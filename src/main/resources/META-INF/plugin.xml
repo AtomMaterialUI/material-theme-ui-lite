@@ -1,0 +1,26 @@
+<idea-plugin>
+  <id>com.mallowigi.idea</id>
+  <name>Material Theme UI Lite</name>
+  <version>1.0</version>
+  <vendor email="heliosaian@gmail.com" url="https://www.material-theme.com">Mallowigi</vendor>
+
+  <description><![CDATA[
+      This is a light version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material Theme UI Plugin</a>
+      containing the theme without all its features and settings.
+    ]]></description>
+
+  <change-notes></change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="191.6183"/>
+
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
