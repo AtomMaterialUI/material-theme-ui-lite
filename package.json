@@ -1,0 +1,26 @@
+{
+  "name": "ninpou",
+  "version": "0.0.0",
+  "description": "<div align=\"center\">   <a href=\"https://www.material-theme.com\"> <img src=\"logo.svg\" width=\"320\" height=\"320\" alt=\"logo\"></img> </a> </div>",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "generate": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mallowigi/material-theme-ui-lite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mallowigi/material-theme-ui-lite/issues"
+  },
+  "homepage": "https://github.com/mallowigi/material-theme-ui-lite#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "yaml": "^1.4.0"
+  }
+}

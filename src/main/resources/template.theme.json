@@ -1,6 +1,6 @@
 {
   "name": "%name",
-  "dark": true,
+  "dark": %dark,
   "author": "Mallowigi",
   "editorScheme": "/colors/%scheme.xml",
   "ui": {
@@ -35,7 +35,7 @@
     "Borders.color": "%border",
     "Button": {
       "arc": 0,
-      "background": "%button",
+      "background": "%bg",
       "default": {
         "endBackground": "%table",
         "endBorderColor": "%table",
@@ -733,14 +733,14 @@
   },
   "icons": {
     "ColorPalette": {
-      "%43494A": "%cs",
-      "%6B6B6B": "%text",
-      "%A7A7A7": "%text",
-      "%3D6185": "%accent",
-      "%466D94": "%accent",
-      "%3C3F41": "%bg",
-      "%545556": "%dis",
-      "%606060": "%dis",
+      "#43494A": "%cs",
+      "#6B6B6B": "%text",
+      "#A7A7A7": "%text",
+      "#3D6185": "%accent",
+      "#466D94": "%accent",
+      "#3C3F41": "%bg",
+      "#545556": "%dis",
+      "#606060": "%dis",
       "#9AA7B0": "%text"
     }
   }

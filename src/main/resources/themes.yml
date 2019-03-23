@@ -1,0 +1,278 @@
+material:
+- oceanic:
+  name: Material Oceanic
+  className: oceanic
+  desc: An oceanic blue flat theme
+  dark: true
+  scheme: Material Oceanic
+  background: '#263238'
+  foreground: '#B0BEC5'
+  text: '#607D8B'
+  selectBg: '#546E7A'
+  selectFg: '#FFFFFF'
+  button: '#2E3C43'
+  second: '#32424A'
+  disabled: '#415967'
+  contrast: '#1E272C'
+  table: '#314549'
+  misc1: '#2A373E'
+  misc2: '#425B67'
+  tree: '#546E7A50'
+  notif: '#1E272C'
+  accent: '#009688'
+  excluded: '#2E3C43'
+
+- darker:
+  name: Material Darker
+  className: darker
+  desc: A pitch-black flat theme
+  dark: true
+  scheme: Material Darker
+  background: '#212121'
+  foreground: '#B0BEC5'
+  text: '#616161'
+  selectBg: '#323232'
+  selectFg: '#FFFFFF'
+  button: '#2A2A2A'
+  second: '#292929'
+  disabled: '#474747'
+  contrast: '#1A1A1A'
+  table: '#323232'
+  misc1: '#292929'
+  misc2: '#3F3F3F'
+  tree: '#32323250'
+  notif: '#1A1A1A'
+  accent: '#FF9800'
+  excluded: '#323232'
+
+- lighter:
+  name: Material Lighter
+  className: lighter
+  desc: A bright light flat theme
+  dark: false
+  scheme: Material Lighter
+  background: '#FAFAFA'
+  foreground: '#546E7A'
+  text: '#94A7B0'
+  selectBg: '#546E7A'
+  selectFg: '#FFFFFF'
+  button: '#F3F4F5'
+  second: '#eae8e8'
+  disabled: '#D2D4D5'
+  contrast: '#F4F4F4'
+  table: '#D2D4D5'
+  misc1: '#d3e1e8'
+  misc2: '#D2D4D5'
+  tree: '#546E7A50'
+  notif: '#b0bec5'
+  accent: '#80CBC4'
+  excluded: '#eae8e8'
+
+- palenight:
+  name: Material Palenight
+  className: palenight
+  desc: A purplish flat theme
+  dark: true
+  scheme: Material Palenight
+  background: '#292D3E'
+  foreground: '#A6ACCD'
+  text: '#676E95'
+  selectBg: '#3C435E'
+  selectFg: '#FFFFFF'
+  button: '#303348'
+  second: '#34324a'
+  disabled: '#515772'
+  contrast: '#202331'
+  table: '#414863'
+  misc1: '#2b2a3e'
+  misc2: '#444267'
+  tree: '#676E9550'
+  notif: '#202331'
+  accent: '#ab47bc'
+  excluded: '#2f2e43'
+
+- deepocean:
+  name: Material Deep Ocean
+  className: deepocean
+  desc: A deep sea black flat theme
+  dark: true
+  scheme: Material Deep Ocean
+  background: '#0F111A'
+  foreground: '#8F93A2'
+  text: '#4B526D'
+  selectBg: '#717CB4'
+  selectFg: '#FFFFFF'
+  button: '#3B3F51'
+  second: '#292D3E'
+  disabled: '#464B5D'
+  contrast: '#090B10'
+  table: '#3B3F51'
+  misc1: '#3B3F51'
+  misc2: '#4B526D'
+  tree: '#717CB450'
+  notif: '#090B10'
+  accent: '#84ffff'
+  excluded: '#292D3E'
+
+other:
+- monokai:
+  name: Monokai Pro
+  className: monokai
+  desc: Theme based on the Monokai Pro Theme
+  dark: true
+  scheme: Monokai Pro
+  background: '#2D2A2E'
+  foreground: '#C1C0C0'
+  text: '#727072'
+  selectBg: '#5B595C'
+  selectFg: '#FFFFFF'
+  button: '#403E41'
+  second: '#403E41'
+  disabled: '#727072'
+  contrast: '#221F22'
+  table: '#5B595C'
+  misc1: '#363437'
+  misc2: '#59575A'
+  tree: '#5B595C50'
+  notif: '#363437'
+  accent: '#E91E63'
+  excluded: '#3a3a3c'
+
+- dracula:
+  name: Dracula
+  className: dracula
+  desc: Theme based on the Dracula Theme
+  dark: true
+  scheme: Dracula
+  background: '#282A36'
+  foreground: '#F8F8F2'
+  text: '#6272A4'
+  selectBg: '#44475A'
+  selectFg: '#8BE9FD'
+  button: '#393C4B'
+  second: '#282A36'
+  disabled: '#6272A4'
+  contrast: '#191A21'
+  table: '#44475A'
+  misc1: '#21222C'
+  misc2: '#6272A4'
+  tree: '#44475A50'
+  notif: '#1D2228'
+  accent: '#FF79C5'
+  excluded: '#34353D'
+
+
+- arcdark:
+  name: Arc Dark
+  className: arcdark
+  desc: Theme based on the Arc Dark GTK Theme
+  dark: true
+  scheme: Arc Dark
+  background: '#2f343f'
+  foreground: '#D3DAE3'
+  text: '#8b9eb5'
+  selectBg: '#8888FF'
+  selectFg: '#FFFFFF'
+  button: '#383C4A'
+  second: '#393f4c'
+  disabled: '#D3DAE3'
+  contrast: '#262b33'
+  table: '#444444'
+  misc1: '#404552'
+  misc2: '#3F3F46'
+  tree: '#08507C50'
+  notif: '#262a33'
+  accent: '#42A5F5'
+  excluded: '#474B57'
+
+- onedark:
+  name: Atom One Dark
+  className: onedark
+  desc: Theme based on the Atom One Dark theme
+  dark: true
+  scheme: Atom One Dark
+  background: '#282C34'
+  foreground: '#979FAD'
+  text: '#979FAD'
+  selectBg: '#3A3F4B'
+  selectFg: '#FFFFFF'
+  button: '#3A3F4B'
+  second: '#2F333D'
+  disabled: '#6B727D'
+  contrast: '#21252B'
+  table: '#383E49'
+  misc1: '#282C34'
+  misc2: '#383D48'
+  tree: '#3A3F4B50'
+  notif: '#282C34'
+  accent: '#2979ff'
+  excluded: '#3c4150'
+
+- onelight:
+  name: Atom One Light
+  className: onelight
+  desc: Theme based on the Atom One Light theme
+  dark: false
+  scheme: Atom One Light
+  background: '#FAFAFA'
+  foreground: '#232324'
+  text: '#9D9D9F'
+  selectBg: '#526FFF'
+  selectFg: '#FFFFFF'
+  button: '#DBDBDC'
+  second: '#EAEAEB'
+  disabled: '#424243'
+  contrast: '#D3D4D5'
+  table: '#DBDBDC'
+  misc1: '#DBDBDC'
+  misc2: '#EAEAEB'
+  tree: '#526FFF50'
+  notif: '#F2F2F2'
+  accent: '#2979ff'
+  excluded: '#DBDBDC'
+
+- solardark:
+  name: Material Solarized Dark
+  className: solardark
+  desc: Solarized Dark Theme
+  dark: true
+  scheme: Solarized Dark
+  background: '#002B36'
+  foreground: '#839496'
+  text: '#586e75'
+  selectBg: '#2E4C52'
+  selectFg: '#FFFFFF'
+  button: '#003745'
+  second: '#002731'
+  disabled: '#54737A'
+  contrast: '#00252E'
+  table: '#11353F'
+  misc1: '#0D3640'
+  misc2: '#11353F'
+  tree: '#2E4C5250'
+  notif: '#2E4C52'
+  accent: '#d33682'
+  excluded: '#083F4D'
+
+- solarlight:
+  name: Material Solarized Light
+  className: solarlight
+  desc: Solarized Light Theme
+  dark: false
+  scheme: Solarized Light
+  background: '#FDF4DF'
+  foreground: '#586e75'
+  text: '#93a1a1'
+  selectBg: '#93a1a1'
+  selectFg: '#002b36'
+  button: '#FEFBF1'
+  second: '#F6F0DE'
+  disabled: '#C9CCC3'
+  contrast: '#FCF4DC'
+  table: '#F6F0DE'
+  misc1: '#EEEADA'
+  misc2: '#F6F0DE'
+  tree: '#93a1a150'
+  notif: '#93a1a1'
+  accent: '#d33682'
+  excluded: '#E3DCC9'

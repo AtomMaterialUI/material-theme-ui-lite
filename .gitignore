@@ -14,3 +14,5 @@ classes/
 #gradle.properties
 *.icls
 src/test/resources/
+
+node_modules

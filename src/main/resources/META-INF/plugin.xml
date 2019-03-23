@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.mallowigi.idea</id>
   <name>Material Theme UI Lite</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="heliosaian@gmail.com" url="https://www.material-theme.com">Mallowigi</vendor>
 
   <description><![CDATA[
@@ -15,7 +15,19 @@
 
 
   <extensions defaultExtensionNs="com.intellij">
-    <themeProvider id="Material Oceanic" path="/themes/material_oceanic.theme.json"></themeProvider>
+    <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"></themeProvider>
+    <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"></themeProvider>
+    <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"></themeProvider>
+    <themeProvider id="Material Palenight" path="/themes/Material Palenight.theme.json"></themeProvider>
+    <themeProvider id="Material Deep Ocean" path="/themes/Material Deep Ocean.theme.json"></themeProvider>
+    <themeProvider id="Dracula" path="/themes/Dracula.theme.json"></themeProvider>
+    <themeProvider id="Monokai Pro" path="/themes/Monokai Pro.theme.json"></themeProvider>
+    <themeProvider id="Arc Dark" path="/themes/Arc Dark.theme.json"></themeProvider>
+    <themeProvider id="Atom One Dark" path="/themes/Atom One Dark.theme.json"></themeProvider>
+    <themeProvider id="Atom One Light" path="/themes/Atom One Light.theme.json"></themeProvider>
+    <themeProvider id="Material Solarized Dark" path="/themes/Material Solarized Dark.theme.json"></themeProvider>
+    <themeProvider id="Material Solarized Light" path="/themes/Material Solarized Light.theme.json"></themeProvider>
+
   </extensions>
 
   <actions>
