@@ -1,6 +1,7 @@
 material:
 - oceanic:
   name: Material Oceanic
+  name2: Material Oceanic Contrast
   className: oceanic
   desc: An oceanic blue flat theme
   dark: true
@@ -24,6 +25,7 @@ material:
 
 - darker:
   name: Material Darker
+  name2: Material Darker Contrast
   className: darker
   desc: A pitch-black flat theme
   dark: true
@@ -47,6 +49,7 @@ material:
 
 - lighter:
   name: Material Lighter
+  name2: Material Lighter Contrast
   className: lighter
   desc: A bright light flat theme
   dark: false
@@ -70,6 +73,7 @@ material:
 
 - palenight:
   name: Material Palenight
+  name2: Material Palenight Contrast
   className: palenight
   desc: A purplish flat theme
   dark: true
@@ -93,6 +97,7 @@ material:
 
 - deepocean:
   name: Material Deep Ocean
+  name2: Material Deep Ocean Contrast
   className: deepocean
   desc: A deep sea black flat theme
   dark: true
@@ -117,6 +122,7 @@ material:
 other:
 - monokai:
   name: Monokai Pro
+  name2: Monokai Pro Contrast
   className: monokai
   desc: Theme based on the Monokai Pro Theme
   dark: true
@@ -140,6 +146,7 @@ other:
 
 - dracula:
   name: Dracula
+  name2: Dracula Contrast
   className: dracula
   desc: Theme based on the Dracula Theme
   dark: true
@@ -164,6 +171,7 @@ other:
 
 - arcdark:
   name: Arc Dark
+  name2: Arc Dark Contrast
   className: arcdark
   desc: Theme based on the Arc Dark GTK Theme
   dark: true
@@ -187,6 +195,7 @@ other:
 
 - onedark:
   name: Atom One Dark
+  name2: Atom One Dark Contrast
   className: onedark
   desc: Theme based on the Atom One Dark theme
   dark: true
@@ -210,6 +219,7 @@ other:
 
 - onelight:
   name: Atom One Light
+  name2: Atom One Light
   className: onelight
   desc: Theme based on the Atom One Light theme
   dark: false
@@ -233,6 +243,7 @@ other:
 
 - solardark:
   name: Material Solarized Dark
+  name2: Material Solarized Dark Contrast
   className: solardark
   desc: Solarized Dark Theme
   dark: true
@@ -256,6 +267,7 @@ other:
 
 - solarlight:
   name: Material Solarized Light
+  name2: Material Solarized Light Contrast
   className: solarlight
   desc: Solarized Light Theme
   dark: false

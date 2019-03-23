@@ -1,5 +1,5 @@
 {
-  "name": "Material Palenight",
+  "name": "Material Palenight Contrast",
   "dark": true,
   "author": "Mallowigi",
   "editorScheme": "/colors/Material Palenight.xml",
@@ -90,9 +90,9 @@
         "background": "#303348",
         "disabledIconColor": "#515772",
         "iconColor": "#A6ACCD",
-        "nonEditableBackground": "#292D3E"
+        "nonEditableBackground": "#202331"
       },
-      "background": "#292D3E",
+      "background": "#202331",
       "buttonBackground": "#303348",
       "disabledForeground": "#515772",
       "foreground": "#A6ACCD",
@@ -149,12 +149,12 @@
       "areaForeground": "#A6ACCD"
     },
     "Editor": {
-      "background": "#292D3E",
+      "background": "#202331",
       "foreground": "#A6ACCD",
       "shortcutForeground": "#676E95"
     },
     "EditorPane": {
-      "background": "#292D3E",
+      "background": "#202331",
       "caretForeground": "#ab47bc",
       "foreground": "#A6ACCD",
       "inactiveBackground": "#292D3E",
@@ -189,7 +189,7 @@
     },
     "Focus.color": "#2b2a3e",
     "FormattedTextField": {
-      "background": "#292D3E",
+      "background": "#202331",
       "caretForeground": "#ab47bc",
       "foreground": "#A6ACCD",
       "inactiveBackground": "#303348",
@@ -285,7 +285,7 @@
       "separatorColor": "#2b2a3e"
     },
     "MenuBar": {
-      "background": "#292D3E",
+      "background": "#202331",
       "borderColor": "#292D3E",
       "disabledBackground": "#292D3E",
       "disabledForeground": "#515772",
@@ -293,7 +293,7 @@
       "highlight": "#292D3E",
       "selectionBackground": "#3C435E",
       "selectionForeground": "#FFFFFF",
-      "shadow": "#292D3E"
+      "shadow": "#202331"
     },
     "MenuItem": {
       "acceleratorForeground": "#676E95",
@@ -354,7 +354,7 @@
       "lineSeparatorColor": "#414863"
     },
     "PasswordField": {
-      "background": "#292D3E",
+      "background": "#202331",
       "capsLockIconColor": "#ab47bc",
       "caretForeground": "#ab47bc",
       "foreground": "#A6ACCD",
@@ -381,7 +381,7 @@
         "updateForeground": "#A6ACCD"
       },
       "SearchField": {
-        "background": "#292D3E",
+        "background": "#202331",
         "borderColor": "#2b2a3e"
       },
       "SectionHeader": {
@@ -511,7 +511,7 @@
       "separatorColor": "#34324a"
     },
     "SidePanel": {
-      "background": "#292D3E"
+      "background": "#202331"
     },
     "Slider": {
       "background": "#292D3E",
@@ -534,7 +534,7 @@
     },
     "SplitPane": {
       "background": "#292D3E",
-      "highlight": "#292D3E"
+      "highlight": "#202331"
     },
     "SplitPaneDivider.draggingColor": "#34324a",
     "StatusBar": {
@@ -562,7 +562,7 @@
       "tabSelectionHeight": 2,
       "underlineColor": "#ab47bc"
     },
-    "TabbedPane.mt.tab.background": "#292D3E",
+    "TabbedPane.mt.tab.background": "#202331",
     "Table": {
       "background": "#292D3E",
       "cellNoFocusBorder": "10,5,10,5",
@@ -594,7 +594,7 @@
     "textInactiveText": "#676E95",
     "textText": "#676E95",
     "TextArea": {
-      "background": "#292D3E",
+      "background": "#202331",
       "caretForeground": "#ab47bc",
       "foreground": "#A6ACCD",
       "inactiveForeground": "#515772",
@@ -602,7 +602,7 @@
       "selectionForeground": "#FFFFFF"
     },
     "TextField": {
-      "background": "#292D3E",
+      "background": "#202331",
       "caretForeground": "#ab47bc",
       "foreground": "#A6ACCD",
       "inactiveForeground": "#515772",
@@ -610,7 +610,7 @@
       "selectionForeground": "#FFFFFF"
     },
     "TextPane": {
-      "background": "#292D3E",
+      "background": "#202331",
       "caretForeground": "#ab47bc",
       "foreground": "#A6ACCD",
       "inactiveForeground": "#515772",
@@ -630,7 +630,7 @@
       "onForeground": "#ab47bc"
     },
     "ToolBar": {
-      "background": "#292D3E",
+      "background": "#202331",
       "borderHandleColor": "#676E95",
       "floatingForeground": "#676E95",
       "foreground": "#A6ACCD"
@@ -664,7 +664,7 @@
       }
     },
     "Tree": {
-      "background": "#292D3E",
+      "background": "#202331",
       "foreground": "#676E95",
       "modifiedItemForeground": "#ab47bc",
       "rowHeight": 24,
@@ -672,7 +672,7 @@
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
       "selectionInactiveBackground": "#676E9550",
-      "textBackground": "#292D3E"
+      "textBackground": "#202331"
     },
     "UiDesigner": {
       "Panel.background": "#292D3E",
@@ -713,7 +713,7 @@
       }
     },
     "Viewport": {
-      "background": "#292D3E",
+      "background": "#202331",
       "foreground": "%fc"
     },
     "WelcomeScreen": {
@@ -732,7 +732,7 @@
         "selectionInactiveBackground": "#34324a"
       }
     },
-    "window": "#292D3E",
+    "window": "#202331",
     "windowBorder": "#2b2a3e",
     "windowText": "#676E95",
     "Window.border": "#2b2a3e"

@@ -28,6 +28,18 @@
     <themeProvider id="Material Solarized Dark" path="/themes/Material Solarized Dark.theme.json"></themeProvider>
     <themeProvider id="Material Solarized Light" path="/themes/Material Solarized Light.theme.json"></themeProvider>
 
+    <themeProvider id="Material Oceanic Contrast" path="/themes/Material Oceanic Contrast.theme.json"></themeProvider>
+    <themeProvider id="Material Darker Contrast" path="/themes/Material Darker Contrast.theme.json"></themeProvider>
+    <themeProvider id="Material Lighter Contrast" path="/themes/Material Lighter Contrast.theme.json"></themeProvider>
+    <themeProvider id="Material Palenight Contrast" path="/themes/Material Palenight Contrast.theme.json"></themeProvider>
+    <themeProvider id="Material Deep Ocean Contrast" path="/themes/Material Deep Ocean Contrast.theme.json"></themeProvider>
+    <themeProvider id="Dracula Contrast" path="/themes/Dracula Contrast.theme.json"></themeProvider>
+    <themeProvider id="Monokai Pro Contrast" path="/themes/Monokai Pro Contrast.theme.json"></themeProvider>
+    <themeProvider id="Arc Dark Contrast" path="/themes/Arc Dark Contrast.theme.json"></themeProvider>
+    <themeProvider id="Atom One Dark Contrast" path="/themes/Atom One Dark Contrast.theme.json"></themeProvider>
+    <themeProvider id="Atom One Light Contrast" path="/themes/Atom One Light Contrast.theme.json"></themeProvider>
+    <themeProvider id="Material Solarized Dark Contrast" path="/themes/Material Solarized Dark Contrast.theme.json"></themeProvider>
+    <themeProvider id="Material Solarized Light Contrast" path="/themes/Material Solarized Light Contrast.theme.json"></themeProvider>
   </extensions>
 
   <actions>

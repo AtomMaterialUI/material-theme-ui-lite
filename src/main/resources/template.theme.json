@@ -90,9 +90,9 @@
         "background": "%button",
         "disabledIconColor": "%dis",
         "iconColor": "%fg",
-        "nonEditableBackground": "%bg"
+        "nonEditableBackground": "%hc"
       },
-      "background": "%bg",
+      "background": "%hc",
       "buttonBackground": "%button",
       "disabledForeground": "%dis",
       "foreground": "%fg",
@@ -149,12 +149,12 @@
       "areaForeground": "%fg"
     },
     "Editor": {
-      "background": "%cs",
+      "background": "%hc",
       "foreground": "%fg",
       "shortcutForeground": "%text"
     },
     "EditorPane": {
-      "background": "%cs",
+      "background": "%hc",
       "caretForeground": "%accent",
       "foreground": "%fg",
       "inactiveBackground": "%bg",
@@ -189,7 +189,7 @@
     },
     "Focus.color": "%border",
     "FormattedTextField": {
-      "background": "%bg",
+      "background": "%hc",
       "caretForeground": "%accent",
       "foreground": "%fg",
       "inactiveBackground": "%button",
@@ -285,7 +285,7 @@
       "separatorColor": "%border"
     },
     "MenuBar": {
-      "background": "%bg",
+      "background": "%hc",
       "borderColor": "%bg",
       "disabledBackground": "%bg",
       "disabledForeground": "%dis",
@@ -293,7 +293,7 @@
       "highlight": "%bg",
       "selectionBackground": "%selBg",
       "selectionForeground": "%selFg",
-      "shadow": "%bg"
+      "shadow": "%hc"
     },
     "MenuItem": {
       "acceleratorForeground": "%text",
@@ -354,7 +354,7 @@
       "lineSeparatorColor": "%table"
     },
     "PasswordField": {
-      "background": "%bg",
+      "background": "%hc",
       "capsLockIconColor": "%accent",
       "caretForeground": "%accent",
       "foreground": "%fg",
@@ -381,7 +381,7 @@
         "updateForeground": "%fg"
       },
       "SearchField": {
-        "background": "%bg",
+        "background": "%hc",
         "borderColor": "%border"
       },
       "SectionHeader": {
@@ -511,7 +511,7 @@
       "separatorColor": "%second"
     },
     "SidePanel": {
-      "background": "%bg"
+      "background": "%hc"
     },
     "Slider": {
       "background": "%bg",
@@ -534,7 +534,7 @@
     },
     "SplitPane": {
       "background": "%bg",
-      "highlight": "%bg"
+      "highlight": "%hc"
     },
     "SplitPaneDivider.draggingColor": "%second",
     "StatusBar": {
@@ -562,7 +562,7 @@
       "tabSelectionHeight": 2,
       "underlineColor": "%accent"
     },
-    "TabbedPane.mt.tab.background": "%bg",
+    "TabbedPane.mt.tab.background": "%hc",
     "Table": {
       "background": "%bg",
       "cellNoFocusBorder": "10,5,10,5",
@@ -594,7 +594,7 @@
     "textInactiveText": "%text",
     "textText": "%text",
     "TextArea": {
-      "background": "%second",
+      "background": "%hc",
       "caretForeground": "%accent",
       "foreground": "%fg",
       "inactiveForeground": "%dis",
@@ -602,7 +602,7 @@
       "selectionForeground": "%selFg"
     },
     "TextField": {
-      "background": "%bg",
+      "background": "%hc",
       "caretForeground": "%accent",
       "foreground": "%fg",
       "inactiveForeground": "%dis",
@@ -610,7 +610,7 @@
       "selectionForeground": "%selFg"
     },
     "TextPane": {
-      "background": "%bg",
+      "background": "%hc",
       "caretForeground": "%accent",
       "foreground": "%fg",
       "inactiveForeground": "%dis",
@@ -630,7 +630,7 @@
       "onForeground": "%accent"
     },
     "ToolBar": {
-      "background": "%cs",
+      "background": "%hc",
       "borderHandleColor": "%text",
       "floatingForeground": "%text",
       "foreground": "%fg"
@@ -664,14 +664,15 @@
       }
     },
     "Tree": {
-      "background": "%bg",
+      "background": "%hc",
       "foreground": "%text",
       "modifiedItemForeground": "%accent",
       "rowHeight": 24,
       "selectionBackground": "%tree",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%selFg",
-      "selectionInactiveBackground": "%tree"
+      "selectionInactiveBackground": "%tree",
+      "textBackground": "%hc"
     },
     "UiDesigner": {
       "Panel.background": "%bg",
@@ -711,6 +712,10 @@
         "backgroundBase": "%hl"
       }
     },
+    "Viewport": {
+      "background": "%hc",
+      "foreground": "%fc"
+    },
     "WelcomeScreen": {
       "background": "%bg",
       "borderColor": "%bg",
@@ -727,9 +732,10 @@
         "selectionInactiveBackground": "%second"
       }
     },
-    "window": "%bg",
+    "window": "%hc",
     "windowBorder": "%border",
-    "windowText": "%text"
+    "windowText": "%text",
+    "Window.border": "%border"
   },
   "icons": {
     "ColorPalette": {
