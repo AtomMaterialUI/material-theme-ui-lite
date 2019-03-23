@@ -50,6 +50,7 @@
       "disabledText": "%dis",
       "endBackground": "%button",
       "endBorderColor": "%button",
+      "focus": "%hl",
       "focusedBorderColor": "%accent",
       "foreground": "%text",
       "highlight": "%selFg",
@@ -221,6 +222,7 @@
     "inactiveCaptionText": "%text",
     "info": "%text",
     "infoText": "%text",
+    "IdeStatusBar.border": "4,4,4,4",
     "InformationHint.borderColor": "%border",
     "InplaceRefactoringPopup": {
       "borderColor": "%bg"
@@ -421,6 +423,8 @@
       "foreground": "%fg",
       "translucentBackground": "%bg"
     },
+    "PopupMenuSeparator.height": 10,
+    "PopupMenuSeparator.stripeIndent": 5,
     "ProgressBar": {
       "background": "%bg",
       "foreground": "%accent",
@@ -573,6 +577,7 @@
       "focusCellForeground": "%selFg",
       "foreground": "%fg",
       "gridColor": "%bg",
+      "highlightOuter": "%table",
       "lightSelectionForeground": "%selFg",
       "lightSelectionInactiveForeground": "%text",
       "lightSelectionInactiveBackground": "%second",
@@ -585,6 +590,7 @@
     },
     "TableHeader": {
       "background": "%bg",
+      "borderColor": "%bg",
       "cellBorder": "4,0,4,0",
       "foreground": "%fg",
       "focusCellBackground": "%table",
@@ -667,13 +673,15 @@
       "background": "%hc",
       "foreground": "%text",
       "modifiedItemForeground": "%accent",
-      "rowHeight": 24,
+      "rowHeight": 28,
       "selectionBackground": "%tree",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%selFg",
       "selectionInactiveBackground": "%tree",
       "textBackground": "%hc"
     },
+    "Tree.leftChildIndent": 10,
+    "Tree.rightChildIndent": 5,
     "UiDesigner": {
       "Panel.background": "%bg",
       "Preview.background": "%bg"

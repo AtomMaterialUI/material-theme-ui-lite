@@ -1,48 +1,61 @@
 <idea-plugin>
-  <id>com.mallowigi.idea</id>
-  <name>Material Theme UI Lite</name>
-  <version>1.1</version>
-  <vendor email="heliosaian@gmail.com" url="https://www.material-theme.com">Mallowigi</vendor>
+    <id>com.mallowigi.idea</id>
+    <name>Material Theme UI Lite</name>
+    <version>1.1</version>
+    <vendor email="heliosaian@gmail.com" url="https://www.material-theme.com">Mallowigi</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material Theme UI Plugin</a>
       that includes the themes only.
     ]]></description>
 
-  <change-notes></change-notes>
+    <change-notes></change-notes>
 
-  <idea-version since-build="191.6183"/>
+    <idea-version since-build="191.6183"/>
+    <resource-bundle>messages.MaterialThemeBundle</resource-bundle>
 
 
-  <extensions defaultExtensionNs="com.intellij">
-    <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"></themeProvider>
-    <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"></themeProvider>
-    <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"></themeProvider>
-    <themeProvider id="Material Palenight" path="/themes/Material Palenight.theme.json"></themeProvider>
-    <themeProvider id="Material Deep Ocean" path="/themes/Material Deep Ocean.theme.json"></themeProvider>
-    <themeProvider id="Dracula" path="/themes/Dracula.theme.json"></themeProvider>
-    <themeProvider id="Monokai Pro" path="/themes/Monokai Pro.theme.json"></themeProvider>
-    <themeProvider id="Arc Dark" path="/themes/Arc Dark.theme.json"></themeProvider>
-    <themeProvider id="Atom One Dark" path="/themes/Atom One Dark.theme.json"></themeProvider>
-    <themeProvider id="Atom One Light" path="/themes/Atom One Light.theme.json"></themeProvider>
-    <themeProvider id="Material Solarized Dark" path="/themes/Material Solarized Dark.theme.json"></themeProvider>
-    <themeProvider id="Material Solarized Light" path="/themes/Material Solarized Light.theme.json"></themeProvider>
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"></themeProvider>
+        <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"></themeProvider>
+        <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"></themeProvider>
+        <themeProvider id="Material Palenight" path="/themes/Material Palenight.theme.json"></themeProvider>
+        <themeProvider id="Material Deep Ocean" path="/themes/Material Deep Ocean.theme.json"></themeProvider>
+        <themeProvider id="Dracula" path="/themes/Dracula.theme.json"></themeProvider>
+        <themeProvider id="Monokai Pro" path="/themes/Monokai Pro.theme.json"></themeProvider>
+        <themeProvider id="Arc Dark" path="/themes/Arc Dark.theme.json"></themeProvider>
+        <themeProvider id="Atom One Dark" path="/themes/Atom One Dark.theme.json"></themeProvider>
+        <themeProvider id="Atom One Light" path="/themes/Atom One Light.theme.json"></themeProvider>
+        <themeProvider id="Material Solarized Dark" path="/themes/Material Solarized Dark.theme.json"></themeProvider>
+        <themeProvider id="Material Solarized Light" path="/themes/Material Solarized Light.theme.json"></themeProvider>
 
-    <themeProvider id="Material Oceanic Contrast" path="/themes/Material Oceanic Contrast.theme.json"></themeProvider>
-    <themeProvider id="Material Darker Contrast" path="/themes/Material Darker Contrast.theme.json"></themeProvider>
-    <themeProvider id="Material Lighter Contrast" path="/themes/Material Lighter Contrast.theme.json"></themeProvider>
-    <themeProvider id="Material Palenight Contrast" path="/themes/Material Palenight Contrast.theme.json"></themeProvider>
-    <themeProvider id="Material Deep Ocean Contrast" path="/themes/Material Deep Ocean Contrast.theme.json"></themeProvider>
-    <themeProvider id="Dracula Contrast" path="/themes/Dracula Contrast.theme.json"></themeProvider>
-    <themeProvider id="Monokai Pro Contrast" path="/themes/Monokai Pro Contrast.theme.json"></themeProvider>
-    <themeProvider id="Arc Dark Contrast" path="/themes/Arc Dark Contrast.theme.json"></themeProvider>
-    <themeProvider id="Atom One Dark Contrast" path="/themes/Atom One Dark Contrast.theme.json"></themeProvider>
-    <themeProvider id="Atom One Light Contrast" path="/themes/Atom One Light Contrast.theme.json"></themeProvider>
-    <themeProvider id="Material Solarized Dark Contrast" path="/themes/Material Solarized Dark Contrast.theme.json"></themeProvider>
-    <themeProvider id="Material Solarized Light Contrast" path="/themes/Material Solarized Light Contrast.theme.json"></themeProvider>
-  </extensions>
+        <themeProvider id="Material Oceanic Contrast"
+                       path="/themes/Material Oceanic Contrast.theme.json"></themeProvider>
+        <themeProvider id="Material Darker Contrast" path="/themes/Material Darker Contrast.theme.json"></themeProvider>
+        <themeProvider id="Material Lighter Contrast"
+                       path="/themes/Material Lighter Contrast.theme.json"></themeProvider>
+        <themeProvider id="Material Palenight Contrast"
+                       path="/themes/Material Palenight Contrast.theme.json"></themeProvider>
+        <themeProvider id="Material Deep Ocean Contrast"
+                       path="/themes/Material Deep Ocean Contrast.theme.json"></themeProvider>
+        <themeProvider id="Dracula Contrast" path="/themes/Dracula Contrast.theme.json"></themeProvider>
+        <themeProvider id="Monokai Pro Contrast" path="/themes/Monokai Pro Contrast.theme.json"></themeProvider>
+        <themeProvider id="Arc Dark Contrast" path="/themes/Arc Dark Contrast.theme.json"></themeProvider>
+        <themeProvider id="Atom One Dark Contrast" path="/themes/Atom One Dark Contrast.theme.json"></themeProvider>
+        <themeProvider id="Atom One Light Contrast" path="/themes/Atom One Light Contrast.theme.json"></themeProvider>
+        <themeProvider id="Material Solarized Dark Contrast"
+                       path="/themes/Material Solarized Dark Contrast.theme.json"></themeProvider>
+        <themeProvider id="Material Solarized Light Contrast"
+                       path="/themes/Material Solarized Light Contrast.theme.json"></themeProvider>
+    </extensions>
 
-  <actions>
-  </actions>
+    <project-components>
+        <component>
+            <implementation-class>com.mallowigi.idea.MTUpdatesComponent</implementation-class>
+        </component>
+    </project-components>
+
+    <actions>
+    </actions>
 
 </idea-plugin>
