@@ -12,10 +12,10 @@
       "selectionBackgroundInactive": "#2F333D",
       "selectionInactiveBackground": "#2F333D",
       "selectionForeground": "#FFFFFF",
-      "disabledBackground": "#6B727DBg",
-      "disabledForeground": "#6B727DFg",
-      "disabledText": "#6B727DFg",
-      "inactiveBackground": "%inBg",
+      "disabledBackground": "#3c4150",
+      "disabledForeground": "#6B727D",
+      "disabledText": "#6B727D",
+      "inactiveBackground": "#3c4150",
       "inactiveForeground": "#979FAD",
       "infoForeground": "#979FAD",
       "separatorColor": "#282C34",
@@ -252,7 +252,7 @@
       "selectionBackground": "#3A3F4B",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#3A3F4B50"
+      "selectionInactiveBackground": "#3A3F4B80"
     },
     "material": {
       "background": "#282C34",
@@ -578,7 +578,7 @@
       "lightSelectionInactiveBackground": "#2F333D",
       "selectionBackground": "#383E49",
       "selectionForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#3A3F4B50",
+      "selectionInactiveBackground": "#3A3F4B80",
       "selectionInactiveForeground": "#FFFFFF",
       "sortIconColor": "#979FAD",
       "stripeColor": "#21252B"
@@ -668,10 +668,10 @@
       "foreground": "#979FAD",
       "modifiedItemForeground": "#2979ff",
       "rowHeight": 24,
-      "selectionBackground": "#3A3F4B50",
+      "selectionBackground": "#3A3F4B80",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#3A3F4B50"
+      "selectionInactiveBackground": "#3A3F4B80"
     },
     "UiDesigner": {
       "Panel.background": "#282C34",
@@ -704,7 +704,7 @@
       },
       "Log": {
         "Commit.unmatchedForeground": "#2F333D",
-        "Commit.currentBranchBackground": "#3A3F4B50"
+        "Commit.currentBranchBackground": "#3A3F4B80"
       },
       "RefLabel": {
         "foreground": "#FFFFFF",

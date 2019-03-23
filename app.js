@@ -16,11 +16,12 @@ let props = [
   ['dis', 'disabled'],
   ['cs', 'contrast'],
   ['table', 'table'],
-  ['hl', 'misc2'],
-  ['border', 'misc1'],
+  ['hl', 'hl'],
+  ['border', 'border'],
   ['tree', 'tree'],
   ['notif', 'notif'],
   ['accent', 'accent'],
+  ['excl', 'excluded']
 ];
 
 // Function to replace placeholders in a text
