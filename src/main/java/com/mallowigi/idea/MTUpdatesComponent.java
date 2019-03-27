@@ -42,11 +42,9 @@ import java.net.URL;
  * Component for showing update notification
  */
 public final class MTUpdatesComponent implements ProjectComponent {
-  public static final String VERSION = "MTUILite.version";
+  private static final String VERSION = "MTUILite.version";
   @NotNull
   private final Project myProject;
-
-  private String pluginVersion;
 
   /**
    * Instantiates a new Mt updates component.
@@ -84,18 +82,19 @@ public final class MTUpdatesComponent implements ProjectComponent {
 
   @Override
   public void initComponent() {
-    pluginVersion = PropertiesComponent.getInstance().getValue(VERSION, "0.0");
   }
 
   @SuppressWarnings("FeatureEnvy")
   @Override
   public void projectOpened() {
+    final String pluginVersion = PropertiesComponent.getInstance().getValue(VERSION, "0.0");
     // Show new version notification
-    final boolean updated = !pluginVersion.equals(MaterialThemeBundle.message("plugin.version"));
+    final String newVersion = MaterialThemeBundle.message("plugin.version");
+    final boolean updated = !pluginVersion.equals(newVersion);
 
     // Show notification update
     if (updated) {
-      PropertiesComponent.getInstance().setValue(VERSION, pluginVersion);
+      PropertiesComponent.getInstance().setValue(VERSION, newVersion);
       Notify.showUpdate(myProject, MTUpdatesComponent::onPaypalClick);
     }
   }

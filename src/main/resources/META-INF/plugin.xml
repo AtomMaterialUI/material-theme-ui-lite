@@ -9,6 +9,8 @@
       that includes the themes only.
     ]]></description>
 
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
     <change-notes></change-notes>
 
     <idea-version since-build="191.6183"/>
