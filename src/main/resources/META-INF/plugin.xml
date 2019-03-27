@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.mallowigi.idea</id>
     <name>Material Theme UI Lite</name>
-    <version>1.1</version>
+    <version>@version</version>
     <vendor email="heliosaian@gmail.com" url="https://www.material-theme.com">Mallowigi</vendor>
 
     <description><![CDATA[
