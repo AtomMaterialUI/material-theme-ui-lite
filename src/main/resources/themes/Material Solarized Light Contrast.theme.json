@@ -50,6 +50,7 @@
       "disabledText": "#C9CCC3",
       "endBackground": "#FEFBF1",
       "endBorderColor": "#FEFBF1",
+      "focus": "#F6F0DE",
       "focusedBorderColor": "#d33682",
       "foreground": "#93a1a1",
       "highlight": "#002b36",
@@ -172,7 +173,7 @@
     "FileColor": {
       "Green": "#387002",
       "Blue": "#004BA0",
-      "Yellow": "#C49000",
+      "Yellow": "#E3DCC9",
       "Orange": "#B53D00",
       "Violet": "#4D2C91",
       "Rose": "#A00037"
@@ -221,6 +222,7 @@
     "inactiveCaptionText": "#93a1a1",
     "info": "#93a1a1",
     "infoText": "#93a1a1",
+    "IdeStatusBar.border": "4,4,4,4",
     "InformationHint.borderColor": "#edead9",
     "InplaceRefactoringPopup": {
       "borderColor": "#fdf6e3"
@@ -421,6 +423,8 @@
       "foreground": "#586e75",
       "translucentBackground": "#fdf6e3"
     },
+    "PopupMenuSeparator.height": 10,
+    "PopupMenuSeparator.stripeIndent": 5,
     "ProgressBar": {
       "background": "#fdf6e3",
       "foreground": "#d33682",
@@ -573,6 +577,7 @@
       "focusCellForeground": "#002b36",
       "foreground": "#586e75",
       "gridColor": "#fdf6e3",
+      "highlightOuter": "#F6F0DE",
       "lightSelectionForeground": "#002b36",
       "lightSelectionInactiveForeground": "#93a1a1",
       "lightSelectionInactiveBackground": "#F6F0DE",
@@ -585,6 +590,7 @@
     },
     "TableHeader": {
       "background": "#fdf6e3",
+      "borderColor": "#fdf6e3",
       "cellBorder": "4,0,4,0",
       "foreground": "#586e75",
       "focusCellBackground": "#F6F0DE",
@@ -667,13 +673,15 @@
       "background": "#eee8d5",
       "foreground": "#93a1a1",
       "modifiedItemForeground": "#d33682",
-      "rowHeight": 24,
+      "rowHeight": 28,
       "selectionBackground": "#93a1a180",
       "selectionForeground": "#002b36",
       "selectionInactiveForeground": "#002b36",
       "selectionInactiveBackground": "#93a1a180",
       "textBackground": "#eee8d5"
     },
+    "Tree.leftChildIndent": 10,
+    "Tree.rightChildIndent": 5,
     "UiDesigner": {
       "Panel.background": "#fdf6e3",
       "Preview.background": "#fdf6e3"

@@ -173,7 +173,7 @@
     "FileColor": {
       "Green": "#387002",
       "Blue": "#004BA0",
-      "Yellow": "#C49000",
+      "Yellow": "%excl",
       "Orange": "#B53D00",
       "Violet": "#4D2C91",
       "Rose": "#A00037"
