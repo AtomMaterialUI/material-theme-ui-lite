@@ -91,7 +91,7 @@
         "background": "%button",
         "disabledIconColor": "%dis",
         "iconColor": "%fg",
-        "nonEditableBackground": "%hc"
+        "nonEditableBackground": "%bg"
       },
       "background": "%hc",
       "buttonBackground": "%button",
@@ -139,7 +139,9 @@
     },
     "DefaultTabs": {
       "background": "%bg",
-      "borderColor": "%bg"
+      "borderColor": "%bg",
+      "inactiveUnderlineColor": "%dis",
+      "underlineColor": "%accent"
     },
     "Desktop.background": "%bg",
     "DialogWrapper.southPanelBackground": "%bg",
@@ -166,6 +168,7 @@
     "EditorTabs": {
       "borderColor": "%second",
       "inactiveMaskColor": "%bg",
+      "inactiveUnderlineColor": "%dis",
       "selectedForeground": "%fg",
       "selectedBackground": "%table",
       "underlineColor": "%accent"
@@ -712,7 +715,7 @@
         "tipIconColor": "%text"
       },
       "Log": {
-        "Commit.unmatchedForeground": "%second",
+        "Commit.unmatchedForeground": "%text",
         "Commit.currentBranchBackground": "%tree"
       },
       "RefLabel": {

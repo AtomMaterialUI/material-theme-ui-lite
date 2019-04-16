@@ -108,6 +108,14 @@
         <option name="ScrollBar.hoverThumbColor" value="42A5F5FF" mac="42A5F5FF"/>
         <option name="ScrollBar.thumbBorderColor" value="42A5F5C0" mac="42A5F5C0"/>
         <option name="ScrollBar.thumbColor" value="42A5F5C0" mac="42A5F5C0"/>
+        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="262b33" mac="262b33"/>
+        <option name="ScrollBar.Mac.Transparent.trackColor" value="262b33" mac="262b33"/>
+        <option name="ScrollBar.Mac.hoverTrackColor" value="262b33" mac="262b33"/>
+        <option name="ScrollBar.Mac.trackColor" value="262b33" mac="262b33"/>
+        <option name="ScrollBar.Transparent.hoverTrackColor" value="262b33" mac="262b33"/>
+        <option name="ScrollBar.Transparent.trackColor" value="262b33" mac="262b33"/>
+        <option name="ScrollBar.hoverTrackColor" value="262b33" mac="262b33"/>
+        <option name="ScrollBar.trackColor" value="262b33" mac="262b33"/>
         <option name="TEARLINE_COLOR" value="464b52"/>
         <option name="TOOLTIP" value="262b33"/>
         <option name="VCS_ANNOTATIONS_COLOR_1" value="5f5a60"/>
@@ -134,6 +142,11 @@
             </value>
         </option>
         <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA"/>
+        <option name="BACKGROUND">
+            <value>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
         <option name="BAD_CHARACTER">
             <value>
                 <option name="EFFECT_COLOR" value="cf6a4c"/>
@@ -207,6 +220,16 @@
         <option name="CLASS_REFERENCE">
             <value>
                 <option name="FOREGROUND" value="1a1f29"/>
+            </value>
+        </option>
+        <option name="CODE_VISION_DEFAULT">
+            <value>
+                <option name="FOREGROUND" value="747c84"/>
+            </value>
+        </option>
+        <option name="CODE_VISION_HOVERED">
+            <value>
+                <option name="FOREGROUND" value="42a5f5"/>
             </value>
         </option>
         <option name="COFFEESCRIPT.BAD_CHARACTER">
@@ -796,7 +819,6 @@
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
                 <option name="BACKGROUND" value="33e5d"/>
-                <option name="EFFECT_COLOR" value="fffbf7"/>
                 <option name="ERROR_STRIPE_COLOR" value="4d6168"/>
             </value>
         </option>
@@ -2223,6 +2245,16 @@
                 <option name="FOREGROUND" value="c4b3a3"/>
             </value>
         </option>
+        <option name="NG.EXPANSION_FORM">
+            <value>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
+        <option name="NG.EXPRESSIONS">
+            <value>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
         <option name="NOT_TOP_FRAME_ATTRIBUTES">
             <value>
                 <option name="BACKGROUND" value="8b9eb5"/>
@@ -2279,8 +2311,6 @@
                 <option name="FOREGROUND" value="cda869"/>
             </value>
         </option>
-        <option name="OC.MESSAGE_ARGUMENT" baseAttributes="DEFAULT_FUNCTION_CALL"/>
-        <option name="OC.METHOD_DECLARATION" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
         <option name="OC.NAMESPACE_LIKE">
             <value>
                 <option name="FOREGROUND" value="47bc9b"/>
@@ -2550,40 +2580,36 @@
         <option name="RUBY_SPECIFIC_CALL" baseAttributes="DEFAULT_STATIC_METHOD"/>
         <option name="RUBY_SYMBOL" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
         <option name="RUBY_WORDS" baseAttributes="DEFAULT_STRING"/>
-        <option name="ReSharper.ASP_NET_ATTRIBUTE_NAME">
-            <value>
-                <option name="FOREGROUND" value="f9ee98"/>
-            </value>
-        </option>
-        <option name="ReSharper.ASP_NET_BLOCK_TAG">
-            <value>
-                <option name="FOREGROUND" value="a7a7a7"/>
-            </value>
-        </option>
         <option name="ReSharper.ASP_NET_COMMENT">
             <value>
-                <option name="FOREGROUND" value="5f5a60"/>
-                <option name="FONT_TYPE" value="2"/>
+                <option name="FOREGROUND" value="747c84"/>
             </value>
         </option>
-        <option name="ReSharper.ASP_NET_ENTITY_REFERENCE">
+        <option name="ReSharper.ASP_NET_DIRECTIVE_NAME">
             <value>
                 <option name="FOREGROUND" value="cf6a4c"/>
             </value>
         </option>
+        <option name="ReSharper.ASP_NET_ENTITY_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="cda869"/>
+            </value>
+        </option>
         <option name="ReSharper.ASP_NET_MVC_ACTION">
             <value>
+                <option name="FOREGROUND" value="7587a6"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="ReSharper.ASP_NET_MVC_AREA">
             <value>
+                <option name="FOREGROUND" value="9b859d"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="ReSharper.ASP_NET_MVC_CONTROLLER">
             <value>
-                <option name="FOREGROUND" value="47bc9b"/>
+                <option name="FOREGROUND" value="cf6a4c"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
@@ -2599,17 +2625,82 @@
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
-        <option name="ReSharper.ASP_NET_RAZOR_CODE_BLOCK">
-            <value/>
-        </option>
-        <option name="ReSharper.ASP_NET_RAZOR_CODE_BLOCK_TAG">
+        <option name="ReSharper.ASP_NET_RAZOR_ATTRIBUTE_NAME">
             <value>
-                <option name="FOREGROUND" value="a7a7a7"/>
+                <option name="FOREGROUND" value="f9ee98"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="ReSharper.ASP_NET_RAZOR_ATTRIBUTE_VALUE">
+            <value>
+                <option name="FOREGROUND" value="8f9d6a"/>
+            </value>
+        </option>
+        <option name="ReSharper.ASP_NET_RAZOR_CODE_BLOCK">
+            <value>
+                <option name="BACKGROUND" value="393f4c"/>
+            </value>
+        </option>
+        <option name="ReSharper.ASP_NET_RAZOR_COMMENT">
+            <value>
+                <option name="FOREGROUND" value="747c84"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="ReSharper.ASP_NET_RAZOR_ENTITY_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="cda869"/>
+            </value>
+        </option>
+        <option name="ReSharper.ASP_NET_RAZOR_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="cf6a4c"/>
             </value>
         </option>
         <option name="ReSharper.ASP_NET_RUN_AT_ATTRIBUTE">
             <value>
+                <option name="FOREGROUND" value="7587a6"/>
+            </value>
+        </option>
+        <option name="ReSharper.ASP_NET_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="cf6a4c"/>
+            </value>
+        </option>
+        <option name="ReSharper.BRACE_OUTLINE">
+            <value/>
+        </option>
+        <option name="ReSharper.CPP_DEPENDENT_NAME_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="47bc9b"/>
+            </value>
+        </option>
+        <option name="ReSharper.CPP_DOXYGEN_COMMAND">
+            <value>
+                <option name="FOREGROUND" value="747c84"/>
+            </value>
+        </option>
+        <option name="ReSharper.CPP_ENUM_ENUMERATOR_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="cda869"/>
+            </value>
+        </option>
+        <option name="ReSharper.CPP_PREPROCESSOR_MACRO_IDENTIFIER">
+            <value>
                 <option name="FOREGROUND" value="9b859d"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="ReSharper.CPP_STATIC_FIELD_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="cf6a4c"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="ReSharper.CPP_STATIC_MEMBER_FUNCTION_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="7587a6"/>
+                <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
         <option name="ReSharper.DELEGATE_IDENTIFIER">
@@ -2626,6 +2717,7 @@
         <option name="ReSharper.EVENT_IDENTIFIER">
             <value>
                 <option name="FOREGROUND" value="cf6a4c"/>
+                <option name="FONT_TYPE" value="1"/>
             </value>
         </option>
         <option name="ReSharper.EXTENSION_METHOD_IDENTIFIER">
@@ -2633,15 +2725,22 @@
                 <option name="FOREGROUND" value="7587a6"/>
             </value>
         </option>
+        <option name="ReSharper.FORMAT_STRING_ITEM">
+            <value>
+                <option name="FOREGROUND" value="cda869"/>
+            </value>
+        </option>
+        <option name="ReSharper.FORMAT_STRING_ITEM_2" baseAttributes="ReSharper.FORMAT_STRING_ITEM"/>
         <option name="ReSharper.HINT">
             <value>
                 <option name="EFFECT_COLOR" value="a7a7a7"/>
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
-        <option name="ReSharper.LATE_BOUND_IDENTIFIER">
+        <option name="ReSharper.MATCHED_FORMAT_STRING_ITEM">
             <value>
-                <option name="FOREGROUND" value="cf6a4c"/>
+                <option name="FOREGROUND" value="cda869"/>
+                <option name="EFFECT_COLOR" value="cda869"/>
             </value>
         </option>
         <option name="ReSharper.MUTABLE_LOCAL_VARIABLE_IDENTIFIER">
@@ -2654,19 +2753,33 @@
                 <option name="FOREGROUND" value="47bc9b"/>
             </value>
         </option>
+        <option name="ReSharper.OUTLINED_ENTITY">
+            <value/>
+        </option>
+        <option name="ReSharper.ReSharper.Cg_PREPROCESSOR_LINE_CONTENT">
+            <value>
+                <option name="FOREGROUND" value="9b859d"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
         <option name="ReSharper.STATIC_CLASS_IDENTIFIER">
             <value>
                 <option name="FOREGROUND" value="47bc9b"/>
+                <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
+        <option name="ReSharper.STRING_ESCAPE_CHARACTER_2" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
         <option name="ReSharper.STRUCT_IDENTIFIER">
             <value>
-                <option name="FOREGROUND" value="cda869"/>
+                <option name="FOREGROUND" value="47bc9b"/>
+                <option name="EFFECT_COLOR" value="47bc9b"/>
+                <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="ReSharper.TYPE_PARAMETER_IDENTIFIER">
             <value>
                 <option name="FOREGROUND" value="8f9d6a"/>
+                <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
         <option name="SASS_COMMENT" baseAttributes="CSS.COMMENT"/>
@@ -2737,7 +2850,7 @@
         </option>
         <option name="SUGGESTION">
             <value>
-                <option name="EFFECT_COLOR" value="8b9eb5"/>
+                <option name="EFFECT_COLOR" value="747c84"/>
                 <option name="EFFECT_TYPE" value="2"/>
             </value>
         </option>
@@ -2805,6 +2918,30 @@
                 <option name="EFFECT_TYPE" value="2"/>
             </value>
         </option>
+        <option name="UNITY_EXPENSIVE_CAMERA_MAIN_USAGE">
+            <value>
+                <option name="EFFECT_COLOR" value="cf6a4c"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="UNITY_EXPENSIVE_METHOD_INVOCATION">
+            <value>
+                <option name="EFFECT_COLOR" value="7587a6"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="UNITY_EXPENSIVE_NULL_COMPARISON">
+            <value>
+                <option name="EFFECT_COLOR" value="cda869"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="UNITY_PERFORMANCE_CRITICAL_LINE_MARKER">
+            <value>
+                <option name="EFFECT_COLOR" value="47bc9b"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
         <option name="Unresolved reference access" baseAttributes="DEFAULT_IDENTIFIER"/>
         <option name="VELOCITY_KEYWORD">
             <value>
@@ -2832,7 +2969,6 @@
         <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
                 <option name="BACKGROUND" value="4a4d50"/>
-                <option name="EFFECT_COLOR" value="fffbf7"/>
                 <option name="ERROR_STRIPE_COLOR" value="4d6168"/>
             </value>
         </option>
