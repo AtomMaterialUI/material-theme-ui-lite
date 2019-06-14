@@ -1,8 +1,6 @@
 {
   "name": "%name",
-  "dark":
-  %
-  dark,
+  "dark": %dark,
   "author": "Mallowigi",
   "editorScheme": "/colors/%scheme.xml",
   "ui": {
@@ -623,6 +621,7 @@
       "foreground": "%fg",
       "focusCellBackground": "%table",
       "focusCellForeground": "%activeFg",
+      "height": 25,
       "separatorColor": "%second"
     },
     "text": "%text",
@@ -785,7 +784,8 @@
       "#3C3F41": "%bg",
       "#545556": "%dis",
       "#606060": "%dis",
-      "#9AA7B0": "%text"
+      "#9AA7B0": "%fg",
+      "#675133": "%accent"
     }
   }
 }

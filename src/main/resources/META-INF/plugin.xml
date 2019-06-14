@@ -30,6 +30,7 @@
         <themeProvider id="Atom One Light" path="/themes/Atom One Light.theme.json"></themeProvider>
         <themeProvider id="Material Solarized Dark" path="/themes/Material Solarized Dark.theme.json"></themeProvider>
         <themeProvider id="Material Solarized Light" path="/themes/Material Solarized Light.theme.json"></themeProvider>
+        <themeProvider id="GitHub" path="/themes/GitHub.theme.json"></themeProvider>
 
         <themeProvider id="Material Oceanic Contrast"
                        path="/themes/Material Oceanic Contrast.theme.json"></themeProvider>
@@ -49,6 +50,8 @@
                        path="/themes/Material Solarized Dark Contrast.theme.json"></themeProvider>
         <themeProvider id="Material Solarized Light Contrast"
                        path="/themes/Material Solarized Light Contrast.theme.json"></themeProvider>
+        <themeProvider id="GitHub Contrast"
+                       path="/themes/GitHub Contrast.theme.json"></themeProvider>
     </extensions>
 
     <project-components>

@@ -119,7 +119,7 @@ material:
   table: '#1A1C25'
   misc1: '#0F111A'
   misc2: '#1F2233'
-  tree: '#717CB4'
+  tree: '#717CB416'
   notif: '#090B10'
   accent: '#84ffff'
   excluded: '#292D3E'
@@ -246,7 +246,7 @@ other:
   table: '#DBDBDC'
   misc1: '#DBDBDC'
   misc2: '#EAEAEB'
-  tree: '#DBDBDC'
+  tree: '#DBDBDC80'
   notif: '#F2F2F2'
   accent: '#2979ff'
   excluded: '#DBDBDC'
@@ -300,3 +300,28 @@ other:
   notif: '#EDE8D4'
   accent: '#d33682'
   excluded: '#E3DCC9'
+
+- github:
+  name: GitHub
+  name2: GitHub Contrast
+  className: github
+  desc: GitHub Theme
+  dark: false
+  scheme: GitHub (Material)
+  background: '#F7F8FA'
+  foreground: '#5B6168'
+  text: '#292D31'
+  selectBg: '#3A66D1'
+  selectFg: '#FFFFFF'
+  selectFg2: '#111111'
+  button: '#F1F3F6'
+  second: '#F7F8FA'
+  disabled: '#6C737C'
+  contrast: '#FFFFFF'
+  table: '#cce5ff'
+  misc1: '#DFE1E4'
+  misc2: '#CCE5FF'
+  tree: '#3A66D1'
+  notif: '#DFECFE'
+  accent: '#79CB60'
+  excluded: '#FDFDFD'
