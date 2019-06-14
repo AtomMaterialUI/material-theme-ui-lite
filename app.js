@@ -34,6 +34,7 @@ let contrastProps = [
   ['text', 'text'],
   ['selBg', 'selectBg'],
   ['selFg', 'selectFg'],
+  ['activeFg', 'selectFg2'],
   ['button', 'button'],
   ['second', 'second'],
   ['dis', 'disabled'],
