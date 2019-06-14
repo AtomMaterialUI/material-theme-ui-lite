@@ -1,6 +1,8 @@
 {
   "name": "%name",
-  "dark": %dark,
+  "dark":
+  %
+  dark,
   "author": "Mallowigi",
   "editorScheme": "/colors/%scheme.xml",
   "ui": {
@@ -119,7 +121,7 @@
     },
     "Component": {
       "arc": 4,
-      "borderColor": "%dis",
+      "borderColor": "%hl",
       "disabledBorderColor": "%button",
       "focusColor": "%accent",
       "focusedBorderColor": "%accent",
@@ -140,8 +142,13 @@
     "DefaultTabs": {
       "background": "%bg",
       "borderColor": "%bg",
+      "hoverBackground": "%table",
+      "hoverColor": "%hc",
+      "hoverMaskColor": "%hl",
       "inactiveUnderlineColor": "%dis",
-      "underlineColor": "%accent"
+      "inactiveMaskColor": "%hc",
+      "underlineColor": "%accent",
+      "underlinedTabBackground":"%table"
     },
     "Desktop.background": "%bg",
     "DialogWrapper.southPanelBackground": "%bg",
@@ -167,11 +174,15 @@
     },
     "EditorTabs": {
       "borderColor": "%second",
+      "hoverColor": "%hl",
+      "hoverMaskColor": "%hl",
       "inactiveMaskColor": "%bg",
+      "inactiveColoredFileBackground": "%bg",
       "inactiveUnderlineColor": "%dis",
       "selectedForeground": "%fg",
       "selectedBackground": "%table",
-      "underlineColor": "%accent"
+      "underlineColor": "%accent",
+      "underlinedTabBackground": "%table"
     },
     "FileColor": {
       "Green": "#387002",
@@ -257,7 +268,7 @@
       "selectionBackground": "%selBg",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%selFg",
-      "selectionInactiveBackground": "%tree"
+      "selectionInactiveBackground": "%tree25"
     },
     "material": {
       "background": "%bg",
@@ -315,6 +326,14 @@
       "arrowColor": "%fg",
       "borderColor": "%bg"
     },
+    "NewClass": {
+      "Panel": {
+        "background": "%bg"
+      },
+      "SearchField": {
+        "background": "%hc"
+      }
+    },
     "Notification": {
       "background": "%notif",
       "borderColor": "%notif",
@@ -371,7 +390,8 @@
       "background": "%bg",
       "disabledForeground": "%dis",
       "eapTagBackground": "%hl",
-      "lightSelectionBackground": "%table",
+      "lightSelectionBackground": "%selBg",
+      "selectionBackground": "%selBg",
       "tagForeground": "%accent",
       "tagBackground": "%hl",
       "Button": {
@@ -456,34 +476,34 @@
       "background": "%bg",
       "hoverThumbBorderColor": "%accent",
       "hoverThumbColor": "%accent",
-      "hoverTrackColor": "%bg",
+      "hoverTrackColor": "%bg30",
       "Mac": {
         "hoverThumbBorderColor": "%accent",
         "hoverThumbColor": "%accent",
-        "hoverTrackColor": "%bg",
+        "hoverTrackColor": "%bg30",
         "thumbBorderColor": "%accent70",
         "thumbColor": "%accent70",
-        "trackColor": "%bg",
+        "trackColor": "%bg30",
         "Transparent": {
           "hoverThumbBorderColor": "%accent",
           "hoverThumbColor": "%accent",
-          "hoverTrackColor": "%bg",
+          "hoverTrackColor": "%bg30",
           "thumbBorderColor": "%accent70",
           "thumbColor": "%accent70",
-          "trackColor": "%bg"
+          "trackColor": "%bg30"
         }
       },
       "thumb": "%hl",
       "thumbBorderColor": "%accent70",
       "thumbColor": "%accent70",
-      "trackColor": "%bg",
+      "trackColor": "%bg30",
       "Transparent": {
         "hoverThumbBorderColor": "%accent",
         "hoverThumbColor": "%accent",
-        "hoverTrackColor": "%bg",
+        "hoverTrackColor": "%bg30",
         "thumbBorderColor": "%accent70",
         "thumbColor": "%accent70",
-        "trackColor": "%bg"
+        "trackColor": "%bg30"
       }
     },
     "SearchEverywhere": {
@@ -566,8 +586,7 @@
       "tabsOverlapBorder": true,
       "tabHeight": 32,
       "tabInsets": "5,10,5,10",
-      "tabSelectionHeight": 2,
-      "underlineColor": "%accent"
+      "tabSelectionHeight": 2
     },
     "TabbedPane.mt.tab.background": "%hc",
     "Table": {
@@ -586,7 +605,7 @@
       "lightSelectionInactiveBackground": "%second",
       "selectionBackground": "%table",
       "selectionForeground": "%selFg",
-      "selectionInactiveBackground": "%tree",
+      "selectionInactiveBackground": "%tree25",
       "selectionInactiveForeground": "%selFg",
       "sortIconColor": "%fg",
       "stripeColor": "%cs"
@@ -594,10 +613,12 @@
     "TableHeader": {
       "background": "%bg",
       "borderColor": "%bg",
+      "bottomSeparatorColor": "%second",
       "cellBorder": "4,0,4,0",
       "foreground": "%fg",
       "focusCellBackground": "%table",
-      "focusCellForeground": "%selFg"
+      "focusCellForeground": "%selFg",
+      "separatorColor": "%second"
     },
     "text": "%text",
     "textInactiveText": "%text",
@@ -675,12 +696,13 @@
     "Tree": {
       "background": "%hc",
       "foreground": "%text",
+      "hash": "%border",
       "modifiedItemForeground": "%accent",
       "rowHeight": 28,
       "selectionBackground": "%tree",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%selFg",
-      "selectionInactiveBackground": "%tree",
+      "selectionInactiveBackground": "%tree25",
       "textBackground": "%hc"
     },
     "Tree.leftChildIndent": 10,
