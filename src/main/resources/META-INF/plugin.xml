@@ -28,9 +28,13 @@
         <themeProvider id="Arc Dark" path="/themes/Arc Dark.theme.json"></themeProvider>
         <themeProvider id="Atom One Dark" path="/themes/Atom One Dark.theme.json"></themeProvider>
         <themeProvider id="Atom One Light" path="/themes/Atom One Light.theme.json"></themeProvider>
-        <themeProvider id="Material Solarized Dark" path="/themes/Material Solarized Dark.theme.json"></themeProvider>
-        <themeProvider id="Material Solarized Light" path="/themes/Material Solarized Light.theme.json"></themeProvider>
+        <themeProvider id="Material Solarized Dark" path="/themes/Solarized Dark.theme.json"></themeProvider>
+        <themeProvider id="Material Solarized Light" path="/themes/Solarized Light.theme.json"></themeProvider>
         <themeProvider id="GitHub" path="/themes/GitHub.theme.json"></themeProvider>
+        <themeProvider id="Night Owl"
+                       path="/themes/Night Owl.theme.json"></themeProvider>
+        <themeProvider id="Light Owl"
+                       path="/themes/Light Owl.theme.json"></themeProvider>
 
         <themeProvider id="Material Oceanic Contrast"
                        path="/themes/Material Oceanic Contrast.theme.json"></themeProvider>
@@ -47,13 +51,25 @@
         <themeProvider id="Atom One Dark Contrast" path="/themes/Atom One Dark Contrast.theme.json"></themeProvider>
         <themeProvider id="Atom One Light Contrast" path="/themes/Atom One Light Contrast.theme.json"></themeProvider>
         <themeProvider id="Material Solarized Dark Contrast"
-                       path="/themes/Material Solarized Dark Contrast.theme.json"></themeProvider>
+                       path="/themes/Solarized Dark Contrast.theme.json"></themeProvider>
         <themeProvider id="Material Solarized Light Contrast"
-                       path="/themes/Material Solarized Light Contrast.theme.json"></themeProvider>
+                       path="/themes/Solarized Light Contrast.theme.json"></themeProvider>
         <themeProvider id="GitHub Contrast"
                        path="/themes/GitHub Contrast.theme.json"></themeProvider>
+        <themeProvider id="Night Owl Contrast"
+                       path="/themes/Night Owl Contrast.theme.json"></themeProvider>
+        <themeProvider id="Light Owl Contrast"
+                       path="/themes/Light Owl Contrast.theme.json"></themeProvider>
     </extensions>
 
+    <application-components>
+        <component>
+            <implementation-class>com.mallowigi.idea.MTApplicationComponent</implementation-class>
+        </component>
+        <component>
+            <implementation-class>com.mallowigi.idea.MTCleanupComponent</implementation-class>
+        </component>
+    </application-components>
     <project-components>
         <component>
             <implementation-class>com.mallowigi.idea.MTUpdatesComponent</implementation-class>
