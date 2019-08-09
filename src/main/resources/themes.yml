@@ -438,7 +438,7 @@ other:
     className: github
     desc: GitHub Theme
     dark: false
-    scheme: GitHub (Material)
+    scheme: Github
     background: '#F7F8FA'
     foreground: '#5B6168'
     text: '#292D31'

@@ -28,13 +28,11 @@
         <themeProvider id="Arc Dark" path="/themes/Arc Dark.theme.json"></themeProvider>
         <themeProvider id="Atom One Dark" path="/themes/Atom One Dark.theme.json"></themeProvider>
         <themeProvider id="Atom One Light" path="/themes/Atom One Light.theme.json"></themeProvider>
-        <themeProvider id="Material Solarized Dark" path="/themes/Solarized Dark.theme.json"></themeProvider>
-        <themeProvider id="Material Solarized Light" path="/themes/Solarized Light.theme.json"></themeProvider>
+        <themeProvider id="Solarized Dark" path="/themes/Solarized Dark.theme.json"></themeProvider>
+        <themeProvider id="Solarized Light" path="/themes/Solarized Light.theme.json"></themeProvider>
         <themeProvider id="GitHub" path="/themes/GitHub.theme.json"></themeProvider>
-        <themeProvider id="Night Owl"
-                       path="/themes/Night Owl.theme.json"></themeProvider>
-        <themeProvider id="Light Owl"
-                       path="/themes/Light Owl.theme.json"></themeProvider>
+        <themeProvider id="Night Owl" path="/themes/Night Owl.theme.json"></themeProvider>
+        <themeProvider id="Light Owl" path="/themes/Light Owl.theme.json"></themeProvider>
 
         <themeProvider id="Material Oceanic Contrast"
                        path="/themes/Material Oceanic Contrast.theme.json"></themeProvider>
@@ -50,9 +48,9 @@
         <themeProvider id="Arc Dark Contrast" path="/themes/Arc Dark Contrast.theme.json"></themeProvider>
         <themeProvider id="Atom One Dark Contrast" path="/themes/Atom One Dark Contrast.theme.json"></themeProvider>
         <themeProvider id="Atom One Light Contrast" path="/themes/Atom One Light Contrast.theme.json"></themeProvider>
-        <themeProvider id="Material Solarized Dark Contrast"
+        <themeProvider id="Solarized Dark Contrast"
                        path="/themes/Solarized Dark Contrast.theme.json"></themeProvider>
-        <themeProvider id="Material Solarized Light Contrast"
+        <themeProvider id="Solarized Light Contrast"
                        path="/themes/Solarized Light Contrast.theme.json"></themeProvider>
         <themeProvider id="GitHub Contrast"
                        path="/themes/GitHub Contrast.theme.json"></themeProvider>

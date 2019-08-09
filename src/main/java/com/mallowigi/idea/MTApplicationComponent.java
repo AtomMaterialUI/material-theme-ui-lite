@@ -39,7 +39,7 @@ public final class MTApplicationComponent implements BaseComponent {
   @Override
   public void initComponent() {
     Registry.get("ide.balloon.shadow.size").setValue(0);
-    Registry.get("enable.animation.on.dialogs").setValue(true);
+    Registry.get("ide.intellij.laf.enable.animation").setValue(true);
   }
 
   /**

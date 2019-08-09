@@ -2,7 +2,7 @@
   "name": "GitHub Contrast",
   "dark": false,
   "author": "Mallowigi",
-  "editorScheme": "/colors/GitHub (Material).xml",
+  "editorScheme": "/colors/Github.xml",
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "#292D31",
