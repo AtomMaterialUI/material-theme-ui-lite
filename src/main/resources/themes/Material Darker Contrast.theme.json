@@ -245,7 +245,7 @@
       "background": "#212121",
       "borderColor": "#292929",
       "foreground": "#B0BEC5",
-      "infoForeground": "#727272",,
+      "infoForeground": "#727272",
       "shortcutForeground": "#727272"
     },
     "Hyperlink.linkColor": "#FF9800",

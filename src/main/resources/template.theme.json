@@ -245,7 +245,7 @@
       "background": "%bg",
       "borderColor": "%border",
       "foreground": "%fg",
-      "infoForeground": "%text",,
+      "infoForeground": "%text",
       "shortcutForeground": "%text"
     },
     "Hyperlink.linkColor": "%accent",
