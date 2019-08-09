@@ -110,9 +110,10 @@
       "background": "%second",
       "foreground": "%fg",
       "infoForeground": "%text",
-      "matchForeground": "%accent",
+      "matchForeground": "%accent2",
       "matchSelectionForeground": "%accent",
       "nonFocusedState": "false",
+      "nonFocusedMask": "%tree",
       "selectedGrayedForeground": "%selFg",
       "selectionGrayForeground": "%selFg",
       "selectionInactiveInfoForeground": "%text",
@@ -137,7 +138,21 @@
       "background": "%accent",
       "foreground": "%selFg"
     },
-    "DebuggerTabs.selectedBackground": "%hl",
+    "Debugger": {
+      "Variables": {
+        "collectingDataForeground": "%text",
+        "changedValueForeground": "%accent",
+        "errorMessageForeground": "%red",
+        "evaluatingExpressionForeground": "%text",
+        "exceptionForeground": "%yellow",
+        "modifyingValueForeground": "%accent",
+        "valueForeground": "%accent"
+      }
+    },
+    "DebuggerTabs": {
+      "selectedBackground": "%hl",
+      "underlinedTabBackground": "%hl"
+    },
     "DebuggerPopup": {
       "borderColor": "%hl"
     },
@@ -230,6 +245,7 @@
       "background": "%bg",
       "borderColor": "%border",
       "foreground": "%fg",
+      "infoForeground": "%text",,
       "shortcutForeground": "%text"
     },
     "Hyperlink.linkColor": "%accent",
@@ -653,7 +669,13 @@
       "selectionBackground": "%table",
       "selectionForeground": "%activeFg"
     },
-    "TitlePane.background": "%cs",
+    "TitlePane": {
+      "background": "%cs",
+      "Button.hoverBackground": "%hl",
+      "inactiveBackground": "%second",
+      "infoForeground": "%text",
+      "inactiveInfoForeground": "%text"
+    },
     "TitledBorder.titleColor": "%fg",
     "ToggleButton": {
       "borderColor": "%button",
@@ -675,8 +697,11 @@
       "Actions.background": "%bg",
       "Actions.infoForeground": "%text",
       "background": "%bg",
+      "borderColor": "%hl",
       "foreground": "%fg",
-      "infoForeground": "%text"
+      "infoForeground": "%text",
+      "separatorColor": "%border",
+      "shortcutForeground": "%text"
     },
     "ToolWindow": {
       "Button": {
@@ -695,8 +720,12 @@
       "HeaderTab": {
         "hoverBackground": "%hl",
         "hoverInactiveBackground": "%second",
+        "inactiveUnderlineColor": "%accent",
         "selectedBackground": "%cs",
-        "selectedInactiveBackground": "%cs"
+        "selectedInactiveBackground": "%cs",
+        "underlineColor": "%accent",
+        "underlinedTabBackground": "%hl",
+        "underlinedTabInactiveBackground": "%second"
       }
     },
     "Tree": {
@@ -788,6 +817,13 @@
       "#606060": "%dis",
       "#9AA7B0": "%fg",
       "#675133": "%accent",
+      "Actions.Blue": "%blue",
+      "Actions.Green": "%green",
+      "Actions.Grey": "%text",
+      "Actions.GreyInline": "%gray",
+      "Actions.GreyInline.Dark": "%fg",
+      "Actions.Red": "%red",
+      "Actions.Yellow": "%yellow",
       "Checkbox.Background.Default": "%cs",
       "Checkbox.Background.Default.Dark": "%cs",
       "Checkbox.Background.Disabled": "%excl",
