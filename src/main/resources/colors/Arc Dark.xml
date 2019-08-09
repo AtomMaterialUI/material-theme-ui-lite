@@ -735,18 +735,30 @@
             </value>
         </option>
         <option name="GHERKIN_REGEXP_PARAMETER" baseAttributes="DEFAULT_PARAMETER"/>
+        <option name="GO_BLOCK_COMMENT" baseAttributes="DEFAULT_BLOCK_COMMENT"/>
+        <option name="GO_BUILTIN_CONSTANT" baseAttributes="DEFAULT_CONSTANT"/>
+        <option name="GO_BUILTIN_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
+        <option name="GO_BUILTIN_TYPE_REFERENCE" baseAttributes="DEFAULT_CLASS_REFERENCE"/>
+        <option name="GO_BUILTIN_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE"/>
+        <option name="GO_EXPORTED_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
+        <option name="GO_EXPORTED_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
         <option name="GO_FUNCTION_PARAMETER">
             <value>
                 <option name="FOREGROUND" value="cda869"/>
-                <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
+        <option name="GO_KEYWORD" baseAttributes="DEFAULT_KEYWORD"/>
+        <option name="GO_LINE_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT"/>
+        <option name="GO_LOCAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
+        <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
         <option name="GO_METHOD_RECEIVER">
             <value>
                 <option name="FOREGROUND" value="cda869"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
+        <option name="GO_PACKAGE" baseAttributes="DEFAULT_IDENTIFIER"/>
+        <option name="GO_TYPE_REFERENCE" baseAttributes="DEFAULT_CLASS_REFERENCE"/>
         <option name="Groovy method declaration" baseAttributes="METHOD_DECLARATION_ATTRIBUTES"/>
         <option name="HAML_CLASS">
             <value>
@@ -954,6 +966,10 @@
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
+        <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
+        <option name="JS.GLOBAL_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE"/>
+        <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD"/>
+        <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
         <option name="JS.MODULE_KEYWORD">
             <value>
                 <option name="FOREGROUND" value="a7a7a7"/>
@@ -965,6 +981,8 @@
                 <option name="FOREGROUND" value="cda869"/>
             </value>
         </option>
+        <option name="JS.PARAMETER" baseAttributes="DEFAULT_PARAMETER"/>
+        <option name="JS.REGEXP" baseAttributes="DEFAULT_STRING"/>
         <option name="JS.THIS_SUPER">
             <value>
                 <option name="FOREGROUND" value="cda869"/>
@@ -985,6 +1003,11 @@
         <option name="JSP_SCRIPTING_BACKGROUND">
             <value>
                 <option name="FOREGROUND" value="a7a7a7"/>
+            </value>
+        </option>
+        <option name="JUPYTER_SELECTED_CELL">
+            <value>
+                <option name="BACKGROUND" value="3e424d" />
             </value>
         </option>
         <option name="KOTLIN_ANNOTATION" baseAttributes="ANNOTATION_NAME_ATTRIBUTES"/>
@@ -2255,9 +2278,14 @@
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
+        <option name="NOT_USED_ELEMENT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="D3DAE3"/>
+            </value>
+        </option>
         <option name="NOT_TOP_FRAME_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="8b9eb5"/>
+                <option name="BACKGROUND" value="D3DAE3"/>
             </value>
         </option>
         <option name="OC.BADCHARACTER">
