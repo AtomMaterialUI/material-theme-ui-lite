@@ -22,7 +22,17 @@ let props = [
   ['tree', 'tree'],
   ['notif', 'notif'],
   ['accent', 'accent'],
-  ['excl', 'excluded']
+  ['excl', 'excluded'],
+  ['accent2', 'links'],
+  ['gray', 'comments'],
+  ['white', 'vars'],
+  ['cyan', 'operators'],
+  ['purple', 'keywords'],
+  ['blue', 'functions'],
+  ['red', 'tags'],
+  ['green', 'strings'],
+  ['yellow', 'attributes'],
+  ['orange', 'numbers'],
 ];
 
 let contrastProps = [
@@ -46,7 +56,17 @@ let contrastProps = [
   ['tree', 'tree'],
   ['notif', 'notif'],
   ['accent', 'accent'],
-  ['excl', 'excluded']
+  ['excl', 'excluded'],
+  ['accent2', 'links'],
+  ['gray', 'comments'],
+  ['white', 'vars'],
+  ['cyan', 'operators'],
+  ['purple', 'keywords'],
+  ['blue', 'functions'],
+  ['red', 'tags'],
+  ['green', 'strings'],
+  ['yellow', 'attributes'],
+  ['orange', 'numbers'],
 ];
 
 // Function to replace placeholders in a text

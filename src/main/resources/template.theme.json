@@ -810,17 +810,17 @@
       "Checkbox.Foreground.Selected.Dark": "%fg",
       "Checkbox.Focus.Thin.Selected": "%fg",
       "Checkbox.Focus.Thin.Selected.Dark": "%fg",
-      "Objects.Grey": "%fg",
-      "Objects.Blue": "#07ffe4",
-      "Objects.RedStatus": "#ff2528ff",
-      "Objects.Red": "#ff5856ff",
-      "Objects.Pink": "#ff789bff",
-      "Objects.Yellow": "#ffc620ff",
-      "Objects.Green": "#00c312ff",
-      "Objects.Purple": "#a56fffff",
-      "Objects.BlackText": "#000000FF",
-      "Objects.YellowDark": "#ffd128ff",
-      "Objects.GreenAndroid": "#00E61FFF"
+      "Objects.Grey": "%gray",
+      "Objects.Blue": "%blue",
+      "Objects.RedStatus": "%red",
+      "Objects.Red": "%red",
+      "Objects.Pink": "%purple",
+      "Objects.Yellow": "%yellow",
+      "Objects.Green": "%green",
+      "Objects.Purple": "%purple",
+      "Objects.BlackText": "%fg",
+      "Objects.YellowDark": "%orange",
+      "Objects.GreenAndroid": "%green"
 
     }
   }
