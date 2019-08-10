@@ -26,10 +26,6 @@
 buildscript {
     repositories {
         jcenter()
-        maven { url 'http://dl.bintray.com/content/aalmiray/kordamp' }
-    }
-    dependencies {
-        classpath 'org.kordamp:markdown-gradle-plugin:1.0.0'
     }
 }
 
@@ -44,16 +40,6 @@ repositories {
 }
 
 
-dependencies {
-    compile('com.thoughtworks.xstream:xstream:1.4.10') {
-        exclude group: 'xmlpull', module: 'xmlpull'
-        exclude group: 'xpp3', module: 'xpp3_min'
-    }
-    compile 'com.mixpanel:mixpanel-java:+'
-
-}
-apply plugin: 'org.kordamp.markdown.convert'
-
 apply plugin: 'java'
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
@@ -64,11 +50,6 @@ sourceSets {
         java.srcDirs 'src/main/java'
         resources.srcDir 'src/main/resources'
     }
-}
-
-markdownToHtml {
-    sourceDir new File("$projectDir/docs")
-    outputDir new File("$projectDir/docs")
 }
 
 version = System.getenv("pluginVersion") ?: pluginVersion
