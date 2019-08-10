@@ -27,13 +27,15 @@
 package com.mallowigi.idea.themes;
 
 import com.intellij.ide.ui.LafManager;
-import com.intellij.ide.ui.laf.LafManagerImpl;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.DumbAware;
 import com.intellij.util.containers.ContainerUtil;
+import com.mallowigi.idea.MaterialThemeBundle;
+import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
+import java.text.MessageFormat;
 import java.util.Objects;
 
 /**
@@ -46,7 +48,7 @@ public abstract class MTAbstractThemeAction extends MTToggleAction implements Du
     // Find LAF theme and trigger a theme change
     final LafManager lafManager = LafManager.getInstance();
     final UIManager.LookAndFeelInfo lafInfo = ContainerUtil.find(lafManager.getInstalledLookAndFeels(),
-        lookAndFeelInfo -> lookAndFeelInfo.getName().equals(getTheme().getName()));
+        lookAndFeelInfo -> lookAndFeelInfo.getName().equals(getThemeName(e)));
 
     if (lafInfo != null) {
       lafManager.setCurrentLookAndFeel(lafInfo);
@@ -55,7 +57,7 @@ public abstract class MTAbstractThemeAction extends MTToggleAction implements Du
 
   @Override
   public final boolean isSelected(@NotNull final AnActionEvent e) {
-    return Objects.requireNonNull(LafManager.getInstance().getCurrentLookAndFeel()).getName().equals(getTheme().getName());
+    return Objects.requireNonNull(LafManager.getInstance().getCurrentLookAndFeel()).getName().equals(getThemeName(e));
   }
 
   /**
@@ -64,4 +66,13 @@ public abstract class MTAbstractThemeAction extends MTToggleAction implements Du
    * @return the theme
    */
   protected abstract MTThemes getTheme();
+
+  @NonNls
+  private String getThemeName(@NotNull final AnActionEvent e) {
+    final String contrast = MaterialThemeBundle.message("contrast");
+    final boolean isContrast = e.getPresentation().getText().contains(contrast);
+    final String name = getTheme().getName();
+
+    return isContrast ? MessageFormat.format("{0} {1}", name, contrast) : name;
+  }
 }

@@ -34,8 +34,8 @@ import org.jetbrains.annotations.PropertyKey;
 /**
  * Messages Bundle for Material Theme
  */
-final class MaterialThemeBundle extends AbstractBundle {
-  static String message(@NotNull @PropertyKey(resourceBundle = BUNDLE) final String key, @NotNull final Object... params) {
+public final class MaterialThemeBundle extends AbstractBundle {
+  public static String message(@NotNull @PropertyKey(resourceBundle = BUNDLE) final String key, @NotNull final Object... params) {
     return INSTANCE.getMessage(key, params);
   }
 

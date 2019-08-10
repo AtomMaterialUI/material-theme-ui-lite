@@ -77,8 +77,8 @@
     </project-components>
 
     <actions>
-        <group id="MaterialLiteTheme.Menu" text="Material Theme Lite" popup="true" icon="/icons/actions/mt/themeSwitch.svg">
-            <add-to-group group-id="MainToolBar" anchor="last"/>
+        <group id="MaterialLiteTheme.ThemeChooser" text="Regular Themes" popup="true"
+               icon="/icons/actions/mt/themeSwitch.svg">
             <action id="MTDarkerTheme" class="com.mallowigi.idea.themes.MTDarkerThemeAction"
                     text="Darker Theme" description="Material Darker"
                     icon="/icons/actions/themes/darker.svg">
@@ -140,8 +140,78 @@
                     text="Light Owl Theme" description="Light Owl Theme"
                     icon="/icons/actions/themes/light_owl.svg">
             </action>
+        </group>
+        <group id="MaterialLiteTheme.ContrastThemeChooser" text="Contrasted Themes" popup="true"
+               icon="/icons/actions/mt/contrast.svg">
+            <action id="MTDarkerThemeContrast" class="com.mallowigi.idea.themes.MTDarkerThemeAction"
+                    text="Darker Theme Contrast" description="Material Darker Contrast"
+                    icon="/icons/actions/themes/darker.svg">
+            </action>
+            <action id="MTOceanicThemeContrast" class="com.mallowigi.idea.themes.MTOceanicThemeAction"
+                    text="Oceanic Theme Contrast" description="Material Oceanic Contrast"
+                    icon="/icons/actions/themes/oceanic.svg">
+            </action>
+            <action id="MTPalenightThemeContrast" class="com.mallowigi.idea.themes.MTPalenightThemeAction"
+                    text="Palenight Theme Contrast" description="Material Palenight Contrast"
+                    icon="/icons/actions/themes/palenight.svg">
+            </action>
+            <action id="MTLighterThemeContrast" class="com.mallowigi.idea.themes.MTLighterThemeAction"
+                    text="Lighter Theme Contrast" description="Material Lighter Contrast"
+                    icon="/icons/actions/themes/lighter.svg">
+            </action>
+            <action id="MTDeepOceanThemeContrast" class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"
+                    text="Deep Ocean Theme Contrast" description="Material Deep Ocean Contrast"
+                    icon="/icons/actions/themes/deepocean.svg">
+            </action>
             <separator/>
+            <action id="MTMonokaiThemeContrast" class="com.mallowigi.idea.themes.MTMonokaiThemeAction"
+                    text="Monokai Theme Contrast" description="Monokai Theme Contrast"
+                    icon="/icons/actions/themes/monokai.svg">
+            </action>
+            <action id="MTGitHubThemeContrast" class="com.mallowigi.idea.themes.MTGithubThemeAction"
+                    text="GitHub Theme Contrast" description="GitHub Theme Contrast"
+                    icon="/icons/actions/themes/github.svg">
+            </action>
+            <action id="MTDraculaThemeContrast" class="com.mallowigi.idea.themes.MTDraculaThemeAction"
+                    text="Dracula Theme Contrast" description="Dracula Theme Contrast"
+                    icon="/icons/actions/themes/dracula.svg">
+            </action>
+            <action id="MTArcDarkThemeContrast" class="com.mallowigi.idea.themes.MTArcDarkThemeAction"
+                    text="Arc Dark Theme Contrast" description="Arc Dark Theme Contrast"
+                    icon="/icons/actions/themes/arc_dark.svg">
+            </action>
+            <action id="MTOneDarkThemeContrast" class="com.mallowigi.idea.themes.MTOneDarkThemeAction"
+                    text="Atom One Dark Theme Contrast" description="Atom One Dark Theme Contrast"
+                    icon="/icons/actions/themes/one_dark.svg">
+            </action>
+            <action id="MTOneLightThemeContrast" class="com.mallowigi.idea.themes.MTOneLightThemeAction"
+                    text="Atom One Light Theme Contrast" description="Atom One Light Theme Contrast"
+                    icon="/icons/actions/themes/one_light.svg">
+            </action>
+            <action id="MTSolarizedDarkThemeContrast" class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"
+                    text="Solarized Dark Theme Contrast" description="Solarized Dark Theme Contrast"
+                    icon="/icons/actions/themes/solarized_dark.svg">
+            </action>
+            <action id="MTSolarizedLightThemeContrast" class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"
+                    text="Solarized Light Theme Contrast" description="Solarized Light Theme Contrast"
+                    icon="/icons/actions/themes/solarized_light.svg">
+            </action>
+            <action id="MTNightOwlThemeContrast" class="com.mallowigi.idea.themes.MTNightOwlThemeAction"
+                    text="Night Owl Theme Contrast" description="Night Owl Theme Contrast"
+                    icon="/icons/actions/themes/night_owl.svg">
+            </action>
+            <action id="MTLightOwlThemeContrast" class="com.mallowigi.idea.themes.MTLightOwlThemeAction"
+                    text="Light Owl Theme Contrast" description="Light Owl Theme Contrast"
+                    icon="/icons/actions/themes/light_owl.svg">
+            </action>
+        </group>
+
+        <group id="MaterialLiteTheme.Menu" text="Material Theme Lite" popup="true" icon="/icons/actions/mt/themeSwitch.svg">
+            <reference id="MaterialLiteTheme.ThemeChooser"/>
+            <separator/>
+            <reference id="MaterialLiteTheme.ContrastThemeChooser"/>
             <add-to-group group-id="ToolsMenu"/>
+            <add-to-group group-id="MainToolBar" anchor="last"/>
             <add-to-group group-id="ChangeScheme" anchor="after" relative-to-action="MaterialTheme.Menu"/>
         </group>
 
