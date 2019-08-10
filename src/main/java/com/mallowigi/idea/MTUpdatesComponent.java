@@ -32,8 +32,6 @@ import com.intellij.openapi.components.ProjectComponent;
 import com.intellij.openapi.project.Project;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import javax.swing.event.HyperlinkEvent;
 import java.net.URL;
@@ -63,13 +61,6 @@ public final class MTUpdatesComponent implements ProjectComponent {
    */
   private static void onPaypalClick(final Notification notification, final HyperlinkEvent event) {
     final URL url = event.getURL();
-
-    try {
-      @NonNls final JSONObject props = new JSONObject();
-      props.put("Url", url);
-
-    } catch (final JSONException ignored) {
-    }
 
     if (url == null) {
       BrowserUtil.browse(event.getDescription());
