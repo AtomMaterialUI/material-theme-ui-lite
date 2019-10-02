@@ -70,7 +70,8 @@ public abstract class MTAbstractThemeAction extends MTToggleAction implements Du
   @NonNls
   private String getThemeName(@NotNull final AnActionEvent e) {
     final String contrast = MaterialThemeBundle.message("contrast");
-    final boolean isContrast = e.getPresentation().getText().contains(contrast);
+
+    final boolean isContrast = e.getPresentation().getText() != null && e.getPresentation().getText().contains(contrast);
     final String name = getTheme().getName();
 
     return isContrast ? MessageFormat.format("{0} {1}", name, contrast) : name;
