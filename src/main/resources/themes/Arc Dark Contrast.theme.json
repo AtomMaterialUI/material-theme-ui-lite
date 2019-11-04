@@ -193,12 +193,21 @@
       "hoverColor": "#3F3F46",
       "hoverMaskColor": "#3F3F46",
       "inactiveMaskColor": "#2f343f",
-      "inactiveColoredFileBackground": "#2f343f",
       "inactiveUnderlineColor": "#D3DAE3",
       "selectedForeground": "#D3DAE3",
       "selectedBackground": "#41416A",
       "underlineColor": "#42A5F5",
       "underlinedTabBackground": "#41416A"
+    },
+    "EditorGroupsTabs": {
+      "background": "#2f343f",
+      "borderColor": "#393f4c",
+      "hoverBackground": "#3F3F46",
+      "hoverColor": "#3F3F46",
+      "inactiveUnderlineColor": "#42A5F5",
+      "underlineColor": "#42A5F5",
+      "underlinedTabBackground": "#41416A",
+      "underlinedTabForeground": "#D3DAE3"
     },
     "FileColor": {
       "Green": "#387002",
@@ -282,7 +291,7 @@
     "List": {
       "background": "#393f4c",
       "foreground": "#D3DAE3",
-      "selectionBackground": "#8888FF",
+      "selectionBackground": "#8888FF50",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
       "selectionInactiveBackground": "#08507C25"
@@ -532,7 +541,7 @@
         "background": "#2f343f"
       },
       "List": {
-        "separatorForeground": "#D3DAE3",
+        "separatorForeground": "#8b9eb5",
         "separatorColor": "#404552"
       },
       "SearchField": {
@@ -560,9 +569,12 @@
     },
     "Slider": {
       "background": "#2f343f",
+      "buttonBorderColor": "#42A5F5",
+      "buttonColor": "#42A5F5",
       "foreground": "#D3DAE3",
       "majorTickLength": 6,
       "tickColor": "#393f4c",
+      "trackColor": "#41416A",
       "trackWidth": 7,
       "thumb": "#42A5F5"
     },
@@ -606,7 +618,8 @@
       "tabsOverlapBorder": true,
       "tabHeight": 32,
       "tabInsets": "5,10,5,10",
-      "tabSelectionHeight": 2
+      "tabSelectionHeight": 2,
+      "underlineColor": "#42A5F5"
     },
     "TabbedPane.mt.tab.background": "#262b33",
     "Table": {
@@ -625,7 +638,7 @@
       "lightSelectionInactiveBackground": "#393f4c",
       "selectionBackground": "#41416A",
       "selectionForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#08507C25",
+      "selectionInactiveBackground": "#41416A",
       "selectionInactiveForeground": "#FFFFFF",
       "sortIconColor": "#D3DAE3",
       "stripeColor": "#262b33"
@@ -671,7 +684,7 @@
     "TitlePane": {
       "background": "#262b33",
       "Button.hoverBackground": "#3F3F46",
-      "inactiveBackground": "#393f4c",
+      "inactiveBackground": "#2f343f",
       "infoForeground": "#8b9eb5",
       "inactiveInfoForeground": "#8b9eb5"
     },
@@ -772,7 +785,7 @@
       },
       "Log": {
         "Commit.unmatchedForeground": "#8b9eb5",
-        "Commit.currentBranchBackground": "#08507C"
+        "Commit.currentBranchBackground": "#393f4c"
       },
       "RefLabel": {
         "foreground": "#FFFFFF",

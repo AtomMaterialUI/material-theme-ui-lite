@@ -193,12 +193,21 @@
       "hoverColor": "#5b595c",
       "hoverMaskColor": "#5b595c",
       "inactiveMaskColor": "#2D2A2E",
-      "inactiveColoredFileBackground": "#2D2A2E",
       "inactiveUnderlineColor": "#727072",
       "selectedForeground": "#fcfcfa",
       "selectedBackground": "#4A474B",
       "underlineColor": "#ffd866",
       "underlinedTabBackground": "#4A474B"
+    },
+    "EditorGroupsTabs": {
+      "background": "#2D2A2E",
+      "borderColor": "#403E41",
+      "hoverBackground": "#5b595c",
+      "hoverColor": "#5b595c",
+      "inactiveUnderlineColor": "#ffd866",
+      "underlineColor": "#ffd866",
+      "underlinedTabBackground": "#4A474B",
+      "underlinedTabForeground": "#fcfcfa"
     },
     "FileColor": {
       "Green": "#387002",
@@ -282,7 +291,7 @@
     "List": {
       "background": "#403E41",
       "foreground": "#fcfcfa",
-      "selectionBackground": "#5B595C",
+      "selectionBackground": "#5B595C50",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#ffd866",
       "selectionInactiveBackground": "#403E4125"
@@ -532,7 +541,7 @@
         "background": "#2D2A2E"
       },
       "List": {
-        "separatorForeground": "#fcfcfa",
+        "separatorForeground": "#939293",
         "separatorColor": "#2d2a2e"
       },
       "SearchField": {
@@ -560,9 +569,12 @@
     },
     "Slider": {
       "background": "#2D2A2E",
+      "buttonBorderColor": "#ffd866",
+      "buttonColor": "#ffd866",
       "foreground": "#fcfcfa",
       "majorTickLength": 6,
       "tickColor": "#403E41",
+      "trackColor": "#4A474B",
       "trackWidth": 7,
       "thumb": "#ffd866"
     },
@@ -606,7 +618,8 @@
       "tabsOverlapBorder": true,
       "tabHeight": 32,
       "tabInsets": "5,10,5,10",
-      "tabSelectionHeight": 2
+      "tabSelectionHeight": 2,
+      "underlineColor": "#ffd866"
     },
     "TabbedPane.mt.tab.background": "#2D2A2E",
     "Table": {
@@ -625,7 +638,7 @@
       "lightSelectionInactiveBackground": "#403E41",
       "selectionBackground": "#4A474B",
       "selectionForeground": "#ffd866",
-      "selectionInactiveBackground": "#403E4125",
+      "selectionInactiveBackground": "#4A474B",
       "selectionInactiveForeground": "#FFFFFF",
       "sortIconColor": "#fcfcfa",
       "stripeColor": "#221F22"
@@ -671,7 +684,7 @@
     "TitlePane": {
       "background": "#221F22",
       "Button.hoverBackground": "#5b595c",
-      "inactiveBackground": "#403E41",
+      "inactiveBackground": "#2D2A2E",
       "infoForeground": "#939293",
       "inactiveInfoForeground": "#939293"
     },

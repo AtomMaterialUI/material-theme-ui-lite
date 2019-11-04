@@ -193,12 +193,21 @@
       "hoverColor": "%hl",
       "hoverMaskColor": "%hl",
       "inactiveMaskColor": "%bg",
-      "inactiveColoredFileBackground": "%bg",
       "inactiveUnderlineColor": "%dis",
       "selectedForeground": "%fg",
       "selectedBackground": "%table",
       "underlineColor": "%accent",
       "underlinedTabBackground": "%table"
+    },
+    "EditorGroupsTabs": {
+      "background": "%bg",
+      "borderColor": "%second",
+      "hoverBackground": "%hl",
+      "hoverColor": "%hl",
+      "inactiveUnderlineColor": "%accent",
+      "underlineColor": "%accent",
+      "underlinedTabBackground": "%table",
+      "underlinedTabForeground": "%fg"
     },
     "FileColor": {
       "Green": "#387002",
@@ -282,7 +291,7 @@
     "List": {
       "background": "%second",
       "foreground": "%fg",
-      "selectionBackground": "%selBg",
+      "selectionBackground": "%selBg50",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%activeFg",
       "selectionInactiveBackground": "%tree25"
@@ -532,7 +541,7 @@
         "background": "%bg"
       },
       "List": {
-        "separatorForeground": "%fg",
+        "separatorForeground": "%text",
         "separatorColor": "%border"
       },
       "SearchField": {
@@ -560,9 +569,12 @@
     },
     "Slider": {
       "background": "%bg",
+      "buttonBorderColor": "%accent",
+      "buttonColor": "%accent",
       "foreground": "%fg",
       "majorTickLength": 6,
       "tickColor": "%second",
+      "trackColor": "%table",
       "trackWidth": 7,
       "thumb": "%accent"
     },
@@ -606,7 +618,8 @@
       "tabsOverlapBorder": true,
       "tabHeight": 32,
       "tabInsets": "5,10,5,10",
-      "tabSelectionHeight": 2
+      "tabSelectionHeight": 2,
+      "underlineColor": "%accent"
     },
     "TabbedPane.mt.tab.background": "%hc",
     "Table": {
@@ -625,7 +638,7 @@
       "lightSelectionInactiveBackground": "%second",
       "selectionBackground": "%table",
       "selectionForeground": "%activeFg",
-      "selectionInactiveBackground": "%tree25",
+      "selectionInactiveBackground": "%table",
       "selectionInactiveForeground": "%selFg",
       "sortIconColor": "%fg",
       "stripeColor": "%cs"
@@ -671,7 +684,7 @@
     "TitlePane": {
       "background": "%cs",
       "Button.hoverBackground": "%hl",
-      "inactiveBackground": "%second",
+      "inactiveBackground": "%bg",
       "infoForeground": "%text",
       "inactiveInfoForeground": "%text"
     },
@@ -772,7 +785,7 @@
       },
       "Log": {
         "Commit.unmatchedForeground": "%text",
-        "Commit.currentBranchBackground": "%tree"
+        "Commit.currentBranchBackground": "%second"
       },
       "RefLabel": {
         "foreground": "%activeFg",
