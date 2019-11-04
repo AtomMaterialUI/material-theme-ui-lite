@@ -113,11 +113,10 @@
       "matchForeground": "#2693862",
       "matchSelectionForeground": "#269386",
       "nonFocusedState": "false",
-      "nonFocusedMask": "#E0E7EA",
       "selectedGrayedForeground": "#403f53",
       "selectionGrayForeground": "#403f53",
       "selectionInactiveInfoForeground": "#403F53",
-      "selectionInactiveBackground": "#E0E7EA",
+      "selectionInactiveBackground": "#999e9e50",
       "selectionBackground": "#999e9e80",
       "selectionForeground": "#403f53",
       "selectionInfoForeground": "#403f53"
@@ -165,7 +164,7 @@
       "inactiveUnderlineColor": "#dddddd",
       "inactiveMaskColor": "#FAFAFA",
       "underlineColor": "#269386",
-      "underlinedTabBackground":"#FAFAFA"
+      "underlinedTabBackground": "#FAFAFA"
     },
     "Desktop.background": "#FAFAFA",
     "DialogWrapper.southPanelBackground": "#FAFAFA",
@@ -857,7 +856,6 @@
       "Objects.BlackText": "#546e7a",
       "Objects.YellowDark": "#aa0982",
       "Objects.GreenAndroid": "#c96765"
-
     }
   }
 }

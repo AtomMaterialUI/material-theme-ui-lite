@@ -1,6 +1,6 @@
 {
   "name": "%name",
-  "dark": %dark,
+  "dark": "@dark",
   "author": "Mallowigi",
   "editorScheme": "/colors/%scheme.xml",
   "ui": {
@@ -113,11 +113,10 @@
       "matchForeground": "%accent2",
       "matchSelectionForeground": "%accent",
       "nonFocusedState": "false",
-      "nonFocusedMask": "%tree",
       "selectedGrayedForeground": "%selFg",
       "selectionGrayForeground": "%selFg",
       "selectionInactiveInfoForeground": "%text",
-      "selectionInactiveBackground": "%hl",
+      "selectionInactiveBackground": "%selBg50",
       "selectionBackground": "%selBg80",
       "selectionForeground": "%selFg",
       "selectionInfoForeground": "%selFg"
@@ -165,7 +164,7 @@
       "inactiveUnderlineColor": "%dis",
       "inactiveMaskColor": "%hc",
       "underlineColor": "%accent",
-      "underlinedTabBackground":"%table"
+      "underlinedTabBackground": "%table"
     },
     "Desktop.background": "%bg",
     "DialogWrapper.southPanelBackground": "%bg",
@@ -857,7 +856,6 @@
       "Objects.BlackText": "%fg",
       "Objects.YellowDark": "%orange",
       "Objects.GreenAndroid": "%green"
-
     }
   }
 }

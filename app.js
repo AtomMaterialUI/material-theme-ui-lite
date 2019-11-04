@@ -76,6 +76,7 @@ const replacePlaceholders = (text, theme, props) => {
   props.forEach(([placeholder, prop]) => {
     console.log(`Replacing ${placeholder} with property ${prop}: ${theme[prop]}`);
     result = result.replace(new RegExp(`%${placeholder}`, 'g'), theme[prop]);
+    result = result.replace(new RegExp(`"@${placeholder}"`, 'g'), theme[prop]);
   });
   return result;
 };
