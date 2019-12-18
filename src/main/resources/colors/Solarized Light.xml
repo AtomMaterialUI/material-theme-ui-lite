@@ -110,31 +110,31 @@
         <option name="SELECTED_TEARLINE_COLOR" value="839496"/>
         <option name="SELECTION_BACKGROUND" value="e2dccb"/>
         <option name="SEPARATOR_BELOW_COLOR" value="e2dccb"/>
+        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="d33682c0"/>
+        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="eee8d5"/>
 
-        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="d33682c0" mac="d33682c0"/>
+        <option name="ScrollBar.Mac.Transparent.thumbColor" value="d3368280"/>
+        <option name="ScrollBar.Mac.Transparent.trackColor" value="eee8d5"/>
 
-        <option name="ScrollBar.Mac.Transparent.thumbColor" value="d3368280" mac="d3368280"/>
+        <option name="ScrollBar.Mac.hoverThumbColor" value="d33682"/>
+        <option name="ScrollBar.Mac.hoverTrackColor" value="eee8d5"/>
 
-        <option name="ScrollBar.Mac.hoverThumbColor" value="d33682FF" mac="d33682FF"/>
+        <option name="ScrollBar.Mac.thumbColor" value="d33682c0"/>
+        <option name="ScrollBar.Mac.trackColor" value="eee8d5"/>
 
-        <option name="ScrollBar.Mac.thumbColor" value="d33682C0" mac="d33682C0"/>
+        <option name="ScrollBar.Transparent.hoverThumbColor" value="d33682c0"/>
+        <option name="ScrollBar.Transparent.hoverTrackColor" value="eee8d5"/>
 
-        <option name="ScrollBar.Transparent.hoverThumbColor" value="d33682c0" mac="d33682c0"/>
+        <option name="ScrollBar.Transparent.thumbColor" value="d3368280"/>
+        <option name="ScrollBar.Transparent.trackColor" value="eee8d5"/>
 
-        <option name="ScrollBar.Transparent.thumbColor" value="d3368280" mac="d3368280"/>
+        <option name="ScrollBar.hoverThumbColor" value="d33682"/>
+        <option name="ScrollBar.hoverTrackColor" value="eee8d5"/>
 
-        <option name="ScrollBar.hoverThumbColor" value="d33682FF" mac="d33682FF"/>
-        <option name="ScrollBar.thumbBorderColor" value="d33682C0" mac="d33682C0"/>
-        <option name="ScrollBar.thumbColor" value="d33682C0" mac="d33682C0"/>
-        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="ScrollBar.Mac.Transparent.trackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="ScrollBar.Mac.hoverTrackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="ScrollBar.Mac.trackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="ScrollBar.Transparent.hoverTrackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="ScrollBar.Transparent.trackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="ScrollBar.hoverTrackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="ScrollBar.trackColor" value="eee8d5" mac="eee8d5"/>
-        <option name="TAB_UNDERLINE" value="d33682c0"/>
+        <option name="ScrollBar.thumbColor" value="d33682c0"/>
+        <option name="ScrollBar.trackColor" value="eee8d5"/>
+
+        <option name="TAB_UNDERLINE" value="d33682"/>
         <option name="TAB_UNDERLINE_INACTIVE" value="d33682c0"/>
         <option name="TEARLINE_COLOR" value="93a1a1"/>
         <option name="VCS_ANNOTATIONS_COLOR_1" value="e8f7c9"/>
@@ -1330,6 +1330,11 @@
         <option name="JADE_TAG_ID">
             <value>
                 <option name="FOREGROUND" value="6c71c4"/>
+            </value>
+        </option>
+        <option name="JAVA.IMPORT_PACKAGE">
+            <value>
+                <option name="FOREGROUND" value="cb4b16"/>
             </value>
         </option>
         <option name="JAVA.MODIFIER">
@@ -3313,6 +3318,7 @@
                 <option name="FOREGROUND" value="268bd2"/>
             </value>
         </option>
+        <option name="RH_RETURN_KEYWORD" baseAttributes="DEFAULT_TEMPLATE_LANGUAGE_COLOR"/>
         <option name="RUBY_COMMENT">
             <value>
                 <option name="FOREGROUND" value="93a1a1"/>
@@ -4192,7 +4198,8 @@
         </option>
         <option name="WRONG_REFERENCES_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="dc322f"/>
+                <option name="EFFECT_COLOR" value="dc322f"/>
+                <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="Wrong number">
@@ -4400,6 +4407,109 @@
         <option name="org.rust.TYPE_PARAMETER">
             <value>
                 <option name="FOREGROUND" value="268bd2"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
+            </value>
+        </option>
+
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
+            </value>
+        </option>
+
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
+            </value>
+        </option>
+
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
             </value>
         </option>
     </attributes>

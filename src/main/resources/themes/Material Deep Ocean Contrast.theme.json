@@ -294,7 +294,7 @@
       "selectionBackground": "#23263250",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#717CB41625"
+      "selectionInactiveBackground": "#717CB425"
     },
     "material": {
       "background": "#0F111A",
@@ -746,10 +746,10 @@
       "hash": "#0F111A",
       "modifiedItemForeground": "#84ffff",
       "rowHeight": 28,
-      "selectionBackground": "#717CB416",
+      "selectionBackground": "#717CB470",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#717CB41625",
+      "selectionInactiveBackground": "#717CB425",
       "textBackground": "#090B10"
     },
     "Tree.leftChildIndent": 10,
@@ -794,7 +794,7 @@
     },
     "Viewport": {
       "background": "#090B10",
-      "foreground": "%fc"
+      "foreground": "#8F93A2"
     },
     "WelcomeScreen": {
       "background": "#0F111A",

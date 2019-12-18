@@ -117,11 +117,11 @@
 
         <option name="ScrollBar.hoverThumbColor" value="ff79c5"/>
         <option name="ScrollBar.hoverTrackColor" value="282a36"/>
-        <option name="ScrollBar.thumbBorderColor" value="ff79c5c0"/>
+
         <option name="ScrollBar.thumbColor" value="ff79c5c0"/>
         <option name="ScrollBar.trackColor" value="282a36"/>
-        <option name="TAB_UNDERLINE" value="ff79c5c0"/>
-        <option name="TAB_UNDERLINE_INACTIVE" value="ff79c5c0"/>
+        <option name="TAB_UNDERLINE" value="ff79c5"/>
+        <option name="TAB_UNDERLINE_INACTIVE" value="ff79c580"/>
         <option name="TEARLINE_COLOR" value="424450"/>
         <option name="TOOLTIP" value="282a36"/>
         <option name="VCS_ANNOTATIONS_COLOR_1" value="f1fa8c"/>
@@ -900,7 +900,7 @@
         </option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="33e5d"/>
+                <option name="BACKGROUND" value="033e5d80"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
@@ -2480,6 +2480,7 @@
                 <option name="FOREGROUND" value="87cefa"/>
             </value>
         </option>
+        <option name="RH_RETURN_KEYWORD" baseAttributes="DEFAULT_TEMPLATE_LANGUAGE_COLOR"/>
         <option name="RUBY_COMMENT">
             <value>
                 <option name="FOREGROUND" value="6272a4"/>
@@ -3012,7 +3013,7 @@
         </option>
         <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="44475a"/>
+                <option name="BACKGROUND" value="44475a80"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
@@ -3023,7 +3024,10 @@
         </option>
         <option name="WRONG_REFERENCES_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="ff5555"/>
+                <option name="EFFECT_COLOR" value="ff5555"/>
+                <option name="ERROR_STRIPE_COLOR" value="ff5555"/>
+                <option name="EFFECT_TYPE" value="1"/>
+
             </value>
         </option>
         <option name="XML_ATTRIBUTE_NAME">
@@ -3081,5 +3085,108 @@
         </option>
         <option name="org.rust.MUT_PARAMETER" baseAttributes="DEFAULT_PARAMETER"/>
         <option name="org.rust.TYPE_PARAMETER" baseAttributes="DEFAULT_IDENTIFIER"/>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
+            </value>
+        </option>
+
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
+            </value>
+        </option>
+
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
+            </value>
+        </option>
+
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="004d40"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="1b5e20"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="006be7"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="283593"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="795548"/>
+            </value>
+        </option>
     </attributes>
 </scheme>

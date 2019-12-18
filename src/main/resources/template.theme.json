@@ -746,7 +746,7 @@
       "hash": "%border",
       "modifiedItemForeground": "%accent",
       "rowHeight": 28,
-      "selectionBackground": "%tree",
+      "selectionBackground": "%tree70",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%selFg",
       "selectionInactiveBackground": "%tree25",
@@ -794,7 +794,7 @@
     },
     "Viewport": {
       "background": "%hc",
-      "foreground": "%fc"
+      "foreground": "%fg"
     },
     "WelcomeScreen": {
       "background": "%bg",

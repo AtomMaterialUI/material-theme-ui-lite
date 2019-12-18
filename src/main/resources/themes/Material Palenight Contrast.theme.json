@@ -294,7 +294,7 @@
       "selectionBackground": "#3C435E50",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#676E957025"
+      "selectionInactiveBackground": "#676E9525"
     },
     "material": {
       "background": "#292D3E",
@@ -749,7 +749,7 @@
       "selectionBackground": "#676E9570",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#676E957025",
+      "selectionInactiveBackground": "#676E9525",
       "textBackground": "#202331"
     },
     "Tree.leftChildIndent": 10,
@@ -794,7 +794,7 @@
     },
     "Viewport": {
       "background": "#202331",
-      "foreground": "%fc"
+      "foreground": "#A6ACCD"
     },
     "WelcomeScreen": {
       "background": "#292D3E",

@@ -17,7 +17,7 @@
       "inactiveBackground": "#3c4150",
       "inactiveForeground": "#979FAD",
       "infoForeground": "#979FAD",
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#4D515D",
       "selectionBackgroundInactive": "#2F333D",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveBackground": "#2F333D",
@@ -31,7 +31,7 @@
       "pressedBorderColor": "#2979ff50"
     },
     "Autocomplete": {
-      "selectionBackground": "#3A3F4B"
+      "selectionBackground": "#4D515D"
     },
     "Borders.ContrastBorderColor": "#282C34",
     "Borders.color": "#282C34",
@@ -79,7 +79,7 @@
       "disabledBackground": "#282C34",
       "disabledForeground": "#6B727D",
       "foreground": "#979FAD",
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#4D515D",
       "selectionForeground": "#FFFFFF"
     },
     "ColorChooser": {
@@ -116,8 +116,8 @@
       "selectedGrayedForeground": "#FFFFFF",
       "selectionGrayForeground": "#FFFFFF",
       "selectionInactiveInfoForeground": "#979FAD",
-      "selectionInactiveBackground": "#3A3F4B50",
-      "selectionBackground": "#3A3F4B80",
+      "selectionInactiveBackground": "#4D515D50",
+      "selectionBackground": "#4D515D80",
       "selectionForeground": "#FFFFFF",
       "selectionInfoForeground": "#FFFFFF"
     },
@@ -185,7 +185,7 @@
       "foreground": "#979FAD",
       "inactiveBackground": "#282C34",
       "inactiveForeground": "#6B727D",
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#4D515D",
       "selectionForeground": "#FFFFFF"
     },
     "EditorTabs": {
@@ -291,7 +291,7 @@
     "List": {
       "background": "#2F333D",
       "foreground": "#979FAD",
-      "selectionBackground": "#3A3F4B50",
+      "selectionBackground": "#4D515D50",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
       "selectionInactiveBackground": "#3A3F4B25"
@@ -322,7 +322,7 @@
       "disabledBackground": "#2F333D",
       "disabledForeground": "#6B727D",
       "foreground": "#979FAD",
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#4D515D",
       "selectionForeground": "#FFFFFF",
       "separatorColor": "#282C34"
     },
@@ -333,7 +333,7 @@
       "disabledForeground": "#6B727D",
       "foreground": "#979FAD",
       "highlight": "#282C34",
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#4D515D",
       "selectionForeground": "#FFFFFF",
       "shadow": "#21252B"
     },
@@ -345,7 +345,7 @@
       "disabledBackground": "#282C34",
       "disabledForeground": "#6B727D",
       "foreground": "#979FAD",
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#4D515D",
       "selectionForeground": "#FFFFFF"
     },
     "NavBar": {
@@ -416,8 +416,8 @@
       "background": "#282C34",
       "disabledForeground": "#6B727D",
       "eapTagBackground": "#383D48",
-      "lightSelectionBackground": "#3A3F4B",
-      "selectionBackground": "#3A3F4B",
+      "lightSelectionBackground": "#4D515D",
+      "selectionBackground": "#4D515D",
       "tagForeground": "#2979ff",
       "tagBackground": "#383D48",
       "Button": {
@@ -495,7 +495,7 @@
       "disabledBackground": "#282C34",
       "disabledForeground": "#6B727D",
       "foreground": "#979FAD",
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#4D515D",
       "selectionForeground": "#FFFFFF"
     },
     "ScrollBar": {
@@ -746,7 +746,7 @@
       "hash": "#282C34",
       "modifiedItemForeground": "#2979ff",
       "rowHeight": 28,
-      "selectionBackground": "#3A3F4B",
+      "selectionBackground": "#3A3F4B70",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
       "selectionInactiveBackground": "#3A3F4B25",
@@ -794,7 +794,7 @@
     },
     "Viewport": {
       "background": "#21252B",
-      "foreground": "%fc"
+      "foreground": "#979FAD"
     },
     "WelcomeScreen": {
       "background": "#282C34",
@@ -808,7 +808,7 @@
       "separatorColor": "#282C34",
       "Projects": {
         "background": "#2F333D",
-        "selectionBackground": "#3A3F4B",
+        "selectionBackground": "#4D515D",
         "selectionInactiveBackground": "#2F333D"
       }
     },
