@@ -110,7 +110,7 @@
       "background": "%second",
       "foreground": "%fg",
       "infoForeground": "%text",
-      "matchForeground": "%accent2",
+      "matchForeground": "%accent",
       "matchSelectionForeground": "%accent",
       "nonFocusedState": "false",
       "selectedGrayedForeground": "%selFg",
