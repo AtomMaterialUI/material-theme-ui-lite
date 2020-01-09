@@ -55,7 +55,7 @@ material:
     table: '#323232'
     misc1: '#292929'
     misc2: '#3F3F3F'
-    tree: '#32323270'
+    tree: '#323232'
     notif: '#1A1A1A'
     accent: '#FF9800'
     excluded: '#323232'
