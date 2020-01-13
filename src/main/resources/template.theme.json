@@ -850,7 +850,7 @@
       "Checkbox.Focus.Wide.Dark": "%accent",
       "Checkbox.Foreground.Disabled": "%dis",
       "Checkbox.Foreground.Disabled.Dark": "%dis",
-      "Checkbox.Background.Selected": "%bg",
+      "Checkbox.Background.Selected": "%accent",
       "Checkbox.Background.Selected.Dark": "%bg",
       "Checkbox.Border.Selected": "%accent",
       "Checkbox.Border.Selected.Dark": "%accent",
