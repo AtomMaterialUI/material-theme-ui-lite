@@ -28,8 +28,8 @@ package com.mallowigi.idea;
 import com.intellij.ide.BrowserUtil;
 import com.intellij.ide.util.PropertiesComponent;
 import com.intellij.notification.Notification;
-import com.intellij.openapi.components.ProjectComponent;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.startup.StartupActivity;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
@@ -39,19 +39,8 @@ import java.net.URL;
 /**
  * Component for showing update notification
  */
-public final class MTUpdatesComponent implements ProjectComponent {
+public final class MTUpdatesComponent implements StartupActivity {
   private static final String VERSION = "MTUILite.version";
-  @NotNull
-  private final Project myProject;
-
-  /**
-   * Instantiates a new Mt updates component.
-   *
-   * @param project the project
-   */
-  private MTUpdatesComponent(@NotNull final Project project) {
-    myProject = project;
-  }
 
   /**
    * Open Paypal/OpenCollective link and add event
@@ -71,34 +60,21 @@ public final class MTUpdatesComponent implements ProjectComponent {
     notification.expire();
   }
 
-  @Override
-  public void initComponent() {
-  }
-
-  @SuppressWarnings("FeatureEnvy")
-  @Override
-  public void projectOpened() {
+  private static void showUpdates(final Project project) {
     final String pluginVersion = PropertiesComponent.getInstance().getValue(VERSION, "0.0");
     // Show new version notification
-    final String newVersion = MaterialThemeBundle.message("plugin.version");
+    @NonNls final String newVersion = MaterialThemeBundle.message("plugin.version");
     final boolean updated = !pluginVersion.equals(newVersion);
 
     // Show notification update
     if (updated) {
       PropertiesComponent.getInstance().setValue(VERSION, newVersion);
-      Notify.showUpdate(myProject, MTUpdatesComponent::onPaypalClick);
+      Notify.showUpdate(project, MTUpdatesComponent::onPaypalClick);
     }
   }
 
   @Override
-  public void disposeComponent() {
+  public void runActivity(@NotNull final Project project) {
+    showUpdates(project);
   }
-
-  @NonNls
-  @NotNull
-  @Override
-  public String getComponentName() {
-    return "MTUpdatesComponent";
-  }
-
 }

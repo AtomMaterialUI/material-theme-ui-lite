@@ -20,6 +20,8 @@
 
 
     <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.mallowigi.idea.MTStartup"/>
+        <postStartupActivity implementation="com.mallowigi.idea.MTUpdatesComponent"/>
         <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"></themeProvider>
         <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"></themeProvider>
         <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"></themeProvider>
@@ -61,20 +63,6 @@
         <themeProvider id="Light Owl Contrast"
                        path="/themes/Light Owl Contrast.theme.json"></themeProvider>
     </extensions>
-
-    <application-components>
-        <component>
-            <implementation-class>com.mallowigi.idea.MTApplicationComponent</implementation-class>
-        </component>
-        <component>
-            <implementation-class>com.mallowigi.idea.MTCleanupComponent</implementation-class>
-        </component>
-    </application-components>
-    <project-components>
-        <component>
-            <implementation-class>com.mallowigi.idea.MTUpdatesComponent</implementation-class>
-        </component>
-    </project-components>
 
     <actions>
         <group id="MaterialLiteTheme.ThemeChooser" text="Regular Themes" popup="true"
@@ -206,7 +194,8 @@
             </action>
         </group>
 
-        <group id="MaterialLiteTheme.Menu" text="Material Theme Lite" popup="true" icon="/icons/actions/mt/themeSwitch.svg">
+        <group id="MaterialLiteTheme.Menu" text="Material Theme Lite" popup="true"
+               icon="/icons/actions/mt/themeSwitch.svg">
             <reference id="MaterialLiteTheme.ThemeChooser"/>
             <separator/>
             <reference id="MaterialLiteTheme.ContrastThemeChooser"/>
