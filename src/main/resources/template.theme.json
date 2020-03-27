@@ -27,6 +27,8 @@
     "ActionButton": {
       "hoverBackground": "%accent50",
       "hoverBorderColor": "%accent50",
+      "hoverSeparatorColor": "%button",
+      "focusedBorderColor": "%accent50",
       "pressedBackground": "%accent50",
       "pressedBorderColor": "%accent50"
     },
@@ -66,6 +68,11 @@
       "shadowColor": "%button",
       "shadowWidth": 0
     },
+    "Canvas": {
+      "Tooltip.borderColor": "%border",
+      "Tooltip.background": "%notif"
+    },
+    "Content.background": "%cs",
     "CheckBox": {
       "background": "%bg",
       "disabledText": "%dis",
@@ -161,6 +168,7 @@
       "hoverBackground": "%table",
       "hoverColor": "%hc",
       "hoverMaskColor": "%hl",
+      "inactiveColoredFileBackground": "%button",
       "inactiveUnderlineColor": "%dis",
       "inactiveMaskColor": "%hc",
       "underlineColor": "%accent",
@@ -193,6 +201,7 @@
       "hoverColor": "%hl",
       "hoverMaskColor": "%hl",
       "inactiveMaskColor": "%bg",
+      "inactiveColoredFileBackground": "%bg2",
       "inactiveUnderlineColor": "%dis",
       "selectedForeground": "%fg",
       "selectedBackground": "%table",
@@ -360,6 +369,7 @@
         "background": "%hc"
       }
     },
+    "NewPSD.warning": "%accent",
     "Notification": {
       "background": "%notif",
       "borderColor": "%notif",
@@ -387,7 +397,9 @@
       "messageForeground": "%fg"
     },
     "Outline": {
-      "color": "%button"
+      "color": "%button",
+      "focusedColor": "%accent",
+      "disabledColor": "%dis"
     },
     "Panel": {
       "background": "%bg",
@@ -417,15 +429,17 @@
       "disabledForeground": "%dis",
       "eapTagBackground": "%hl",
       "lightSelectionBackground": "%selBg",
+      "paidTagBackground": "%hl",
       "selectionBackground": "%selBg",
       "tagForeground": "%accent",
       "tagBackground": "%hl",
+      "trialTagBackground": "%hl",
       "Button": {
         "installBackground": "%button",
         "installBorderColor": "%button",
         "installForeground": "%fg",
         "installFocusedBackground": "%hl",
-        "installFillForeground": "%text",
+        "installFillForeground": "%dis",
         "installFillBackground": "%button",
         "updateBackground": "%button",
         "updateBorderColor": "%button",
@@ -462,6 +476,7 @@
       "separatorForeground": "%fg",
       "separatorColor": "%second",
       "Toolbar": {
+        "Floating.background": "%cs",
         "background": "%cs",
         "borderColor": "%cs"
       }
@@ -482,6 +497,9 @@
       "progressColor": "%accent",
       "selectionBackground": "%hl",
       "trackColor": "%hl"
+    },
+    "PsiViewer": {
+      "referenceHighlightColor": "%accent"
     },
     "RadioButton": {
       "background": "%bg",
@@ -559,6 +577,7 @@
       "endBackground": "%accent",
       "startBackground": "%accent"
     },
+    "SearchField.errorBackground": "%notif",
     "Separator": {
       "background": "%second",
       "foreground": "%second",
@@ -648,6 +667,7 @@
       "borderColor": "%bg",
       "bottomSeparatorColor": "%second",
       "cellBorder": "4,0,4,0",
+      "disabledForeground": "%dis",
       "foreground": "%fg",
       "focusCellBackground": "%table",
       "focusCellForeground": "%activeFg",
@@ -755,8 +775,27 @@
     "Tree.leftChildIndent": 10,
     "Tree.rightChildIndent": 5,
     "UiDesigner": {
+      "Activity.borderColor": "%border",
+      "ColorPicker.background": "%bg",
+      "ColorPicker.foreground": "%fg",
+      "Component.borderColor": "%border",
+      "Component.background": "%bg",
+      "Component.foreground": "%fg",
+      "Connector.borderColor": "%border",
+      "Connector.hoverBorderColor": "%hl",
+      "Canvas.background": "%cs",
+      "highStroke.foreground": "%fg",
+      "Label.foreground": "%text",
+      "List.selectionBackground": "%tree",
+      "Panel.borderColor": "%border",
       "Panel.background": "%bg",
-      "Preview.background": "%bg"
+      "percent.foreground": "%fg",
+      "Placeholder.background": "%bg",
+      "Placeholder.borderColor": "%border",
+      "Placeholder.foreground": "%fg",
+      "Placeholder.selectedForeground": "%selFg",
+      "Preview.background": "%bg",
+      "stroke.acceleratorForeground": "%text"
     },
     "ValidationTooltip": {
       "errorBackground": "%notif",
@@ -767,6 +806,9 @@
     "VersionControl": {
       "FileHistory.Commit": {
         "selectedBranchBackground": "%bg"
+      },
+      "GitCommits": {
+        "graphColor": "%hl"
       },
       "GitLog": {
         "localBranchIconColor": "%accent",
