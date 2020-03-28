@@ -1,7 +1,7 @@
 <!--
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2019 Chris Magnussen and Elior Boukhobza
+  ~ Copyright (c) 2015 - 2020 Chris Magnussen and Elior Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@
   ~
   -->
 
-<scheme name="Atom One Light" version="142">
+<scheme name="Atom One Light" version="142" parent_scheme="Default">
     <option name="FONT_SCALE" value="1.0"/>
     <metaInfo>
         <property name="created">2018-08-04T11:56:45</property>
@@ -98,6 +98,7 @@
         <option name="NOTIFICATION_BACKGROUND" value="f2f2f2"/>
         <option name="NOT_CHANGED" value="232324"/>
         <option name="QUESTION_HINT" value="fafafa"/>
+        <option name="PROMOTION_PANE" value="d3d4d5"/>
         <option name="RECENT_LOCATIONS_SELECTION" value="d3d4d5"/>
         <option name="RIGHT_MARGIN_COLOR" value="d3d4d5"/>
         <option name="SELECTED_INDENT_GUIDE" value="809b"/>
@@ -146,6 +147,31 @@
     </colors>
     <attributes>
         <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="50a14e"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="986801"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="e4564a"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="4078f2"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="a626a4"/>
+            </value>
+        </option>
+        <option name="ANGLE_BRACKETS_RAINBOW_COLOR4">
             <value>
                 <option name="FOREGROUND" value="50a14e"/>
             </value>
@@ -736,6 +762,18 @@
                 <option name="ERROR_STRIPE_COLOR" value="43698d"/>
             </value>
         </option>
+        <option name="DOC_COMMENT_GUIDE">
+            <value>
+                <option name="FOREGROUND" value="d3d4d5"/>
+            </value>
+        </option>
+        <option name="DOC_COMMENT_LINK">
+            <value>
+                <option name="FOREGROUND" value="184bc"/>
+                <option name="EFFECT_COLOR" value="184bc"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
         <option name="DUPLICATE_FROM_SERVER">
             <value/>
         </option>
@@ -807,6 +845,42 @@
         <option name="GHERKIN_OUTLINE_PARAMETER_SUBSTITUTION" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
         <option name="GHERKIN_PYSTRING" baseAttributes="DEFAULT_STRING"/>
         <option name="GHERKIN_REGEXP_PARAMETER" baseAttributes="DEFAULT_PARAMETER"/>
+        <option name="GIT_TOOLBOX.CHANGED_COUNT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="e4564a"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="GIT_TOOLBOX.EDITOR_INLINE_BLAME_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="a0a1a7"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="GIT_TOOLBOX.HEAD_TAGS_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="986801"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="GIT_TOOLBOX.LOCAL_BRANCH_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="a626a4"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="GIT_TOOLBOX.REMOTE_BRANCH_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="4078f2"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="GIT_TOOLBOX.STATUS_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="50a14e"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
         <option name="GO_BLOCK_COMMENT">
             <value>
                 <option name="FOREGROUND" value="a0a1a7"/>
@@ -1135,6 +1209,31 @@
                 <option name="FOREGROUND" value="808080"/>
                 <option name="EFFECT_COLOR" value="808080"/>
                 <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="INDENT_RAINBOW_COLOR_1">
+            <value>
+                <option name="BACKGROUND" value="fafaed"/>
+            </value>
+        </option>
+        <option name="INDENT_RAINBOW_COLOR_2">
+            <value>
+                <option name="BACKGROUND" value="f1faf1"/>
+            </value>
+        </option>
+        <option name="INDENT_RAINBOW_COLOR_3">
+            <value>
+                <option name="BACKGROUND" value="faf1fa"/>
+            </value>
+        </option>
+        <option name="INDENT_RAINBOW_COLOR_4">
+            <value>
+                <option name="BACKGROUND" value="eef9f9"/>
+            </value>
+        </option>
+        <option name="INDENT_RAINBOW_ERROR">
+            <value>
+                <option name="BACKGROUND" value="d5b8b8"/>
             </value>
         </option>
         <option name="INFO_ATTRIBUTES">
@@ -1844,9 +1943,24 @@
                 <option name="EFFECT_TYPE" value="2"/>
             </value>
         </option>
-        <option name="MARKDOWN_NAVIGATOR.LINK_REF_ANCHOR_MARKER">
+        <option name="MARKDOWN_NAVIGATOR.LINK_REF">
             <value>
                 <option name="FOREGROUND" value="a626a4"/>
+                <option name="EFFECT_COLOR" value="a626a4"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_NAVIGATOR.LINK_REF_ANCHOR">
+            <value>
+                <option name="FOREGROUND" value="e4564a"/>
+                <option name="FONT_TYPE" value="1"/>
+                <option name="EFFECT_COLOR" value="e4564a"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_NAVIGATOR.LINK_REF_ANCHOR_MARKER">
+            <value>
+                <option name="FOREGROUND" value="383a42"/>
             </value>
         </option>
         <option name="MARKDOWN_NAVIGATOR.LINK_REF_TEXT">
@@ -1857,6 +1971,13 @@
         <option name="MARKDOWN_NAVIGATOR.LINK_REF_TITLE">
             <value>
                 <option name="FOREGROUND" value="e4564a"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_NAVIGATOR.MAIL_LINK">
+            <value>
+                <option name="FOREGROUND" value="a626a4"/>
+                <option name="EFFECT_COLOR" value="a626a4"/>
+                <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="MARKDOWN_NAVIGATOR.ORDERED_LIST">
@@ -1902,8 +2023,9 @@
         </option>
         <option name="MARKDOWN_NAVIGATOR.REFERENCE_ANCHOR">
             <value>
-                <option name="FOREGROUND" value="a626a4"/>
-                <option name="EFFECT_COLOR" value="a626a4"/>
+                <option name="FOREGROUND" value="e4564a"/>
+                <option name="FONT_TYPE" value="1"/>
+                <option name="EFFECT_COLOR" value="e4564a"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
@@ -1915,6 +2037,13 @@
         <option name="MARKDOWN_NAVIGATOR.REFERENCE_IMAGE_REFERENCE">
             <value>
                 <option name="FOREGROUND" value="4078f2"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_NAVIGATOR.REFERENCE_LINK_REF">
+            <value>
+                <option name="FOREGROUND" value="a626a4"/>
+                <option name="EFFECT_COLOR" value="a626a4"/>
+                <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="MARKDOWN_NAVIGATOR.REFERENCE_LINK_REFERENCE">
@@ -2286,6 +2415,8 @@
                 <option name="EFFECT_TYPE" value="3"/>
             </value>
         </option>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_REVEN_CEVEN"
+                baseAttributes="MARKDOWN_NAVIGATOR.TABLE_CELL_REVEN_CEVEN"/>
         <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_REVEN_CEVEN_BOLD_TEXT">
             <value>
                 <option name="FOREGROUND" value="a626a4"/>
@@ -2342,6 +2473,8 @@
                 <option name="EFFECT_TYPE" value="3"/>
             </value>
         </option>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_REVEN_CODD"
+                baseAttributes="MARKDOWN_NAVIGATOR.TABLE_CELL_REVEN_CODD"/>
         <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_REVEN_CODD_BOLD_TEXT">
             <value>
                 <option name="FOREGROUND" value="a626a4"/>
@@ -2398,6 +2531,8 @@
                 <option name="EFFECT_TYPE" value="3"/>
             </value>
         </option>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_RODD_CEVEN"
+                baseAttributes="MARKDOWN_NAVIGATOR.TABLE_CELL_RODD_CEVEN"/>
         <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_RODD_CEVEN_BOLD_TEXT">
             <value>
                 <option name="FOREGROUND" value="a626a4"/>
@@ -2447,6 +2582,8 @@
                 <option name="EFFECT_TYPE" value="3"/>
             </value>
         </option>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_RODD_CODD"
+                baseAttributes="MARKDOWN_NAVIGATOR.TABLE_CELL_RODD_CODD"/>
         <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_CELL_RODD_CODD_BOLD_TEXT">
             <value>
                 <option name="FOREGROUND" value="a626a4"/>
@@ -2496,6 +2633,8 @@
                 <option name="EFFECT_TYPE" value="3"/>
             </value>
         </option>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_ROW_EVEN" baseAttributes="MARKDOWN_NAVIGATOR.TABLE_ROW_EVEN"/>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_HDR_ROW_ODD" baseAttributes="MARKDOWN_NAVIGATOR.TABLE_ROW_ODD"/>
         <option name="MARKDOWN_NAVIGATOR.TABLE_ROW_EVEN">
             <value>
                 <option name="BACKGROUND" value="e5e5e5"/>
@@ -2509,6 +2648,10 @@
                 <option name="BACKGROUND" value="e5e5e6"/>
             </value>
         </option>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_SEP_COLUMN_EVEN"
+                baseAttributes="MARKDOWN_NAVIGATOR.TABLE_CELL_REVEN_CEVEN"/>
+        <option name="MARKDOWN_NAVIGATOR.TABLE_SEP_COLUMN_ODD"
+                baseAttributes="MARKDOWN_NAVIGATOR.TABLE_CELL_REVEN_CODD"/>
         <option name="MARKDOWN_NAVIGATOR.TASK_DONE_ITEM_MARKER">
             <value>
                 <option name="FOREGROUND" value="50a14e"/>
@@ -2580,6 +2723,11 @@
         <option name="MARKDOWN_NAVIGATOR.WIKI_LINK_REF_ANCHOR">
             <value>
                 <option name="FOREGROUND" value="c18401"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_NAVIGATOR.WIKI_LINK_SEPARATOR">
+            <value>
+                <option name="FOREGROUND" value="383a42"/>
             </value>
         </option>
         <option name="MARKDOWN_NAVIGATOR.WIKI_LINK_TEXT">
@@ -2942,6 +3090,31 @@
             </value>
         </option>
         <option name="RH_RETURN_KEYWORD" baseAttributes="DEFAULT_TEMPLATE_LANGUAGE_COLOR"/>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="986801"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="e4564a"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="4078f2"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="a626a4"/>
+            </value>
+        </option>
+        <option name="ROUND_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="50a14e"/>
+            </value>
+        </option>
         <option name="RUBY_COMMENT">
             <value>
                 <option name="FOREGROUND" value="a0a1a7"/>
@@ -3336,6 +3509,56 @@
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="986801"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="e4564a"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="4078f2"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="a626a4"/>
+            </value>
+        </option>
+        <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="50a14e"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR0">
+            <value>
+                <option name="FOREGROUND" value="986801"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR1">
+            <value>
+                <option name="FOREGROUND" value="e4564a"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR2">
+            <value>
+                <option name="FOREGROUND" value="4078f2"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
+            <value>
+                <option name="FOREGROUND" value="a626a4"/>
+            </value>
+        </option>
+        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
+            <value>
+                <option name="FOREGROUND" value="50a14e"/>
+            </value>
+        </option>
         <option name="STATIC_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_FIELD"/>
         <option name="STATIC_FINAL_FIELD_ATTRIBUTES" baseAttributes="STATIC_FIELD_ATTRIBUTES"/>
         <option name="Scala Immutable Collection" baseAttributes="DEFAULT_IDENTIFIER"/>
@@ -3537,109 +3760,6 @@
         <option name="org.rust.TYPE_PARAMETER" baseAttributes="DEFAULT_IDENTIFIER"/>
         <option name="org.rust.UNSAFE_CODE">
             <value/>
-        </option>
-        <option name="ROUND_BRACKETS_RAINBOW_COLOR0">
-            <value>
-                <option name="FOREGROUND" value="004d40"/>
-            </value>
-        </option>
-        <option name="ROUND_BRACKETS_RAINBOW_COLOR1">
-            <value>
-                <option name="FOREGROUND" value="1b5e20"/>
-            </value>
-        </option>
-        <option name="ROUND_BRACKETS_RAINBOW_COLOR2">
-            <value>
-                <option name="FOREGROUND" value="006be7"/>
-            </value>
-        </option>
-        <option name="ROUND_BRACKETS_RAINBOW_COLOR3">
-            <value>
-                <option name="FOREGROUND" value="283593"/>
-            </value>
-        </option>
-        <option name="ROUND_BRACKETS_RAINBOW_COLOR4">
-            <value>
-                <option name="FOREGROUND" value="795548"/>
-            </value>
-        </option>
-
-        <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
-            <value>
-                <option name="FOREGROUND" value="004d40"/>
-            </value>
-        </option>
-        <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
-            <value>
-                <option name="FOREGROUND" value="1b5e20"/>
-            </value>
-        </option>
-        <option name="SQUARE_BRACKETS_RAINBOW_COLOR2">
-            <value>
-                <option name="FOREGROUND" value="006be7"/>
-            </value>
-        </option>
-        <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
-            <value>
-                <option name="FOREGROUND" value="283593"/>
-            </value>
-        </option>
-        <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
-            <value>
-                <option name="FOREGROUND" value="795548"/>
-            </value>
-        </option>
-
-        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR0">
-            <value>
-                <option name="FOREGROUND" value="004d40"/>
-            </value>
-        </option>
-        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR1">
-            <value>
-                <option name="FOREGROUND" value="1b5e20"/>
-            </value>
-        </option>
-        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR2">
-            <value>
-                <option name="FOREGROUND" value="006be7"/>
-            </value>
-        </option>
-        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
-            <value>
-                <option name="FOREGROUND" value="283593"/>
-            </value>
-        </option>
-        <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
-            <value>
-                <option name="FOREGROUND" value="795548"/>
-            </value>
-        </option>
-
-        <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
-            <value>
-                <option name="FOREGROUND" value="004d40"/>
-            </value>
-        </option>
-        <option name="ANGLE_BRACKETS_RAINBOW_COLOR1">
-            <value>
-                <option name="FOREGROUND" value="1b5e20"/>
-            </value>
-        </option>
-        <option name="ANGLE_BRACKETS_RAINBOW_COLOR2">
-            <value>
-                <option name="FOREGROUND" value="006be7"/>
-            </value>
-        </option>
-        <option name="ANGLE_BRACKETS_RAINBOW_COLOR3">
-            <value>
-                <option name="FOREGROUND" value="283593"/>
-            </value>
-        </option>
-        <option name="ANGLE_BRACKETS_RAINBOW_COLOR4">
-            <value>
-                <option name="FOREGROUND" value="795548"/>
-            </value>
         </option>
         <option name="osmorc.headerName">
             <value>
