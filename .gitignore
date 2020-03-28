@@ -16,3 +16,5 @@ classes/
 src/test/resources/
 
 node_modules
+
+publishToken
