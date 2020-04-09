@@ -297,13 +297,14 @@
       "secondaryForeground": "#979FAD",
       "visitedForeground": "#2979ff"
     },
+    "link.foreground": "#2979ff",
     "List": {
       "background": "#2F333D",
       "foreground": "#979FAD",
       "selectionBackground": "#4D515D50",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#3A3F4B25"
+      "selectionInactiveBackground": "#3A3F4B80"
     },
     "material": {
       "background": "#282C34",
@@ -766,10 +767,10 @@
       "hash": "#282C34",
       "modifiedItemForeground": "#2979ff",
       "rowHeight": 28,
-      "selectionBackground": "#3A3F4B70",
+      "selectionBackground": "#3A3F4B80",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#3A3F4B25",
+      "selectionInactiveBackground": "#3A3F4B80",
       "textBackground": "#21252B"
     },
     "Tree.leftChildIndent": 10,
@@ -786,7 +787,7 @@
       "Canvas.background": "#21252B",
       "highStroke.foreground": "#979FAD",
       "Label.foreground": "#979FAD",
-      "List.selectionBackground": "#3A3F4B",
+      "List.selectionBackground": "#3A3F4B80",
       "Panel.borderColor": "#282C34",
       "Panel.background": "#282C34",
       "percent.foreground": "#979FAD",

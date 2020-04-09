@@ -297,13 +297,14 @@
       "secondaryForeground": "%text",
       "visitedForeground": "%accent"
     },
+    "link.foreground": "%accent",
     "List": {
       "background": "%second",
       "foreground": "%fg",
       "selectionBackground": "%selBg50",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%activeFg",
-      "selectionInactiveBackground": "%tree25"
+      "selectionInactiveBackground": "%tree"
     },
     "material": {
       "background": "%bg",
@@ -766,10 +767,10 @@
       "hash": "%border",
       "modifiedItemForeground": "%accent",
       "rowHeight": 28,
-      "selectionBackground": "%tree70",
+      "selectionBackground": "%tree",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%selFg",
-      "selectionInactiveBackground": "%tree25",
+      "selectionInactiveBackground": "%tree",
       "textBackground": "%hc"
     },
     "Tree.leftChildIndent": 10,
