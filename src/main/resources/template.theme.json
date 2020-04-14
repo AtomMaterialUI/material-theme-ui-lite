@@ -201,7 +201,7 @@
       "hoverColor": "%hl",
       "hoverMaskColor": "%hl",
       "inactiveMaskColor": "%bg",
-      "inactiveColoredFileBackground": "%bg2",
+      "inactiveColoredFileBackground": "%second",
       "inactiveUnderlineColor": "%dis",
       "selectedForeground": "%fg",
       "selectedBackground": "%table",
