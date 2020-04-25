@@ -39,7 +39,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.awt.*;
 
-@SuppressWarnings("MethodWithTooManyParameters")
 public enum Notify {
   DEFAULT;
 

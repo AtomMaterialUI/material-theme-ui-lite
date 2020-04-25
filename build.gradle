@@ -31,7 +31,7 @@ buildscript {
 
 
 plugins {
-    id 'org.jetbrains.intellij' version '0.4.17'
+    id 'org.jetbrains.intellij' version '0.4.18'
 }
 
 repositories {
@@ -72,7 +72,7 @@ intellij {
     }
 
     publishPlugin {
-        token System.getenv("publishToken") ?: publishToken
+        token file("$projectDir/publishToken").text ?: System.getenv("publishToken") ?: publishToken
         username System.getenv("publishUsername") ?: publishUsername
         password System.getenv("publishPassword") ?: publishPassword
     }
