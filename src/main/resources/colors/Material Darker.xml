@@ -29,8 +29,8 @@
     <metaInfo>
         <property name="created">2017-04-10T18:10:53</property>
         <property name="ide">idea</property>
-        <property name="ideVersion">2019.3.0.0</property>
-        <property name="modified">2019-11-02T13:45:33</property>
+        <property name="ideVersion">2020.1.0.0</property>
+        <property name="modified">2020-04-18T11:14:57</property>
         <property name="originalScheme">Material Darker</property>
     </metaInfo>
     <option name="LINE_SPACING" value="1.4"/>
@@ -62,6 +62,8 @@
         <option name="DIFF_SEPARATORS_BACKGROUND" value="1e2a30"/>
         <option name="DIFF_SEPARATORS_TOP_BORDER" value="171717"/>
         <option name="DOCUMENTATION_COLOR" value="212121"/>
+        <option name="DOC_COMMENT_GUIDE" value="424242"/>
+        <option name="DOC_COMMENT_LINK" value="89ddf7"/>
         <option name="FILESTATUS_ADDED" value="c3e88d"/>
         <option name="FILESTATUS_COPIED" value="c3e88d"/>
         <option name="FILESTATUS_DELETED" value="808080"/>
@@ -743,18 +745,6 @@
                 <option name="ERROR_STRIPE_COLOR" value="43698d"/>
             </value>
         </option>
-        <option name="DOC_COMMENT_GUIDE">
-            <value>
-                <option name="FOREGROUND" value="424242"/>
-            </value>
-        </option>
-        <option name="DOC_COMMENT_LINK">
-            <value>
-                <option name="FOREGROUND" value="89ddf7"/>
-                <option name="EFFECT_COLOR" value="89ddf7"/>
-                <option name="EFFECT_TYPE" value="1"/>
-            </value>
-        </option>
         <option name="DUPLICATE_FROM_SERVER">
             <value/>
         </option>
@@ -1144,6 +1134,12 @@
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
+        <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
+            <value>
+                <option name="BACKGROUND" value="033e5d80"/>
+                <option name="ERROR_STRIPE_COLOR" value="4f4f4f"/>
+            </value>
+        </option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
                 <option name="BACKGROUND" value="033e5d80"/>
@@ -1388,8 +1384,19 @@
                 <option name="FOREGROUND" value="c792ea"/>
             </value>
         </option>
+        <option name="KOTLIN_ARROW">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+            </value>
+        </option>
         <option name="KOTLIN_BACKING_FIELD_VARIABLE">
             <value/>
+        </option>
+        <option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
         </option>
         <option name="KOTLIN_COLON">
             <value>
@@ -1407,19 +1414,35 @@
             </value>
         </option>
         <option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
-            <value/>
+            <value>
+                <option name="FOREGROUND" value="eeffff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
         </option>
         <option name="KOTLIN_EXCLEXCL">
             <value>
                 <option name="FOREGROUND" value="89ddff"/>
             </value>
         </option>
+        <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
         <option name="KOTLIN_IMPLICIT_EXHAUSTIVE_WHEN">
             <value/>
         </option>
+        <option name="KOTLIN_KEYWORD" baseAttributes="DEFAULT_KEYWORD"/>
         <option name="KOTLIN_LABEL">
             <value>
                 <option name="FOREGROUND" value="eeffff"/>
+            </value>
+        </option>
+        <option name="KOTLIN_MUTABLE_VARIABLE">
+            <value>
+                <option name="EFFECT_COLOR" value="eeffff"/>
+                <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="KOTLIN_NAMED_ARGUMENT">
@@ -1447,7 +1470,9 @@
             </value>
         </option>
         <option name="KOTLIN_SMART_CAST_VALUE">
-            <value/>
+            <value>
+                <option name="BACKGROUND" value="2b2b2b"/>
+            </value>
         </option>
         <option name="KOTLIN_SMART_CONSTANT">
             <value>
@@ -1462,6 +1487,16 @@
         <option name="KOTLIN_TYPE_PARAMETER">
             <value>
                 <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="KOTLIN_VARIABLE_AS_FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="82aaff"/>
+            </value>
+        </option>
+        <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
+            <value>
+                <option name="FOREGROUND" value="82aaff"/>
             </value>
         </option>
         <option name="LABEL">
@@ -1489,7 +1524,7 @@
         <option name="LIVE_TEMPLATE_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="ffffff"/>
-                <option name="BACKGROUND" value="ff9800"/>
+                <option name="BACKGROUND" value="ff980050"/>
             </value>
         </option>
         <option name="LOG_DEBUG_OUTPUT">

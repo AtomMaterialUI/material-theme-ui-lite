@@ -29,8 +29,8 @@
     <metaInfo>
         <property name="created">2017-04-10T18:07:41</property>
         <property name="ide">idea</property>
-        <property name="ideVersion">2019.3.0.0</property>
-        <property name="modified">2019-11-02T13:45:33</property>
+        <property name="ideVersion">2020.1.0.0</property>
+        <property name="modified">2020-04-18T11:14:57</property>
         <property name="originalScheme">Material Oceanic</property>
     </metaInfo>
     <option name="LINE_SPACING" value="1.4"/>
@@ -61,6 +61,8 @@
         <option name="DIFF_SEPARATORS_BACKGROUND" value="1e2a30"/>
         <option name="DIFF_SEPARATORS_TOP_BORDER" value="1b262b"/>
         <option name="DOCUMENTATION_COLOR" value="263238"/>
+        <option name="DOC_COMMENT_GUIDE" value="475f63"/>
+        <option name="DOC_COMMENT_LINK" value="89ddf7"/>
         <option name="FILESTATUS_ADDED" value="c3e88d"/>
         <option name="FILESTATUS_COPIED" value="c3e88d"/>
         <option name="FILESTATUS_DELETED" value="808080"/>
@@ -99,24 +101,24 @@
         <option name="SELECTION_FOREGROUND" value="fffbf7"/>
         <option name="SEPARATOR_BELOW_COLOR" value="3b4950"/>
         <option name="SOFT_WRAP_SIGN_COLOR" value="4f6269"/>
-        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="9688c0"/>
+        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="009688c0"/>
         <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="263238"/>
-        <option name="ScrollBar.Mac.Transparent.thumbColor" value="968880"/>
+        <option name="ScrollBar.Mac.Transparent.thumbColor" value="00968880"/>
         <option name="ScrollBar.Mac.Transparent.trackColor" value="263238"/>
-        <option name="ScrollBar.Mac.hoverThumbColor" value="968880"/>
+        <option name="ScrollBar.Mac.hoverThumbColor" value="00968880"/>
         <option name="ScrollBar.Mac.hoverTrackColor" value="263238"/>
-        <option name="ScrollBar.Mac.thumbColor" value="9688c0"/>
+        <option name="ScrollBar.Mac.thumbColor" value="009688c0"/>
         <option name="ScrollBar.Mac.trackColor" value="263238"/>
-        <option name="ScrollBar.Transparent.hoverThumbColor" value="9688c0"/>
+        <option name="ScrollBar.Transparent.hoverThumbColor" value="009688c0"/>
         <option name="ScrollBar.Transparent.hoverTrackColor" value="263238"/>
-        <option name="ScrollBar.Transparent.thumbColor" value="968880"/>
+        <option name="ScrollBar.Transparent.thumbColor" value="00968880"/>
         <option name="ScrollBar.Transparent.trackColor" value="263238"/>
-        <option name="ScrollBar.hoverThumbColor" value="968880"/>
+        <option name="ScrollBar.hoverThumbColor" value="00968880"/>
         <option name="ScrollBar.hoverTrackColor" value="263238"/>
-        <option name="ScrollBar.thumbColor" value="9688c0"/>
+        <option name="ScrollBar.thumbColor" value="009688c0"/>
         <option name="ScrollBar.trackColor" value="263238"/>
         <option name="TAB_UNDERLINE" value="9688"/>
-        <option name="TAB_UNDERLINE_INACTIVE" value="9688c0"/>
+        <option name="TAB_UNDERLINE_INACTIVE" value="9688"/>
         <option name="TEARLINE_COLOR" value="3b4950"/>
         <option name="TOOLTIP" value="32424a"/>
         <option name="VCS_ANNOTATIONS_COLOR_1" value="546e7a"/>
@@ -733,18 +735,6 @@
                 <option name="ERROR_STRIPE_COLOR" value="43698d"/>
             </value>
         </option>
-        <option name="DOC_COMMENT_GUIDE">
-            <value>
-                <option name="FOREGROUND" value="37474f"/>
-            </value>
-        </option>
-        <option name="DOC_COMMENT_LINK">
-            <value>
-                <option name="FOREGROUND" value="89ddf7"/>
-                <option name="EFFECT_COLOR" value="89ddf7"/>
-                <option name="EFFECT_TYPE" value="1"/>
-            </value>
-        </option>
         <option name="DUPLICATE_FROM_SERVER">
             <value/>
         </option>
@@ -1131,6 +1121,12 @@
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
+        <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
+            <value>
+                <option name="BACKGROUND" value="033e5d80"/>
+                <option name="ERROR_STRIPE_COLOR" value="4d6168"/>
+            </value>
+        </option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
                 <option name="BACKGROUND" value="033e5d80"/>
@@ -1372,8 +1368,19 @@
                 <option name="FOREGROUND" value="c792ea"/>
             </value>
         </option>
+        <option name="KOTLIN_ARROW">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+            </value>
+        </option>
         <option name="KOTLIN_BACKING_FIELD_VARIABLE">
             <value/>
+        </option>
+        <option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
         </option>
         <option name="KOTLIN_COLON">
             <value>
@@ -1391,19 +1398,35 @@
             </value>
         </option>
         <option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
-            <value/>
+            <value>
+                <option name="FOREGROUND" value="eeffff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
         </option>
         <option name="KOTLIN_EXCLEXCL">
             <value>
                 <option name="FOREGROUND" value="89ddff"/>
             </value>
         </option>
+        <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
         <option name="KOTLIN_IMPLICIT_EXHAUSTIVE_WHEN">
             <value/>
         </option>
+        <option name="KOTLIN_KEYWORD" baseAttributes="DEFAULT_KEYWORD"/>
         <option name="KOTLIN_LABEL">
             <value>
                 <option name="FOREGROUND" value="c3d3de"/>
+            </value>
+        </option>
+        <option name="KOTLIN_MUTABLE_VARIABLE">
+            <value>
+                <option name="EFFECT_COLOR" value="eeffff"/>
+                <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="KOTLIN_NAMED_ARGUMENT">
@@ -1431,7 +1454,9 @@
             </value>
         </option>
         <option name="KOTLIN_SMART_CAST_VALUE">
-            <value/>
+            <value>
+                <option name="BACKGROUND" value="303c41"/>
+            </value>
         </option>
         <option name="KOTLIN_SMART_CONSTANT">
             <value>
@@ -1446,6 +1471,16 @@
         <option name="KOTLIN_TYPE_PARAMETER">
             <value>
                 <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="KOTLIN_VARIABLE_AS_FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="82aaff"/>
+            </value>
+        </option>
+        <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
+            <value>
+                <option name="FOREGROUND" value="82aaff"/>
             </value>
         </option>
         <option name="LABEL">
@@ -1473,7 +1508,7 @@
         <option name="LIVE_TEMPLATE_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="ffffff"/>
-                <option name="BACKGROUND" value="9688"/>
+                <option name="BACKGROUND" value="00968850"/>
             </value>
         </option>
         <option name="LOG_DEBUG_OUTPUT">
@@ -2774,7 +2809,6 @@
         <option name="NOT_USED_ELEMENT_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="546e7a"/>
-                <option name="EFFECT_COLOR" value="292929"/>
             </value>
         </option>
         <option name="OC.BLOCK_COMMENT">
