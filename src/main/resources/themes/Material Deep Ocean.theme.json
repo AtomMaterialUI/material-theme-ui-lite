@@ -3,6 +3,11 @@
   "dark": true,
   "author": "Mallowigi",
   "editorScheme": "/colors/Material Deep Ocean.xml",
+  "emptyFrameBackground": {
+    "anchor": "center",
+    "image": "/walls/deepocean.svg",
+    "fill": "scale"
+  },
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "#4B526D",
@@ -201,7 +206,7 @@
       "hoverColor": "#1F2233",
       "hoverMaskColor": "#1F2233",
       "inactiveMaskColor": "#0F111A",
-      "inactiveColoredFileBackground": "#0F111A2",
+      "inactiveColoredFileBackground": "#181A1F",
       "inactiveUnderlineColor": "#464B5D",
       "selectedForeground": "#8F93A2",
       "selectedBackground": "#1A1C25",
@@ -304,7 +309,7 @@
       "selectionBackground": "#23263250",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#717CB430"
+      "selectionInactiveBackground": "#717CB416"
     },
     "material": {
       "background": "#0F111A",
@@ -767,10 +772,10 @@
       "hash": "#0F111A",
       "modifiedItemForeground": "#84ffff",
       "rowHeight": 28,
-      "selectionBackground": "#717CB430",
+      "selectionBackground": "#717CB416",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#717CB430",
+      "selectionInactiveBackground": "#717CB416",
       "textBackground": "#0F111A"
     },
     "Tree.leftChildIndent": 10,
@@ -787,7 +792,7 @@
       "Canvas.background": "#090B10",
       "highStroke.foreground": "#8F93A2",
       "Label.foreground": "#4B526D",
-      "List.selectionBackground": "#717CB430",
+      "List.selectionBackground": "#717CB416",
       "Panel.borderColor": "#0F111A",
       "Panel.background": "#0F111A",
       "percent.foreground": "#8F93A2",

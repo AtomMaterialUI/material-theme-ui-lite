@@ -3,6 +3,11 @@
   "dark": true,
   "author": "Mallowigi",
   "editorScheme": "/colors/Material Palenight.xml",
+  "emptyFrameBackground": {
+    "anchor": "center",
+    "image": "/walls/palenight.svg",
+    "fill": "scale"
+  },
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "#676E95",
@@ -201,7 +206,7 @@
       "hoverColor": "#444267",
       "hoverMaskColor": "#444267",
       "inactiveMaskColor": "#292D3E",
-      "inactiveColoredFileBackground": "#292D3E2",
+      "inactiveColoredFileBackground": "#34324a",
       "inactiveUnderlineColor": "#515772",
       "selectedForeground": "#A6ACCD",
       "selectedBackground": "#414863",
@@ -304,7 +309,7 @@
       "selectionBackground": "#3C435E50",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#676E9550"
+      "selectionInactiveBackground": "#676E9570"
     },
     "material": {
       "background": "#292D3E",
@@ -767,10 +772,10 @@
       "hash": "#2b2a3e",
       "modifiedItemForeground": "#ab47bc",
       "rowHeight": 28,
-      "selectionBackground": "#676E9550",
+      "selectionBackground": "#676E9570",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#676E9550",
+      "selectionInactiveBackground": "#676E9570",
       "textBackground": "#292D3E"
     },
     "Tree.leftChildIndent": 10,
@@ -787,7 +792,7 @@
       "Canvas.background": "#202331",
       "highStroke.foreground": "#A6ACCD",
       "Label.foreground": "#676E95",
-      "List.selectionBackground": "#676E9550",
+      "List.selectionBackground": "#676E9570",
       "Panel.borderColor": "#2b2a3e",
       "Panel.background": "#292D3E",
       "percent.foreground": "#A6ACCD",

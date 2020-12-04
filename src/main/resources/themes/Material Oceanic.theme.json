@@ -3,6 +3,11 @@
   "dark": true,
   "author": "Mallowigi",
   "editorScheme": "/colors/Material Oceanic.xml",
+  "emptyFrameBackground": {
+    "anchor": "center",
+    "image": "/walls/oceanic.svg",
+    "fill": "scale"
+  },
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "#607D8B",
@@ -201,7 +206,7 @@
       "hoverColor": "#425B67",
       "hoverMaskColor": "#425B67",
       "inactiveMaskColor": "#263238",
-      "inactiveColoredFileBackground": "#2632382",
+      "inactiveColoredFileBackground": "#32424A",
       "inactiveUnderlineColor": "#415967",
       "selectedForeground": "#B0BEC5",
       "selectedBackground": "#314549",
@@ -304,7 +309,7 @@
       "selectionBackground": "#546E7A50",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#546E7A50"
+      "selectionInactiveBackground": "#546E7A70"
     },
     "material": {
       "background": "#263238",
@@ -767,10 +772,10 @@
       "hash": "#2A373E",
       "modifiedItemForeground": "#009688",
       "rowHeight": 28,
-      "selectionBackground": "#546E7A50",
+      "selectionBackground": "#546E7A70",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#546E7A50",
+      "selectionInactiveBackground": "#546E7A70",
       "textBackground": "#263238"
     },
     "Tree.leftChildIndent": 10,
@@ -787,7 +792,7 @@
       "Canvas.background": "#1E272C",
       "highStroke.foreground": "#B0BEC5",
       "Label.foreground": "#607D8B",
-      "List.selectionBackground": "#546E7A50",
+      "List.selectionBackground": "#546E7A70",
       "Panel.borderColor": "#2A373E",
       "Panel.background": "#263238",
       "percent.foreground": "#B0BEC5",

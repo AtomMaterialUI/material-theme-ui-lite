@@ -3,6 +3,11 @@
   "dark": "@dark",
   "author": "Mallowigi",
   "editorScheme": "/colors/%scheme.xml",
+  "emptyFrameBackground": {
+    "anchor": "center",
+    "image": "/walls/%id.svg",
+    "fill": "scale"
+  },
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "%text",
