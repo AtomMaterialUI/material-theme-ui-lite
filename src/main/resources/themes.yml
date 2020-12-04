@@ -544,18 +544,18 @@ other:
     name: Moonlight
     name2: Moonlight
     className: moonlight
-    desc: Dark Blue theme with bubblegum colors
+    desc: Night Sky Theme with vibrant colors
     dark: true
     scheme: Moonlight
     background: "#222436"
     foreground: "#c8d3f5"
-    text: "#bcc4d6"
+    text: "#a9b8e8"
     selectBg: "#444a73"
     selectFg: "#FFFFFF"
     selectFg2: "#FFFFFF"
     button: "#2f334d"
     second: "#2f334d"
-    disabled: "#828bb8"
+    disabled: "#828bb8"`
     contrast: "#191a2a"
     table: "#444a73"
     border: "#222436"
@@ -566,12 +566,12 @@ other:
     excluded: "#2f334d"
     comments: "#7a88cf"
     vars: "#b4c2f0"
-    links: "#ff757f"
-    functions: "#65bcff"
+    links: "#65bcff"
+    functions: "#82aaff"
     keywords: "#c099ff"
     tags: "#ff757f"
     strings: "#c3e88d"
     operators: "#86e1fc"
-    attributes: "#ffc777"
+    attributes: "#c099ff"
     numbers: "#ff966c"
-    parameters: "#4fd6be"
+    parameters: "#fca7ea"
