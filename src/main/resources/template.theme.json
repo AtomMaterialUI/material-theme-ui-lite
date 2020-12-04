@@ -100,8 +100,9 @@
     "CodeWithMe": {
       "Avatar.foreground": "%fg",
       "AccessEnabled": {
-        "pillBackground": "$second",
-        "dropdownBorder": "%second"
+        "accessDot": "%accent",
+        "dropdownBorder": "%second",
+        "pillBackground": "$second"
       }
     },
     "ColorChooser": {
@@ -119,6 +120,7 @@
       },
       "background": "%hc",
       "buttonBackground": "%button",
+      "darcula.hoveredArrowButtonForeground": "%accent",
       "disabledForeground": "%dis",
       "foreground": "%fg",
       "modifiedItemForeground": "%accent",
@@ -185,7 +187,7 @@
       "hoverMaskColor": "%hl",
       "inactiveColoredTabBackground": "%bg",
       "inactiveColoredFileBackground": "%button",
-      "inactiveUnderlineColor": "%dis",
+      "inactiveUnderlineColor": "%accent",
       "inactiveMaskColor": "%hc",
       "underlineColor": "%accent",
       "underlinedTabBackground": "%table",
@@ -466,7 +468,7 @@
         "installFocusedBackground": "%hl",
         "installFillForeground": "%dis",
         "installFillBackground": "%button",
-        "updateBackground": "%button",
+        "updateBackground": "%accent",
         "updateBorderColor": "%button",
         "updateForeground": "%fg"
       },
