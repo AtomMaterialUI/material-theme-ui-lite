@@ -6,7 +6,8 @@
   "emptyFrameBackground": {
     "anchor": "center",
     "image": "/walls/deepocean.svg",
-    "fill": "scale"
+    "fill": "scale",
+    "transparency": 50
   },
   "ui": {
     "*": {

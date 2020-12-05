@@ -588,7 +588,7 @@
         </option>
         <option name="DEFAULT_FUNCTION_CALL">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
             </value>
         </option>
         <option name="DEFAULT_FUNCTION_DECLARATION">
@@ -613,7 +613,7 @@
         </option>
         <option name="DEFAULT_INSTANCE_METHOD">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
             </value>
         </option>
         <option name="DEFAULT_INTERFACE_NAME">
@@ -889,7 +889,7 @@
         </option>
         <option name="GO_BUILTIN_FUNCTION_CALL">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -912,7 +912,7 @@
         </option>
         <option name="GO_EXPORTED_FUNCTION_CALL">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
             </value>
         </option>
         <option name="GO_FUNCTION_PARAMETER">
@@ -944,7 +944,7 @@
         </option>
         <option name="GO_LOCAL_FUNCTION_CALL">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
             </value>
         </option>
         <option name="GO_METHOD_RECEIVER">
@@ -1325,7 +1325,7 @@
         </option>
         <option name="JS.INSTANCE_MEMBER_FUNCTION">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
             </value>
         </option>
         <option name="JS.INSTANCE_MEMBER_VARIABLE">
@@ -1335,7 +1335,7 @@
         </option>
         <option name="JS.LOCAL_VARIABLE">
             <value>
-                <option name="FOREGROUND" value="ff98a4"/>
+                <option name="FOREGROUND" value="c8d3f5"/>
             </value>
         </option>
         <option name="JS.MODULE_KEYWORD">
@@ -1420,7 +1420,7 @@
         </option>
         <option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -1457,7 +1457,7 @@
         </option>
         <option name="KOTLIN_PACKAGE_FUNCTION_CALL">
             <value>
-                <option name="FOREGROUND" value="86e1fc"/>
+                <option name="FOREGROUND" value="65bcff"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -2933,7 +2933,7 @@
         </option>
         <option name="PHP_FUNCTION_CALL">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
             </value>
         </option>
         <option name="PHP_INSTANCE_FIELD">
@@ -2943,7 +2943,7 @@
         </option>
         <option name="PHP_INSTANCE_METHOD">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="65bcff"/>
             </value>
         </option>
         <option name="PHP_INTERFACE">
