@@ -37,6 +37,7 @@
         <themeProvider id="GitHub" path="/themes/GitHub.theme.json"/>
         <themeProvider id="Night Owl" path="/themes/Night Owl.theme.json"/>
         <themeProvider id="Light Owl" path="/themes/Light Owl.theme.json"/>
+        <themeProvider id="Moonlight" path="/themes/Moonlight.theme.json"/>
 
         <themeProvider id="Material Oceanic Contrast"
                        path="/themes/Material Oceanic Contrast.theme.json"/>
@@ -62,6 +63,8 @@
                        path="/themes/Night Owl Contrast.theme.json"/>
         <themeProvider id="Light Owl Contrast"
                        path="/themes/Light Owl Contrast.theme.json"/>
+        <themeProvider id="Moonlight Contrast"
+                       path="/themes/Moonlight Contrast.theme.json"/>
     </extensions>
 
     <actions>
@@ -128,6 +131,10 @@
                     text="Light Owl Theme" description="Light owl theme"
                     icon="/icons/actions/themes/light_owl.svg">
             </action>
+            <action id="MTMoonlightTheme" class="com.mallowigi.idea.themes.MTMoonlightThemeAction"
+                    text="Moonlight Theme" description="Moonlight theme"
+                    icon="/icons/actions/themes/moonlight.svg">
+            </action>
         </group>
         <group id="MaterialLiteTheme.ContrastThemeChooser" text="Contrasted Themes" popup="true"
                icon="/icons/actions/mt/contrast.svg">
@@ -191,6 +198,10 @@
             <action id="MTLightOwlThemeContrast" class="com.mallowigi.idea.themes.MTLightOwlThemeAction"
                     text="Light Owl Theme Contrast" description="Light owl theme contrast"
                     icon="/icons/actions/themes/light_owl.svg">
+            </action>
+            <action id="MTMoonlightThemeContrast" class="com.mallowigi.idea.themes.MTMoonlightThemeAction"
+                    text="Moonlight Theme Contrast" description="Moonlight theme contrast"
+                    icon="/icons/actions/themes/moonlight.svg">
             </action>
         </group>
 

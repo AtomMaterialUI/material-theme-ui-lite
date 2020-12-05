@@ -1,5 +1,5 @@
 {
-  "name": "Material Solarized Dark Contrast",
+  "name": "Solarized Dark Contrast",
   "dark": true,
   "author": "Mallowigi",
   "editorScheme": "/colors/Solarized Dark.xml",
@@ -603,7 +603,9 @@
     },
     "SearchMatch": {
       "endBackground": "#d33682",
-      "startBackground": "#d33682"
+      "startBackground": "#d33682",
+      "endColor": "#d33682",
+      "startColor": "#d33682"
     },
     "SearchField.errorBackground": "#2E4C52",
     "SearchOption": {

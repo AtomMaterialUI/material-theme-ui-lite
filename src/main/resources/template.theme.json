@@ -603,7 +603,9 @@
     },
     "SearchMatch": {
       "endBackground": "%accent",
-      "startBackground": "%accent"
+      "startBackground": "%accent",
+      "endColor": "%accent",
+      "startColor": "%accent"
     },
     "SearchField.errorBackground": "%notif",
     "SearchOption": {

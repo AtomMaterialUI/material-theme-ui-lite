@@ -362,7 +362,7 @@ other:
 
   - solardark:
     name: Solarized Dark
-    name2: Material Solarized Dark Contrast
+    name2: Solarized Dark Contrast
     className: solardark
     desc: Solarized Dark Theme
     dark: true
@@ -398,7 +398,7 @@ other:
 
   - solarlight:
     name: Solarized Light
-    name2: Material Solarized Light Contrast
+    name2: Solarized Light Contrast
     className: solarlight
     desc: Solarized Light Theme
     dark: false
@@ -542,7 +542,7 @@ other:
 
   - moonlight:
     name: Moonlight
-    name2: Moonlight
+    name2: Moonlight Contrast
     className: moonlight
     desc: Night Sky Theme with vibrant colors
     dark: true

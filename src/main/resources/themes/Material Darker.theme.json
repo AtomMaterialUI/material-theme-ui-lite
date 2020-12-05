@@ -603,7 +603,9 @@
     },
     "SearchMatch": {
       "endBackground": "#FF9800",
-      "startBackground": "#FF9800"
+      "startBackground": "#FF9800",
+      "endColor": "#FF9800",
+      "startColor": "#FF9800"
     },
     "SearchField.errorBackground": "#1A1A1A",
     "SearchOption": {

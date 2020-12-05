@@ -48,7 +48,9 @@ public enum MTThemes {
   DRACULA("DRACULA", ThemesBundle.message("dracula.name")),
   NIGHT_OWL("NIGHT_OWL", ThemesBundle.message("night_owl.name")),
   LIGHT_OWL("LIGHT_OWL", ThemesBundle.message("light_owl.name")),
-  GITHUB("GITHUB", ThemesBundle.message("github.name"));
+  GITHUB("GITHUB", ThemesBundle.message("github.name")),
+  MOONLIGHT("MOONLIGHT", ThemesBundle.message("moonlight.name"));
+
 
   private final String id;
   private final transient String name;
