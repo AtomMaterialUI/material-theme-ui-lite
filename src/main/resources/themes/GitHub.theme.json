@@ -1,8 +1,8 @@
 {
   "name": "GitHub",
-  "dark": undefined,
+  "dark": false,
   "author": "Mallowigi",
-  "editorScheme": "/colors/GitHub (Material).xml",
+  "editorScheme": "/colors/GitHub.xml",
   "emptyFrameBackground": {
     "anchor": "center",
     "image": "/walls/github.svg",

@@ -1,9 +1,11 @@
 material:
   - oceanic:
-    name: Oceanic
+    name: Material Oceanic
+    name2: Material Oceanic Contrast
     className: oceanic
     desc: An oceanic blue flat theme
-    light: false
+    dark: true
+    scheme: Material Oceanic
     background: '#263238'
     foreground: '#B0BEC5'
     text: '#607D8B'
@@ -44,10 +46,12 @@ material:
     parameters: '#f78c6c'
 
   - darker:
-    name: Darker
+    name: Material Darker
+    name2: Material Darker Contrast
     className: darker
     desc: A pitch-black flat theme
-    light: false
+    dark: true
+    scheme: Material Darker
     background: '#212121'
     foreground: '#B0BEC5'
     text: '#727272'
@@ -88,10 +92,12 @@ material:
     parameters: '#f78c6c'
 
   - lighter:
-    name: Lighter
+    name: Material Lighter
+    name2: Material Lighter Contrast
     className: lighter
     desc: A bright light flat theme
-    light: true
+    dark: false
+    scheme: Material Lighter
     background: '#FAFAFA'
     foreground: '#546E7A'
     text: '#94A7B0'
@@ -132,10 +138,12 @@ material:
     parameters: '#F76D47'
 
   - palenight:
-    name: Palenight
+    name: Material Palenight
+    name2: Material Palenight Contrast
     className: palenight
     desc: A purplish flat theme
-    light: false
+    dark: true
+    scheme: Material Palenight
     background: '#292D3E'
     foreground: '#A6ACCD'
     text: '#676E95'
@@ -176,10 +184,12 @@ material:
     parameters: '#f78c6c'
 
   - deepocean:
-    name: Deep Ocean
+    name: Material Deep Ocean
+    name2: Material Deep Ocean Contrast
     className: deepocean
     desc: A deep sea black flat theme
-    light: false
+    dark: true
+    scheme: Material Deep Ocean
     background: '#0F111A'
     foreground: '#8F93A2'
     text: '#4B526D'
@@ -222,9 +232,11 @@ material:
 other:
   - monokai:
     name: Monokai Pro
+    name2: Monokai Pro Contrast
     className: monokai
     desc: Theme based on the Monokai Pro Theme
-    light: false
+    dark: true
+    scheme: Monokai Pro
     background: '#2D2A2E'
     foreground: '#fcfcfa'
     text: '#939293'
@@ -266,9 +278,11 @@ other:
 
   - dracula:
     name: Dracula
+    name2: Dracula Contrast
     className: dracula
     desc: Theme based on the Dracula Theme
-    light: false
+    dark: true
+    scheme: Dracula
     background: '#282A36'
     foreground: '#F8F8F2'
     text: '#6272A4'
@@ -310,10 +324,11 @@ other:
 
   - github:
     name: GitHub
+    name2: GitHub Contrast
     className: github
     desc: Theme based on the GitHub UI
-    light: true
-    scheme: GitHub (Material)
+    dark: false
+    scheme: GitHub
     background: '#F7F8FA'
     foreground: '#5B6168'
     text: '#292D31'
@@ -356,10 +371,11 @@ other:
 
   - github_dark:
     name: GitHub Dark
+    name2: GitHub Dark Contrast
     className: github_dark
     desc: Theme based on the GitHub Dark UI
-    light: false
-    scheme: GitHub Dark (Material)
+    dark: true
+    scheme: GitHub Dark
     background: '#24292e'
     foreground: '#e1e4e8'
     text: '#959da5'
@@ -402,9 +418,11 @@ other:
 
   - arcdark:
     name: Arc Dark
+    name2: Arc Dark Contrast
     className: arcdark
     desc: Theme based on the Arc Dark GTK Theme
-    light: false
+    dark: true
+    scheme: Arc Dark
     background: '#2f343f'
     foreground: '#D3DAE3'
     text: '#8b9eb5'
@@ -445,10 +463,12 @@ other:
     parameters: '#CDA869'
 
   - onedark:
-    name: One Dark
+    name: Atom One Dark
+    name2: Atom One Dark Contrast
     className: onedark
     desc: Theme based on the Atom One Dark theme
-    light: false
+    dark: true
+    scheme: Atom One Dark
     background: '#282C34'
     foreground: '#979FAD'
     text: '#979FAD'
@@ -489,10 +509,12 @@ other:
     parameters: '#ABB2BF'
 
   - onelight:
-    name: One Light
+    name: Atom One Light
+    name2: Atom One Light
     className: onelight
     desc: Theme based on the Atom One Light theme
-    light: true
+    dark: false
+    scheme: Atom One Light
     background: '#F4F4F4'
     foreground: '#232324'
     text: '#7f7f7f'
@@ -534,9 +556,11 @@ other:
 
   - solardark:
     name: Solarized Dark
+    name2: Solarized Dark Contrast
     className: solardark
     desc: Solarized Dark Theme
-    light: false
+    dark: true
+    scheme: Solarized Dark
     background: '#002B36'
     foreground: '#839496'
     text: '#586e75'
@@ -578,9 +602,11 @@ other:
 
   - solarlight:
     name: Solarized Light
+    name2: Solarized Light Contrast
     className: solarlight
     desc: Solarized Light Theme
-    light: true
+    dark: false
+    scheme: Solarized Light
     background: '#fdf6e3'
     foreground: '#586e75'
     text: '#93a1a1'
@@ -622,9 +648,11 @@ other:
 
   - nightowl:
     name: Night Owl
+    name2: Night Owl Contrast
     className: nightowl
     desc: Theme based on Night Owl by Sarah Drasner
-    light: false
+    dark: true
+    scheme: Night Owl
     background: '#011627'
     foreground: '#d6deeb'
     text: '#5f7e97'
@@ -666,9 +694,11 @@ other:
 
   - lightowl:
     name: Light Owl
+    name2: Light Owl Contrast
     className: lightowl
     desc: Theme based on Light Owl by Sarah Drasner
-    light: true
+    dark: false
+    scheme: Light Owl
     background: '#F0F0F0'
     foreground: '#403f53'
     text: '#90A7B2'
@@ -710,9 +740,11 @@ other:
 
   - moonlight:
     name: Moonlight
+    name2: Moonlight Contrast
     className: moonlight
     desc: Theme based on the Moonlight Theme by Atomiks
-    light: false
+    dark: true
+    scheme: Moonlight
     background: '#222436'
     foreground: '#c8d3f5'
     text: '#a9b8e8'

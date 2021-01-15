@@ -1,8 +1,8 @@
 {
-  "name": "undefined",
-  "dark": undefined,
+  "name": "Light Owl Contrast",
+  "dark": false,
   "author": "Mallowigi",
-  "editorScheme": "/colors/undefined.xml",
+  "editorScheme": "/colors/Light Owl.xml",
   "emptyFrameBackground": {
     "anchor": "center",
     "image": "/walls/lightowl.svg",

@@ -1,8 +1,8 @@
 {
-  "name": "undefined",
-  "dark": undefined,
+  "name": "Solarized Dark Contrast",
+  "dark": true,
   "author": "Mallowigi",
-  "editorScheme": "/colors/undefined.xml",
+  "editorScheme": "/colors/Solarized Dark.xml",
   "emptyFrameBackground": {
     "anchor": "center",
     "image": "/walls/solardark.svg",

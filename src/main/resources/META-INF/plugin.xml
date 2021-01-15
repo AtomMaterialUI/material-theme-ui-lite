@@ -198,6 +198,10 @@
                     text="GitHub Theme Contrast" description="GitHub theme contrast"
                     icon="/icons/actions/themes/github.svg">
             </action>
+            <action id="MTGitHubDarkThemeContrast" class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"
+                    text="GitHub Dark Theme Contrast" description="GitHub dark theme contrast"
+                    icon="/icons/actions/themes/githubdark.svg">
+            </action>
             <action id="MTDraculaThemeContrast" class="com.mallowigi.idea.themes.MTDraculaThemeAction"
                     text="Dracula Theme Contrast" description="Dracula theme contrast"
                     icon="/icons/actions/themes/dracula.svg">

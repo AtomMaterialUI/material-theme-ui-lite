@@ -1,8 +1,8 @@
 {
   "name": "Dracula",
-  "dark": undefined,
+  "dark": true,
   "author": "Mallowigi",
-  "editorScheme": "/colors/undefined.xml",
+  "editorScheme": "/colors/Dracula.xml",
   "emptyFrameBackground": {
     "anchor": "center",
     "image": "/walls/dracula.svg",
