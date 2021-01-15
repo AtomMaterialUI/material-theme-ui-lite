@@ -59,6 +59,7 @@
         <themeProvider id="Solarized Dark" path="/themes/Solarized Dark.theme.json"/>
         <themeProvider id="Solarized Light" path="/themes/Solarized Light.theme.json"/>
         <themeProvider id="GitHub" path="/themes/GitHub.theme.json"/>
+        <themeProvider id="GitHub Dark" path="/themes/GitHub Dark.theme.json"/>
         <themeProvider id="Night Owl" path="/themes/Night Owl.theme.json"/>
         <themeProvider id="Light Owl" path="/themes/Light Owl.theme.json"/>
         <themeProvider id="Moonlight" path="/themes/Moonlight.theme.json"/>
@@ -83,6 +84,8 @@
                        path="/themes/Solarized Light Contrast.theme.json"/>
         <themeProvider id="GitHub Contrast"
                        path="/themes/GitHub Contrast.theme.json"/>
+        <themeProvider id="GitHub Dark Contrast"
+                       path="/themes/GitHub Dark Contrast.theme.json"/>
         <themeProvider id="Night Owl Contrast"
                        path="/themes/Night Owl Contrast.theme.json"/>
         <themeProvider id="Light Owl Contrast"
@@ -122,6 +125,10 @@
             <action id="MTGitHubTheme" class="com.mallowigi.idea.themes.MTGithubThemeAction"
                     text="GitHub Theme" description="GitHub theme"
                     icon="/icons/actions/themes/github.svg">
+            </action>
+            <action id="MTGitHubDarkTheme" class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"
+                    text="GitHub Dark Theme" description="GitHub Dark theme"
+                    icon="/icons/actions/themes/githubdark.svg">
             </action>
             <action id="MTDraculaTheme" class="com.mallowigi.idea.themes.MTDraculaThemeAction"
                     text="Dracula Theme" description="Dracula theme"

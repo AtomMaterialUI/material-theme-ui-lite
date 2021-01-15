@@ -1,7 +1,7 @@
 <!--
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2020 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2015-2020 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,8 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
+  ~
+  ~
   -->
 
 <scheme name="Material Oceanic" version="142" parent_scheme="Darcula">
@@ -50,22 +52,31 @@
         <option name="EDITOR_FONT_SIZE" value="12"/>
     </console-font>
     <colors>
-        <option name="ADDED_LINES_COLOR" value="c3e88d"/>
-        <option name="ANNOTATIONS_COLOR" value="fffbf7"/>
-        <option name="CARET_COLOR" value="ffcc00"/>
-        <option name="CARET_ROW_COLOR" value="1b2529"/>
-        <option name="CONSOLE_BACKGROUND_KEY" value="263238"/>
-        <option name="DELETED_LINES_COLOR" value="f07178"/>
-        <option name="DIFF_SEPARATORS_BACKGROUND" value="1e2a30"/>
-        <option name="DIFF_SEPARATORS_TOP_BORDER" value="1b262b"/>
-        <option name="DOCUMENTATION_COLOR" value="263238"/>
-        <option name="DOC_COMMENT_GUIDE" value="475f63"/>
-        <option name="DOC_COMMENT_LINK" value="89ddf7"/>
-        <option name="FILESTATUS_ADDED" value="c3e88d"/>
-        <option name="FILESTATUS_COPIED" value="c3e88d"/>
-        <option name="FILESTATUS_DELETED" value="808080"/>
-        <option name="FILESTATUS_HIJACKED" value="ffcb6b"/>
-        <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="808080"/>
+        <option name="ADDED_LINES_COLOR" value="c3e88d" />
+        <option name="ANNOTATIONS_COLOR" value="fffbf7" />
+        <option name="CARET_COLOR" value="ffcc00" />
+        <option name="CARET_ROW_COLOR" value="1b2529" />
+        <option name="CONSOLE_BACKGROUND_KEY" value="263238" />
+        <option name="DELETED_LINES_COLOR" value="f07178" />
+        <option name="DIAGRAM_ANNOTATION_EDGE" value="c792ea" />
+        <option name="DIAGRAM_DEFAULT_EDGE" value="c3cee3" />
+        <option name="DIAGRAM_GENERALIZATION_EDGE" value="ffcb6b" />
+        <option name="DIAGRAM_INNER_EDGE" value="82aaff" />
+        <option name="DIAGRAM_NODE_BACKGROUND" value="263238" />
+        <option name="DIAGRAM_NODE_HEADER" value="546e7a" />
+        <option name="DIAGRAM_NOTE_BACKGROUND" value="263238" />
+        <option name="DIAGRAM_NOTE_BORDER" value="c3cee3" />
+        <option name="DIAGRAM_REALIZATION_EDGE" value="f07178" />
+        <option name="DIFF_SEPARATORS_BACKGROUND" value="1e2a30" />
+        <option name="DIFF_SEPARATORS_TOP_BORDER" value="1b262b" />
+        <option name="DOCUMENTATION_COLOR" value="263238" />
+        <option name="DOC_COMMENT_GUIDE" value="475f63" />
+        <option name="DOC_COMMENT_LINK" value="89ddf7" />
+        <option name="FILESTATUS_ADDED" value="c3e88d" />
+        <option name="FILESTATUS_COPIED" value="c3e88d" />
+        <option name="FILESTATUS_DELETED" value="808080" />
+        <option name="FILESTATUS_HIJACKED" value="ffcb6b" />
+        <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="808080" />
         <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="ab7967"/>
         <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="c3e88d"/>
         <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="ab7967"/>
@@ -77,7 +88,7 @@
         <option name="FILESTATUS_SWITCHED" value="c792ea"/>
         <option name="FILESTATUS_UNKNOWN" value="f77669"/>
         <option name="FILESTATUS_addedOutside" value="c3e88d"/>
-        <option name="FILESTATUS_modifiedOutside" value="82aaff"/>
+        <option name="FILESTATUS_modifiedOutside" value="c792ea"/>
         <option name="GUTTER_BACKGROUND" value="263238"/>
         <option name="INDENT_GUIDE" value="37474f"/>
         <option name="INFORMATION_HINT" value="263238"/>
@@ -89,8 +100,8 @@
         <option name="MT_SUPPRESSED" value="eeffff"/>
         <option name="NOTIFICATION_BACKGROUND" value="3d1a11"/>
         <option name="NOT_CHANGED" value="607d8b"/>
-        <option name="QUESTION_HINT" value="263238"/>
         <option name="PROMOTION_PANE" value="1b2529"/>
+        <option name="QUESTION_HINT" value="263238"/>
         <option name="RECENT_LOCATIONS_SELECTION" value="1b2529"/>
         <option name="RIGHT_MARGIN_COLOR" value="37474f"/>
         <option name="SELECTED_INDENT_GUIDE" value="9688"/>
@@ -127,8 +138,6 @@
         <option name="VISUAL_INDENT_GUIDE" value="37474f"/>
         <option name="WHITESPACES" value="65737e"/>
         <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="546e7a"/>
-
-
     </colors>
     <attributes>
         <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
@@ -598,23 +607,30 @@
         </option>
         <option name="DEFAULT_LABEL">
             <value>
-                <option name="FOREGROUND" value="c3d3de"/>
+                <option name="FOREGROUND" value="c3d3de" />
             </value>
         </option>
         <option name="DEFAULT_LINE_COMMENT">
             <value>
-                <option name="FOREGROUND" value="546e7a"/>
-                <option name="FONT_TYPE" value="2"/>
+                <option name="FOREGROUND" value="546e7a" />
+                <option name="FONT_TYPE" value="2" />
             </value>
         </option>
+        <option name="LIVE_TEMPLATE_INACTIVE_SEGMENT">
+            <value>
+                <option name="FOREGROUND" value="546e7a" />
+                <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+
         <option name="DEFAULT_LOCAL_VARIABLE">
             <value>
-                <option name="FOREGROUND" value="eeffe3"/>
+                <option name="FOREGROUND" value="eeffe3" />
             </value>
         </option>
         <option name="DEFAULT_METADATA">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="82aaff" />
             </value>
         </option>
         <option name="DEFAULT_NUMBER">
@@ -2791,22 +2807,27 @@
         </option>
         <option name="NG.EXPANSION_FORM">
             <value>
-                <option name="EFFECT_TYPE" value="5"/>
+                <option name="EFFECT_TYPE" value="5" />
             </value>
         </option>
         <option name="NG.EXPRESSIONS">
             <value>
-                <option name="EFFECT_TYPE" value="5"/>
+                <option name="EFFECT_TYPE" value="5" />
             </value>
         </option>
         <option name="NOT_TOP_FRAME_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="415967"/>
+                <option name="BACKGROUND" value="415967" />
+            </value>
+        </option>
+        <option name="REGEXP_MATCHED_GROUPS">
+            <value>
+                <option name="BACKGROUND" value="415967" />
             </value>
         </option>
         <option name="NOT_USED_ELEMENT_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="546e7a"/>
+                <option name="FOREGROUND" value="546e7a" />
             </value>
         </option>
         <option name="OC.BLOCK_COMMENT">
@@ -3333,7 +3354,11 @@
             </value>
         </option>
         <option name="RUNTIME_ERROR">
-            <value/>
+            <value>
+                <option name="EFFECT_COLOR" value="ff5370" />
+                <option name="ERROR_STRIPE_COLOR" value="ff5370" />
+                <option name="EFFECT_TYPE" value="2" />
+            </value>
         </option>
         <option name="ReSharper.ASP_NET_ATTRIBUTE_NAME">
             <value>
@@ -3786,7 +3811,7 @@
         </option>
         <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="4a4d5080"/>
+                <option name="BACKGROUND" value="4a4d5020"/>
                 <option name="ERROR_STRIPE_COLOR" value="4d6168"/>
             </value>
         </option>

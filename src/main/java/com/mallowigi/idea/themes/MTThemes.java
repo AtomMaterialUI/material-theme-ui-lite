@@ -44,9 +44,10 @@ public enum MTThemes {
   SOLARIZED_DARK("SOLARIZED_DARK", ThemesBundle.message("solarized.dark.name")),
   SOLARIZED_LIGHT("SOLARIZED_LIGHT", ThemesBundle.message("solarized.light.name")),
   DRACULA("DRACULA", ThemesBundle.message("dracula.name")),
-  NIGHT_OWL("NIGHT_OWL", ThemesBundle.message("night_owl.name")),
-  LIGHT_OWL("LIGHT_OWL", ThemesBundle.message("light_owl.name")),
+  NIGHT_OWL("NIGHT_OWL", ThemesBundle.message("nightowl.name")),
+  LIGHT_OWL("LIGHT_OWL", ThemesBundle.message("lightowl.name")),
   GITHUB("GITHUB", ThemesBundle.message("github.name")),
+  GITHUB_DARK("GITHUB_DARK", ThemesBundle.message("github_dark.name")),
   MOONLIGHT("MOONLIGHT", ThemesBundle.message("moonlight.name"));
 
 

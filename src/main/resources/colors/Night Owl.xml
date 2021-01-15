@@ -1,7 +1,7 @@
 <!--
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2020 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2015-2021 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,8 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
+  ~
+  ~
   -->
 
 <scheme name="Night Owl (Material)" version="142" parent_scheme="Darcula">
@@ -52,22 +54,31 @@
     </console-font>
     <option name="CONSOLE_LIGATURES" value="true"/>
     <colors>
-        <option name="ADDED_LINES_COLOR" value="9ccc65"/>
-        <option name="ANNOTATIONS_COLOR" value="fffbf7"/>
-        <option name="CARET_COLOR" value="7e57c2"/>
-        <option name="CARET_ROW_COLOR" value="232235"/>
-        <option name="CONSOLE_BACKGROUND_KEY" value="11627"/>
-        <option name="DELETED_LINES_COLOR" value="ef5350"/>
-        <option name="DIFF_SEPARATORS_BACKGROUND" value="1e2a30"/>
-        <option name="DIFF_SEPARATORS_TOP_BORDER" value="1b262b"/>
-        <option name="DOCUMENTATION_COLOR" value="11627"/>
-        <option name="DOC_COMMENT_GUIDE" value="4b6479"/>
-        <option name="DOC_COMMENT_LINK" value="ecc48d"/>
-        <option name="FILESTATUS_ADDED" value="9ccc65"/>
-        <option name="FILESTATUS_COPIED" value="9ccc65"/>
-        <option name="FILESTATUS_DELETED" value="ef5350"/>
-        <option name="FILESTATUS_HIJACKED" value="7e57c2"/>
-        <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="ef5350"/>
+        <option name="ADDED_LINES_COLOR" value="9ccc65" />
+        <option name="ANNOTATIONS_COLOR" value="fffbf7" />
+        <option name="CARET_COLOR" value="7e57c2" />
+        <option name="CARET_ROW_COLOR" value="232235" />
+        <option name="CONSOLE_BACKGROUND_KEY" value="11627" />
+        <option name="DELETED_LINES_COLOR" value="ef5350" />
+        <option name="DIAGRAM_ANNOTATION_EDGE" value="c792ea" />
+        <option name="DIAGRAM_DEFAULT_EDGE" value="d6deeb" />
+        <option name="DIAGRAM_GENERALIZATION_EDGE" value="addb67" />
+        <option name="DIAGRAM_INNER_EDGE" value="82aaff" />
+        <option name="DIAGRAM_NODE_BACKGROUND" value="11627" />
+        <option name="DIAGRAM_NODE_HEADER" value="32374d" />
+        <option name="DIAGRAM_NOTE_BACKGROUND" value="11627" />
+        <option name="DIAGRAM_NOTE_BORDER" value="d6deeb" />
+        <option name="DIAGRAM_REALIZATION_EDGE" value="f78c6c" />
+        <option name="DIFF_SEPARATORS_BACKGROUND" value="1e2a30" />
+        <option name="DIFF_SEPARATORS_TOP_BORDER" value="1b262b" />
+        <option name="DOCUMENTATION_COLOR" value="11627" />
+        <option name="DOC_COMMENT_GUIDE" value="4b6479" />
+        <option name="DOC_COMMENT_LINK" value="ecc48d" />
+        <option name="FILESTATUS_ADDED" value="9ccc65" />
+        <option name="FILESTATUS_COPIED" value="9ccc65" />
+        <option name="FILESTATUS_DELETED" value="ef5350" />
+        <option name="FILESTATUS_HIJACKED" value="7e57c2" />
+        <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="ef5350" />
         <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="395a75"/>
         <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="ffeb95"/>
         <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="ffeb95"/>
@@ -82,7 +93,7 @@
         <option name="FILESTATUS_UNKNOWN" value="addb67"/>
         <option name="FILESTATUS_addedOutside" value="addb67"/>
         <option name="FILESTATUS_changelistConflict" value="ffeb95"/>
-        <option name="FILESTATUS_modifiedOutside" value="e2b93d"/>
+        <option name="FILESTATUS_modifiedOutside" value="a2bffc"/>
         <option name="FOLDED_TEXT_BORDER_COLOR" value="122d42"/>
         <option name="GUTTER_BACKGROUND" value="11627"/>
         <option name="INDENT_GUIDE" value="84d81"/>
@@ -100,8 +111,8 @@
         <option name="MT_SUPPRESSED" value="d6deeb"/>
         <option name="NOTIFICATION_BACKGROUND" value="1111d"/>
         <option name="NOT_CHANGED" value="d6deeb"/>
-        <option name="QUESTION_HINT" value="11627"/>
         <option name="PROMOTION_PANE" value="1d3b53"/>
+        <option name="QUESTION_HINT" value="11627"/>
         <option name="RECENT_LOCATIONS_SELECTION" value="1d3b53"/>
         <option name="RIGHT_MARGIN_COLOR" value="84d81"/>
         <option name="SELECTED_INDENT_GUIDE" value="7e97ac"/>
@@ -112,28 +123,20 @@
         <option name="SOFT_WRAP_SIGN_COLOR" value="122d42"/>
         <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="7e57c2c0"/>
         <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="11627"/>
-
         <option name="ScrollBar.Mac.Transparent.thumbColor" value="7e57c280"/>
         <option name="ScrollBar.Mac.Transparent.trackColor" value="11627"/>
-
         <option name="ScrollBar.Mac.hoverThumbColor" value="7e57c2"/>
         <option name="ScrollBar.Mac.hoverTrackColor" value="11627"/>
-
         <option name="ScrollBar.Mac.thumbColor" value="7e57c2c0"/>
         <option name="ScrollBar.Mac.trackColor" value="11627"/>
-
         <option name="ScrollBar.Transparent.hoverThumbColor" value="7e57c2c0"/>
         <option name="ScrollBar.Transparent.hoverTrackColor" value="11627"/>
-
         <option name="ScrollBar.Transparent.thumbColor" value="7e57c280"/>
         <option name="ScrollBar.Transparent.trackColor" value="11627"/>
-
         <option name="ScrollBar.hoverThumbColor" value="7e57c2"/>
         <option name="ScrollBar.hoverTrackColor" value="11627"/>
-
         <option name="ScrollBar.thumbColor" value="7e57c2c0"/>
         <option name="ScrollBar.trackColor" value="11627"/>
-
         <option name="TAB_UNDERLINE" value="7e57c2"/>
         <option name="TAB_UNDERLINE_INACTIVE" value="7e57c2c0"/>
         <option name="TEARLINE_COLOR" value="444267"/>
@@ -146,8 +149,6 @@
         <option name="VISUAL_INDENT_GUIDE" value="84d81"/>
         <option name="WHITESPACES" value="84d81"/>
         <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="7e97ac"/>
-
-
     </colors>
     <attributes>
         <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
@@ -634,23 +635,30 @@
         </option>
         <option name="DEFAULT_LABEL">
             <value>
-                <option name="FOREGROUND" value="c3d3de"/>
+                <option name="FOREGROUND" value="c3d3de" />
             </value>
         </option>
         <option name="DEFAULT_LINE_COMMENT">
             <value>
-                <option name="FOREGROUND" value="637777"/>
-                <option name="FONT_TYPE" value="2"/>
+                <option name="FOREGROUND" value="637777" />
+                <option name="FONT_TYPE" value="2" />
             </value>
         </option>
+        <option name="LIVE_TEMPLATE_INACTIVE_SEGMENT">
+            <value>
+                <option name="FOREGROUND" value="637777" />
+                <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+
         <option name="DEFAULT_LOCAL_VARIABLE">
             <value>
-                <option name="FOREGROUND" value="addb67"/>
+                <option name="FOREGROUND" value="addb67" />
             </value>
         </option>
         <option name="DEFAULT_METADATA">
             <value>
-                <option name="FOREGROUND" value="82aaff"/>
+                <option name="FOREGROUND" value="82aaff" />
             </value>
         </option>
         <option name="DEFAULT_NUMBER">
@@ -2805,9 +2813,14 @@
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
-        <option name="NOT_TOP_FRAME_ATTRIBUTES">
+<option name="NOT_TOP_FRAME_ATTRIBUTES">
+    <value>
+        <option name="BACKGROUND" value="5f7e97" />
+    </value>
+</option>
+        <option name="REGEXP_MATCHED_GROUPS">
             <value>
-                <option name="BACKGROUND" value="5f7e97"/>
+                <option name="BACKGROUND" value="5f7e97" />
             </value>
         </option>
         <option name="NOT_USED_ELEMENT_ATTRIBUTES">
@@ -3289,7 +3302,9 @@
         </option>
         <option name="RUNTIME_ERROR">
             <value>
-                <option name="EFFECT_TYPE" value="2"/>
+                <option name="EFFECT_COLOR" value="ef5350" />
+                <option name="ERROR_STRIPE_COLOR" value="ef5350" />
+                <option name="EFFECT_TYPE" value="2" />
             </value>
         </option>
         <option name="ReSharper.ASP_NET_ATTRIBUTE_VALUE">
@@ -3741,7 +3756,7 @@
         </option>
         <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="4a4d5080"/>
+                <option name="BACKGROUND" value="4a4d5020"/>
                 <option name="ERROR_STRIPE_COLOR" value="4d6168"/>
             </value>
         </option>
