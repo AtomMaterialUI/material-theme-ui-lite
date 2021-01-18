@@ -141,8 +141,8 @@
       "selectedGrayedForeground": "#FFFFFF",
       "selectionGrayForeground": "#FFFFFF",
       "selectionInactiveInfoForeground": "#586e75",
-      "selectionInactiveBackground": "#2E4C5250",
-      "selectionBackground": "#2E4C5280",
+      "selectionInactiveBackground": "#2E4C52",
+      "selectionBackground": "#2E4C52",
       "selectionForeground": "#FFFFFF",
       "selectionInfoForeground": "#FFFFFF"
     },
@@ -327,7 +327,7 @@
       "foreground": "#839496",
       "hoverBackground": "#2E4C5280",
       "hoverInactiveBackground": "#003946",
-      "selectionBackground": "#2E4C5250",
+      "selectionBackground": "#2E4C52",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveForeground": "#FFFFFF",
       "selectionInactiveBackground": "#2E4C5280"

@@ -141,8 +141,8 @@
       "selectedGrayedForeground": "%selFg",
       "selectionGrayForeground": "%selFg",
       "selectionInactiveInfoForeground": "%text",
-      "selectionInactiveBackground": "%selBg50",
-      "selectionBackground": "%selBg80",
+      "selectionInactiveBackground": "%selBg",
+      "selectionBackground": "%selBg",
       "selectionForeground": "%selFg",
       "selectionInfoForeground": "%selFg"
     },
@@ -327,7 +327,7 @@
       "foreground": "%fg",
       "hoverBackground": "%tree",
       "hoverInactiveBackground": "%table",
-      "selectionBackground": "%selBg50",
+      "selectionBackground": "%selBg",
       "selectionForeground": "%selFg",
       "selectionInactiveForeground": "%activeFg",
       "selectionInactiveBackground": "%tree"
