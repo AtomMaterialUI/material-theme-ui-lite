@@ -2,13 +2,7 @@
   "name": "%name",
   "dark": "@dark",
   "author": "Mallowigi",
-  "editorScheme": "/colors/%scheme.xml",
-  "emptyFrameBackground": {
-    "anchor": "center",
-    "image": "walls/%id.svg",
-    "fill": "scale",
-    "transparency": 50
-  },
+  "editorScheme": "colors/%scheme.xml",
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "%text",
@@ -138,10 +132,11 @@
       "matchForeground": "%accent",
       "matchSelectionForeground": "%accent",
       "nonFocusedState": "false",
+      "selectedForeground": "%selFg",
       "selectedGrayedForeground": "%selFg",
       "selectionGrayForeground": "%selFg",
       "selectionInactiveInfoForeground": "%text",
-      "selectionInactiveBackground": "%selBg",
+      "selectionInactiveBackground": "%hl",
       "selectionBackground": "%selBg",
       "selectionForeground": "%selFg",
       "selectionInfoForeground": "%selFg"

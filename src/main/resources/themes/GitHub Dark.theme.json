@@ -2,13 +2,7 @@
   "name": "GitHub Dark",
   "dark": true,
   "author": "Mallowigi",
-  "editorScheme": "/colors/GitHub Dark.xml",
-  "emptyFrameBackground": {
-    "anchor": "center",
-    "image": "walls/github_dark.svg",
-    "fill": "scale",
-    "transparency": 50
-  },
+  "editorScheme": "colors/GitHub Dark.xml",
   "ui": {
     "*": {
       "acceleratorSelectionForeground": "#959da5",
@@ -138,10 +132,11 @@
       "matchForeground": "#f9826c",
       "matchSelectionForeground": "#f9826c",
       "nonFocusedState": "false",
+      "selectedForeground": "#FFFFFF",
       "selectedGrayedForeground": "#FFFFFF",
       "selectionGrayForeground": "#FFFFFF",
       "selectionInactiveInfoForeground": "#959da5",
-      "selectionInactiveBackground": "#3392FF44",
+      "selectionInactiveBackground": "#444d56",
       "selectionBackground": "#3392FF44",
       "selectionForeground": "#FFFFFF",
       "selectionInfoForeground": "#FFFFFF"
