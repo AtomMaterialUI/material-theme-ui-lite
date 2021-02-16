@@ -5,7 +5,7 @@
   "editorScheme": "/colors/%scheme.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/%id.svg",
+    "image": "walls/%id.svg",
     "fill": "scale",
     "transparency": 50
   },

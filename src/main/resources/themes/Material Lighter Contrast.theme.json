@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Material Lighter.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/lighter.svg",
+    "image": "walls/lighter.svg",
     "fill": "scale",
     "transparency": 50
   },

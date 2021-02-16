@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Atom One Light.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/onelight.svg",
+    "image": "walls/onelight.svg",
     "fill": "scale",
     "transparency": 50
   },

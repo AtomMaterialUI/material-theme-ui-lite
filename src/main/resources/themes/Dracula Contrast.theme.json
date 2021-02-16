@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Dracula.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/dracula.svg",
+    "image": "walls/dracula.svg",
     "fill": "scale",
     "transparency": 50
   },

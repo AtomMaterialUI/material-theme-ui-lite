@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Material Oceanic.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/oceanic.svg",
+    "image": "walls/oceanic.svg",
     "fill": "scale",
     "transparency": 50
   },

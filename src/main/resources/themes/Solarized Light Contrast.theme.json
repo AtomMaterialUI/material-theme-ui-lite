@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Solarized Light.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/solarlight.svg",
+    "image": "walls/solarlight.svg",
     "fill": "scale",
     "transparency": 50
   },

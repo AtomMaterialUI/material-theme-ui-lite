@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Night Owl.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/nightowl.svg",
+    "image": "walls/nightowl.svg",
     "fill": "scale",
     "transparency": 50
   },

@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Material Deep Ocean.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/deepocean.svg",
+    "image": "walls/deepocean.svg",
     "fill": "scale",
     "transparency": 50
   },

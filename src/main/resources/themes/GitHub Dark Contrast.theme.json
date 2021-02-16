@@ -5,7 +5,7 @@
   "editorScheme": "/colors/GitHub Dark.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/github_dark.svg",
+    "image": "walls/github_dark.svg",
     "fill": "scale",
     "transparency": 50
   },

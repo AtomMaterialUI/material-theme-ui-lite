@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Material Darker.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/darker.svg",
+    "image": "walls/darker.svg",
     "fill": "scale",
     "transparency": 50
   },

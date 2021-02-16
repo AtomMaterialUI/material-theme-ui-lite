@@ -5,7 +5,7 @@
   "editorScheme": "/colors/Material Palenight.xml",
   "emptyFrameBackground": {
     "anchor": "center",
-    "image": "/walls/palenight.svg",
+    "image": "walls/palenight.svg",
     "fill": "scale",
     "transparency": 50
   },
