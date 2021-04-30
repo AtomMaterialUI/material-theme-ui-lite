@@ -510,21 +510,21 @@ other:
 
   - onelight:
     name: Atom One Light
-    name2: Atom One Light
+    name2: Atom One Light Contrast
     className: onelight
     desc: Theme based on the Atom One Light theme
     dark: false
     scheme: Atom One Light
-    background: '#F4F4F4'
+    background: '#FAFAFA'
     foreground: '#232324'
     text: '#7f7f7f'
-    selectBg: '#FFFFFF'
+    selectBg: '#2979ff80'
     selectFg: '#232324'
     selectFg2: '#232324'
     button: '#DBDBDC'
     second: '#EAEAEB'
     disabled: '#b8b8b9'
-    contrast: '#eaeae'
+    contrast: '#EAEAEA'
     table: '#DBDBDC'
     border: '#DBDBDC'
     hl: '#FFFFFF'
