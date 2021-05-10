@@ -367,11 +367,11 @@
     "List": {
       "background": "#34324a",
       "foreground": "#A6ACCD",
-      "hoverBackground": "#676E95",
+      "hoverBackground": "#676E9550",
       "hoverInactiveBackground": "#414863",
       "selectionBackground": "#717CB470",
       "selectionForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#676E95",
+      "selectionInactiveBackground": "#676E9550",
       "selectionInactiveForeground": "#FFFFFF"
     },
     "material": {
@@ -504,7 +504,7 @@
       "background": "#292D3E",
       "disabledForeground": "#515772",
       "eapTagBackground": "#444267",
-      "hoverBackground": "#676E95",
+      "hoverBackground": "#676E9550",
       "lightSelectionBackground": "#414863",
       "paidTagBackground": "#444267",
       "selectionBackground": "#717CB470",
@@ -745,7 +745,7 @@
       "foreground": "#A6ACCD",
       "gridColor": "#292D3E",
       "highlightOuter": "#414863",
-      "hoverBackground": "#676E95",
+      "hoverBackground": "#676E9550",
       "hoverInactiveBackground": "#414863",
       "lightSelectionForeground": "#FFFFFF",
       "lightSelectionInactiveBackground": "#34324a",
@@ -862,13 +862,13 @@
       "background": "#202331",
       "foreground": "#676E95",
       "hash": "#2b2a3e",
-      "hoverBackground": "#676E95",
+      "hoverBackground": "#676E9550",
       "hoverInactiveBackground": "#414863",
       "modifiedItemForeground": "#ab47bc",
       "rowHeight": 28,
-      "selectionBackground": "#676E95",
+      "selectionBackground": "#676E9550",
       "selectionForeground": "#FFFFFF",
-      "selectionInactiveBackground": "#676E95",
+      "selectionInactiveBackground": "#676E9550",
       "selectionInactiveForeground": "#FFFFFF",
       "textBackground": "#202331"
     },
@@ -893,10 +893,10 @@
       },
       "Canvas.background": "#202331",
       "Label.foreground": "#676E95",
-      "List.selectionBackground": "#676E95",
+      "List.selectionBackground": "#676E9550",
       "highStroke.foreground": "#A6ACCD",
       "motion": {
-        "CSPanel.SelectedBackground": "#676E95",
+        "CSPanel.SelectedBackground": "#676E9550",
         "CSPanel.SelectedFocusBackground": "#717CB470",
         "Component.foreground": "#A6ACCD",
         "ConstraintSet.background": "#34324a",
@@ -969,7 +969,7 @@
       },
       "Log": {
         "Commit.currentBranchBackground": "#34324a",
-        "Commit.hoveredBackground": "#676E95",
+        "Commit.hoveredBackground": "#676E9550",
         "Commit.unmatchedForeground": "#676E95"
       },
       "RefLabel": {

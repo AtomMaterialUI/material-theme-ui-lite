@@ -1,7 +1,7 @@
 <!--
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2015-2020 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2015-2021 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -40,18 +40,22 @@
         <option name="EDITOR_FONT_SIZE" value="12" />
     </font>
     <font>
-        <option name="EDITOR_FONT_NAME" value="Fira Code" />
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
         <option name="EDITOR_FONT_SIZE" value="12" />
     </font>
+    <option name="EDITOR_LIGATURES" value="true" />
+    <console-font>
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+        <option name="EDITOR_FONT_SIZE" value="12" />
+    </console-font>
     <console-font>
         <option name="EDITOR_FONT_NAME" value="Menlo" />
         <option name="EDITOR_FONT_SIZE" value="12" />
     </console-font>
-    <console-font>
-        <option name="EDITOR_FONT_NAME" value="Fira Code" />
-        <option name="EDITOR_FONT_SIZE" value="12" />
-    </console-font>
     <colors>
+        <option name="ActionButton.hoverBackground" value="1F2233c0" />
+        <option name="ActionButton.pressedBackground" value="1F2233" />
+        <option name="ActionButton.iconTextForeground" value="4B526D" />
         <option name="ADDED_LINES_COLOR" value="c3e88d" />
         <option name="ANNOTATIONS_COLOR" value="fffbf7" />
         <option name="CARET_COLOR" value="ffcc00" />
@@ -92,10 +96,18 @@
         <option name="GUTTER_BACKGROUND" value="f111a" />
         <option name="INDENT_GUIDE" value="3b3f51" />
         <option name="INFORMATION_HINT" value="f111a" />
+        <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="f111a" />
+        <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="3b3f51" />
+        <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="1a1c25" />
         <option name="LINE_NUMBERS_COLOR" value="475f63" />
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="525975" />
         <option name="METHOD_SEPARATORS_COLOR" value="3b3f51" />
+        <option name="BookmarkIcon.background" value="84ffff" />
+        <option name="MnemonicIcon.foreground" value="fffbf7" />
+        <option name="MnemonicIcon.background" value="3b3f51" />
+        <option name="MnemonicIcon.borderColor" value="3b3f51" />
         <option name="MODIFIED_LINES_COLOR" value="ffcb6b" />
+        <option name="MODIFIED_TAB_ICON" value="84ffff" />
         <option name="MT_IGNORE.PROJECT_VIEW.IGNORED" value="ab7967" />
         <option name="MT_SUPPRESSED" value="eeffff" />
         <option name="NOTIFICATION_BACKGROUND" value="3d1a11" />
@@ -140,6 +152,25 @@
         <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="717cb4" />
     </colors>
     <attributes>
+        <option name="INLAY_DEFAULT">
+            <value>
+                <option name="FOREGROUND" value="8f93a2" />
+                <option name="BACKGROUND" value="90b10" />
+            </value>
+        </option>
+        <option name="INLAY_TEXT_WITHOUT_BACKGROUND">
+            <value>
+                <option name="FOREGROUND" value="717cb4" />
+            </value>
+        </option>
+        <option name="BLINKING_HIGHLIGHTS_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" />
+                <option name="BACKGROUND" />
+                <option name="EFFECT_COLOR" value="84ffff" />
+                <option name="EFFECT_TYPE" value="0" />
+            </value>
+        </option>
         <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="c3e88d" />
@@ -1344,9 +1375,33 @@
                 <option name="FOREGROUND" value="eeffe3" />
             </value>
         </option>
+        <option name="JS.PRIMITIVE">
+            <value>
+                <option name="FOREGROUND" value="ff9cac" />
+            </value>
+        </option>
         <option name="JS.MODULE_KEYWORD">
             <value>
                 <option name="FOREGROUND" value="89ddff" />
+                <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+        <option name="JS.TRY_CATCH">
+            <value>
+                <option name="FOREGROUND" value="89ddff" />
+                <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+        <option name="JS.YIELD">
+            <value>
+                <option name="FOREGROUND" value="89ddff" />
+                <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+        <option name="JS.IF_ELSE">
+            <value>
+                <option name="FOREGROUND" value="89ddff" />
+                <option name="FONT_TYPE" value="2" />
             </value>
         </option>
         <option name="JS.MODULE_NAME">
@@ -3095,6 +3150,11 @@
                 <option name="FONT_TYPE" value="2" />
             </value>
         </option>
+        <option name="PHP_THIS_VAR">
+            <value>
+                <option name="FOREGROUND" value="ff5370" />
+            </value>
+        </option>
         <option name="PHP_VAR">
             <value>
                 <option name="FOREGROUND" value="eeffe3" />
@@ -3731,6 +3791,12 @@
                 <option name="EFFECT_TYPE" value="2" />
             </value>
         </option>
+        <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="eeffff" />
+                <option name="FONT_TYPE" value="3" />
+            </value>
+        </option>
         <option name="Scala Abstract class">
             <value>
                 <option name="FOREGROUND" value="c3e88d" />
@@ -3796,6 +3862,16 @@
             <value>
                 <option name="FOREGROUND" value="ffeb95" />
                 <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+        <option name="TS.ANY">
+            <value>
+                <option name="FOREGROUND" value="B2CCD6" />
+            </value>
+        </option>
+        <option name="TS.PRIM_TYPE">
+            <value>
+                <option name="FOREGROUND" value="B2CCD6" />
             </value>
         </option>
         <option name="TS.MODULE_NAME">

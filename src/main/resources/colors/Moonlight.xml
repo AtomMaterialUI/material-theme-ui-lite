@@ -40,20 +40,23 @@
         <option name="EDITOR_FONT_SIZE" value="12" />
     </font>
     <font>
-        <option name="EDITOR_FONT_NAME" value="Fira Code" />
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
         <option name="EDITOR_FONT_SIZE" value="12" />
     </font>
     <option name="EDITOR_LIGATURES" value="true" />
     <console-font>
-        <option name="EDITOR_FONT_NAME" value="Menlo" />
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
         <option name="EDITOR_FONT_SIZE" value="12" />
     </console-font>
     <console-font>
-        <option name="EDITOR_FONT_NAME" value="Fira Code" />
+        <option name="EDITOR_FONT_NAME" value="Menlo" />
         <option name="EDITOR_FONT_SIZE" value="12" />
     </console-font>
     <option name="CONSOLE_LIGATURES" value="true" />
     <colors>
+        <option name="ActionButton.hoverBackground" value="444a7350" />
+        <option name="ActionButton.pressedBackground" value="444a73" />
+        <option name="ActionButton.iconTextForeground" value="a9b8e8" />
         <option name="ADDED_LINES_COLOR" value="7af8ca" />
         <option name="ANNOTATIONS_COLOR" value="fffbf7" />
         <option name="CARET_COLOR" value="4fd6be" />
@@ -98,10 +101,14 @@
         <option name="GUTTER_BACKGROUND" value="222436" />
         <option name="INDENT_GUIDE" value="444a73" />
         <option name="INFORMATION_HINT" value="222436" />
+        <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="222436" />
+        <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="444a73" />
+        <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="2f334d" />
         <option name="LINE_NUMBERS_COLOR" value="444a73" />
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="828bb8" />
         <option name="METHOD_SEPARATORS_COLOR" value="444a73" />
         <option name="MODIFIED_LINES_COLOR" value="34d3fb" />
+        <option name="MODIFIED_TAB_ICON" value="4fd6be" />
         <option name="MT_ADDED" value="7af8ca" />
         <option name="MT_DELETED" value="ff5370" />
         <option name="MT_IDEA_FILESTATUS_IGNORED" value="bcc4d6" />
@@ -109,6 +116,10 @@
         <option name="MT_MODIFIED" value="34d3fb" />
         <option name="MT_RENAMED" value="70b0ff" />
         <option name="MT_SUPPRESSED" value="bcc4d6" />
+        <option name="BookmarkIcon.background" value="4fd6be" />
+        <option name="MnemonicIcon.foreground" value="ffffff" />
+        <option name="MnemonicIcon.background" value="444a73" />
+        <option name="MnemonicIcon.borderColor" value="444a73" />
         <option name="NOTIFICATION_BACKGROUND" value="191a2a" />
         <option name="NOT_CHANGED" value="bcc4d6" />
         <option name="QUESTION_HINT" value="222436" />
@@ -123,28 +134,20 @@
         <option name="SOFT_WRAP_SIGN_COLOR" value="222436" />
         <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="4fd6bec0" />
         <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="222436" />
-
         <option name="ScrollBar.Mac.Transparent.thumbColor" value="4fd6be80" />
         <option name="ScrollBar.Mac.Transparent.trackColor" value="222436" />
-
         <option name="ScrollBar.Mac.hoverThumbColor" value="4fd6be" />
         <option name="ScrollBar.Mac.hoverTrackColor" value="222436" />
-
         <option name="ScrollBar.Mac.thumbColor" value="4fd6bec0" />
         <option name="ScrollBar.Mac.trackColor" value="222436" />
-
         <option name="ScrollBar.Transparent.hoverThumbColor" value="4fd6bec0" />
         <option name="ScrollBar.Transparent.hoverTrackColor" value="222436" />
-
         <option name="ScrollBar.Transparent.thumbColor" value="4fd6be80" />
         <option name="ScrollBar.Transparent.trackColor" value="222436" />
-
         <option name="ScrollBar.hoverThumbColor" value="4fd6be" />
         <option name="ScrollBar.hoverTrackColor" value="222436" />
-
         <option name="ScrollBar.thumbColor" value="4fd6bec0" />
         <option name="ScrollBar.trackColor" value="222436" />
-
         <option name="TAB_UNDERLINE" value="70b0ff" />
         <option name="TAB_UNDERLINE_INACTIVE" value="70b0ffc0" />
         <option name="TEARLINE_COLOR" value="2f334d" />
@@ -157,10 +160,27 @@
         <option name="VISUAL_INDENT_GUIDE" value="828bb8" />
         <option name="WHITESPACES" value="828bb8" />
         <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="b4f9f8" />
-
-
     </colors>
     <attributes>
+        <option name="INLAY_DEFAULT">
+            <value>
+                <option name="FOREGROUND" value="a9b8e8" />
+                <option name="BACKGROUND" value="222436" />
+            </value>
+        </option>
+        <option name="INLAY_TEXT_WITHOUT_BACKGROUND">
+            <value>
+                <option name="FOREGROUND" value="a9b8e8" />
+            </value>
+        </option>
+        <option name="BLINKING_HIGHLIGHTS_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" />
+                <option name="BACKGROUND" />
+                <option name="EFFECT_COLOR" value="4fd6be" />
+                <option name="EFFECT_TYPE" value="0" />
+            </value>
+        </option>
         <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="7af8ca" />
@@ -1163,7 +1183,7 @@
         </option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="222436" />
+                <option name="BACKGROUND" value="033e5d80" />
                 <option name="ERROR_STRIPE_COLOR" value="4d6168" />
             </value>
         </option>
@@ -1370,6 +1390,31 @@
             </value>
         </option>
         <option name="JS.THIS_SUPER">
+            <value>
+                <option name="FOREGROUND" value="ff757f" />
+            </value>
+        </option>
+        <option name="JS.ASYNC_AWAIT">
+            <value>
+                <option name="FOREGROUND" value="b4f9f8" />
+            </value>
+        </option>
+        <option name="JS.YIELD">
+            <value>
+                <option name="FOREGROUND" value="b4f9f8" />
+            </value>
+        </option>
+        <option name="JS.NEW">
+            <value>
+                <option name="FOREGROUND" value="7fdaff" />
+            </value>
+        </option>
+        <option name="JS.INLINE">
+            <value>
+                <option name="FOREGROUND" value="7fdaff" />
+            </value>
+        </option>
+        <option name="JS.PRIMITIVE">
             <value>
                 <option name="FOREGROUND" value="ff757f" />
             </value>
@@ -2994,18 +3039,17 @@
                 <option name="FONT_TYPE" value="2" />
             </value>
         </option>
+        <option name="PHP_THIS_VAR">
+            <value>
+                <option name="FOREGROUND" value="ff757f" />
+            </value>
+        </option>
         <option name="PHP_VAR">
             <value>
                 <option name="FOREGROUND" value="e4f3fa" />
             </value>
         </option>
         <option name="PROPERTIES.INVALID_STRING_ESCAPE" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
-        <option name="PROPERTIES.KEY">
-            <value>
-                <option name="FOREGROUND" value="7fdbca" />
-                <option name="FONT_TYPE" value="2" />
-            </value>
-        </option>
         <option name="PROPERTIES.KEY_VALUE_SEPARATOR" baseAttributes="DEFAULT_OPERATION_SIGN" />
         <option name="PROPERTIES.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
         <option name="PROTOCOL_REFERENCE">
@@ -3683,6 +3727,21 @@
             <value>
                 <option name="FOREGROUND" value="b4f9f8" />
                 <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+        <option name="TS.INLINE">
+            <value>
+                <option name="FOREGROUND" value="7fdaff" />
+            </value>
+        </option>
+        <option name="TS.ANY">
+            <value>
+                <option name="FOREGROUND" value="a7c6e8" />
+            </value>
+        </option>
+        <option name="TS.PRIM_TYPE">
+            <value>
+                <option name="FOREGROUND" value="a7c6e8" />
             </value>
         </option>
         <option name="TS.MODULE_NAME">
