@@ -73,7 +73,7 @@
       "Tooltip.background": "#F2F2F2"
     },
     "Content": {
-      "background": "#eaeae",
+      "background": "#eaeaea",
       "selectionBackground": "#FFFFFF"
     },
     "CheckBox": {
@@ -274,7 +274,7 @@
     },
     "HeaderColor": {
       "active": "#F4F4F4",
-      "inactive": "#eaeae"
+      "inactive": "#eaeaea"
     },
     "HelpTooltip": {
       "background": "#F4F4F4",
@@ -330,7 +330,7 @@
     "material": {
       "background": "#F4F4F4",
       "branchColor": "#232324",
-      "contrast": "#eaeae",
+      "contrast": "#eaeaea",
       "foreground": "#232324",
       "mergeCommits": "#DBDBDC",
       "primaryColor": "#7f7f7f",
@@ -488,20 +488,20 @@
         "borderColor": "#F4F4F4",
         "foreground": "#2979ff"
       },
-      "borderColor": "#eaeae",
+      "borderColor": "#eaeaea",
       "inactiveBorderColor": "#F4F4F4",
       "innerBorderColor": "#EAEAEB",
       "Header": {
         "activeBackground": "#F4F4F4",
-        "inactiveBackground": "#eaeae"
+        "inactiveBackground": "#eaeaea"
       },
       "paintBorder": true,
       "separatorForeground": "#232324",
       "separatorColor": "#EAEAEB",
       "Toolbar": {
-        "Floating.background": "#eaeae",
-        "background": "#eaeae",
-        "borderColor": "#eaeae"
+        "Floating.background": "#eaeaea",
+        "background": "#eaeaea",
+        "borderColor": "#eaeaea"
       }
     },
     "PopupMenu": {
@@ -576,7 +576,7 @@
     },
     "SearchEverywhere": {
       "Advertiser": {
-        "background": "#eaeae",
+        "background": "#eaeaea",
         "foreground": "#7f7f7f"
       },
       "Header": {
@@ -588,7 +588,7 @@
       },
       "SearchField": {
         "background": "#F4F4F4",
-        "borderColor": "#eaeae",
+        "borderColor": "#eaeaea",
         "infoForeground": "#7f7f7f"
       },
       "Tab": {
@@ -677,7 +677,7 @@
     },
     "TabbedPane.mt.tab.background": "#F4F4F4",
     "Table": {
-      "alternativeRowBackground": "#eaeae",
+      "alternativeRowBackground": "#eaeaea",
       "background": "#F4F4F4",
       "cellNoFocusBorder": "10,5,10,5",
       "focusCellHighlightBorder": "10,5,10,5",
@@ -699,7 +699,7 @@
       "selectionInactiveBackground": "#DBDBDC",
       "selectionInactiveForeground": "#232324",
       "sortIconColor": "#232324",
-      "stripeColor": "#eaeae"
+      "stripeColor": "#eaeaea"
     },
     "TableHeader": {
       "background": "#F4F4F4",
@@ -741,7 +741,7 @@
       "selectionForeground": "#232324"
     },
     "TitlePane": {
-      "background": "#eaeae",
+      "background": "#eaeaea",
       "Button.hoverBackground": "#FFFFFF",
       "inactiveBackground": "#F4F4F4",
       "infoForeground": "#7f7f7f",
@@ -778,7 +778,7 @@
       "Button": {
         "hoverBackground": "#DBDBDC",
         "selectedForeground": "#232324",
-        "selectedBackground": "#eaeae"
+        "selectedBackground": "#eaeaea"
       },
       "Header": {
         "background": "#F4F4F4",
@@ -793,8 +793,8 @@
         "hoverBackground": "#FFFFFF",
         "hoverInactiveBackground": "#FFFFFF",
         "inactiveUnderlineColor": "#2979ff",
-        "selectedBackground": "#eaeae",
-        "selectedInactiveBackground": "#eaeae",
+        "selectedBackground": "#eaeaea",
+        "selectedInactiveBackground": "#eaeaea",
         "underlineColor": "#2979ff",
         "underlinedTabBackground": "#DBDBDC",
         "underlinedTabInactiveBackground": "#EAEAEB",
@@ -820,7 +820,7 @@
     "Tree.rightChildIndent": 5,
     "UIDesigner": {
       "Activity.borderColor": "#DBDBDC",
-      "Canvas.background": "#eaeae",
+      "Canvas.background": "#eaeaea",
       "ColorPicker": {
         "background": "#F4F4F4",
         "foreground": "#232324"
@@ -835,7 +835,7 @@
         "borderColor": "#DBDBDC",
         "hoverBorderColor": "#FFFFFF"
       },
-      "Canvas.background": "#eaeae",
+      "Canvas.background": "#eaeaea",
       "highStroke.foreground": "#232324",
       "Label.foreground": "#7f7f7f",
       "List.selectionBackground": "#DBDBDC80",
@@ -859,10 +859,10 @@
         "ourCS_SelectedBackground.selectionInactiveBackground": "#DBDBDC",
         "ourCS_SelectedBorder.pressedBorderColor": "#FFFFFF",
         "ourML_BarColor.separatorColor": "#DBDBDC",
-        "PrimaryPanel.background": "#eaeae",
+        "PrimaryPanel.background": "#eaeaea",
         "SecondaryPanel.background": "#F4F4F4",
         "SecondaryPanel.header.foreground": "#7f7f7f",
-        "SecondaryPanel.header.background": "#eaeae",
+        "SecondaryPanel.header.background": "#eaeaea",
         "timeLine.disabledBorderColor": "#DBDBDC"
       },
       "Panel": {
@@ -925,18 +925,18 @@
       "AssociatedComponent.background": "#F4F4F4",
       "background": "#F4F4F4",
       "borderColor": "#F4F4F4",
-      "captionBackground": "#eaeae",
+      "captionBackground": "#eaeaea",
       "captionForeground": "#232324",
       "Details.background": "#F4F4F4",
-      "footerBackground": "#eaeae",
+      "footerBackground": "#eaeaea",
       "footerForeground": "#232324",
       "headerBackground": "#F4F4F4",
       "headerForeground": "#232324",
-      "List.background": "#eaeae",
+      "List.background": "#eaeaea",
       "separatorColor": "#DBDBDC",
       "SidePanel.background": "#EAEAEB",
       "Projects": {
-        "actions.background": "#eaeae",
+        "actions.background": "#eaeaea",
         "actions.selectionBackground": "#FFFFFF",
         "background": "#EAEAEB",
         "selectionBackground": "#FFFFFF",
@@ -950,7 +950,7 @@
   },
   "icons": {
     "ColorPalette": {
-      "#43494A": "#eaeae",
+      "#43494A": "#eaeaea",
       "#6B6B6B": "#7f7f7f",
       "#A7A7A7": "#F4F4F4",
       "#3D6185": "#2979ff",
@@ -967,8 +967,8 @@
       "Actions.GreyInline.Dark": "#232324",
       "Actions.Red": "#E4564A",
       "Actions.Yellow": "#C18401",
-      "Checkbox.Background.Default": "#eaeae",
-      "Checkbox.Background.Default.Dark": "#eaeae",
+      "Checkbox.Background.Default": "#eaeaea",
+      "Checkbox.Background.Default.Dark": "#eaeaea",
       "Checkbox.Background.Disabled": "#CACACB",
       "Checkbox.Background.Disabled.Dark": "#CACACB",
       "Checkbox.Border.Default": "#DBDBDC",
