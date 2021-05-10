@@ -63,6 +63,7 @@
       "foreground": "%fg"
     },
     "BigSpinner.background": "%bg",
+    "BookmarkIcon.background": "%accent",
     "Borders.ContrastBorderColor": "%bg",
     "Borders.color": "%border",
     "Button": {
@@ -354,6 +355,7 @@
       "selectedDisabledForeground": "%fg"
       "selectedForeground": "%activeFg",
     },
+    "link": "%accent",
     "Link": {
       "activeForeground": "%accent",
       "hoverForeground": "%accent",
@@ -923,7 +925,8 @@
         "background": "%bg"
         "borderColor": "%border",
         "graphLabel": "%text",
-        "graphLines": "%hl"
+        "graphLines": "%hl",
+        "lines3d": "%accent",
         "secondaryGraphLines": "%border",
       },
       "percent.foreground": "%fg",
