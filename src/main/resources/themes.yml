@@ -527,8 +527,8 @@ other:
     contrast: '#eaeaea'
     table: '#DBDBDC'
     border: '#DBDBDC'
-    hl: '#FFFFFF'
-    tree: '#DBDBDC80'
+    hl: "#DBDBDC"
+    tree: '#dbdbdc'
     notif: '#F2F2F2'
     accent: '#2979ff'
     excluded: '#CACACB'
