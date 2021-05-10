@@ -22,10 +22,12 @@
   "editorScheme": "colors/Solarized Dark.xml",
   "ui": {
     "*": {
+      "acceleratorForeground": "#586e75",
       "acceleratorSelectionForeground": "#586e75",
       "background": "#002B36",
       "borderColor": "#0D3640",
       "disabledBackground": "#083F4D",
+      "disabledBorderColor": "#073642",
       "disabledForeground": "#2E5861",
       "disabledText": "#2E5861",
       "focusColor": "#005a6f",
@@ -38,7 +40,8 @@
       "selectionBackgroundInactive": "#003745",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveBackground": "#003745",
-      "separatorColor": "#0D3640"
+      "separatorColor": "#0D3640",
+      "lineSeparatorColor": "#005a6f"
     },
     "activeCaption": "#002B36",
     "ActionButton": {
@@ -338,6 +341,7 @@
     "infoPanelForeground": "#586e75",
     "infoText": "#586e75",
     "InplaceRefactoringPopup": {
+      "background": "#002B36",
       "borderColor": "#002B36"
     },
     "InternalFrame": {
@@ -470,6 +474,10 @@
       "background": "#002B36",
       "foreground": "#839496",
       "messageForeground": "#839496"
+    },
+    "OptionButton" : {
+      "default.separatorColor": "#0D3640",
+      "separatorColor": "#0D3640"
     },
     "Outline": {
       "color": "#073642",

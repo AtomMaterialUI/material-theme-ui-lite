@@ -22,10 +22,12 @@
   "editorScheme": "colors/Material Deep Ocean.xml",
   "ui": {
     "*": {
+      "acceleratorForeground": "#4B526D",
       "acceleratorSelectionForeground": "#4B526D",
       "background": "#0F111A",
       "borderColor": "#0F111A",
       "disabledBackground": "#292D3E",
+      "disabledBorderColor": "#191A21",
       "disabledForeground": "#464B5D",
       "disabledText": "#464B5D",
       "focusColor": "#1F2233",
@@ -38,7 +40,8 @@
       "selectionBackgroundInactive": "#181A1F",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveBackground": "#181A1F",
-      "separatorColor": "#0F111A"
+      "separatorColor": "#0F111A",
+      "lineSeparatorColor": "#1F2233"
     },
     "activeCaption": "#0F111A",
     "ActionButton": {
@@ -338,6 +341,7 @@
     "infoPanelForeground": "#4B526D",
     "infoText": "#4B526D",
     "InplaceRefactoringPopup": {
+      "background": "#0F111A",
       "borderColor": "#0F111A"
     },
     "InternalFrame": {
@@ -470,6 +474,10 @@
       "background": "#0F111A",
       "foreground": "#8F93A2",
       "messageForeground": "#8F93A2"
+    },
+    "OptionButton" : {
+      "default.separatorColor": "#0F111A",
+      "separatorColor": "#0F111A"
     },
     "Outline": {
       "color": "#191A21",

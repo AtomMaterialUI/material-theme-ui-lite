@@ -22,10 +22,12 @@
   "editorScheme": "colors/GitHub Dark.xml",
   "ui": {
     "*": {
+      "acceleratorForeground": "#959da5",
       "acceleratorSelectionForeground": "#959da5",
       "background": "#24292e",
       "borderColor": "#1b1f23",
       "disabledBackground": "#2f363d",
+      "disabledBorderColor": "#39414a",
       "disabledForeground": "#6a737d",
       "disabledText": "#6a737d",
       "focusColor": "#444d56",
@@ -38,7 +40,8 @@
       "selectionBackgroundInactive": "#2f363d",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveBackground": "#2f363d",
-      "separatorColor": "#1b1f23"
+      "separatorColor": "#1b1f23",
+      "lineSeparatorColor": "#444d56"
     },
     "activeCaption": "#24292e",
     "ActionButton": {
@@ -338,6 +341,7 @@
     "infoPanelForeground": "#959da5",
     "infoText": "#959da5",
     "InplaceRefactoringPopup": {
+      "background": "#24292e",
       "borderColor": "#24292e"
     },
     "InternalFrame": {
@@ -470,6 +474,10 @@
       "background": "#24292e",
       "foreground": "#e1e4e8",
       "messageForeground": "#e1e4e8"
+    },
+    "OptionButton" : {
+      "default.separatorColor": "#1b1f23",
+      "separatorColor": "#1b1f23"
     },
     "Outline": {
       "color": "#39414a",

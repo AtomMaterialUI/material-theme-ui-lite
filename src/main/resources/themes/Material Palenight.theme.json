@@ -22,10 +22,12 @@
   "editorScheme": "colors/Material Palenight.xml",
   "ui": {
     "*": {
+      "acceleratorForeground": "#676E95",
       "acceleratorSelectionForeground": "#676E95",
       "background": "#292D3E",
       "borderColor": "#2b2a3e",
       "disabledBackground": "#2f2e43",
+      "disabledBorderColor": "#303348",
       "disabledForeground": "#515772",
       "disabledText": "#515772",
       "focusColor": "#444267",
@@ -38,7 +40,8 @@
       "selectionBackgroundInactive": "#34324a",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveBackground": "#34324a",
-      "separatorColor": "#2b2a3e"
+      "separatorColor": "#2b2a3e",
+      "lineSeparatorColor": "#444267"
     },
     "activeCaption": "#292D3E",
     "ActionButton": {
@@ -338,6 +341,7 @@
     "infoPanelForeground": "#676E95",
     "infoText": "#676E95",
     "InplaceRefactoringPopup": {
+      "background": "#292D3E",
       "borderColor": "#292D3E"
     },
     "InternalFrame": {
@@ -470,6 +474,10 @@
       "background": "#292D3E",
       "foreground": "#A6ACCD",
       "messageForeground": "#A6ACCD"
+    },
+    "OptionButton" : {
+      "default.separatorColor": "#2b2a3e",
+      "separatorColor": "#2b2a3e"
     },
     "Outline": {
       "color": "#303348",

@@ -22,10 +22,12 @@
   "editorScheme": "colors/Dracula.xml",
   "ui": {
     "*": {
+      "acceleratorForeground": "#6272A4",
       "acceleratorSelectionForeground": "#6272A4",
       "background": "#282A36",
       "borderColor": "#21222C",
       "disabledBackground": "#313341",
+      "disabledBorderColor": "#393C4B",
       "disabledForeground": "#6272A4",
       "disabledText": "#6272A4",
       "focusColor": "#6272A4",
@@ -38,7 +40,8 @@
       "selectionBackgroundInactive": "#282A36",
       "selectionForeground": "#8BE9FD",
       "selectionInactiveBackground": "#282A36",
-      "separatorColor": "#21222C"
+      "separatorColor": "#21222C",
+      "lineSeparatorColor": "#6272A4"
     },
     "activeCaption": "#282A36",
     "ActionButton": {
@@ -338,6 +341,7 @@
     "infoPanelForeground": "#6272A4",
     "infoText": "#6272A4",
     "InplaceRefactoringPopup": {
+      "background": "#282A36",
       "borderColor": "#282A36"
     },
     "InternalFrame": {
@@ -470,6 +474,10 @@
       "background": "#282A36",
       "foreground": "#F8F8F2",
       "messageForeground": "#F8F8F2"
+    },
+    "OptionButton" : {
+      "default.separatorColor": "#21222C",
+      "separatorColor": "#21222C"
     },
     "Outline": {
       "color": "#393C4B",

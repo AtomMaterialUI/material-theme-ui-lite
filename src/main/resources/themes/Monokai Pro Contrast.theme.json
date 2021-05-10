@@ -22,10 +22,12 @@
   "editorScheme": "colors/Monokai Pro.xml",
   "ui": {
     "*": {
+      "acceleratorForeground": "#939293",
       "acceleratorSelectionForeground": "#939293",
       "background": "#2D2A2E",
       "borderColor": "#2d2a2e",
       "disabledBackground": "#3a3a3c",
+      "disabledBorderColor": "#403E41",
       "disabledForeground": "#5b595c",
       "disabledText": "#5b595c",
       "focusColor": "#5b595c",
@@ -38,7 +40,8 @@
       "selectionBackgroundInactive": "#403E41",
       "selectionForeground": "#ffd866",
       "selectionInactiveBackground": "#403E41",
-      "separatorColor": "#2d2a2e"
+      "separatorColor": "#2d2a2e",
+      "lineSeparatorColor": "#5b595c"
     },
     "activeCaption": "#2D2A2E",
     "ActionButton": {
@@ -338,6 +341,7 @@
     "infoPanelForeground": "#939293",
     "infoText": "#939293",
     "InplaceRefactoringPopup": {
+      "background": "#2D2A2E",
       "borderColor": "#2D2A2E"
     },
     "InternalFrame": {
@@ -470,6 +474,10 @@
       "background": "#2D2A2E",
       "foreground": "#fcfcfa",
       "messageForeground": "#fcfcfa"
+    },
+    "OptionButton" : {
+      "default.separatorColor": "#2d2a2e",
+      "separatorColor": "#2d2a2e"
     },
     "Outline": {
       "color": "#403E41",
