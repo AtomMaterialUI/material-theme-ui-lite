@@ -101,7 +101,7 @@ material:
     background: '#FAFAFA'
     foreground: '#546E7A'
     text: '#94A7B0'
-    selectBg: '#80CBC440'
+    selectBg: '#CCD7DA'
     selectFg: '#546e7a'
     selectFg2: '#272727'
     button: '#F3F4F5'
@@ -114,7 +114,7 @@ material:
     tree: '#80CBC440'
     notif: '#eae8e8'
     accent: '#00BCD4'
-    excluded: '#CCD7DA50'
+    excluded: '#d3e1e8'
     green: '#91b859'
     red: '#e53935'
     yellow: '#f6a434'
@@ -147,7 +147,7 @@ material:
     background: '#292D3E'
     foreground: '#A6ACCD'
     text: '#676E95'
-    selectBg: '#717CB470'
+    selectBg: '#4C578B'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#303348'
@@ -193,7 +193,7 @@ material:
     background: '#0F111A'
     foreground: '#8F93A2'
     text: '#4B526D'
-    selectBg: '#717CB480'
+    selectBg: '#222533'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#191A21'
@@ -332,8 +332,8 @@ other:
     background: '#F7F8FA'
     foreground: '#5B6168'
     text: '#292D31'
-    selectBg: '#3A66D150'
-    selectFg: '#FFFFFF'
+    selectBg: '#c6e5ff'
+    selectFg: '#111111'
     selectFg2: '#111111'
     button: '#edf1f5'
     second: '#F3f3f3'
@@ -342,7 +342,7 @@ other:
     table: '#cce5ff'
     border: '#DFE1E4'
     hl: '#CCE5FF'
-    tree: '#3A66D1'
+    tree: '#e1e4e8'
     notif: '#DFECFE'
     accent: '#79CB60'
     excluded: '#dcdcdc'
@@ -368,7 +368,6 @@ other:
     numbers: '#005CC5'
     parameters: '#E36209'
 
-
   - github_dark:
     name: GitHub Dark
     name2: GitHub Dark Contrast
@@ -379,7 +378,7 @@ other:
     background: '#24292e'
     foreground: '#e1e4e8'
     text: '#959da5'
-    selectBg: '#3392FF44'
+    selectBg: '#3392FF'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#39414a'
@@ -415,7 +414,6 @@ other:
     numbers: '#79b8ff'
     parameters: '#ffab70'
 
-
   - arcdark:
     name: Arc Dark
     name2: Arc Dark Contrast
@@ -426,12 +424,12 @@ other:
     background: '#2f343f'
     foreground: '#D3DAE3'
     text: '#8b9eb5'
-    selectBg: '#8888FF'
+    selectBg: '#414181'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#383C4A'
-    second: '#393f4c45'
-    disabled: '#D3DAE3'
+    second: '#393f4c'
+    disabled: '#a2a2a2'
     contrast: '#262b33'
     table: '#41416A'
     border: '#404552'
@@ -656,7 +654,7 @@ other:
     background: '#011627'
     foreground: '#d6deeb'
     text: '#5f7e97'
-    selectBg: '#5f7e9790'
+    selectBg: '#084d81'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#0b253a'

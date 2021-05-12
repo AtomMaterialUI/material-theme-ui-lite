@@ -6,7 +6,7 @@
     "bg": "#0F111A",
     "fg": "#8F93A2",
     "text": "#4B526D",
-    "selBg": "#717CB480",
+    "selBg": "#222533",
     "selFg": "#FFFFFF",
     "border": "#0F111A",
     "excl": "#292D3E",
@@ -36,7 +36,7 @@
       "inactiveBackground": "#292D3E",
       "inactiveForeground": "#4B526D",
       "infoForeground": "#4B526D",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionBackgroundInactive": "#181A1F",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveBackground": "#181A1F",
@@ -54,11 +54,11 @@
     },
     "AssignedMnemonic": {
       "background": "#1F2233",
-      "borderColor": "#717CB480",
+      "borderColor": "#222533",
       "foreground": "#8F93A2"
     },
     "Autocomplete": {
-      "selectionBackground": "#717CB480"
+      "selectionBackground": "#222533"
     },
     "AvailableMnemonic": {
       "background": "#191A21",
@@ -106,7 +106,7 @@
     },
     "Content": {
       "background": "#090B10",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionInactiveBackground": "#292D3E"
     },
     "CheckBox": {
@@ -122,7 +122,7 @@
       "disabledBackground": "#0F111A",
       "disabledForeground": "#464B5D",
       "foreground": "#8F93A2",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionForeground": "#FFFFFF"
     },
     "CodeWithMe": {
@@ -167,7 +167,7 @@
       "nonFocusedState": "false",
       "selectedForeground": "#FFFFFF",
       "selectedGrayedForeground": "#FFFFFF",
-      "selectionBackground": "#0F111A",
+      "selectionBackground": "#090B10",
       "selectionForeground": "#FFFFFF",
       "selectionGrayForeground": "#FFFFFF",
       "selectionInactiveBackground": "#1F2233",
@@ -246,7 +246,7 @@
       "foreground": "#8F93A2",
       "inactiveBackground": "#0F111A",
       "inactiveForeground": "#464B5D",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionForeground": "#FFFFFF"
     },
     "EditorTabs": {
@@ -373,7 +373,7 @@
       "foreground": "#8F93A2",
       "hoverBackground": "#717CB430",
       "hoverInactiveBackground": "#1A1C25",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionForeground": "#FFFFFF",
       "selectionInactiveBackground": "#717CB430",
       "selectionInactiveForeground": "#FFFFFF"
@@ -404,7 +404,7 @@
       "disabledBackground": "#181A1F",
       "disabledForeground": "#464B5D",
       "foreground": "#8F93A2",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionForeground": "#FFFFFF",
       "separatorColor": "#0F111A"
     },
@@ -415,7 +415,7 @@
       "disabledForeground": "#464B5D",
       "foreground": "#8F93A2",
       "highlight": "#0F111A",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionForeground": "#FFFFFF",
       "shadow": "#090B10"
     },
@@ -427,7 +427,7 @@
       "disabledBackground": "#0F111A",
       "disabledForeground": "#464B5D",
       "foreground": "#8F93A2",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionForeground": "#FFFFFF"
     },
     "MlModelBinding.Viewer.CodeEditor.background": "#0F111A",
@@ -515,7 +515,7 @@
       "hoverBackground": "#717CB430",
       "lightSelectionBackground": "#1A1C25",
       "paidTagBackground": "#1F2233",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "tagBackground": "#1F2233",
       "tagForeground": "#84ffff",
       "trialTagBackground": "#1F2233",
@@ -598,7 +598,7 @@
       "disabledBackground": "#0F111A",
       "disabledForeground": "#464B5D",
       "foreground": "#8F93A2",
-      "selectionBackground": "#717CB480",
+      "selectionBackground": "#222533",
       "selectionForeground": "#FFFFFF"
     },
     "ScreenView.borderColor": "#0F111A",
@@ -905,7 +905,7 @@
       "highStroke.foreground": "#8F93A2",
       "motion": {
         "CSPanel.SelectedBackground": "#717CB430",
-        "CSPanel.SelectedFocusBackground": "#717CB480",
+        "CSPanel.SelectedFocusBackground": "#222533",
         "Component.foreground": "#8F93A2",
         "ConstraintSet.background": "#181A1F",
         "ConstraintSetText.foreground": "#4B526D",
@@ -1007,7 +1007,7 @@
         "actions.background": "#090B10",
         "actions.selectionBackground": "#1F2233",
         "background": "#181A1F",
-        "selectionBackground": "#717CB480",
+        "selectionBackground": "#222533",
         "selectionInactiveBackground": "#181A1F"
       }
     },

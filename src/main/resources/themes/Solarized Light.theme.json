@@ -167,7 +167,7 @@
       "nonFocusedState": "false",
       "selectedForeground": "#002b36",
       "selectedGrayedForeground": "#002b36",
-      "selectionBackground": "#fdf6e3",
+      "selectionBackground": "#eee8d5",
       "selectionForeground": "#002b36",
       "selectionGrayForeground": "#002b36",
       "selectionInactiveBackground": "#d1cbb8",

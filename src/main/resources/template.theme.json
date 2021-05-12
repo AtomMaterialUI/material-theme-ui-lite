@@ -167,7 +167,7 @@
       "nonFocusedState": "false",
       "selectedForeground": "%selFg",
       "selectedGrayedForeground": "%selFg",
-      "selectionBackground": "%bg",
+      "selectionBackground": "%cs",
       "selectionForeground": "%selFg",
       "selectionGrayForeground": "%selFg",
       "selectionInactiveBackground": "%hl",
