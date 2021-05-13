@@ -1040,13 +1040,13 @@
       "Checkbox.Background.Disabled": "#2f334d",
       "Checkbox.Background.Disabled.Dark": "#2f334d",
       "Checkbox.Background.Selected": "#74a0f1",
-      "Checkbox.Background.Selected.Dark": "#74a0f1",
-      "Checkbox.Border.Default": "#222436",
-      "Checkbox.Border.Default.Dark": "#222436",
+      "Checkbox.Background.Selected.Dark": "#222436",
+      "Checkbox.Border.Default": "#444a73",
+      "Checkbox.Border.Default.Dark": "#444a73",
       "Checkbox.Border.Disabled": "#828bb8",
       "Checkbox.Border.Disabled.Dark": "#828bb8",
       "Checkbox.Border.Selected": "#74a0f1",
-      "Checkbox.Border.Selected.Dark": "#74a0f1",
+      "Checkbox.Border.Selected.Dark": "#444a73",
       "Checkbox.Focus.Thin.Default": "#74a0f1",
       "Checkbox.Focus.Thin.Default.Dark": "#74a0f1",
       "Checkbox.Focus.Thin.Selected": "#c8d3f5",
@@ -1056,7 +1056,7 @@
       "Checkbox.Foreground.Disabled": "#828bb8",
       "Checkbox.Foreground.Disabled.Dark": "#828bb8",
       "Checkbox.Foreground.Selected": "#222436",
-      "Checkbox.Foreground.Selected.Dark": "#222436",
+      "Checkbox.Foreground.Selected.Dark": "#74a0f1",
       "Objects.BlackText": "#c8d3f5",
       "Objects.Blue": "#70b0ff",
       "Objects.Green": "#7af8ca",
@@ -1067,7 +1067,9 @@
       "Objects.Red": "#ff757f",
       "Objects.RedStatus": "#ff757f",
       "Objects.Yellow": "#ffbd76",
-      "Objects.YellowDark": "#ff9668"
+      "Objects.YellowDark": "#ff9668",
+      "Tree.iconColor": "#a9b8e8",
+      "Tree.iconColor.Dark": "#a9b8e8"
     }
   }
 }

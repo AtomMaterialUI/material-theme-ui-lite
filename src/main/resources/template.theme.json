@@ -1040,13 +1040,13 @@
       "Checkbox.Background.Disabled": "%excl",
       "Checkbox.Background.Disabled.Dark": "%excl",
       "Checkbox.Background.Selected": "%accent",
-      "Checkbox.Background.Selected.Dark": "%accent",
-      "Checkbox.Border.Default": "%border",
-      "Checkbox.Border.Default.Dark": "%border",
+      "Checkbox.Background.Selected.Dark": "%hc",
+      "Checkbox.Border.Default": "%hl",
+      "Checkbox.Border.Default.Dark": "%hl",
       "Checkbox.Border.Disabled": "%dis",
       "Checkbox.Border.Disabled.Dark": "%dis",
       "Checkbox.Border.Selected": "%accent",
-      "Checkbox.Border.Selected.Dark": "%accent",
+      "Checkbox.Border.Selected.Dark": "%hl",
       "Checkbox.Focus.Thin.Default": "%accent",
       "Checkbox.Focus.Thin.Default.Dark": "%accent",
       "Checkbox.Focus.Thin.Selected": "%fg",
@@ -1055,8 +1055,8 @@
       "Checkbox.Focus.Wide.Dark": "%accent",
       "Checkbox.Foreground.Disabled": "%dis",
       "Checkbox.Foreground.Disabled.Dark": "%dis",
-      "Checkbox.Foreground.Selected": "%bg",
-      "Checkbox.Foreground.Selected.Dark": "%bg",
+      "Checkbox.Foreground.Selected": "%hc",
+      "Checkbox.Foreground.Selected.Dark": "%accent",
       "Objects.BlackText": "%fg",
       "Objects.Blue": "%blue",
       "Objects.Green": "%green",
@@ -1067,7 +1067,9 @@
       "Objects.Red": "%red",
       "Objects.RedStatus": "%red",
       "Objects.Yellow": "%yellow",
-      "Objects.YellowDark": "%orange"
+      "Objects.YellowDark": "%orange",
+      "Tree.iconColor": "%text",
+      "Tree.iconColor.Dark": "%text"
     }
   }
 }
