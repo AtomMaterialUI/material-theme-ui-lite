@@ -900,7 +900,6 @@
         "borderColor": "#0D3640",
         "hoverBorderColor": "#005a6f"
       },
-      "Canvas.background": "#00252E",
       "Label.foreground": "#586e75",
       "List.selectionBackground": "#2E4C5280",
       "highStroke.foreground": "#839496",

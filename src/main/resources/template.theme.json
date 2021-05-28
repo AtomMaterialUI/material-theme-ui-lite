@@ -900,7 +900,6 @@
         "borderColor": "%border",
         "hoverBorderColor": "%hl"
       },
-      "Canvas.background": "%cs",
       "Label.foreground": "%text",
       "List.selectionBackground": "%tree",
       "highStroke.foreground": "%fg",
