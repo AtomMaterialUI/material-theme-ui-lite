@@ -678,6 +678,7 @@
       "foreground": "%second",
       "separatorColor": "%second"
     },
+    "Settings.Spotlight.borderColor": "%accent",
     "SidePanel": {
       "background": "%hc"
     },

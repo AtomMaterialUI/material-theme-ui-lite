@@ -678,6 +678,7 @@
       "foreground": "#2f334d",
       "separatorColor": "#2f334d"
     },
+    "Settings.Spotlight.borderColor": "#74a0f1",
     "SidePanel": {
       "background": "#191a2a"
     },
