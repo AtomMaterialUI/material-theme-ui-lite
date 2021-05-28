@@ -40,12 +40,11 @@
 
     <idea-version since-build="191.6183"/>
     <resource-bundle>messages.MaterialThemeBundle</resource-bundle>
-    <resource-bundle>messages.ThemesBundle</resource-bundle>
 
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="com.mallowigi.idea.MTStartup"/>
-        <postStartupActivity implementation="com.mallowigi.idea.MTUpdatesComponent"/>
+<!--        <postStartupActivity implementation="com.mallowigi.idea.MTUpdatesComponent"/>-->
         <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"/>
         <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"/>
         <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"/>
