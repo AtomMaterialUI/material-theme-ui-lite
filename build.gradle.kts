@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2015-2021 Elior "Mallowigi" Boukhobza
+ * Copyright (c) 2021 Elior "Mallowigi" Boukhobza
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,8 +20,6 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- *
  */
 
 import org.jetbrains.changelog.closure
@@ -33,13 +31,13 @@ plugins {
   // Java support
   id("java")
   // Kotlin support
-  id("org.jetbrains.kotlin.jvm") version "1.5.0-M2"
+  id("org.jetbrains.kotlin.jvm") version "1.5.10"
   // gradle-intellij-plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
   id("org.jetbrains.intellij") version "0.7.2"
   // gradle-changelog-plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
   id("org.jetbrains.changelog") version "1.1.2"
   // detekt linter - read more: https://detekt.github.io/detekt/gradle.html
-  id("io.gitlab.arturbosch.detekt") version "1.16.0"
+  id("io.gitlab.arturbosch.detekt") version "1.17.1"
   // ktlint linter - read more: https://github.com/JLLeitschuh/ktlint-gradle
   id("org.jlleitschuh.gradle.ktlint") version "10.0.0"
 }
@@ -95,6 +93,7 @@ intellij {
 detekt {
   config = files("./detekt-config.yml")
   buildUponDefaultConfig = true
+  autoCorrect = true
 
   reports {
     html.enabled = false
@@ -111,6 +110,7 @@ tasks {
   }
   withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.freeCompilerArgs += listOf("-Xskip-prerelease-check")
   }
 
   withType<io.gitlab.arturbosch.detekt.Detekt> {

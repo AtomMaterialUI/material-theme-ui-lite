@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2020 Elior "Mallowigi" Boukhobza
+ * Copyright (c) 2021 Elior "Mallowigi" Boukhobza
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -33,6 +33,9 @@ import com.intellij.util.messages.MessageBusConnection;
 import org.jetbrains.annotations.NotNull;
 
 public final class MTStartup implements StartupActivity {
+  public static final String IDE_BALLOON_SHADOW_SIZE = "ide.balloon.shadow.size";
+  public static final String IDE_INTELLIJ_LAF_ENABLE_ANIMATION = "ide.intellij.laf.enable.animation";
+
   @Override
   public void runActivity(@NotNull final Project project) {
     modifyRegistry();
@@ -41,15 +44,15 @@ public final class MTStartup implements StartupActivity {
     connect.subscribe(AppLifecycleListener.TOPIC, new AppLifecycleListener() {
       @Override
       public void appClosing() {
-        Registry.get("ide.balloon.shadow.size").setValue(15);
-        Registry.get("ide.intellij.laf.enable.animation").setValue(false);
+        Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(15);
+        Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(false);
         connect.disconnect();
       }
     });
   }
 
   private static void modifyRegistry() {
-    Registry.get("ide.balloon.shadow.size").setValue(0);
-    Registry.get("ide.intellij.laf.enable.animation").setValue(true);
+    Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(0);
+    Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(true);
   }
 }

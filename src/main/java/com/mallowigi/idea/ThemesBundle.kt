@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2020 Elior "Mallowigi" Boukhobza
+ * Copyright (c) 2021 Elior "Mallowigi" Boukhobza
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,27 +21,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+package com.mallowigi.idea
 
-package com.mallowigi.idea;
+import com.intellij.AbstractBundle
+import com.mallowigi.idea.ThemesBundle
+import org.jetbrains.annotations.NonNls
+import org.jetbrains.annotations.PropertyKey
 
-import com.intellij.AbstractBundle;
-import org.jetbrains.annotations.NonNls;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.PropertyKey;
-
-/**
- * Messages Bundle for Material Theme
- */
-public final class ThemesBundle extends AbstractBundle {
-  public static String message(@NotNull @PropertyKey(resourceBundle = BUNDLE) final String key, @NotNull final Object... params) {
-    return INSTANCE.getMessage(key, params);
-  }
-
-  @NonNls
-  private static final String BUNDLE = "messages.ThemesBundle";
-  private static final ThemesBundle INSTANCE = new ThemesBundle();
-
-  private ThemesBundle() {
-    super(BUNDLE);
-  }
+object ThemesBundle : AbstractBundle(MESSAGE_BUNDLE) {
+    @JvmStatic
+    fun message(@PropertyKey(resourceBundle = MESSAGE_BUNDLE) key: String, vararg params: Any?): String {
+        return getMessage(key, *params)
+    }
 }
+const val MESSAGE_BUNDLE = "messages.ThemesBundle"

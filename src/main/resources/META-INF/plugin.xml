@@ -1,7 +1,7 @@
 <!--
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2020 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2021 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +31,7 @@
 
     <description><![CDATA[
         This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material Theme UI Plugin</a>
-        that includes the themes only.
+        which only includes the themes and color schemes.
         ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
@@ -44,7 +44,6 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="com.mallowigi.idea.MTStartup"/>
-<!--        <postStartupActivity implementation="com.mallowigi.idea.MTUpdatesComponent"/>-->
         <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"/>
         <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"/>
         <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"/>
@@ -91,6 +90,9 @@
                        path="/themes/Light Owl Contrast.theme.json"/>
         <themeProvider id="Moonlight Contrast"
                        path="/themes/Moonlight Contrast.theme.json"/>
+
+        <notificationGroup displayType="STICKY_BALLOON" id="Material Theme UI Lite Notifications" />
+
     </extensions>
 
     <actions>
