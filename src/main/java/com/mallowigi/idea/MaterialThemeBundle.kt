@@ -21,27 +21,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+package com.mallowigi.idea
 
-package com.mallowigi.idea;
+import com.intellij.AbstractBundle
+import org.jetbrains.annotations.NonNls
+import org.jetbrains.annotations.PropertyKey
 
-import com.intellij.AbstractBundle;
-import org.jetbrains.annotations.NonNls;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.PropertyKey;
-
-/**
- * Messages Bundle for Material Theme
- */
-public final class MaterialThemeBundle extends AbstractBundle {
-  public static String message(@NotNull @PropertyKey(resourceBundle = BUNDLE) final String key, @NotNull final Object... params) {
-    return INSTANCE.getMessage(key, params);
-  }
-
-  @NonNls
-  private static final String BUNDLE = "messages.MaterialThemeBundle";
-  private static final MaterialThemeBundle INSTANCE = new MaterialThemeBundle();
-
-  private MaterialThemeBundle() {
-    super(BUNDLE);
-  }
+object MaterialThemeBundle : AbstractBundle(MATERIAL_THEME_BUNDLE) {
+    @JvmStatic
+    fun message(@PropertyKey(resourceBundle = MATERIAL_THEME_BUNDLE) key: String, vararg params: Any?): String {
+        return getMessage(key, *params)
+    }
 }
+const val MATERIAL_THEME_BUNDLE: String = "messages.MaterialThemeBundle"

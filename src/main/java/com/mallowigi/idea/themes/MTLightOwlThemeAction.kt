@@ -21,16 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+package com.mallowigi.idea.themes
 
-package com.mallowigi.idea.themes;
-
-import org.jetbrains.annotations.NotNull;
-
-public final class MTLightOwlThemeAction extends MTAbstractThemeAction {
-  @Override
-  @NotNull
-  public MTThemes getTheme() {
-    return MTThemes.LIGHT_OWL;
-  }
-
+class MTLightOwlThemeAction : MTAbstractThemeAction() {
+  override val theme: MTThemes
+    get() = MTThemes.LIGHT_OWL
 }
+

@@ -21,17 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+package com.mallowigi.idea.themes
 
-package com.mallowigi.idea.themes;
-
-import org.jetbrains.annotations.NotNull;
-
-public final class MTDeepOceanThemeAction extends MTAbstractThemeAction {
-  @SuppressWarnings("MethodReturnAlwaysConstant")
-  @Override
-  @NotNull
-  public MTThemes getTheme() {
-    return MTThemes.DEEPOCEAN;
-  }
-
+class MTDeepOceanThemeAction : MTAbstractThemeAction() {
+  override val theme: MTThemes
+    get() = MTThemes.DEEPOCEAN
 }
+

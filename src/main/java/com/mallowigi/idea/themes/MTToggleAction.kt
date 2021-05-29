@@ -21,17 +21,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+package com.mallowigi.idea.themes
 
-package com.mallowigi.idea.themes;
+import com.intellij.openapi.actionSystem.AnActionEvent
+import com.intellij.openapi.actionSystem.ToggleAction
 
-import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.actionSystem.ToggleAction;
-import org.jetbrains.annotations.NotNull;
-
-@SuppressWarnings("NoopMethodInAbstractClass")
-public abstract class MTToggleAction extends ToggleAction {
-  @Override
-  public void update(@NotNull final AnActionEvent e) {
+abstract class MTToggleAction : ToggleAction() {
+  override fun update(e: AnActionEvent) {
     // Override ToggleAction so we can display an icon
   }
 }

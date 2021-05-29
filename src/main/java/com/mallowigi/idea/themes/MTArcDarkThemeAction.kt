@@ -21,14 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+package com.mallowigi.idea.themes
 
-package com.mallowigi.idea.themes;
-
-
-public final class MTArcDarkThemeAction extends MTAbstractThemeAction {
-
-  @Override
-  protected MTThemes getTheme() {
-    return MTThemes.ARC_DARK;
-  }
+class MTArcDarkThemeAction : MTAbstractThemeAction() {
+  override val theme: MTThemes
+    get() = MTThemes.ARC_DARK
 }

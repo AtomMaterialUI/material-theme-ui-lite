@@ -24,14 +24,12 @@
 package com.mallowigi.idea
 
 import com.intellij.AbstractBundle
-import com.mallowigi.idea.ThemesBundle
-import org.jetbrains.annotations.NonNls
 import org.jetbrains.annotations.PropertyKey
 
-object ThemesBundle : AbstractBundle(MESSAGE_BUNDLE) {
+object ThemesBundle : AbstractBundle(THEMES_BUNDLE) {
     @JvmStatic
-    fun message(@PropertyKey(resourceBundle = MESSAGE_BUNDLE) key: String, vararg params: Any?): String {
+    fun message(@PropertyKey(resourceBundle = THEMES_BUNDLE) key: String, vararg params: Any?): String {
         return getMessage(key, *params)
     }
 }
-const val MESSAGE_BUNDLE = "messages.ThemesBundle"
+const val THEMES_BUNDLE: String = "messages.ThemesBundle"
