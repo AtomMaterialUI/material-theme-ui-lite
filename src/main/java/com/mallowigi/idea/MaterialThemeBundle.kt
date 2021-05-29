@@ -24,13 +24,12 @@
 package com.mallowigi.idea
 
 import com.intellij.AbstractBundle
-import org.jetbrains.annotations.NonNls
 import org.jetbrains.annotations.PropertyKey
 
 object MaterialThemeBundle : AbstractBundle(MATERIAL_THEME_BUNDLE) {
-    @JvmStatic
-    fun message(@PropertyKey(resourceBundle = MATERIAL_THEME_BUNDLE) key: String, vararg params: Any?): String {
-        return getMessage(key, *params)
-    }
+  @JvmStatic
+  fun message(@PropertyKey(resourceBundle = MATERIAL_THEME_BUNDLE) key: String, vararg params: Any?): String {
+    return getMessage(key, *params)
+  }
 }
 const val MATERIAL_THEME_BUNDLE: String = "messages.MaterialThemeBundle"

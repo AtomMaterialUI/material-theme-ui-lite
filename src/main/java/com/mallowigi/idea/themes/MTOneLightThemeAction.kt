@@ -27,4 +27,3 @@ class MTOneLightThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.ONE_LIGHT
 }
-

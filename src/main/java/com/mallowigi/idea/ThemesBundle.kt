@@ -27,9 +27,9 @@ import com.intellij.AbstractBundle
 import org.jetbrains.annotations.PropertyKey
 
 object ThemesBundle : AbstractBundle(THEMES_BUNDLE) {
-    @JvmStatic
-    fun message(@PropertyKey(resourceBundle = THEMES_BUNDLE) key: String, vararg params: Any?): String {
-        return getMessage(key, *params)
-    }
+  @JvmStatic
+  fun message(@PropertyKey(resourceBundle = THEMES_BUNDLE) key: String, vararg params: Any?): String {
+    return getMessage(key, *params)
+  }
 }
 const val THEMES_BUNDLE: String = "messages.ThemesBundle"

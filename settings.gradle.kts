@@ -23,4 +23,3 @@
  */
 
 rootProject.name = "material-theme-lite"
-

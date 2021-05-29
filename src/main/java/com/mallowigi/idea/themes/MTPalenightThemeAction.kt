@@ -27,4 +27,3 @@ class MTPalenightThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.PALENIGHT
 }
-

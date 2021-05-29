@@ -23,35 +23,36 @@
  */
 package com.mallowigi.idea
 
-import com.intellij.openapi.startup.StartupActivity
-import com.mallowigi.idea.MTStartup
-import com.intellij.util.messages.MessageBusConnection
-import com.intellij.openapi.application.ApplicationManager
 import com.intellij.ide.AppLifecycleListener
+import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.project.Project
+import com.intellij.openapi.startup.StartupActivity
 import com.intellij.openapi.util.registry.Registry
 
 class MTStartup : StartupActivity {
-    override fun runActivity(project: Project) {
-        modifyRegistry()
-        ApplicationManager.getApplication().messageBus.connect().also {
-            it.subscribe(AppLifecycleListener.TOPIC, object : AppLifecycleListener {
-                override fun appClosing() {
-                    Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(15)
-                    Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(false)
-                    it.disconnect()
-                }
-            })
+  override fun runActivity(project: Project) {
+    modifyRegistry()
+    ApplicationManager.getApplication().messageBus.connect().also {
+      it.subscribe(
+        AppLifecycleListener.TOPIC,
+        object : AppLifecycleListener {
+          override fun appClosing() {
+            Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(15)
+            Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(false)
+            it.disconnect()
+          }
         }
+      )
     }
+  }
 
-    companion object {
-        private const val IDE_BALLOON_SHADOW_SIZE = "ide.balloon.shadow.size"
-        private const val IDE_INTELLIJ_LAF_ENABLE_ANIMATION = "ide.intellij.laf.enable.animation"
+  companion object {
+    private const val IDE_BALLOON_SHADOW_SIZE = "ide.balloon.shadow.size"
+    private const val IDE_INTELLIJ_LAF_ENABLE_ANIMATION = "ide.intellij.laf.enable.animation"
 
-        private fun modifyRegistry() {
-            Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(0)
-            Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(true)
-        }
+    private fun modifyRegistry() {
+      Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(0)
+      Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(true)
     }
+  }
 }

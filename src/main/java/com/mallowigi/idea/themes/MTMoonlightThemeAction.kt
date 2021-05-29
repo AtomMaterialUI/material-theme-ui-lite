@@ -27,4 +27,3 @@ class MTMoonlightThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.MOONLIGHT
 }
-

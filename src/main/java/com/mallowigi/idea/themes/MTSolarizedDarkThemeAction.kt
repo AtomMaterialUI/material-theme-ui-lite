@@ -27,4 +27,3 @@ class MTSolarizedDarkThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.SOLARIZED_DARK
 }
-

@@ -44,5 +44,4 @@ enum class MTThemes(@param:NonNls private val id: String, @field:Transient val t
   GITHUB("GITHUB", message("github.name")),
   GITHUB_DARK("GITHUB_DARK", message("github_dark.name")),
   MOONLIGHT("MOONLIGHT", message("moonlight.name"));
-
 }

@@ -27,4 +27,3 @@ class MTMonokaiThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.MONOKAI
 }
-

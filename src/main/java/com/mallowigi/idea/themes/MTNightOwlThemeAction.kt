@@ -27,4 +27,3 @@ class MTNightOwlThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.NIGHT_OWL
 }
-

@@ -27,4 +27,3 @@ class MTSolarizedLightThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.SOLARIZED_LIGHT
 }
-

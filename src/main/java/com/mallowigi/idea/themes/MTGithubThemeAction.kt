@@ -27,4 +27,3 @@ class MTGithubThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.GITHUB
 }
-

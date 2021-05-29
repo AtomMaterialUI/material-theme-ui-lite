@@ -27,4 +27,3 @@ class MTDraculaThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.DRACULA
 }
-

@@ -22,9 +22,6 @@
  * SOFTWARE.
  */
 
-import org.jetbrains.changelog.closure
-import org.jetbrains.changelog.markdownToHTML
-
 fun properties(key: String) = project.findProperty(key).toString()
 
 plugins {
@@ -71,22 +68,24 @@ intellij {
   alternativeIdePath = properties("idePath")
 
   // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
-  setPlugins(*properties("platformPlugins")
+  setPlugins(
+    *properties("platformPlugins")
       .split(',')
       .map(String::trim)
       .filter(String::isNotEmpty)
-      .toTypedArray())
+      .toTypedArray()
+  )
 }
 
 // Configure gradle-changelog-plugin plugin.
 // Read more: https://github.com/JetBrains/gradle-changelog-plugin
-//changelog {
+// changelog {
 //  path = "${project.projectDir}/docs/CHANGELOG.md"
 //  version = properties("pluginVersion")
 //  keepUnreleasedSection = true
 //  unreleasedTerm = "Changelog"
 //  groups = emptyList()
-//}
+// }
 
 // Configure detekt plugin.
 // Read more: https://detekt.github.io/detekt/kotlindsl.html

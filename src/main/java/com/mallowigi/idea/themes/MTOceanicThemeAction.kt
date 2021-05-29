@@ -27,4 +27,3 @@ class MTOceanicThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.OCEANIC
 }
-
