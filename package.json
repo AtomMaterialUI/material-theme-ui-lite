@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/mallowigi/material-theme-ui-lite#readme",
   "devDependencies": {
-    "nodemon": "^1.18.10",
+    "nodemon": "^2.0.0",
     "yaml": "^1.4.0"
   }
 }
