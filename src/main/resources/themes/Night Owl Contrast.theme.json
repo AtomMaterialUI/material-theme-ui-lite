@@ -7,7 +7,7 @@
     "bg30": "#01162730",
     "fg": "#d6deeb",
     "text": "#5f7e97",
-    "selBg": "#084d81",
+    "selBg": "#5f7e9790",
     "selFg": "#FFFFFF",
     "activeFg": "#FFFFFF",
     "border": "#122d42",

@@ -30,7 +30,8 @@
     <vendor email="heliosaian@gmail.com" url="https://www.material-theme.com">Mallowigi</vendor>
 
     <description><![CDATA[
-        This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material Theme UI Plugin</a>
+        This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material
+            Theme UI Plugin</a>
         which only includes the themes and color schemes.
         ]]></description>
 
@@ -44,11 +45,15 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="com.mallowigi.idea.MTStartup"/>
-        <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"/>
-        <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"/>
-        <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"/>
-        <themeProvider id="Material Palenight" path="/themes/Material Palenight.theme.json"/>
-        <themeProvider id="Material Deep Ocean" path="/themes/Material Deep Ocean.theme.json"/>
+        <themeProvider id="Material Oceanic" path="/themes/Oceanic.theme.json"/>
+        <themeProvider id="Material Darker" path="/themes/Darker.theme.json"/>
+        <themeProvider id="Material Lighter" path="/themes/Lighter.theme.json"/>
+        <themeProvider id="Material Palenight" path="/themes/Palenight.theme.json"/>
+        <themeProvider id="Material Deep Ocean" path="/themes/Deep Ocean.theme.json"/>
+        <themeProvider id="Material Forest" path="/themes/Forest.theme.json"/>
+        <themeProvider id="Material Sky Blue" path="/themes/Sky Blue.theme.json"/>
+        <themeProvider id="Material SandyBeach" path="/themes/Sandy Beach.theme.json"/>
+        <themeProvider id="Material Volcano" path="/themes/Volcano.theme.json"/>
         <themeProvider id="Dracula" path="/themes/Dracula.theme.json"/>
         <themeProvider id="Monokai Pro" path="/themes/Monokai Pro.theme.json"/>
         <themeProvider id="Arc Dark" path="/themes/Arc Dark.theme.json"/>
@@ -61,16 +66,21 @@
         <themeProvider id="Night Owl" path="/themes/Night Owl.theme.json"/>
         <themeProvider id="Light Owl" path="/themes/Light Owl.theme.json"/>
         <themeProvider id="Moonlight" path="/themes/Moonlight.theme.json"/>
+        <themeProvider id="SynthWave '84" path="/themes/SynthWave '84.theme.json"/>
 
         <themeProvider id="Material Oceanic Contrast"
-                       path="/themes/Material Oceanic Contrast.theme.json"/>
-        <themeProvider id="Material Darker Contrast" path="/themes/Material Darker Contrast.theme.json"/>
+                       path="/themes/Oceanic Contrast.theme.json"/>
+        <themeProvider id="Material Darker Contrast" path="/themes/Darker Contrast.theme.json"/>
         <themeProvider id="Material Lighter Contrast"
-                       path="/themes/Material Lighter Contrast.theme.json"/>
+                       path="/themes/Lighter Contrast.theme.json"/>
         <themeProvider id="Material Palenight Contrast"
-                       path="/themes/Material Palenight Contrast.theme.json"/>
+                       path="/themes/Palenight Contrast.theme.json"/>
         <themeProvider id="Material Deep Ocean Contrast"
-                       path="/themes/Material Deep Ocean Contrast.theme.json"/>
+                       path="/themes/Deep Ocean Contrast.theme.json"/>
+        <themeProvider id="Material Forest Contrast" path="/themes/Forest Contrast.theme.json"/>
+        <themeProvider id="Material Sky Blue Contrast" path="/themes/Sky Blue Contrast.theme.json"/>
+        <themeProvider id="Material SandyBeach Contrast" path="/themes/Sandy Beach Contrast.theme.json"/>
+        <themeProvider id="Material Volcano Contrast" path="/themes/Volcano Contrast.theme.json"/>
         <themeProvider id="Dracula Contrast" path="/themes/Dracula Contrast.theme.json"/>
         <themeProvider id="Monokai Pro Contrast" path="/themes/Monokai Pro Contrast.theme.json"/>
         <themeProvider id="Arc Dark Contrast" path="/themes/Arc Dark Contrast.theme.json"/>
@@ -90,8 +100,10 @@
                        path="/themes/Light Owl Contrast.theme.json"/>
         <themeProvider id="Moonlight Contrast"
                        path="/themes/Moonlight Contrast.theme.json"/>
+        <themeProvider id="SynthWave '84 Contrast" path="/themes/SynthWave '84 Contrast.theme.json"/>
 
-        <notificationGroup displayType="STICKY_BALLOON" id="Material Theme UI Lite Notifications" />
+
+        <notificationGroup displayType="STICKY_BALLOON" id="Material Theme UI Lite Notifications"/>
 
     </extensions>
 

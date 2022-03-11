@@ -21,6 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+@file:Suppress("SpellCheckingInspection", "HardCodedStringLiteral")
 
 fun properties(key: String) = project.findProperty(key).toString()
 
@@ -28,15 +29,17 @@ plugins {
   // Java support
   id("java")
   // Kotlin support
-  id("org.jetbrains.kotlin.jvm") version "1.5.10"
+  id("org.jetbrains.kotlin.jvm") version "1.6.10"
   // gradle-intellij-plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
-  id("org.jetbrains.intellij") version "0.7.2"
+  id("org.jetbrains.intellij") version "1.4.0"
   // gradle-changelog-plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
-  id("org.jetbrains.changelog") version "1.1.2"
+  id("org.jetbrains.changelog") version "1.3.1"
+  // Gradle Qodana Plugin
+  id("org.jetbrains.qodana") version "0.1.13"
   // detekt linter - read more: https://detekt.github.io/detekt/gradle.html
-  id("io.gitlab.arturbosch.detekt") version "1.17.1"
+  id("io.gitlab.arturbosch.detekt") version "1.19.0"
   // ktlint linter - read more: https://github.com/JLLeitschuh/ktlint-gradle
-  id("org.jlleitschuh.gradle.ktlint") version "10.0.0"
+  id("org.jlleitschuh.gradle.ktlint") version "10.2.0"
 }
 
 group = properties("pluginGroup")
@@ -45,47 +48,46 @@ version = properties("pluginVersion")
 // Configure project's dependencies
 repositories {
   mavenCentral()
-  jcenter()
+  maven(url = "https://maven-central.storage-download.googleapis.com/repos/central/data/")
+  maven(url = "https://repo.eclipse.org/content/groups/releases/")
+  maven(url = "https://www.jetbrains.com/intellij-repository/releases")
+  maven(url = "https://www.jetbrains.com/intellij-repository/snapshots")
 }
 
 dependencies {
-  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.16.0")
-  implementation("com.thoughtworks.xstream:xstream:1.4.16")
-  implementation("org.javassist:javassist:3.27.0-GA")
+  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.19.0")
+  implementation("com.jgoodies:jgoodies-forms:1.9.0")
+  implementation("com.thoughtworks.xstream:xstream:1.4.19")
+  implementation("org.javassist:javassist:3.28.0-GA")
   implementation("com.mixpanel:mixpanel-java:1.5.0")
-  implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0-M2")
 }
 
 // Configure gradle-intellij-plugin plugin.
 // Read more: https://github.com/JetBrains/gradle-intellij-plugin
 intellij {
-  pluginName = properties("pluginName")
-  version = properties("platformVersion")
-  type = properties("platformType")
-  downloadSources = true
-  instrumentCode = true
-  updateSinceUntilBuild = true
-  alternativeIdePath = properties("idePath")
+  pluginName.set(properties("pluginName"))
+  version.set(properties("platformVersion"))
+  type.set(properties("platformType"))
+  downloadSources.set(true)
+  instrumentCode.set(true)
+  updateSinceUntilBuild.set(true)
+//  localPath.set(properties("idePath"))
 
   // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
-  setPlugins(
-    *properties("platformPlugins")
-      .split(',')
-      .map(String::trim)
-      .filter(String::isNotEmpty)
-      .toTypedArray()
-  )
-}
+  plugins.set(listOf("java"))
 
 // Configure gradle-changelog-plugin plugin.
 // Read more: https://github.com/JetBrains/gradle-changelog-plugin
-// changelog {
-//  path = "${project.projectDir}/docs/CHANGELOG.md"
-//  version = properties("pluginVersion")
-//  keepUnreleasedSection = true
-//  unreleasedTerm = "Changelog"
-//  groups = emptyList()
-// }
+  changelog {
+    path.set("${project.projectDir}/docs/CHANGELOG.md")
+    version.set(properties("pluginVersion"))
+    header.set(provider { version.get() })
+    itemPrefix.set("-")
+    keepUnreleasedSection.set(true)
+    unreleasedTerm.set("Changelog")
+    groups.set(listOf("Features", "Fixes", "Removals", "Other"))
+  }
+}
 
 // Configure detekt plugin.
 // Read more: https://detekt.github.io/detekt/kotlindsl.html
@@ -93,27 +95,40 @@ detekt {
   config = files("./detekt-config.yml")
   buildUponDefaultConfig = true
   autoCorrect = true
+}
 
-  reports {
-    html.enabled = false
-    xml.enabled = false
-    txt.enabled = false
-  }
+// Configure Gradle Qodana Plugin - read more: https://github.com/JetBrains/gradle-qodana-plugin
+qodana {
+  cachePath.set(projectDir.resolve(".qodana").canonicalPath)
+  reportPath.set(projectDir.resolve("build/reports/inspections").canonicalPath)
+  saveReport.set(true)
+  showReport.set(System.getenv("QODANA_SHOW_REPORT")?.toBoolean() ?: false)
 }
 
 tasks {
-  // Set the compatibility versions to 1.8
-  withType<JavaCompile> {
-    sourceCompatibility = "1.8"
-    targetCompatibility = "1.8"
+  properties("javaVersion").let {
+    // Set the compatibility versions to 1.8
+    withType<JavaCompile> {
+      sourceCompatibility = it
+      targetCompatibility = it
+    }
+    withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+      kotlinOptions.jvmTarget = it
+      kotlinOptions.freeCompilerArgs += listOf("-Xskip-prerelease-check", "-Xjvm-default=all")
+    }
   }
-  withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-    kotlinOptions.freeCompilerArgs += listOf("-Xskip-prerelease-check")
+
+  wrapper {
+    gradleVersion = properties("gradleVersion")
   }
 
   withType<io.gitlab.arturbosch.detekt.Detekt> {
-    jvmTarget = "1.8"
+    jvmTarget = properties("javaVersion")
+    reports.xml.required.set(true)
+  }
+
+  withType<Copy> {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
   }
 
   sourceSets {
@@ -124,32 +139,45 @@ tasks {
   }
 
   patchPluginXml {
-    version(properties("pluginVersion"))
-    sinceBuild(properties("pluginSinceBuild"))
-    untilBuild(properties("pluginUntilBuild"))
+    version.set(properties("pluginVersion"))
+    sinceBuild.set(properties("pluginSinceBuild"))
+    untilBuild.set(properties("pluginUntilBuild"))
 
     // Get the latest available change notes from the changelog file
-//    changeNotes(
-//        closure {
-//          File(projectDir, "docs/CHANGELOG.md")
-//              .readText()
-//              .lines()
-//              .joinToString("\n")
-//              .run { markdownToHTML(this) }
-//        }
-//    )
+    changeNotes.set(changelog.getLatest().toHTML())
   }
 
   runPluginVerifier {
-    ideVersions(properties("pluginVerifierIdeVersions"))
+    ideVersions.set(properties("pluginVerifierIdeVersions").split(',').map { it.trim() }.toList())
   }
 
   buildSearchableOptions {
     enabled = false
   }
 
+  // Configure UI tests plugin
+  // Read more: https://github.com/JetBrains/intellij-ui-test-robot
+  runIdeForUiTests {
+    systemProperty("robot-server.port", "8082")
+    systemProperty("ide.mac.message.dialogs.as.sheets", "false")
+    systemProperty("jb.privacy.policy.text", "<!--999.999-->")
+    systemProperty("jb.consents.confirmation.enabled", "false")
+  }
+
+//  runIde {
+//    jvmArgs = properties("jvmArgs").split("")
+//    systemProperty("jb.service.configuration.url", properties("salesUrl"))
+//  }
+
+  signPlugin {
+    certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
+    privateKey.set(System.getenv("PRIVATE_KEY"))
+    password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
+  }
+
   publishPlugin {
-//    dependsOn("patchChangelog")
-    token(file("./publishToken").readText())
+    //    dependsOn("patchChangelog")
+    token.set(System.getenv("INTELLIJ_PUBLISH_TOKEN") ?: file("./publishToken").readText())
+    channels.set(listOf(properties("pluginVersion").split('-').getOrElse(1) { "default" }.split('.').first()))
   }
 }
