@@ -73,10 +73,11 @@
     "AssignedMnemonic": {
       "background": "hl",
       "borderColor": "selBg",
-      "foreground": "fg"
+      "foreground": "activeFg"
     },
     "Autocomplete": {
-      "selectionBackground": "selBg"
+      "selectionBackground": "selBg",
+      "selectionUnfocus": "hl"
     },
     "AvailableMnemonic": {
       "background": "button",
@@ -229,6 +230,7 @@
     },
     "CodeWithMe": {
       "Avatar.foreground": "fg",
+      "AccessDisabled.accessDot": "dis",
       "AccessEnabled": {
         "accessDot": "accent",
         "dropdownBorder": "second",
@@ -292,11 +294,12 @@
     "Component": {
       "arc": 4,
       "borderColor": "hl",
-      "disabledBorderColor": "button",
+      "disabledBorderColor": "dis",
       "focusColor": "accent",
       "focusedBorderColor": "accent",
       "hoverIconColor": "accent",
-      "iconColor": "fg",
+      "iconColor": "text",
+      "grayForeground": "text",
       "infoForeground": "text"
     },
     "Content": {
@@ -304,8 +307,12 @@
       "selectionBackground": "selBg",
       "selectionInactiveBackground": "fg"
     },
-    "control": "bg",
+    "control": "button",
+    "controlLtHighlight": "selFg",
     "controlText": "text",
+    "controlHighlight": "hl",
+    "controlShadow": "excl",
+    "controlDkShadow": "excl",
     "Counter": {
       "background": "accent",
       "foreground": "selFg"
@@ -313,7 +320,7 @@
     "CurrentMnemonic": {
       "background": "accent",
       "borderColor": "accent",
-      "foreground": "fg"
+      "foreground": "selFg"
     },
     "darcula": {
       "background": "bg",
@@ -332,8 +339,9 @@
       }
     },
     "DebuggerTabs": {
+      "active.background": "hl",
       "selectedBackground": "hl",
-      "underlinedTabBackground": "hl"
+      "underlinedTabBackground": "table"
     },
     "DebuggerPopup": {
       "borderColor": "bg"
@@ -417,7 +425,8 @@
       "Orange": "#B53D00",
       "Rose": "#A00037",
       "Violet": "#4D2C91",
-      "Yellow": "excl"
+      "Yellow": "excl",
+      "excluded": "excl"
     },
     "FlameGraph": {
       "JVMBackground": "#89DDF7",
@@ -495,7 +504,7 @@
     "Hyperlink.linkColor": "accent",
     "IdeStatusBar.border": "4,4,4,4",
     "InformationHint.borderColor": "border",
-    "inactiveCaption": "bg",
+    "inactiveCaption": "second",
     "inactiveCaptionBorder": "bg",
     "inactiveCaptionText": "text",
     "info": "text",
@@ -589,6 +598,7 @@
     },
     "MemoryIndicator": {
       "allocatedBackground": "second",
+      "unusedColor": "second",
       "usedBackground": "hl",
       "usedColor": "hl"
     },
@@ -681,8 +691,8 @@
     },
     "NotificationsToolwindow": {
       "newNotification.background": "notif",
-      "newNotification.hoverBackground": "bg",
-      "Notification.hoverBackground": "bg"
+      "newNotification.hoverBackground": "tree",
+      "Notification.hoverBackground": "tree"
     },
     "OnePixelDivider.background": "border",
     "OptionPane": {
@@ -691,8 +701,8 @@
       "messageForeground": "fg"
     },
     "OptionButton": {
-      "default.separatorColor": "border",
-      "separatorColor": "border"
+      "default.separatorColor": "table",
+      "separatorColor": "button"
     },
     "Outline": {
       "color": "button",
@@ -813,6 +823,7 @@
     "ProgressBar": {
       "background": "bg",
       "foreground": "accent",
+      "halfColor": "hl",
       "indeterminateEndColor": "accent",
       "indeterminateStartColor": "accent",
       "progressColor": "accent",
@@ -893,14 +904,14 @@
       },
       "List": {
         "Separator.Color": "border",
-        "Separator.foreground": "border",
+        "Separator.foreground": "text",
         "separatorColor": "border",
-        "separatorForeground": "border"
+        "separatorForeground": "text"
       },
       "SearchField": {
-        "Border.color": "cs",
+        "Border.color": "hl",
         "background": "hc",
-        "borderColor": "cs",
+        "borderColor": "hl",
         "grayForeground": "dis",
         "infoForeground": "dis"
       },
@@ -928,10 +939,14 @@
       "Ordinal.File.Foreground": "text",
       "Repeated.File.Foreground": "fg"
     },
+    "SegmentedButton": {
+      "selectedStartBorderColor": "border",
+      "selectedEndBorderColor": "border"
+    },
     "Separator": {
       "background": "second",
       "foreground": "second",
-      "separatorColor": "second"
+      "separatorColor": "border"
     },
     "Settings.Spotlight.borderColor": "accent",
     "SidePanel": {
@@ -1075,8 +1090,15 @@
       "height": 25,
       "separatorColor": "border"
     },
+    "Tag": {
+      "background": "button",
+      "borderColor": "button",
+      "foreground": "fg"
+    },
     "text": "bg",
     "textInactiveText": "text",
+    "textHighlight": "selBg",
+    "textHighlightText": "activeFg",
     "textText": "text",
     "TextArea": {
       "background": "hc",
