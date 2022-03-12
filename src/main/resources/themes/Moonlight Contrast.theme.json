@@ -8,6 +8,7 @@
     "fg": "#c8d3f5",
     "text": "#a9b8e8",
     "selBg": "#444a73",
+    "selBg20": "#444a7320",
     "selFg": "#FFFFFF",
     "activeFg": "#FFFFFF",
     "border": "#222436",
@@ -25,7 +26,7 @@
     "hl": "#444a73",
     "notif": "#191a2a",
     "hc": "#191a2a",
-    "shadow": "#00000020",
+    "shadow": "undefined",
     "white": "#c8d3f5",
     "blue": "#70b0ff",
     "red": "#ff757f",
@@ -49,15 +50,17 @@
       "focusColor": "hl",
       "focusedBorderColor": "accent",
       "foreground": "fg",
+      "hoverBorderColor": "hl",
       "inactiveBackground": "excl",
       "inactiveForeground": "text",
       "infoForeground": "text",
+      "lineSeparatorColor": "hl",
+      "pressedBorderColor": "hl",
       "selectionBackground": "selBg",
       "selectionBackgroundInactive": "second",
       "selectionForeground": "selFg",
       "selectionInactiveBackground": "second",
-      "separatorColor": "border",
-      "lineSeparatorColor": "hl"
+      "separatorColor": "border"
     },
     "activeCaption": "bg",
     "activeCaptionBorder": "bg",
@@ -384,7 +387,7 @@
       "southPanelDivider": "bg"
     },
     "DragAndDrop": {
-      "areaBackground": "bg",
+      "areaBackground": "tree",
       "areaBorderColor": "bg",
       "areaForeground": "fg",
       "backgroundBorderColor": "bg",
@@ -444,6 +447,7 @@
       "Rose": "#A00037",
       "Violet": "#4D2C91",
       "Yellow": "excl",
+      "Gray": "excl",
       "excluded": "excl"
     },
     "FlameGraph": {
@@ -498,7 +502,7 @@
     },
     "Group": {
       "disabledSeparatorColor": "border",
-      "separatorColor": "fg"
+      "separatorColor": "border"
     },
     "GutterTooltip": {
       "borderColor": "bg",
@@ -597,11 +601,10 @@
     "List": {
       "background": "second",
       "foreground": "fg",
-      "hoverBackground": "tree",
+      "hoverBackground": "hl",
       "hoverInactiveBackground": "table",
-      "selectionBackground": "selBg",
       "selectionForeground": "selFg",
-      "selectionInactiveBackground": "tree",
+      "selectionInactiveBackground": "table",
       "selectionInactiveForeground": "activeFg"
     },
     "LiveIndicator": {
@@ -711,20 +714,29 @@
         "innerBorderColor": "button"
       },
       "ToolWindow": {
-        "errorBackground": "notif",
-        "errorBorderColor": "notif",
+        "errorBackground": "notifError",
+        "errorBorderColor": "notifError",
         "errorForeground": "fg",
         "infoForeground": "fg",
-        "informativeBackground": "notif",
-        "informativeBorderColor": "notif",
+        "informativeBackground": "notifInfo",
+        "informativeBorderColor": "notifInfo",
         "informativeForeground": "fg",
-        "warningBackground": "notif",
-        "warningBorderColor": "notif",
+        "warningBackground": "notifWarn",
+        "warningBorderColor": "notifWarn",
         "warningForeground": "fg"
       },
-      "ToolWindowError.foreground": "fg",
-      "ToolWindowInfo.foreground": "fg",
-      "ToolWindowWarning.foreground": "fg"
+      "ToolWindowError": {
+        "foreground": "fg",
+        "background": "notifError"
+      },
+      "ToolWindowInfo": {
+        "foreground": "fg",
+        "background": "notifInfo"
+      },
+      "ToolWindowWarning": {
+        "foreground": "fg",
+        "background": "notifWarn"
+      }
     },
     "Notifications": {
       "background": "notif",
@@ -960,6 +972,7 @@
       "List": {
         "Separator.Color": "border",
         "Separator.foreground": "text",
+        "selectionBackground": "selBg",
         "separatorColor": "border",
         "separatorForeground": "text"
       },
@@ -1114,7 +1127,7 @@
       "foreground": "fg",
       "gridColor": "bg",
       "highlightOuter": "table",
-      "hoverBackground": "tree",
+      "hoverBackground": "hl",
       "hoverInactiveBackground": "table",
       "lightSelectionBackground": "table",
       "lightSelectionForeground": "activeFg",
@@ -1138,7 +1151,7 @@
       "focusCellForeground": "activeFg",
       "foreground": "fg",
       "height": 25,
-      "hoverBackground": "tree",
+      "hoverBackground": "hl",
       "separatorColor": "border"
     },
     "Tag": {
@@ -1204,8 +1217,8 @@
       "onBackground": "accent",
       "onForeground": "accent"
     },
+    "Toolbar.Floating.background": "button",
     "ToolBar": {
-      "Floating.background": "second",
       "background": "hc",
       "borderHandleColor": "text",
       "comboBoxButtonBackground": "button",
@@ -1432,7 +1445,11 @@
     "WelcomeScreen": {
       "AssociatedComponent.background": "bg",
       "Details.background": "bg",
-      "List.background": "cs",
+      "List": {
+        "background": "hc",
+        "selectionBackground": "selBg",
+        "selectionInactiveBackground": "hl"
+      },
       "SidePanel.background": "second",
       "background": "bg",
       "borderColor": "bg",
@@ -1449,7 +1466,7 @@
         "actions.selectionBackground": "hl",
         "background": "second",
         "selectionBackground": "selBg",
-        "selectionInactiveBackground": "second"
+        "selectionInactiveBackground": "selBg"
       }
     },
     "Window.border": "border",

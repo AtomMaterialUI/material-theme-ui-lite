@@ -98,6 +98,13 @@ let contrastProps = [
   ['orange', 'numbers'],
 ];
 
+let globalProps = [
+  ['shadow', '#ffffff20', '#00000020'],
+  ['notifError', '#ef9694', '#b71c1c'],
+  ['notifWarn', '#ffeca0', '#5d4037'],
+  ['notifInfo', '#87bb91', '#1b5e20'],
+];
+
 // Function to replace placeholders in a text
 const replacePlaceholders = (text, theme, props) => {
   let result = text;
@@ -106,6 +113,13 @@ const replacePlaceholders = (text, theme, props) => {
     result = result.replace(new RegExp(`%${placeholder}`, 'g'), theme[prop]);
     result = result.replace(new RegExp(`"@${placeholder}"`, 'g'), theme[prop]);
   });
+
+  globalProps.forEach(([prop, light, dark]) => {
+    let isDark = theme.dark;
+    console.log(`Replacing global ${prop} with ${isDark ? dark : light}`);
+    result = result.replace(new RegExp(`%${prop}`, 'g'), isDark ? dark : light);
+  });
+
   return result;
 };
 
