@@ -70,6 +70,9 @@
       "pressedBackground": "accent50",
       "pressedBorderColor": "accent50"
     },
+    "ActionToolbar": {
+      "background": "hc"
+    },
     "AssignedMnemonic": {
       "background": "hl",
       "borderColor": "selBg",
@@ -86,6 +89,7 @@
     },
     "BigSpinner.background": "bg",
     "Bookmark": {
+      "iconBackground": "accent",
       "Mnemonic": {
         "iconBackground": "hl",
         "iconBorderColor": "hl",
@@ -175,14 +179,11 @@
       "Tooltip.background": "notif",
       "Tooltip.borderColor": "border"
     },
-    "Content": {
-      "background": "cs",
-      "selectionBackground": "selBg",
-      "selectionInactiveBackground": "excl"
-    },
     "CheckBox": {
       "background": "bg",
+      "background.selected": "accent",
       "borderColor": "bg",
+      "borderColor.selected": "accent",
       "checkSignColor": "bg",
       "checkSignColor.selected": "bg",
       "checkSignColorDisabled": "bg",
@@ -195,11 +196,15 @@
         "inactiveFillColor": "hl"
       },
       "disabledBorderColor": "bg",
+      "disabledBorderColor.selected": "accent",
       "disabledText": "dis",
       "focused.background": "bg",
+      "focused.background.selected": "accent",
       "focusedArmed.background": "bg",
+      "focusedArmed.background.selected": "accent",
       "foreground": "fg",
       "inactiveFillColor": "bg",
+      "inactiveFillColor.selected": "accent",
       "select": "accent",
       "shadowColor": "bg",
       "shadowColorDisabled": "bg"
@@ -209,14 +214,22 @@
       "Background.Default.Dark": "bg",
       "Background.Disabled": "second",
       "Background.Disabled.Dark": "second",
+      "Background.Selected": "accent",
+      "Background.Selected.Dark": "accent",
       "Border.Default": "hl",
       "Border.Default.Dark": "hl",
       "Border.Disabled": "second",
       "Border.Disabled.Dark": "second",
+      "Border.Selected": "accent",
+      "Border.Selected.Dark": "accent",
       "Focus.Thin.Default": "bg",
       "Focus.Thin.Default.Dark": "bg",
       "Focus.Wide.Default": "bg",
-      "Focus.Wide.Default.Dark": "bg"
+      "Focus.Wide.Default.Dark": "bg",
+      "Focus.Thin.Selected": "accent",
+      "Focus.Thin.Selected.Dark": "accent",
+      "Focus.Wide.Selected": "accent",
+      "Focus.Wide.Selected.Dark": "accent"
     },
     "CheckBoxMenuItem": {
       "acceleratorForeground": "text",
@@ -248,18 +261,18 @@
         "background": "button",
         "disabledIconColor": "dis",
         "iconColor": "fg",
-        "nonEditableBackground": "bg"
+        "nonEditableBackground": "hc"
       },
       "PopupBackground": "cs",
-      "arrowFillColor": "bg",
+      "arrowFillColor": "hc",
       "background": "hc",
       "buttonBackground": "button",
       "darcula": {
-        "arrowButtonBackground": "bg",
+        "arrowButtonBackground": "hc",
         "arrowButtonDisabledForeground": "dis",
         "arrowButtonForeground": "fg",
         "disabledArrowButtonBackground": "excl",
-        "editable.arrowButtonBackground": "bg",
+        "editable.arrowButtonBackground": "hc",
         "hoveredArrowButtonForeground": "accent",
         "nonEditableBackground": "bg"
       },
@@ -279,6 +292,7 @@
       "grayedForeground": "text",
       "infoForeground": "text",
       "matchForeground": "accent",
+      "matchSelectedForeground": "accent",
       "matchSelectionForeground": "accent",
       "nonFocusedState": "false",
       "selectedForeground": "selFg",
@@ -327,6 +341,7 @@
       "foreground": "fg",
       "primary": "bg"
     },
+    "desktop": "hc",
     "Debugger": {
       "Variables": {
         "changedValueForeground": "accent",
@@ -374,8 +389,10 @@
       "areaForeground": "fg",
       "backgroundBorderColor": "bg",
       "backgroundColor": "bg",
+      "borderColor": "accent",
       "foregroundColor": "fg"
     },
+    "dropArea.base": "accent",
     "Editor": {
       "background": "hc",
       "foreground": "fg",
@@ -403,6 +420,7 @@
     "EditorTabs": {
       "active.background": "table",
       "active.foreground": "fg",
+      "active.underlineColor": "accent",
       "background": "bg",
       "borderColor": "second",
       "foreground": "fg",
@@ -438,7 +456,12 @@
       "nativeFocusSearchNotMatchedBackground": "#BB80B3",
       "nativeSearchNotMatchedBackground": "#C792EA"
     },
-    "Focus.color": "border",
+    "Focus": {
+      "Color": "accent50",
+      "borderColor": "accent50",
+      "color": "accent50",
+      "defaultButtonBorderColor": "accent"
+    },
     "FormattedTextField": {
       "background": "hc",
       "caretForeground": "accent",
@@ -449,6 +472,7 @@
       "selectionForeground": "activeFg"
     },
     "Git.Log.Ref": {
+      "LocalBranch": "accent",
       "Other": "text",
       "RemoteBranch": "fg",
       "Tag": "text"
@@ -496,12 +520,16 @@
       "textColor": "fg"
     },
     "Hg.Log.Ref": {
+      "Branch": "accent",
       "ClosedBranch": "fg",
       "LocalTag": "text",
       "MqTag": "text",
       "Tag": "text"
     },
     "Hyperlink.linkColor": "accent",
+    "IconBadge": {
+      "infoBackground": "accent"
+    },
     "IdeStatusBar.border": "4,4,4,4",
     "InformationHint.borderColor": "border",
     "inactiveCaption": "second",
@@ -530,6 +558,7 @@
       "disabledForegroundColor": "dis",
       "disabledShadow": "dis",
       "disabledText": "dis",
+      "errorForeground": "accent",
       "foreground": "fg",
       "grayForeground": "text",
       "infoForeground": "text",
@@ -539,6 +568,7 @@
     },
     "Lesson": {
       "Badge": {
+        "newLessonBackground": "accent",
         "newLessonForeground": "selFg"
       },
       "shortcutBackground": "second",
@@ -561,6 +591,9 @@
       "visitedForeground": "accent"
     },
     "link.foreground": "accent",
+    "link.hover.foreground": "accent",
+    "link.pressed.foreground": "accent",
+    "link.visited.foreground": "accent",
     "List": {
       "background": "second",
       "foreground": "fg",
@@ -570,6 +603,9 @@
       "selectionForeground": "selFg",
       "selectionInactiveBackground": "tree",
       "selectionInactiveForeground": "activeFg"
+    },
+    "LiveIndicator": {
+      "color": "accent"
     },
     "MainToolbar": {
       "Dropdown.background": "bg",
@@ -647,7 +683,8 @@
     },
     "NavBar": {
       "arrowColor": "fg",
-      "borderColor": "bg"
+      "borderColor": "bg",
+      "selectedColor": "accent"
     },
     "NewClass": {
       "Panel": {
@@ -659,11 +696,15 @@
     },
     "NewPSD.warning": "accent",
     "Notification": {
+      "Error.foreground": "accent",
+      "Link.foreground": "accent",
       "background": "notif",
       "borderColor": "notif",
       "errorBackground": "notif",
       "errorBorderColor": "notif",
+      "errorForeground": "accent",
       "foreground": "fg",
+      "linkForeground": "accent",
       "MoreButton": {
         "background": "button",
         "foreground": "fg",
@@ -690,9 +731,9 @@
       "borderColor": "notif"
     },
     "NotificationsToolwindow": {
+      "Notification.hoverBackground": "tree",
       "newNotification.background": "notif",
-      "newNotification.hoverBackground": "tree",
-      "Notification.hoverBackground": "tree"
+      "newNotification.hoverBackground": "tree"
     },
     "OnePixelDivider.background": "border",
     "OptionPane": {
@@ -715,14 +756,15 @@
       "mouseShortcutBackground": "bg"
     },
     "ParameterInfo": {
+      "ContextHelp.foreground": "text",
       "background": "second",
       "borderColor": "table",
-      "ContextHelp.foreground": "text",
       "currentOverloadBackground": "hl",
       "currentParameterForeground": "accent",
       "disabledColor": "dis",
       "disabledForeground": "dis",
       "foreground": "fg",
+      "highlightedColor": "accent",
       "infoForeground": "text",
       "lineSeparatorColor": "table"
     },
@@ -769,8 +811,8 @@
       "Tab": {
         "active.background": "table",
         "active.foreground": "activeFg",
-        "hoverBackground": "table",
         "hover.background": "table",
+        "hoverBackground": "table",
         "selectedBackground": "table",
         "selectedForeground": "selFg"
       }
@@ -805,9 +847,9 @@
       "separatorColor": "second",
       "separatorForeground": "fg",
       "Toolbar": {
+        "Border.color": "cs",
         "Floating.background": "cs",
         "background": "cs",
-        "Border.color": "cs",
         "borderColor": "cs"
       }
     },
@@ -835,11 +877,20 @@
     },
     "RadioButton": {
       "background": "bg",
-      "darcula.borderColor1": "fg",
-      "darcula.selectionDisabledColor": "bg",
+      "darcula": {
+        "borderColor1": "fg",
+        "selectionDisabledColor": "bg",
+        "selectionDisabledShadowColor": "accent",
+        "selectionEnabledColor": "accent",
+        "selectionEnabledShadowColor": "accent"
+      },
       "disabledText": "dis",
+      "focusColor": "accent",
       "foreground": "fg",
-      "selectionDisabledColor": "bg"
+      "selectionDisabledColor": "bg",
+      "selectionDisabledShadowColor": "accent",
+      "selectionEnabledColor": "accent",
+      "selectionEnabledShadowColor": "accent"
     },
     "RadioButtonMenuItem": {
       "acceleratorForeground": "text",
@@ -877,6 +928,10 @@
       "thumb": "hl",
       "thumbBorderColor": "accent70",
       "thumbColor": "accent70",
+      "Thumb": {
+        "Hovered.background": "accent",
+        "NonOpaque.Hovered.background": "accent"
+      },
       "trackColor": "bg30",
       "Transparent": {
         "hoverThumbBorderColor": "accent",
@@ -948,7 +1003,9 @@
       "foreground": "second",
       "separatorColor": "border"
     },
-    "Settings.Spotlight.borderColor": "accent",
+    "Settings": {
+      "Spotlight.borderColor": "accent"
+    },
     "SidePanel": {
       "background": "hc"
     },
@@ -964,12 +1021,6 @@
       "trackColor": "table",
       "trackDisabled": "hl",
       "trackWidth": 7
-    },
-    "SpeedSearch": {
-      "background": "hl",
-      "borderColor": "border",
-      "errorForeground": "fg",
-      "foreground": "fg"
     },
     "Space.Review.diffAnchorBackground": "second",
     "SpeedSearch": {
@@ -1020,10 +1071,10 @@
     },
     "TabbedPane": {
       "background": "bg",
-      "borderColor": "bg",
+      "borderColor": "hc",
       "contentAreaColor": "hl",
       "contentBorderInsets": "3,1,1,1",
-      "darkShadow": "border",
+      "darkShadow": "hc",
       "disabledForeground": "dis",
       "disabledText": "dis",
       "disabledUnderlineColor": "dis",
@@ -1034,15 +1085,15 @@
       "highlight": "border",
       "hoverColor": "hl",
       "labelShift": 0,
-      "mt.tab.background": "bg",
+      "mt.tab.background": "hc",
       "selectHighlight": "hl",
       "selected": "selBg",
-      "selectedColor": "hl",
+      "selectedColor": "accent",
       "selectedDisabledColor": "dis",
       "selectedForeground": "activeFg",
       "selectedLabelShift": 0,
       "selectedTabPadInsets": "0,0,0,0",
-      "shadow": "border",
+      "shadow": "hc",
       "tabHeight": 32,
       "tabInsets": "5,10,5,10",
       "tabSelectionHeight": 2,
@@ -1086,8 +1137,8 @@
       "focusCellBackground": "table",
       "focusCellForeground": "activeFg",
       "foreground": "fg",
-      "hoverBackground": "tree",
       "height": 25,
+      "hoverBackground": "tree",
       "separatorColor": "border"
     },
     "Tag": {
@@ -1117,6 +1168,7 @@
       "foreground": "fg",
       "hoverBorderColor": "bg",
       "inactiveForeground": "dis",
+      "selectedSeparatorColor": "accent",
       "selectionBackground": "selBg",
       "selectionForeground": "activeFg",
       "separatorColor": "hl",
@@ -1147,6 +1199,8 @@
       "off.foreground": "bg",
       "offBackground": "bg",
       "offForeground": "bg",
+      "on.background": "accent",
+      "on.foreground": "accent",
       "onBackground": "accent",
       "onForeground": "accent"
     },
@@ -1181,8 +1235,12 @@
       "foreground": "fg",
       "infoForeground": "text",
       "Learning": {
+        "background": "accent",
+        "borderColor": "accent",
         "foreground": "fg",
-        "spanForeground": "fg"
+        "spanBackground": "accent50",
+        "spanForeground": "fg",
+        "stepNumberForeground": "accent"
       },
       "separatorColor": "border",
       "shortcutForeground": "text"
@@ -1193,7 +1251,7 @@
         "HeaderTab.background": "cs"
       },
       "Background": "bg",
-      "background": "bg",
+      "background": "hc",
       "Button": {
         "hoverBackground": "table",
         "selectedBackground": "cs",
@@ -1225,7 +1283,7 @@
         "underlineColor": "accent",
         "underlinedTabBackground": "table",
         "underlinedTabForeground": "selFg",
-        "underlinedTabInactiveBackground": "cs",
+        "underlinedTabInactiveBackground": "hc",
         "underlinedTabInactiveForeground": "fg"
       },
       "inactive": {
@@ -1270,6 +1328,8 @@
       "List.selectionBackground": "tree",
       "highStroke.foreground": "fg",
       "motion": {
+        "AddConstraintColor": "accent",
+        "AddConstraintPlus": "accent",
         "CSPanel.SelectedBackground": "tree",
         "CSPanel.SelectedFocusBackground": "selBg",
         "Component.foreground": "fg",
@@ -1277,13 +1337,19 @@
         "ConstraintSetText.foreground": "text",
         "CursorTextColor.foreground": "fg",
         "HoverColor.disabledBackground": "dis",
+        "Key.selectedForeground": "accent",
         "Notification.background": "notif",
+        "PositionMarkColor": "accent",
         "PrimaryPanel.background": "cs",
         "SecondaryPanel.background": "bg",
         "SecondaryPanel.header.background": "cs",
         "SecondaryPanel.header.foreground": "text",
+        "TimeCursor.End.selectedForeground": "accent",
+        "TimeCursor.Start.selectedForeground": "accent",
+        "TimeCursor.selectedForeground": "accent",
         "borderColor": "border",
         "cs_FocusText.infoForeground": "text",
+        "graphLine.lineSeparatorColor": "accent",
         "motionGraph.background": "bg",
         "ourAvg.background": "second",
         "ourCS.background": "second",
@@ -1291,6 +1357,7 @@
         "ourCS_SelectedBackground.selectionInactiveBackground": "table",
         "ourCS_SelectedBorder.pressedBorderColor": "hl",
         "ourCS_SelectedFocusBackground.selectionForeground": "selFg",
+        "ourCS_SelectedFocusBorder.focusedBorderColor": "accent",
         "ourCS_TextColor.foreground": "text",
         "ourML_BarColor.separatorColor": "border",
         "timeLine.disabledBorderColor": "border"
