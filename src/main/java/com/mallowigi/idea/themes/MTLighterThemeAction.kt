@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Material Lighter. */
 class MTLighterThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.LIGHTER

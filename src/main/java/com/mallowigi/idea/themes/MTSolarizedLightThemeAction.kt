@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Solarized Light. */
 class MTSolarizedLightThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.SOLARIZED_LIGHT

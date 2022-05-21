@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Solarized Dark. */
 class MTSolarizedDarkThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.SOLARIZED_DARK

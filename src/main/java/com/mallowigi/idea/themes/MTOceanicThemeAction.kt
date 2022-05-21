@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Material Oceanic. */
 class MTOceanicThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.OCEANIC

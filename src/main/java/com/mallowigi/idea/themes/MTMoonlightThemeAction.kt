@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Moonlight. */
 class MTMoonlightThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.MOONLIGHT

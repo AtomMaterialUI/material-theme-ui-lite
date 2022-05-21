@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Monokai Pro. */
 class MTMonokaiThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.MONOKAI

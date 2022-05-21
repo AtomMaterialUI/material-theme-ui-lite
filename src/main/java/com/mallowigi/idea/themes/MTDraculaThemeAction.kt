@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Dracula. */
 class MTDraculaThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.DRACULA

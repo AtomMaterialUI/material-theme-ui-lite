@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Material Darker. */
 class MTDarkerThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.DARKER

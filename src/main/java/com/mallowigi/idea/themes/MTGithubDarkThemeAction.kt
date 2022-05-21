@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** GitHub Dark. */
 class MTGithubDarkThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.GITHUB_DARK

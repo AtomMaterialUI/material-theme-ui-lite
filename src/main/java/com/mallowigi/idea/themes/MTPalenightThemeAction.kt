@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Material Palenight. */
 class MTPalenightThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.PALENIGHT

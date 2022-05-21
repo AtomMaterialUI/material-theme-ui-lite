@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Atom One Dark. */
 class MTOneDarkThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.ONE_DARK

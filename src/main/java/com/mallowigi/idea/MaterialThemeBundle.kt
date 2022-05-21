@@ -21,15 +21,23 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+@file:Suppress("UnstableApiUsage")
+
 package com.mallowigi.idea
 
 import com.intellij.AbstractBundle
+import com.intellij.openapi.util.NlsSafe
 import org.jetbrains.annotations.PropertyKey
 
+/** Strings for the plugin. */
 object MaterialThemeBundle : AbstractBundle(MATERIAL_THEME_BUNDLE) {
+  /** Message. */
+  @NlsSafe
   @JvmStatic
   fun message(@PropertyKey(resourceBundle = MATERIAL_THEME_BUNDLE) key: String, vararg params: Any?): String {
     return getMessage(key, *params)
   }
 }
+
+/** Bundle. */
 const val MATERIAL_THEME_BUNDLE: String = "messages.MaterialThemeBundle"

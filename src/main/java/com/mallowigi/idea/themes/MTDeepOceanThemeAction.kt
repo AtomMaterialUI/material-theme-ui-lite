@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Material Deep Ocean. */
 class MTDeepOceanThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.DEEPOCEAN

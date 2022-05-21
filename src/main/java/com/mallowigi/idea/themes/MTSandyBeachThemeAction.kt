@@ -23,8 +23,8 @@
  */
 package com.mallowigi.idea.themes
 
-/** Atom One Light. */
-class MTOneLightThemeAction : MTAbstractThemeAction() {
+/** Material Sandy Beach. */
+class MTSandyBeachThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
-    get() = MTThemes.ONE_LIGHT
+    get() = MTThemes.SANDYBEACH
 }

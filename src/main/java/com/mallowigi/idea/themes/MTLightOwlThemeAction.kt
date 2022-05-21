@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Light Owl. */
 class MTLightOwlThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.LIGHT_OWL

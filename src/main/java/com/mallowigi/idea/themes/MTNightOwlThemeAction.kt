@@ -23,6 +23,7 @@
  */
 package com.mallowigi.idea.themes
 
+/** Night Owl. */
 class MTNightOwlThemeAction : MTAbstractThemeAction() {
   override val theme: MTThemes
     get() = MTThemes.NIGHT_OWL

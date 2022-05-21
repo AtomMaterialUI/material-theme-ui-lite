@@ -29,7 +29,9 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.startup.StartupActivity
 import com.intellij.openapi.util.registry.Registry
 
+/** Runs at start. */
 class MTStartup : StartupActivity {
+  /** Modify the registry at start. */
   override fun runActivity(project: Project) {
     modifyRegistry()
     ApplicationManager.getApplication().messageBus.connect().also {
