@@ -1826,7 +1826,7 @@
         </option>
         <option name="MARKDOWN_HRULE">
             <value>
-                <option name="FOREGROUND" value="34294f"/>
+                <option name="FOREGROUND" value="848bbd"/>
             </value>
         </option>
         <option name="MARKDOWN_IMAGE">
@@ -2026,7 +2026,7 @@
         </option>
         <option name="MARKDOWN_NAVIGATOR.HRULE">
             <value>
-                <option name="FOREGROUND" value="34294f"/>
+                <option name="FOREGROUND" value="848bbd"/>
                 <option name="FONT_TYPE" value="1"/>
             </value>
         </option>
