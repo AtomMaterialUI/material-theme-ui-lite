@@ -21,17 +21,24 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+@file:Suppress("KDocMissingDocumentation")
+
 package com.mallowigi.idea.themes
 
 import com.mallowigi.idea.ThemesBundle.message
 import org.jetbrains.annotations.NonNls
 
+/** Enum for theme names. */
 enum class MTThemes(@param:NonNls private val id: String, @field:Transient val themeName: String) {
   OCEANIC("OCEANIC", message("mt.oceanic.name")),
   DARKER("DARKER", message("mt.darker.name")),
   LIGHTER("LIGHTER", message("mt.lighter.name")),
   PALENIGHT("PALENIGHT", message("mt.palenight.name")),
   DEEPOCEAN("DEEPOCEAN", message("mt.deepocean.name")),
+  SKYBLUE("SKYBLUE", message("mt.skyblue.name")),
+  SANDYBEACH("SANDYBEACH", message("mt.sandybeach.name")),
+  FOREST("FOREST", message("mt.forest.name")),
+  VOLCANO("VOLCANO", message("mt.volcano.name")),
   MONOKAI("MONOKAI", message("monokai.name")),
   ARC_DARK("ARC_DARK", message("arc.dark.name")),
   ONE_DARK("ONE_DARK", message("one.dark.name")),
@@ -43,5 +50,6 @@ enum class MTThemes(@param:NonNls private val id: String, @field:Transient val t
   LIGHT_OWL("LIGHT_OWL", message("lightowl.name")),
   GITHUB("GITHUB", message("github.name")),
   GITHUB_DARK("GITHUB_DARK", message("github_dark.name")),
-  MOONLIGHT("MOONLIGHT", message("moonlight.name"));
+  MOONLIGHT("MOONLIGHT", message("moonlight.name")),
+  SYNTHWAVE("SYNTHWAVE", message("synthwave.name")),
 }

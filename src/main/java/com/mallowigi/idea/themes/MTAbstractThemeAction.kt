@@ -30,7 +30,9 @@ import com.mallowigi.idea.MaterialThemeBundle.message
 import org.jetbrains.annotations.NonNls
 import java.text.MessageFormat
 
+/** Abstract class for switching themes. */
 abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
+  /** Set selected theme. */
   override fun setSelected(e: AnActionEvent, state: Boolean) {
     // Find LAF theme and trigger a theme change
     val lafManager = LafManager.getInstance()
@@ -38,8 +40,11 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
     if (lafInfo != null) lafManager.currentLookAndFeel = lafInfo
   }
 
-  override fun isSelected(e: AnActionEvent): Boolean = LafManager.getInstance().currentLookAndFeel!!.name == getThemeName(e)
+  /** Whether theme is selected. */
+  override fun isSelected(e: AnActionEvent): Boolean =
+    LafManager.getInstance().currentLookAndFeel!!.name == getThemeName(e)
 
+  /** The theme. */
   protected abstract val theme: MTThemes
 
   @NonNls

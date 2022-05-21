@@ -1,8 +1,8 @@
 material:
   - oceanic:
     id: mt.oceanic
-    name: Oceanic
-    name2: Oceanic Contrast
+    name: Material Oceanic
+    name2: Material Oceanic Contrast
     className: oceanic
     desc: An oceanic blue flat theme
     dark: true
@@ -49,8 +49,8 @@ material:
 
   - darker:
     id: mt.darker
-    name: Darker
-    name2: Darker Contrast
+    name: Material Darker
+    name2: Material Darker Contrast
     className: darker
     desc: A pitch-black flat theme
     dark: true
@@ -97,8 +97,8 @@ material:
 
   - lighter:
     id: mt.lighter
-    name: Lighter
-    name2: Lighter Contrast
+    name: Material Lighter
+    name2: Material Lighter Contrast
     className: lighter
     desc: A bright light flat theme
     dark: false
@@ -145,8 +145,8 @@ material:
 
   - palenight:
     id: mt.palenight
-    name: Palenight
-    name2: Palenight Contrast
+    name: Material Palenight
+    name2: Material Palenight Contrast
     className: palenight
     desc: A purplish flat theme
     dark: true
@@ -193,8 +193,8 @@ material:
 
   - deepocean:
     id: mt.deepocean
-    name: Deep Ocean
-    name2: Deep Ocean Contrast
+    name: Material Deep Ocean
+    name2: Material Deep Ocean Contrast
     className: deepocean
     desc: A deep sea black flat theme
     dark: true
@@ -241,8 +241,8 @@ material:
 
   - forest:
     id: mt.forest
-    name: Forest
-    name2: Forest Contrast
+    name: Material Forest
+    name2: Material Forest Contrast
     className: forest
     desc: A forests and trees based flat theme
     dark: true
@@ -289,8 +289,8 @@ material:
 
   - skyblue:
     id: mt.skyblue
-    name: Sky Blue
-    name2: Sky Blue Contrast
+    name: Material Sky Blue
+    name2: Material Sky Blue Contrast
     className: skyblue
     desc: A clear and light blue flat theme
     dark: false
@@ -337,8 +337,8 @@ material:
 
   - sandybeach:
     id: mt.sanybeach
-    name: Sandy Beach
-    name2: Sandy Beach Contrast
+    name: Material Sandy Beach
+    name2: Material Sandy Beach Contrast
     className: sandybeach
     desc: A sandy based flat theme
     dark: false
@@ -385,8 +385,8 @@ material:
 
   - volcano:
     id: mt.volcano
-    name: Volcano
-    name2: Volcano Contrast
+    name: Material Volcano
+    name2: Material Volcano Contrast
     className: volcano
     desc: A rock and fiery based theme
     dark: true

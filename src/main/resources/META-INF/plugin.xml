@@ -25,18 +25,29 @@
 <idea-plugin>
     <id>com.mallowigi.idea</id>
     <name>Material Theme UI Lite</name>
-    <version>4.0</version>
+    <version>@version@</version>
     <category>Themes</category>
-    <vendor email="heliosaian@gmail.com" url="https://www.material-theme.com">Mallowigi</vendor>
+    <vendor email="elior@material-theme.com" url="https://github.com/mallowigi">AtomMaterial</vendor>
 
     <description><![CDATA[
-        This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material
+        <!--suppress LongLine -->
+        <h1>Material Theme UI Lite</h1>
+        <h2>Material Design Experience for JetBrains IDEs</h2>
+        <hr />
+        <div>
+            <a href="https://www.material-theme.com" style="outline: none;">
+                <img src="https://raw.githubusercontent.com/ChrisRM/material-theme-jetbrains/master/laptop-full.png"
+                     width="640"
+                     alt="theme">
+            </a>
+        </div>
+        <hr>
+        <p>This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material
             Theme UI Plugin</a>
-        which only includes the themes and color schemes.
+            containing only the themes and color schemes.</p>
         ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
-    <depends>com.intellij.modules.lang</depends>
     <change-notes></change-notes>
 
     <idea-version since-build="191.6183"/>
@@ -45,15 +56,15 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="com.mallowigi.idea.MTStartup"/>
-        <themeProvider id="Material Oceanic" path="/themes/Oceanic.theme.json"/>
-        <themeProvider id="Material Darker" path="/themes/Darker.theme.json"/>
-        <themeProvider id="Material Lighter" path="/themes/Lighter.theme.json"/>
-        <themeProvider id="Material Palenight" path="/themes/Palenight.theme.json"/>
-        <themeProvider id="Material Deep Ocean" path="/themes/Deep Ocean.theme.json"/>
-        <themeProvider id="Material Forest" path="/themes/Forest.theme.json"/>
-        <themeProvider id="Material Sky Blue" path="/themes/Sky Blue.theme.json"/>
-        <themeProvider id="Material SandyBeach" path="/themes/Sandy Beach.theme.json"/>
-        <themeProvider id="Material Volcano" path="/themes/Volcano.theme.json"/>
+        <themeProvider id="Material Oceanic" path="/themes/Material Oceanic.theme.json"/>
+        <themeProvider id="Material Darker" path="/themes/Material Darker.theme.json"/>
+        <themeProvider id="Material Lighter" path="/themes/Material Lighter.theme.json"/>
+        <themeProvider id="Material Palenight" path="/themes/Material Palenight.theme.json"/>
+        <themeProvider id="Material Deep Ocean" path="/themes/Material Deep Ocean.theme.json"/>
+        <themeProvider id="Material Forest" path="/themes/Material Forest.theme.json"/>
+        <themeProvider id="Material Sky Blue" path="/themes/Material Sky Blue.theme.json"/>
+        <themeProvider id="Material SandyBeach" path="/themes/Material Sandy Beach.theme.json"/>
+        <themeProvider id="Material Volcano" path="/themes/Material Volcano.theme.json"/>
         <themeProvider id="Dracula" path="/themes/Dracula.theme.json"/>
         <themeProvider id="Monokai Pro" path="/themes/Monokai Pro.theme.json"/>
         <themeProvider id="Arc Dark" path="/themes/Arc Dark.theme.json"/>
@@ -69,18 +80,18 @@
         <themeProvider id="SynthWave '84" path="/themes/SynthWave '84.theme.json"/>
 
         <themeProvider id="Material Oceanic Contrast"
-                       path="/themes/Oceanic Contrast.theme.json"/>
-        <themeProvider id="Material Darker Contrast" path="/themes/Darker Contrast.theme.json"/>
+                       path="/themes/Material Oceanic Contrast.theme.json"/>
+        <themeProvider id="Material Darker Contrast" path="/themes/Material Darker Contrast.theme.json"/>
         <themeProvider id="Material Lighter Contrast"
-                       path="/themes/Lighter Contrast.theme.json"/>
+                       path="/themes/Material Lighter Contrast.theme.json"/>
         <themeProvider id="Material Palenight Contrast"
-                       path="/themes/Palenight Contrast.theme.json"/>
+                       path="/themes/Material Palenight Contrast.theme.json"/>
         <themeProvider id="Material Deep Ocean Contrast"
-                       path="/themes/Deep Ocean Contrast.theme.json"/>
-        <themeProvider id="Material Forest Contrast" path="/themes/Forest Contrast.theme.json"/>
-        <themeProvider id="Material Sky Blue Contrast" path="/themes/Sky Blue Contrast.theme.json"/>
-        <themeProvider id="Material SandyBeach Contrast" path="/themes/Sandy Beach Contrast.theme.json"/>
-        <themeProvider id="Material Volcano Contrast" path="/themes/Volcano Contrast.theme.json"/>
+                       path="/themes/Material Deep Ocean Contrast.theme.json"/>
+        <themeProvider id="Material Forest Contrast" path="/themes/Material Forest Contrast.theme.json"/>
+        <themeProvider id="Material Sky Blue Contrast" path="/themes/Material Sky Blue Contrast.theme.json"/>
+        <themeProvider id="Material SandyBeach Contrast" path="/themes/Material Sandy Beach Contrast.theme.json"/>
+        <themeProvider id="Material Volcano Contrast" path="/themes/Material Volcano Contrast.theme.json"/>
         <themeProvider id="Dracula Contrast" path="/themes/Dracula Contrast.theme.json"/>
         <themeProvider id="Monokai Pro Contrast" path="/themes/Monokai Pro Contrast.theme.json"/>
         <themeProvider id="Arc Dark Contrast" path="/themes/Arc Dark Contrast.theme.json"/>

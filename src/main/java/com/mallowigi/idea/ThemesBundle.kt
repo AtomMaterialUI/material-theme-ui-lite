@@ -26,10 +26,14 @@ package com.mallowigi.idea
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.PropertyKey
 
+/** Theme names. */
 object ThemesBundle : AbstractBundle(THEMES_BUNDLE) {
+  /** Message. */
   @JvmStatic
   fun message(@PropertyKey(resourceBundle = THEMES_BUNDLE) key: String, vararg params: Any?): String {
     return getMessage(key, *params)
   }
 }
+
+/** Bundle. */
 const val THEMES_BUNDLE: String = "messages.ThemesBundle"
