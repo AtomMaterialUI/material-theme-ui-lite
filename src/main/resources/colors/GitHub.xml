@@ -680,7 +680,6 @@
         <option name="DEFAULT_IDENTIFIER">
             <value>
                 <option name="FOREGROUND" value="24292e"/>
-                <option name="BACKGROUND" value="d1d5da"/>
             </value>
         </option>
         <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_IDENTIFIER"/>
