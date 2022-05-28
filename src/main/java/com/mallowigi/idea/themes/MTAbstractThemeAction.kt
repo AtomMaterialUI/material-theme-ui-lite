@@ -50,7 +50,9 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
   @NonNls
   private fun getThemeName(e: AnActionEvent): String {
     val contrast = message("contrast")
-    val isContrast = e.presentation.text!!.contains(contrast)
+    val text = e.presentation.text ?: return theme.themeName
+
+    val isContrast = text.contains(contrast)
     val name = theme.themeName
     return if (isContrast) MessageFormat.format("{0} {1}", name, contrast) else name
   }
