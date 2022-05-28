@@ -1,27 +1,41 @@
+# Material Theme UI Lite for JetBrains
+
 <div align="center">
   <a href="https://www.material-theme.com">
 <img src="logo.svg" width="320" height="320" alt="logo"></img>
 </a>
 </div>
 
-# Material Theme UI Lite
-
 This is a lite version of the famous [Material Theme UI Plugin](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) which contains only the themes and the color schemes.
 
 If you want to use the icons as well, I invite you to install the [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) plugin.
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+[![GitHub issues](https://img.shields.io/github/issues/mallowigi/material-theme-ui-lite.svg)](https://github.com/mallowigi/material-theme-ui-lite/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mallowigi/material-theme-ui-lite.svg)](https://github.com/mallowigi/material-theme-ui-lite/stargazers)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/mallowigi/material-theme-ui-lite.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fmallowigi%2Fmaterial-theme-ui-lite)
+
+![GitHub tag](https://img.shields.io/github/tag/mallowigi/material-theme-ui-lite.svg)
+![JetBrains IntelliJ Plugins](https://img.shields.io/jetbrains/plugin/v/12124-material-theme-ui-lite.svg)
+
+![Github All Releases](https://img.shields.io/github/downloads/mallowigi/material-theme-ui-lite/total.svg)
+![JetBrains IntelliJ plugins](https://img.shields.io/jetbrains/plugin/d/12124-material-theme-ui-lite.svg?label=plugin%20downloads)
+
+
 Plugin page:
-https://plugins.jetbrains.com/plugin/12124-material-theme-ui-lite
+<https://plugins.jetbrains.com/plugin/12124-material-theme-ui-lite>
 
 ## Documentation:
-https://www.material-theme.com
+<https://www.material-theme.com>
 
 ![laptop-full](laptop-full.png)
 
-#### Donate via Paypal:
 
-_@ChrisRM_:
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LSF7K29JBPMWU&lc=US&item_name=Material%20Theme%20JetBrains%20Development&item_number=m1&currency_code=NOK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+
+#### Donate via Paypal:
 
 _@Mallowigi_:
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/mallowigi)
@@ -35,19 +49,6 @@ _@Mallowigi_:
 [![Sponsors on Open Collective](https://opencollective.com/atom-material-themes-and-plugins/sponsors/badge.svg)](#sponsors)
 
 
-## Development
-
-### Requirements
-
-* JDK 1.8
-* IntelliJ IDEA with Gradle
-
-### Developing using IntelliJ Gradle
-
-You can simplify development process thanks to Intellij's **Gradle plugin**. Install the plugin, restart the IDE and you will be prompted with a window asking if you want to import the project as a Gradle project. After that IntelliJ will download the Gradle Wrapper and the tasks will appear in the Gradle Tool Panel on the right.
-
-Import the project from the `build.gradle` file and develop as normal.  Make sure you select JDK 8 in the import wizard.  The other defaults are fine.  You can run the above mentioned CLI Gradle tasks directly in the "Gradle" Tool Window, which expands from the right side of the screen.  To debug, find "runIde" in the list, right-click it, and choose Run/Debug.
-
 --------------------
 
 # Authors:
@@ -55,23 +56,21 @@ Import the project from the `build.gradle` file and develop as normal.  Make sur
 Twitter: [@crmag](https://twitter.com/crmag)
 [@mallowigi](https://twitter.com/mallowigi)
 
-Official page: [@MJetbrains](https://twitter.com/MJetbrains)
+Official page: [@AtomMaterialUI](https://twitter.com/AtomMaterialUI)
 
 Github: [@ChrisRM](https://github.com/chrisrm) [@Mallowigi](https://github.com/mallowigi)
-
-Blog: https://www.material-theme.com/docs/blog/
 
 **Thanks to [@equinusocio](https://github.com/equinusocio) and his original [Material Theme](https://github.com/equinusocio/vsc-material-theme) for the inspiration.**
 
 # Contact
-You can contact us or ask questions via [Gitter](https://gitter.im/Material-Theme-Jetbrains/Lobby#) or our brand new
-[Slack community!](https://join.slack.com/t/material-theme-ui/shared_invite/enQtMzgzNTUxMjQ2MTQ1LWU3Y2ZlYTBlNDEyZmU5YTMzNjAxZjc0NmVkMTk1NzdmNDI1NDAwMzI4NWYxZjVmYzUyYTgwZWEzNjE2YTg2NTA)
+You can contact us or ask questions in our [Slack community!](https://join.slack.com/t/material-theme-ui/shared_invite/enQtMzgzNTUxMjQ2MTQ1LWU3Y2ZlYTBlNDEyZmU5YTMzNjAxZjc0NmVkMTk1NzdmNDI1NDAwMzI4NWYxZjVmYzUyYTgwZWEzNjE2YTg2NTA)
 
 Come say hello!
 
 ## Other portings
 
 The Material Theme has been ported to many other editors, applications, websites and other platforms:
+
 - [Visual Studio Code](https://github.com/equinusocio/vsc-material-theme/) (by [@equinusocio](https://github.com/equinusocio)
 - [Sublime Text](https://github.com/equinusocio/material-theme/) (also by [@equinusocio](https://github.com/equinusocio)
 - [Hyper](https://github.com/equinusocio/hyper-material-theme) (also by [@equinusocio](https://github.com/equinusocio).
@@ -80,25 +79,49 @@ The Material Theme has been ported to many other editors, applications, websites
 - [Terminal OSX](https://gist.github.com/mvaneijgen/4c56701215847dd5ddcf) (by [@mvaneijgen](https://github.com/mvaneijgen)).
 - [iTerm2](https://gist.github.com/Revod/3f3115f8d4b90fc986fd4b61441c2567) (by [@Revod](https://github.com/Revod)) and [iTerm2 Palenight](https://github.com/JonathanSpeek/palenight-iterm2) (by [@jonathanspeek](https://github.com/jonathanspeek)).
 - [ConEmu](https://gist.github.com/rajadain/b306b2ba71bd58a1df41) (by [@rajadain](https://github.com/rajadain)).
-- [Slack](https://slack.com/) (`#263238`, `#2E3A40`, `#80CBC4`, `#FFFFFF`, `#13191C`, `#FFFFFF`, `#50FA7B`, `#FF5555`)
+- [Slack Sidebar](https://slack.com/) (`#263238`, `#2E3A40`, `#80CBC4`, `#FFFFFF`, `#13191C`, `#FFFFFF`, `#50FA7B`, `#FF5555`)
 - [Nylas N1](https://github.com/jackiehluo/n1-material) (thanks to [@jackiehluo](https://github.com/jackiehluo))
 - [Base16](https://github.com/ntpeters/base16-materialtheme-scheme) (by [@ntpeters](https://github.com/ntpeters))
 - [Notepad++](https://github.com/Codextor/npp-material-theme) (by [@Codextor](https://github.com/Codextor))
-- [Chrome Devtools](https://chrome.google.com/webstore/detail/material-devtools-theme/pmlofkkoaahmkmmebdkkcljmflocijlo) (by [@jaysuz](https://github.com/jaysuz/material-dev-tools))
+- [Chrome Devtools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo)
 - [Bear](https://github.com/r3volution11/material-theme-bear-notes) (by [Doug C. Hardester](https://github.com/r3volution11))
+- [Slack Themes](https://github.com/mallowigi/slack-themes) - Porting of the Material Theme to Slack
+- [Gmail](https://userstyles.org/styles/174257/material-dark-gmail) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
+- [Google Calendar](https://userstyles.org/styles/174228/material-dark-google-calendar) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
+- [Google Keep](https://userstyles.org/styles/174291/material-dark-google-keep) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
+- [Trello](https://userstyles.org/styles/167605/material-dark-trello) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
+- [GitHub](https://github.com/CharlieEtienne/material-github) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
+- [Google](https://github.com/CharlieEtienne/material-google) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
 
 ## Other Projects
 
 Check out my other projects:
 - [Material Theme UI](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) - A lot of features to completely customize the IDE! With theme switching, custom themes, icons, layout settings and more.
-- [Image Icon Plugin](https://plugins.jetbrains.com/plugin/11096-image-icon-viewer) - A previewer for small images and svgs directly in the Project View
-- [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) - A mix of the Atom File Icons and the Material Icons, or if you prefer, the Icons component of this plugin :)
-- [Slack One Dark Theme](https://github.com/mallowigi/slack-one-dark-theme) - A One Dark theme for Slack
-- [Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) - Proof of concept for defining custom keywords highlighting.
+- [Image Icon Plugin](https://plugins.jetbrains.com/plugin/11096-image-icon-viewer) — A previewer for small images and svg directly in the Project View
+- [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) — A mix of the Atom File Icons and the Material Icons, or if you prefer, the Icons component of this plugin :)
+- [Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) — Proof of concept for defining custom keywords highlighting.
+- [Material Theme UI for Chrome](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) — Porting of the Material Theme for Chrome
+- [Slack Themes](https://github.com/mallowigi/slack-themes) — Porting of the Material Theme to Slack
+
 
 ## Contributors
 
 This project exists thanks to all the people who contribute. 
+<!-- ALL-CONTRIBUTORS-LIST:START — Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://unthrottled.io"><img src="https://avatars.githubusercontent.com/u/15972415?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Simons</b></sub></a><br /><a href="https://github.com/mallowigi/material-theme-jetbrains/commits?author=Unthrottled" title="Code">💻</a> <a href="#infra-Unthrottled" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://kotlin.desarrollador-android.com/"><img src="https://avatars.githubusercontent.com/u/7463564?v=4" width="100px;" alt=""/><br /><sub><b>Javier Segovia Cordoba</b></sub></a><br /><a href="https://github.com/mallowigi/material-theme-jetbrains/commits?author=JavierSegoviaCordoba" title="Code">💻</a> <a href="#infra-JavierSegoviaCordoba" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 <a href="graphs/contributors"><img src="https://opencollective.com/atom-material-themes-and-plugins/contributors.svg?width=890&button=false" /></a>
 
 
@@ -108,7 +131,7 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 <a href="https://opencollective.com/atom-material-themes-and-plugins#backers" target="_blank"><img src="https://opencollective.com/atom-material-themes-and-plugins/backers.svg?width=890"></a>
 
-Check also : http://www.material-theme.com/docs/support-us/
+Check also : <https://www.material-theme.com/docs/support-us/>
 
 ## Sponsors
 
