@@ -1,5 +1,34 @@
 {
   "extends": [
-    "@emmanuelgautier"
+    "config:base"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "automerge": true,
+  "rebaseWhen": "behind-base-branch",
+  "bumpVersion": "patch",
+  "commitBodyTable": true,
+  "prHourlyLimit": 6,
+  "prConcurrentLimit": 6,
+  "gradle": {
+    "enabled": false
+  },
+  "gradle-lite": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchManagers": [
+        "gradle",
+        "gradle-lite"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "Gradle non-major dependencies",
+      "groupSlug": "gradle-minor-patch"
+    }
   ]
 }
