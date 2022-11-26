@@ -73,6 +73,10 @@
       "pressedBackground": "accent50",
       "pressedBorderColor": "accent50"
     },
+    "ActionsList": {
+      "icon.gap": 12,
+      "mnemonic.icon.gap": 12
+    },
     "ActionToolbar": {
       "background": "hc"
     },
@@ -128,7 +132,7 @@
     "Borders.ContrastBorderColor": "bg",
     "Borders.color": "border",
     "Button": {
-      "arc": 0,
+      "arc": 8,
       "background": "bg",
       "darcula": {
         "borderColor": "button",
@@ -181,7 +185,10 @@
       "shadowColor": "shadow",
       "shadowWidth": 0,
       "startBackground": "table",
-      "startBorderColor": "button"
+      "startBorderColor": "button",
+      "ToolWindow": {
+        "arc": 40
+      }
     },
     "Canvas": {
       "Tooltip.background": "notif",
@@ -320,6 +327,7 @@
     },
     "Component": {
       "arc": 4,
+      "focusWidth": 2,
       "borderColor": "hl",
       "disabledBorderColor": "dis",
       "focusColor": "accent",
@@ -369,7 +377,8 @@
     "DebuggerTabs": {
       "active.background": "hl",
       "selectedBackground": "hl",
-      "underlinedTabBackground": "table"
+      "underlinedTabBackground": "table",
+      "underlineHeight": 2
     },
     "DebuggerPopup": {
       "borderColor": "bg"
@@ -385,6 +394,7 @@
       "inactiveMaskColor": "hc",
       "inactiveUnderlineColor": "accent",
       "underlineColor": "accent",
+      "underlineHeight": 3,
       "underlinedTabBackground": "table",
       "underlinedTabForeground": "selFg"
     },
@@ -447,6 +457,8 @@
       "selectedBackground": "table",
       "selectedForeground": "fg",
       "underlineColor": "accent",
+      "underlineHeight": 3,
+      "underlineArc": 4,
       "underlinedTabBackground": "table",
       "underlinedTabForeground": "selFg"
     },
@@ -514,6 +526,9 @@
       "disabledSeparatorColor": "border",
       "separatorColor": "border"
     },
+    "Gutter": {
+      "VcsChanges.width": 4
+    },
     "GutterTooltip": {
       "borderColor": "bg",
       "infoForeground": "text",
@@ -531,7 +546,8 @@
       "infoForeground": "text",
       "shortcutForeground": "text",
       "shortcutTextColor": "text",
-      "textColor": "fg"
+      "textColor": "fg",
+      "verticalGap": 8
     },
     "Hg.Log.Ref": {
       "Branch": "accent",
@@ -617,6 +633,7 @@
       "hoverBackground": "hl",
       "hoverInactiveBackground": "table",
       "Line.hoverBackground": "selBg",
+      "rowHeight": "28",
       "selectionBackground": "tree",
       "selectionForeground": "selFg",
       "selectionInactiveBackground": "table",
@@ -626,6 +643,10 @@
     },
     "LiveIndicator": {
       "color": "accent"
+    },
+    "macOSWindow.Title": {
+      "height": 30,
+      "heightSmall": 20
     },
     "MainToolbar": {
       "Dropdown.background": "bg",
@@ -666,11 +687,12 @@
       "acceleratorForeground": "text",
       "acceleratorSelectionForeground": "activeFg",
       "background": "bg",
-      "border": "4,2,4,2",
+      "border": "8,8,8,8",
       "borderColor": "second",
       "disabledBackground": "second",
       "disabledForeground": "dis",
       "foreground": "fg",
+      "Selection.arc": 8,
       "selectionBackground": "selBg",
       "selectionForeground": "activeFg",
       "separatorColor": "border"
@@ -690,7 +712,7 @@
       "acceleratorForeground": "text",
       "acceleratorSelectionForeground": "activeFg",
       "background": "bg",
-      "border": "4,2,4,2",
+      "border": "8,8,8,8",
       "disabledBackground": "bg",
       "disabledForeground": "dis",
       "foreground": "fg",
@@ -714,10 +736,12 @@
       },
       "SearchField": {
         "background": "hc"
-      }
+      },
+      "separatorWidth": 10
     },
     "NewPSD.warning": "accent",
     "Notification": {
+      "arc": 16,
       "Error.foreground": "accent",
       "Link.foreground": "accent",
       "background": "notif",
@@ -865,6 +889,11 @@
         "borderColor": "bg",
         "foreground": "accent"
       },
+      "Body": {
+        "bottomInsetNoAd": 8,
+        "bottomInsetBeforeAd": 8,
+        "topInsetNoHeader": 8
+      },
       "Border": {
         "color": "cs",
         "inactiveColor": "bg"
@@ -883,6 +912,8 @@
         "borderColor": "bg",
         "foreground": "fg"
       },
+      "Selection.arc": 8,
+      "Selection.leftRightInset": 8,
       "Separator": {
         "foreground": "fg",
         "color": "border"
@@ -898,13 +929,21 @@
     },
     "PopupMenu": {
       "background": "bg",
-      "border": "2,0,2,0",
+      "borderWidth": 1,
+      "border": "8,8,8,8",
+      "borderCornerRadius": 8,
       "foreground": "fg",
+      "Selection.arc": 8,
       "selectionBackground": "selBg",
       "translucentBackground": "bg"
     },
-    "PopupMenuSeparator.height": 10,
-    "PopupMenuSeparator.stripeIndent": 5,
+    "PopupMenuSeparator": {
+      "height": 10,
+      "stripeWidth": 2,
+      "stripeIndent": 5,
+      "withToEdge": 4,
+      "borderCornerRadius": 8
+    },
     "ProgressBar": {
       "background": "bg",
       "foreground": "accent",
@@ -1105,7 +1144,7 @@
     },
     "Spinner": {
       "background": "bg",
-      "border": "3,3,3,3",
+      "border": "4,4,4,4",
       "disabledBackground": "excl",
       "foreground": "fg",
       "selectionForeground": "activeFg"
@@ -1170,6 +1209,7 @@
       "shadow": "hc",
       "tabHeight": 32,
       "tabInsets": "5,10,5,10",
+      "tabSelectionArc": 4,
       "tabSelectionHeight": 2,
       "tabsOverlapBorder": true,
       "underlineColor": "accent"
@@ -1194,6 +1234,7 @@
       "lightSelectionForeground": "activeFg",
       "lightSelectionInactiveBackground": "second",
       "lightSelectionInactiveForeground": "text",
+      "rowHeight": 28,
       "selectionBackground": "table",
       "selectionForeground": "activeFg",
       "selectionInactiveBackground": "table",
@@ -1210,7 +1251,7 @@
       "focusCellBackground": "table",
       "focusCellForeground": "activeFg",
       "foreground": "fg",
-      "height": 25,
+      "height": 26,
       "hoverBackground": "hl",
       "separatorColor": "border"
     },
@@ -1296,6 +1337,7 @@
       "description.title.text.color": "fg"
     },
     "ToolTip": {
+      "arc": 6,
       "actions": {
         "background": "bg"
       },
@@ -1306,6 +1348,7 @@
       },
       "background": "notif",
       "borderColor": "border",
+      "borderCornerRadius": 8,
       "foreground": "fg",
       "infoForeground": "text",
       "Learning": {
@@ -1340,6 +1383,7 @@
         "tab.selected.background": "cs"
       },
       "Header": {
+        "height": 42,
         "background": "second",
         "borderColor": "second",
         "inactiveBackground": "bg"
@@ -1354,11 +1398,14 @@
         "inactiveUnderlineColor": "accent",
         "selectedBackground": "cs",
         "selectedInactiveBackground": "cs",
+        "underlineArc": 4,
         "underlineColor": "accent",
+        "underlineHeight": 3,
         "underlinedTabBackground": "table",
         "underlinedTabForeground": "selFg",
         "underlinedTabInactiveBackground": "hc",
-        "underlinedTabInactiveForeground": "fg"
+        "underlinedTabInactiveForeground": "fg",
+        "verticalPadding": 6
       },
       "inactive": {
         "Header.background": "bg",
@@ -1440,6 +1487,7 @@
         "infoBanner": "accent"
       },
       "PackageSearch": {
+        "PackagesList.rowHeight": 28,
         "PackageTag": {
           "hoverBackground": "tree",
           "selectedForeground": "selFg"
@@ -1506,6 +1554,7 @@
         "Commit": {
           "currentBranchBackground": "cs",
           "hoveredBackground": "tree",
+          "rowHeight": 28,
           "unmatchedForeground": "text"
         }
       },
