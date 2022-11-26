@@ -556,10 +556,12 @@
       "background": "bg",
       "backgroundColor": "bg",
       "borderColor": "border",
+      "defaultTextBorderInsets": "16,16,16,16",
       "foreground": "fg",
       "infoForeground": "text",
       "shortcutForeground": "text",
       "shortcutTextColor": "text",
+      "smallTextBorderInsets": "8,12,8,12",
       "textColor": "fg",
       "verticalGap": 8
     },
@@ -1393,6 +1395,7 @@
       "borderCornerRadius": 8,
       "foreground": "fg",
       "infoForeground": "text",
+      "linkForeground": "accent",
       "Learning": {
         "background": "accent",
         "borderColor": "accent",
@@ -1413,6 +1416,10 @@
       "background": "hc",
       "Button": {
         "hoverBackground": "table",
+        "DragAndDrop": {
+          "stripeBackground": "cs",
+          "buttonDropBackground": "accent"
+        },
         "selectedBackground": "cs",
         "selectedForeground": "activeFg"
       },
@@ -1425,7 +1432,7 @@
         "tab.selected.background": "cs"
       },
       "Header": {
-        "height": 32,
+        "height": 42,
         "background": "second",
         "borderColor": "second",
         "inactiveBackground": "bg"
@@ -1438,6 +1445,7 @@
         "hoverBackground": "hl",
         "hoverInactiveBackground": "hl",
         "inactiveUnderlineColor": "accent",
+        "leftRightInsets": "0,12,0,12",
         "selectedBackground": "cs",
         "selectedInactiveBackground": "cs",
         "underlineArc": 4,
