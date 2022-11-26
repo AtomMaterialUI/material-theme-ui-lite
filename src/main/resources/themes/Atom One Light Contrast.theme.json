@@ -503,7 +503,7 @@
       "defaultButtonBorderColor": "accent"
     },
     "FormattedTextField": {
-      "background": "hc",
+      "background": "cs",
       "caretForeground": "accent",
       "foreground": "fg",
       "inactiveBackground": "button",
@@ -860,7 +860,7 @@
       "lineSeparatorColor": "table"
     },
     "PasswordField": {
-      "background": "hc",
+      "background": "cs",
       "capsLockIconColor": "accent",
       "caretForeground": "accent",
       "foreground": "fg",
@@ -1026,6 +1026,7 @@
       "state.foreground": "fg"
     },
     "RunWidget": {
+      "background": "button",
       "foreground": "fg",
       "hoverBackground": "table",
       "pressedBackground": "hl",
@@ -1195,9 +1196,11 @@
       "Breadcrumbs": {
         "floatingBackground": "tree",
         "floatingForeground": "fg",
+        "floatingToolbarInsets": "8,12,8,12",
         "foreground": "fg",
         "hoverBackground": "tree",
         "hoverForeground": "fg",
+        "itemBackgroundInsets": "2,4,2,4",
         "selectionBackground": "selBg",
         "selectionForeground": "activeFg",
         "selectionInactiveBackground": "button",
@@ -1254,13 +1257,13 @@
     "Table": {
       "alternativeRowBackground": "cs",
       "background": "bg",
-      "cellNoFocusBorder": "10,5,10,5",
+      "cellNoFocusBorder": "16,4,16,4",
       "disabledForeground": "dis",
       "dropLineColor": "accent",
       "dropLineShortColor": "accent",
       "focusCellBackground": "table",
       "focusCellForeground": "activeFg",
-      "focusCellHighlightBorder": "10,5,10,5",
+      "focusCellHighlightBorder": "18,6,18,6",
       "foreground": "fg",
       "gridColor": "bg",
       "highlightOuter": "table",
@@ -1281,8 +1284,9 @@
     },
     "TableHeader": {
       "background": "button",
+      "bottomSeparatorColor": "border",
       "borderColor": "hl",
-      "cellBorder": "4,0,4,0",
+      "cellBorder": "6,0,6,0",
       "disabledForeground": "dis",
       "focusCellBackground": "table",
       "focusCellForeground": "activeFg",
@@ -1302,7 +1306,7 @@
     "textHighlightText": "activeFg",
     "textText": "text",
     "TextArea": {
-      "background": "hc",
+      "background": "cs",
       "caretForeground": "accent",
       "foreground": "fg",
       "inactiveForeground": "dis",
@@ -1310,7 +1314,7 @@
       "selectionForeground": "activeFg"
     },
     "TextField": {
-      "background": "hc",
+      "background": "cs",
       "borderColor": "bg",
       "caretForeground": "accent",
       "disabledBackground": "excl",
@@ -1325,7 +1329,7 @@
       "separatorColorDisabled": "bg"
     },
     "TextPane": {
-      "background": "hc",
+      "background": "cs",
       "caretForeground": "accent",
       "foreground": "fg",
       "inactiveForeground": "dis",
