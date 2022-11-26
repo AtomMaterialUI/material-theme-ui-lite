@@ -23,6 +23,9 @@
  */
 @file:Suppress("SpellCheckingInspection", "HardCodedStringLiteral")
 
+import io.gitlab.arturbosch.detekt.Detekt
+import org.jetbrains.changelog.Changelog
+
 fun properties(key: String) = project.findProperty(key).toString()
 
 plugins {
@@ -55,10 +58,10 @@ repositories {
 }
 
 dependencies {
-  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.21.0")
+  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.22.0")
   implementation("com.jgoodies:jgoodies-forms:1.9.0")
   implementation("com.thoughtworks.xstream:xstream:1.4.19")
-  implementation("org.javassist:javassist:3.29.0-GA")
+  implementation("org.javassist:javassist:3.29.2-GA")
   implementation("com.mixpanel:mixpanel-java:1.5.1")
 }
 
@@ -75,18 +78,17 @@ intellij {
 
   // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
   plugins.set(listOf("java"))
-
+}
 // Configure gradle-changelog-plugin plugin.
 // Read more: https://github.com/JetBrains/gradle-changelog-plugin
-  changelog {
-    path.set("${project.projectDir}/docs/CHANGELOG.md")
-    version.set(properties("pluginVersion"))
-    header.set(provider { version.get() })
-    itemPrefix.set("-")
-    keepUnreleasedSection.set(true)
-    unreleasedTerm.set("Changelog")
-    groups.set(listOf("Features", "Fixes", "Removals", "Other"))
-  }
+changelog {
+  path.set("${project.projectDir}/docs/CHANGELOG.md")
+  version.set(properties("pluginVersion"))
+  header.set(provider { version.get() })
+  itemPrefix.set("-")
+  keepUnreleasedSection.set(true)
+  unreleasedTerm.set("Changelog")
+  groups.set(listOf("Features", "Fixes", "Removals", "Other"))
 }
 
 // Configure detekt plugin.
@@ -115,7 +117,7 @@ tasks {
     gradleVersion = properties("gradleVersion")
   }
 
-  withType<io.gitlab.arturbosch.detekt.Detekt> {
+  withType<Detekt> {
     jvmTarget = properties("javaVersion")
     reports.xml.required.set(true)
   }
@@ -137,7 +139,15 @@ tasks {
     untilBuild.set(properties("pluginUntilBuild"))
 
     // Get the latest available change notes from the changelog file
-    changeNotes.set(changelog.getLatest().toHTML())
+    changeNotes.set(provider {
+      changelog.renderItem(
+        changelog
+          .getUnreleased()
+          .withHeader(false)
+          .withEmptySections(false),
+        Changelog.OutputType.HTML
+      )
+    })
   }
 
   runPluginVerifier {
@@ -172,5 +182,12 @@ tasks {
     //    dependsOn("patchChangelog")
     token.set(System.getenv("INTELLIJ_PUBLISH_TOKEN") ?: file("./publishToken").readText().trim())
     channels.set(listOf(properties("pluginVersion").split('-').getOrElse(1) { "default" }.split('.').first()))
+  }
+
+  register("markdownToHtml") {
+    val input = File("./docs/CHANGELOG.md")
+    File("./docs/CHANGELOG.html").run {
+      writeText(org.jetbrains.changelog.markdownToHTML(input.readText()))
+    }
   }
 }

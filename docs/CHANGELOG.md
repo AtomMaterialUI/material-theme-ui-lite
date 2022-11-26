@@ -1,8 +1,6 @@
 ## Changelog
 
-----
-
-# 18.0
+# 18.0.0
 
 ### Features
 
