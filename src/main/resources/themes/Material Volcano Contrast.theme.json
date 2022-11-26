@@ -677,18 +677,27 @@
       "selectionBackground": "selBg"
     },
     "MainToolbar": {
-      "Dropdown.background": "bg",
-      "Dropdown.foreground": "fg",
-      "Dropdown.hoverBackground": "hl",
-      "Dropdown.pressedBackground": "table",
-      "Icon.background": "bg",
-      "Icon.hoverBackground": "hl",
-      "Icon.pressedBackground": "table",
       "background": "bg",
+      "Button": {
+        "buttonInsets": "0,0,0,0"
+      },
+      "Dropdown": {
+        "borderInsets": "6,12,6,12",
+        "background": "bg",
+        "foreground": "fg",
+        "hoverBackground": "hl",
+        "pressedBackground": "table"
+      },
       "hoverBackground": "hl",
+      "Icon": {
+        "borderInsets": "10,10,10,10",
+        "background": "bg",
+        "hoverBackground": "hl",
+        "pressedBackground": "table"
+      },
       "inactiveBackground": "bg",
       "pressedBackground": "table",
-      "separatorColor": "bg"
+      "separatorColor": "border"
     },
     "material": {
       "background": "bg",
@@ -1418,7 +1427,7 @@
         "hoverBackground": "table",
         "DragAndDrop": {
           "stripeBackground": "cs",
-          "buttonDropBackground": "accent"
+          "buttonDropBackground": "accent70"
         },
         "selectedBackground": "cs",
         "selectedForeground": "activeFg"
@@ -1543,7 +1552,7 @@
           "selectedForeground": "selFg"
         },
         "SearchResult": {
-          "background": "bg",
+          "background": "cs",
           "hoverBackground": "tree",
           "PackageTag": {
             "foreground": "fg",
