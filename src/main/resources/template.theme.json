@@ -1084,7 +1084,8 @@
     "SearchEverywhere": {
       "Advertiser": {
         "background": "cs",
-        "foreground": "text"
+        "foreground": "text",
+        "borderInsets": "6,20,6,20"
       },
       "background": "bg",
       "Dialog": {
@@ -1202,7 +1203,7 @@
         "selectionInactiveBackground": "button",
         "selectionInactiveForeground": "fg"
       },
-      "borderColor": "bg",
+      "borderColor": "border",
       "bottomColor": "bg",
       "hoverBackground": "hl",
       "top2Color": "bg",
@@ -1213,7 +1214,8 @@
         "hoverBackground": "hl",
         "hoverForeground": "selFg",
         "pressedBackground": "button",
-        "pressedForeground": "fg"
+        "pressedForeground": "fg",
+        "widgetInsets": "8,12,8,12"
       }
     },
     "TabbedPane": {
