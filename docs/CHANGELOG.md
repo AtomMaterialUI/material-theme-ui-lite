@@ -1,5 +1,19 @@
 ## Changelog
 
+# 19.0.0
+
+### Features
+- Improve padding: tabs, lists, menus, buttons, etc.
+- Set text fields and search fields color to contrast color by default, to make them more prominent.
+- Add more "border" colors, to make it easier to distinguish the different panes.
+
+### Fixes
+
+- Remove transparency for tree colors
+- Add actions to new UI's main toolbar
+- Support for 2022.3
+- Upgrade gradle dependencies
+
 # 18.0.0
 
 ### Features
