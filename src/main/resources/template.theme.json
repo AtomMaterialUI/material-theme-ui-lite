@@ -301,8 +301,11 @@
       "selectionForeground": "activeFg"
     },
     "CompletionPopup": {
-      "Advertiser.background": "bg",
-      "Advertiser.foreground": "fg",
+      "Advertiser": {
+        "background": "bg",
+        "foreground": "fg",
+        "borderInsets": "8,12,8,12"
+      },
       "background": "second",
       "foreground": "fg",
       "grayForeground": "text",
@@ -364,6 +367,7 @@
     },
     "desktop": "hc",
     "Debugger": {
+      "EvaluateExpression.background": "bg",
       "Variables": {
         "changedValueForeground": "accent",
         "collectingDataForeground": "text",
@@ -371,7 +375,8 @@
         "evaluatingExpressionForeground": "text",
         "exceptionForeground": "yellow",
         "modifyingValueForeground": "accent",
-        "valueForeground": "accent"
+        "valueForeground": "accent",
+        "typeForeground": "text"
       }
     },
     "DebuggerTabs": {
@@ -413,13 +418,21 @@
       "backgroundBorderColor": "bg",
       "backgroundColor": "bg",
       "borderColor": "accent",
-      "foregroundColor": "fg"
+      "foregroundColor": "fg",
+      "rowBackground": "accent70"
     },
     "dropArea.base": "accent",
     "Editor": {
       "background": "hc",
       "foreground": "fg",
-      "shortcutForeground": "text"
+      "shortcutForeground": "text",
+      "SearchField": {
+        "background": "cs",
+        "borderInsets": "8,12,8,12"
+      },
+      "Toolbar": {
+        "borderColor": "border"
+      }
     },
     "EditorGroupsTabs": {
       "background": "bg",
@@ -456,6 +469,7 @@
       "inactiveUnderlineColor": "dis",
       "selectedBackground": "table",
       "selectedForeground": "fg",
+      "tabInsets": "-10,10,-10,10",
       "underlineColor": "accent",
       "underlineHeight": 3,
       "underlineArc": 4,
@@ -627,8 +641,12 @@
     "link.visited.foreground": "accent",
     "List": {
       "background": "bg",
-      "Button.hoverBackground": "hl",
-      "Button.separatorColor": "border",
+      "Button": {
+        "hoverBackground": "hl",
+        "leftRightInset": 8,
+        "separatorColor": "border",
+        "separatorInset": 4
+      },
       "foreground": "fg",
       "hoverBackground": "hl",
       "hoverInactiveBackground": "table",
@@ -638,8 +656,10 @@
       "selectionForeground": "selFg",
       "selectionInactiveBackground": "table",
       "selectionInactiveForeground": "activeFg",
-      "Tag.background": "button",
-      "Tag.foreground": "fg"
+      "Tag": {
+        "background": "button",
+        "foreground": "fg"
+      }
     },
     "LiveIndicator": {
       "color": "accent"
@@ -647,6 +667,12 @@
     "macOSWindow.Title": {
       "height": 30,
       "heightSmall": 20
+    },
+    "MainMenu": {
+      "background": "hc",
+      "foreground": "fg",
+      "selectionForeground": "activeFg",
+      "selectionBackground": "selBg"
     },
     "MainToolbar": {
       "Dropdown.background": "bg",
@@ -692,7 +718,10 @@
       "disabledBackground": "second",
       "disabledForeground": "dis",
       "foreground": "fg",
-      "Selection.arc": 8,
+      "Selection": {
+        "arc": 8,
+        "innerInsets": "8,2,8,2"
+      },
       "selectionBackground": "selBg",
       "selectionForeground": "activeFg",
       "separatorColor": "border"
@@ -735,9 +764,9 @@
         "background": "bg"
       },
       "SearchField": {
-        "background": "hc"
+        "background": "cs"
       },
-      "separatorWidth": 10
+      "separatorWidth": 6
     },
     "NewPSD.warning": "accent",
     "Notification": {
@@ -867,7 +896,7 @@
         "CurrentImage.fillColor": "accent"
       },
       "SearchField": {
-        "background": "hc",
+        "background": "cs",
         "borderColor": "border"
       },
       "SectionHeader": {
@@ -885,6 +914,7 @@
     },
     "Popup": {
       "Advertiser": {
+        "borderInsets": "6,20,6,20",
         "background": "bg",
         "borderColor": "bg",
         "foreground": "accent"
@@ -904,7 +934,8 @@
       "innerBorderColor": "second",
       "Header": {
         "activeBackground": "bg",
-        "inactiveBackground": "cs"
+        "inactiveBackground": "cs",
+        "inactiveForeground": "text"
       },
       "paintBorder": true,
       "preferences": {
@@ -933,7 +964,10 @@
       "border": "8,8,8,8",
       "borderCornerRadius": 8,
       "foreground": "fg",
-      "Selection.arc": 8,
+      "Selection": {
+        "arc": 8,
+        "innerInsets": "8,2,8,2"
+      },
       "selectionBackground": "selBg",
       "translucentBackground": "bg"
     },
@@ -1071,7 +1105,7 @@
       },
       "SearchField": {
         "Border.color": "hl",
-        "background": "hc",
+        "background": "cs",
         "borderColor": "hl",
         "grayForeground": "dis",
         "infoForeground": "dis"
@@ -1234,7 +1268,7 @@
       "lightSelectionForeground": "activeFg",
       "lightSelectionInactiveBackground": "second",
       "lightSelectionInactiveForeground": "text",
-      "rowHeight": 28,
+      "rowHeight": 32,
       "selectionBackground": "table",
       "selectionForeground": "activeFg",
       "selectionInactiveBackground": "table",
@@ -1251,7 +1285,7 @@
       "focusCellBackground": "table",
       "focusCellForeground": "activeFg",
       "foreground": "fg",
-      "height": 26,
+      "height": 32,
       "hoverBackground": "hl",
       "separatorColor": "border"
     },
@@ -1325,7 +1359,9 @@
       "borderHandleColor": "text",
       "comboBoxButtonBackground": "button",
       "floatingForeground": "text",
-      "foreground": "fg"
+      "foreground": "fg",
+      "verticalToolbarInsets": "6,6,6,6",
+      "horizontalToolbarInsets": "6,6,6,6"
     },
     "ToolbarComboWidget": {
       "background": "button",
@@ -1383,7 +1419,7 @@
         "tab.selected.background": "cs"
       },
       "Header": {
-        "height": 42,
+        "height": 32,
         "background": "second",
         "borderColor": "second",
         "inactiveBackground": "bg"
