@@ -263,6 +263,32 @@
         "accessDot": "accent",
         "dropdownBorder": "second",
         "pillBackground": "second"
+      },
+      "Users": {
+        "1": {
+          "Background": "green",
+          "Foreground": "fg"
+        },
+        "2": {
+          "Background": "blue",
+          "Foreground": "fg"
+        },
+        "3": {
+          "Background": "red",
+          "Foreground": "fg"
+        },
+        "4": {
+          "Background": "purple",
+          "Foreground": "fg"
+        },
+        "5": {
+          "Background": "yellow",
+          "Foreground": "fg"
+        },
+        "6": {
+          "Background": "orange",
+          "Foreground": "fg"
+        }
       }
     },
     "ColorChooser": {
@@ -1347,9 +1373,14 @@
       "selectionBackground": "table",
       "selectionForeground": "activeFg"
     },
-    "TipOfTheDay.Image.borderColor": "border",
+    "TipOfTheDay": {
+      "Image.borderColor": "border"
+    },
     "TitlePane": {
-      "Button.hoverBackground": "hl",
+      "Button": {
+        "hoverBackground": "hl",
+        "preferredSize": "48,40"
+      },
       "background": "hc",
       "inactiveBackground": "bg",
       "inactiveInfoForeground": "dis",
@@ -1472,8 +1503,10 @@
       }
     },
     "Tree": {
+      "border": "4,12,4,12",
       "background": "hc",
       "foreground": "text",
+      "errorForeground": "red",
       "hash": "border",
       "hoverBackground": "tree",
       "hoverInactiveBackground": "table",
@@ -1548,13 +1581,21 @@
       "PackageSearch": {
         "PackagesList.rowHeight": 28,
         "PackageTag": {
+          "background": "excl",
+          "foreground": "fg",
           "hoverBackground": "tree",
+          "selectedBackground": "selBg",
           "selectedForeground": "selFg"
+        },
+        "PackageTagSelected": {
+          "background": "selBg",
+          "foreground": "selFg"
         },
         "SearchResult": {
           "background": "cs",
           "hoverBackground": "tree",
           "PackageTag": {
+            "background": "excl",
             "foreground": "fg",
             "hoverBackground": "tree",
             "selectedBackground": "selBg",
@@ -1588,7 +1629,7 @@
     },
     "VersionControl": {
       "FileHistory.Commit": {
-        "otherBranchBackground": "bg",
+        "otherBranchBackground": "excl",
         "selectedBranchBackground": "bg"
       },
       "GitCommits": {
@@ -1617,7 +1658,11 @@
           "unmatchedForeground": "text"
         }
       },
-      "MarkerPopup.Toolbar.background": "hl",
+      "MarkerPopup": {
+        "borderColor": "border",
+        "borderInsets": "6,8,6,10",
+        "Toolbar.background": "hl"
+      },
       "Ref": {
         "backgroundBase": "hl",
         "foreground": "activeFg"
@@ -1626,6 +1671,11 @@
         "backgroundBase": "hl",
         "foreground": "activeFg"
       }
+    },
+    "UnattendedHostStatus": {
+      "warningBackground": "yellow",
+      "warningForeground": "activeFg",
+      "dangerBackground": "red"
     },
     "Viewport": {
       "background": "hc",

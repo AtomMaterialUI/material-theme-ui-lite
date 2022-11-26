@@ -1349,7 +1349,10 @@
     },
     "TipOfTheDay.Image.borderColor": "border",
     "TitlePane": {
-      "Button.hoverBackground": "hl",
+      "Button": {
+        "hoverBackground": "hl",
+        "preferredSize": "64,64"
+      },
       "background": "hc",
       "inactiveBackground": "bg",
       "inactiveInfoForeground": "dis",
