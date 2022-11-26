@@ -131,6 +131,7 @@
     "BookmarkIcon.background": "accent",
     "Borders.ContrastBorderColor": "bg",
     "Borders.color": "border",
+    "Breakpoint.iconHoverAlpha": 0.35,
     "Button": {
       "arc": 8,
       "background": "bg",
@@ -326,6 +327,7 @@
       "selectionBackground": "table",
       "selectionForeground": "activeFg"
     },
+    "ComboPopup.border": "1,1,1,1,#ffd866",
     "CompletionPopup": {
       "Advertiser": {
         "background": "bg",
@@ -477,7 +479,8 @@
       "inactiveBackground": "bg",
       "inactiveForeground": "dis",
       "selectionBackground": "selBg",
-      "selectionForeground": "activeFg"
+      "selectionForeground": "activeFg",
+      "splitBorder": "red"
     },
     "EditorTabs": {
       "active.background": "table",
@@ -967,6 +970,7 @@
       },
       "background": "notif",
       "borderColor": "cs",
+      "borderWidth": 0,
       "inactiveBorderColor": "bg",
       "innerBorderColor": "second",
       "Header": {
@@ -974,7 +978,7 @@
         "inactiveBackground": "cs",
         "inactiveForeground": "text"
       },
-      "paintBorder": true,
+      "paintBorder": false,
       "preferences": {
         "background": "bg",
         "borderColor": "bg",
@@ -1122,9 +1126,9 @@
     },
     "SearchEverywhere": {
       "Advertiser": {
-        "background": "cs",
+        "background": "bg",
         "foreground": "text",
-        "borderInsets": "6,20,6,20"
+        "borderInsets": "10,20,10,20"
       },
       "background": "bg",
       "Dialog": {
@@ -1141,7 +1145,8 @@
         "Separator.foreground": "text",
         "selectionBackground": "selBg",
         "separatorColor": "border",
-        "separatorForeground": "text"
+        "separatorForeground": "text",
+        "settingsBackground": "bg"
       },
       "SearchField": {
         "Border.color": "hl",
@@ -1213,7 +1218,7 @@
     "SpeedSearch": {
       "background": "hl",
       "borderColor": "border",
-      "errorForeground": "fg",
+      "errorForeground": "red",
       "foreground": "fg"
     },
     "Spinner": {
