@@ -1064,20 +1064,21 @@
     },
     "RunWidget": {
       "background": "button",
+      "Debug.activeBackground": "hl",
       "foreground": "fg",
       "hoverBackground": "table",
       "pressedBackground": "hl",
+      "Profile.activeBackground": "hl",
       "runningBackground": "hl",
       "runningForeground": "selFg",
       "Run.activeBackground": "hl",
-      "Debug.activeBackground": "hl",
-      "Profile.activeBackground": "hl",
       "Running": {
         "background": "hl",
         "foreground": "selFg",
         "leftHoverBackground": "hl",
         "leftPressedBackground": "hl"
-      }
+      },
+      "separatorColor": "border"
     },
     "ScreenView.borderColor": "border",
     "scrollbar": "bg",
