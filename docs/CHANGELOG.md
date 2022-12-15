@@ -1,5 +1,12 @@
 ## Changelog
 
+# 20.0.0
+
+### Features
+- Add Compact and Compact Contrast themes
+  - Compact line height
+  - Compact tab height
+
 # 19.0.0
 
 ### Features
