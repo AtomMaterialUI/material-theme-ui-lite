@@ -27,7 +27,6 @@ const yaml = require('yaml');
 
 // Replacements
 let props = [
-  ['name', 'name'],
   ['dark', 'dark'],
   ['scheme', 'scheme'],
   ['id', 'className'],
@@ -63,7 +62,6 @@ let props = [
 ];
 
 let contrastProps = [
-  ['name', 'name2'],
   ['dark', 'dark'],
   ['scheme', 'scheme'],
   ['id', 'className'],
@@ -105,9 +103,25 @@ let globalProps = [
   ['notifInfo', '#87bb91', '#1b5e20'],
 ];
 
+let sizesProps = [
+  ['tabInsets', "-10,10,-10,10", "0,8,0,8"],
+  ['rowHeight', "28", "20"]
+]
+
 // Function to replace placeholders in a text
-const replacePlaceholders = (text, theme, props) => {
+const replacePlaceholders = (text, theme, props, {contrast, compact}) => {
   let result = text;
+  let name = theme.name;
+
+  // replace name
+  if (compact) {
+    name += ' Compact';
+  }
+  if (contrast) {
+    name += ' Contrast';
+  }
+  result = result.replace(new RegExp(`%name`, 'g'), name);
+
   props.forEach(([placeholder, prop]) => {
     console.log(`Replacing ${placeholder} with property ${prop}: ${theme[prop]}`);
     result = result.replace(new RegExp(`%${placeholder}`, 'g'), theme[prop]);
@@ -118,6 +132,11 @@ const replacePlaceholders = (text, theme, props) => {
     let isDark = theme.dark;
     console.log(`Replacing global ${prop} with ${isDark ? dark : light}`);
     result = result.replace(new RegExp(`%${prop}`, 'g'), isDark ? dark : light);
+  });
+
+  sizesProps.forEach(([prop, normalProp, compactProp]) => {
+    console.log(`Replacing ${prop} with ${compact ? compactProp : normalProp}`);
+    result = result.replace(new RegExp(`%${prop}`, 'g'), compact ? compactProp : normalProp);
   });
 
   return result;
@@ -132,11 +151,24 @@ const allThemes = [...material, ...other];
 // Output files
 const template = fs.readFileSync('./src/main/resources/template.theme.json', 'utf8');
 
-allThemes.forEach((theme) => {
-  const result = replacePlaceholders(template, theme, props);
-  fs.writeFileSync(`./src/main/resources/themes/${theme.name}.theme.json`, result, 'utf8');
+// Directories
+const themesDir = './src/main/resources/themes';
+fs.mkdirSync(`${themesDir}/regular`, {recursive: true});
+fs.mkdirSync(`${themesDir}/compact`, {recursive: true});
+fs.mkdirSync(`${themesDir}/contrast`, {recursive: true});
+fs.mkdirSync(`${themesDir}/compactContrast`, {recursive: true});
 
-  const result2 = replacePlaceholders(template, theme, contrastProps);
-  fs.writeFileSync(`./src/main/resources/themes/${theme.name} Contrast.theme.json`, result2, 'utf8');
+allThemes.forEach((theme) => {
+  const themeStr = replacePlaceholders(template, theme, props, {contrast: false, compact: false});
+  fs.writeFileSync(`./src/main/resources/themes/regular/${theme.name}.theme.json`, themeStr, 'utf8');
+
+  const contrastThemeStr = replacePlaceholders(template, theme, contrastProps, {contrast: true, compact: false});
+  fs.writeFileSync(`./src/main/resources/themes/contrast/${theme.name} Contrast.theme.json`, contrastThemeStr, 'utf8');
+
+  const compactThemeStr = replacePlaceholders(template, theme, props, {contrast: false, compact: true});
+  fs.writeFileSync(`./src/main/resources/themes/compact/${theme.name} Compact.theme.json`, compactThemeStr, 'utf8');
+
+  const compactContrastThemeStr = replacePlaceholders(template, theme, contrastProps, {contrast: true, compact: true});
+  fs.writeFileSync(`./src/main/resources/themes/compactContrast/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
 
 });

@@ -24,6 +24,7 @@
 package com.mallowigi.idea.themes
 
 import com.intellij.ide.ui.LafManager
+import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.project.DumbAware
 import com.mallowigi.idea.MaterialThemeBundle.message
@@ -50,10 +51,19 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
   @NonNls
   private fun getThemeName(e: AnActionEvent): String {
     val contrast = message("contrast")
+    val compact = message("compact")
     val text = e.presentation.text ?: return theme.themeName
 
     val isContrast = text.contains(contrast)
+    val isCompact = text.contains(compact)
     val name = theme.themeName
-    return if (isContrast) MessageFormat.format("{0} {1}", name, contrast) else name
+    return when {
+      isContrast && isCompact -> MessageFormat.format("{0} {1} {2}", name, compact, contrast)
+      isContrast && !isCompact -> MessageFormat.format("{0} {1}", name, contrast)
+      !isContrast && isCompact -> MessageFormat.format("{0} {1}", name, compact)
+      else -> name
+    }
   }
+
+  override fun getActionUpdateThread(): ActionUpdateThread = ActionUpdateThread.BGT
 }
