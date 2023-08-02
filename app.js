@@ -104,7 +104,7 @@ let globalProps = [
 ];
 
 let sizesProps = [
-  ['tabInsets', "-10,10,-10,10", "0,8,0,8"],
+  ['tabInsets', "null", "0,8,0,8"],
   ['rowHeight', "28", "20"]
 ]
 

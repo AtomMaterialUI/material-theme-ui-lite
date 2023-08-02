@@ -23,7 +23,7 @@
                   fill="rgb(128,203,196)"/>
             <g filter="url(#f3)">
                 <rect class="ribbon" x="0" y="600" width="848" height="200" fill="#009688"/>
-                <text x="12%" y="750" fill="white" font-size="120" font-family="Roboto" font-weight="900">
+                <text x="100px" y="750" fill="white" font-size="120" font-family="Roboto" font-weight="900">
                     Lite Version
                 </text>
             </g>
