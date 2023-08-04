@@ -24,37 +24,43 @@
 package com.mallowigi.idea
 
 import com.intellij.ide.AppLifecycleListener
+import com.intellij.openapi.Disposable
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.project.Project
-import com.intellij.openapi.startup.StartupActivity
+import com.intellij.openapi.startup.ProjectActivity
 import com.intellij.openapi.util.registry.Registry
 
 /** Runs at start. */
-class MTStartup : StartupActivity {
+class MTStartup : ProjectActivity, Disposable {
+  override suspend fun execute(project: Project) = runActivity()
+
+  override fun dispose() = onClose()
+
   /** Modify the registry at start. */
-  override fun runActivity(project: Project) {
+  private fun runActivity() {
     modifyRegistry()
     ApplicationManager.getApplication().messageBus.connect().also {
-      it.subscribe(
-        AppLifecycleListener.TOPIC,
-        object : AppLifecycleListener {
-          override fun appClosing() {
-            Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(15)
-            Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(false)
-            it.disconnect()
-          }
+      it.subscribe(AppLifecycleListener.TOPIC, object : AppLifecycleListener {
+        override fun appClosing() {
+          onClose()
+          it.disconnect()
         }
-      )
+      })
     }
+  }
+
+  private fun onClose() {
+    Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(15)
+    Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(false)
+  }
+
+  private fun modifyRegistry() {
+    Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(0)
+    Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(true)
   }
 
   companion object {
     private const val IDE_BALLOON_SHADOW_SIZE = "ide.balloon.shadow.size"
     private const val IDE_INTELLIJ_LAF_ENABLE_ANIMATION = "ide.intellij.laf.enable.animation"
-
-    private fun modifyRegistry() {
-      Registry.get(IDE_BALLOON_SHADOW_SIZE).setValue(0)
-      Registry.get(IDE_INTELLIJ_LAF_ENABLE_ANIMATION).setValue(true)
-    }
   }
 }
