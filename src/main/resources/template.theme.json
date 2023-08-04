@@ -72,7 +72,8 @@
       "hoverBorderColor": "accent50",
       "hoverSeparatorColor": "button",
       "pressedBackground": "accent50",
-      "pressedBorderColor": "accent50"
+      "pressedBorderColor": "accent50",
+      "separatorColor": "border"
     },
     "ActionsList": {
       "icon.gap": 12,
@@ -98,6 +99,9 @@
     "AvailableMnemonic": {
       "background": "button",
       "borderColor": "button",
+      "foreground": "fg"
+    },
+    "Banner": {
       "foreground": "fg"
     },
     "BigSpinner.background": "bg",
@@ -193,7 +197,7 @@
       "Split": {
         "default": {
           "iconColor": "fg",
-          "separatorColor": "border"
+          "separatorColor": "accent"
         }
       },
       "startBackground": "table",
@@ -661,7 +665,8 @@
     },
     "Hyperlink.linkColor": "accent",
     "IconBadge": {
-      "infoBackground": "accent"
+      "infoBackground": "accent",
+      "newUiBackground": "accent"
     },
     "Ide.Shadow": {
       "borderInsets": "16,16,16,16",
@@ -702,7 +707,8 @@
       "activeTitleForeground": "fg",
       "background": "bg",
       "inactiveTitleBackground": "bg",
-      "inactiveTitleForeground": "text"
+      "inactiveTitleForeground": "text",
+      "optionDialogBackground": "bg"
     },
     "Label": {
       "background": "bg",
@@ -734,20 +740,20 @@
         "stepNumberForeground": "text"
       }
     },
-    "LineProfiler" : {
-      "Line" : {
-        "labelBackground" : "bg",
-        "foreground" : "fg",
-        "hoverBackground" : "table"
+    "LineProfiler": {
+      "Line": {
+        "labelBackground": "bg",
+        "foreground": "fg",
+        "hoverBackground": "table"
       },
-      "HotLine" : {
-        "labelBackground" : "table",
-        "foreground" : "red",
-        "hoverBackground" : "hl"
+      "HotLine": {
+        "labelBackground": "table",
+        "foreground": "red",
+        "hoverBackground": "hl"
       },
-      "IgnoredLine" : {
-        "labelBackground" : "excl",
-        "foreground" : "fg"
+      "IgnoredLine": {
+        "labelBackground": "excl",
+        "foreground": "fg"
       }
     },
     "link": "accent",
@@ -834,8 +840,8 @@
         "background": "cs",
         "hoverForeground": "selFg",
         "hoverBackground": "hl",
-        "separatorColor": "hl",
-        "borderColor": "border"
+        "separatorColor": "border",
+        "borderColor": "bg"
       },
       "FullScreeControl.Background": "cs"
     },
@@ -1053,6 +1059,7 @@
       "paidTagBackground": "hl",
       "selectionBackground": "selBg",
       "selectionForeground": "selFg",
+      "suggestedLabelBackground": "button",
       "tagBackground": "hl",
       "tagForeground": "accent",
       "trialTagBackground": "hl",
@@ -1110,9 +1117,11 @@
       "innerBorderColor": "second",
       "Header": {
         "activeBackground": "bg",
+        "activeForeground": "fg",
         "inactiveBackground": "cs",
-        "inactiveForeground": "text"
+        "inactiveForeground": "dis"
       },
+      "mnemonicForeground": "text",
       "paintBorder": false,
       "preferences": {
         "background": "bg",
@@ -1175,6 +1184,8 @@
         "pointBackground": "accent",
         "pointBorderColor": "accent"
       },
+      "neutralLifecycleEvent": "second",
+      "trackBackground": "button",
       "Timer": {
         "foreground": "fg",
         "disabledForeground": "dis"
@@ -1293,37 +1304,61 @@
     },
     "Review": {
       "Branch": {
-        "Background": "second",
+        "Background": "button",
         "Background.Hover": "tree"
+      },
+      "ChatItem": {
+        "BubblePanel.Border": "button",
+        "Hover": "hl"
+      },
+      "MetaInfo": {
+        "StatusLine": {
+          "Blue": "accent",
+          "Gray": "excl"
+        }
       },
       "State": {
         "Background": "second",
-        "Foreground": "text"
+        "Foreground": "fg"
+      },
+      "Timeline": {
+        "Thread.Diff.AnchorLine": "table"
       }
     },
     "ReviewList": {
       "state.background": "second",
       "state.foreground": "fg"
     },
+    "RunToolbar": {
+      "Debug.activeBackground": "hl",
+      "Profile.activeBackground": "hl",
+      "Run.activeBackground": "hl"
+    },
     "RunWidget": {
       "background": "button",
       "Debug.activeBackground": "hl",
       "foreground": "fg",
       "iconColor": "fg",
-      "hoverBackground": "table",
+      "hoverBackground": "hl",
+      "leftHoverBackground": "hl",
       "pressedBackground": "hl",
       "Profile.activeBackground": "hl",
+      "runIconColor": "accent",
       "runningBackground": "hl",
-      "runningForeground": "selFg",
+      "runningForeground": "fg",
       "runningIconColor": "selFg",
       "Run.activeBackground": "hl",
       "Running": {
         "background": "hl",
-        "foreground": "selFg",
+        "foreground": "fg",
         "leftHoverBackground": "hl",
         "leftPressedBackground": "hl"
       },
-      "separatorColor": "border"
+      "StopButton": {
+        "leftHoverBackground": "hl"
+      },
+      "separatorColor": "border",
+      "stopBackground": "second"
     },
     "ScreenView.borderColor": "border",
     "scrollbar": "bg",
@@ -1649,7 +1684,12 @@
       "onBackground": "accent",
       "onForeground": "accent"
     },
-    "Toolbar.Floating.background": "button",
+    "Toolbar": {
+      "Floating": {
+        "background": "button",
+        "borderColor": "second"
+      }
+    },
     "ToolBar": {
       "background": "hc",
       "borderHandleColor": "text",
@@ -1688,7 +1728,7 @@
       "Learning": {
         "background": "accent",
         "borderColor": "accent",
-        "codeBorderColor": "hl",
+        "codeBorderColor": "cs",
         "foreground": "fg",
         "spanBackground": "accent50",
         "spanForeground": "fg",
@@ -1756,7 +1796,7 @@
         "HeaderTab.background": "cs"
       },
       "Stripe": {
-        "separatorColor": "hl",
+        "separatorColor": "table",
         "DragAndDrop": {
           "separatorColor": "accent70"
         }
@@ -1925,6 +1965,7 @@
         "Commit": {
           "currentBranchBackground": "cs",
           "hoveredBackground": "tree",
+          "Reference.foreground": "text",
           "rowHeight": 28,
           "unmatchedForeground": "text"
         }
