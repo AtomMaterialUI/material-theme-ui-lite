@@ -77,7 +77,10 @@
     },
     "ActionsList": {
       "icon.gap": 12,
-      "mnemonic.icon.gap": 12
+      "mnemonic.icon.gap": 12,
+      "mnemonics.insets": "0,8,0,8",
+      "mnemonicsInsets": "0,8,0,8",
+      "mnemonicsBorderInsets": "0,8,0,8"
     },
     "ActionToolbar": {
       "background": "hc"
@@ -210,9 +213,15 @@
       "Tooltip.background": "notif",
       "Tooltip.borderColor": "border"
     },
+    "Caret.width": 2,
+    "CellEditor": {
+      "border.width": 2
+    },
     "CheckBox": {
       "background": "bg",
       "background.selected": "accent",
+      "border.width": 3,
+      "borderInsets": "4,4,4,4",
       "borderColor": "bg",
       "borderColor.selected": "accent",
       "checkSignColor": "bg",
@@ -343,7 +352,8 @@
       "nonEditableBackground": "bg",
       "padding": "5,5,5,5",
       "selectionBackground": "table",
-      "selectionForeground": "activeFg"
+      "selectionForeground": "activeFg",
+      "squareButton": true
     },
     "ComboPopup.border": "1,1,1,1,%accent",
     "CompletionPopup": {
@@ -369,13 +379,20 @@
       "selectionInactiveBackground": "hl",
       "selectionInactiveForeground": "text",
       "selectionInactiveInfoForeground": "text",
-      "selectionInfoForeground": "selFg"
+      "selectionInfoForeground": "selFg",
+      "selectionInnerInsets": "4,4,4,4"
     },
     "ComplexPopup": {
-      "Header.background": "notif"
+      "Header": {
+        "background": "notif",
+        "insets": "12,12,12,12"
+      },
+      "TextField": {
+        "inputInsets": "8,4,8,4"
+      }
     },
     "Component": {
-      "arc": 4,
+      "arc": 6,
       "focusWidth": 2,
       "borderColor": "hl",
       "disabledBorderColor": "dis",
@@ -474,10 +491,22 @@
     "Editor": {
       "background": "hc",
       "foreground": "fg",
+      "Notification": {
+        "borderInsets": "10,12,10,12"
+      },
       "shortcutForeground": "text",
       "SearchField": {
         "background": "cs",
         "borderInsets": "8,12,8,12"
+      },
+      "SearchToolbar": {
+        "borderInsets": "4,12,4,12"
+      },
+      "SearchReplaceModePanel": {
+        "borderInsets": "4,12,4,12"
+      },
+      "ReplaceToolbar": {
+        "borderInsets": "4,12,4,12"
       },
       "Toolbar": {
         "borderColor": "border"
@@ -519,6 +548,9 @@
       "inactiveUnderlineColor": "dis",
       "selectedBackground": "table",
       "selectedForeground": "fg",
+      "tabContentInsetsActionsLeft": "0,6,0,6",
+      "tabContentInsetsActionsNone": "0,6,0,6",
+      "tabContentInsetsActionsRight": "0,6,0,6",
       "tabInsets": "%tabInsets",
       "underlineColor": "accent",
       "underlineHeight": 3,
@@ -537,6 +569,10 @@
       "Yellow": "excl",
       "Gray": "excl",
       "excluded": "excl"
+    },
+    "FindPopup": {
+      "bottomPanelInsets": "4,10,4,10",
+      "scopesPanelInsets": "4,16,4,16"
     },
     "FlameGraph": {
       "JVMBackground": "#89DDF7",
@@ -648,13 +684,18 @@
       "backgroundColor": "bg",
       "borderColor": "border",
       "defaultTextBorderInsets": "16,16,16,16",
+      "fontSizeDelta": 0,
       "foreground": "fg",
+      "horizontalGap": 10,
       "infoForeground": "text",
+      "maxWidth": 250,
       "shortcutForeground": "text",
       "shortcutTextColor": "text",
       "smallTextBorderInsets": "8,12,8,12",
       "textColor": "fg",
-      "verticalGap": 8
+      "verticalGap": 8,
+      "xOffset": 1,
+      "yOffset": 1
     },
     "Hg.Log.Ref": {
       "Branch": "accent",
@@ -776,13 +817,14 @@
         "hoverBackground": "hl",
         "leftRightInset": 8,
         "separatorColor": "border",
-        "separatorInset": 4
+        "separatorInset": 8
       },
       "foreground": "fg",
       "hoverBackground": "hl",
       "hoverInactiveBackground": "table",
       "Line.hoverBackground": "selBg",
       "rowHeight": "28",
+      "selectedItemAlpha": 100,
       "selectionBackground": "tree",
       "selectionForeground": "selFg",
       "selectionInactiveBackground": "table",
@@ -809,13 +851,16 @@
     "MainToolbar": {
       "background": "bg",
       "Button": {
-        "buttonInsets": "0,0,0,0"
+        "buttonInsets": "0,4,0,4",
+        "iconSize": "20,20",
+        "size": 28
       },
       "Dropdown": {
-        "borderInsets": "6,12,6,12",
+        "borderInsets": "4,4,4,4",
         "background": "bg",
         "foreground": "fg",
         "hoverBackground": "hl",
+        "iconSize": "20,20",
         "maxWidth": 350,
         "pressedBackground": "table",
         "transparentHoverBackground": "tree"
@@ -829,7 +874,10 @@
       },
       "inactiveBackground": "bg",
       "pressedBackground": "table",
-      "separatorColor": "border"
+      "separatorColor": "border",
+      "SplitDropdown": {
+        "borderInsets": "6,6,6,6"
+      }
     },
     "MainWindow": {
       "Tab": {
@@ -844,6 +892,12 @@
         "borderColor": "bg"
       },
       "FullScreeControl.Background": "cs"
+    },
+    "macOSWindow": {
+      "Title": {
+        "height": 30,
+        "heightSmall": 24
+      }
     },
     "material": {
       "background": "bg",
@@ -875,6 +929,7 @@
       "disabledBackground": "second",
       "disabledForeground": "dis",
       "foreground": "fg",
+      "opaque": true,
       "Selection": {
         "arc": 8,
         "innerInsets": "8,2,8,2"
@@ -885,6 +940,7 @@
     },
     "MenuBar": {
       "background": "hc",
+      "borderInsets": "8,12,8,12",
       "borderColor": "bg",
       "disabledBackground": "bg",
       "disabledForeground": "dis",
@@ -903,7 +959,10 @@
       "disabledForeground": "dis",
       "foreground": "fg",
       "selectionBackground": "selBg",
-      "selectionForeground": "activeFg"
+      "selectionForeground": "activeFg",
+      "Selection": {
+        "arc": 8
+      }
     },
     "MlModelBinding.Viewer.CodeEditor.background": "bg",
     "MnemonicIcon": {
@@ -914,6 +973,9 @@
     "NavBar": {
       "arrowColor": "fg",
       "borderColor": "bg",
+      "Breadcrumbs": {
+        "itemInsets": "4,2,4,2"
+      },
       "selectedColor": "accent"
     },
     "NewClass": {
@@ -923,11 +985,11 @@
       "SearchField": {
         "background": "cs"
       },
-      "separatorWidth": 6
+      "separatorWidth": 10
     },
     "NewPSD.warning": "accent",
     "Notification.Shadow": {
-      "borderInsets": "5,5,5,5",
+      "borderInsets": "8,8,8,8",
       "top0Color": "#00000000",
       "top1Color": "#00000010",
       "bottom0Color": "#00000000",
@@ -947,15 +1009,16 @@
     },
     "Notification": {
       "arc": 16,
-      "Error.foreground": "accent",
-      "Link.foreground": "accent",
       "background": "notif",
       "borderColor": "notif",
+      "borderInsets": "4,6,4,6",
       "errorBackground": "notif",
       "errorBorderColor": "notif",
       "errorForeground": "accent",
+      "Error.foreground": "accent",
       "foreground": "fg",
       "linkForeground": "accent",
+      "Link.foreground": "accent",
       "Button": {
         "background": "button",
         "borderColor": "button",
@@ -1119,7 +1182,8 @@
         "activeBackground": "bg",
         "activeForeground": "fg",
         "inactiveBackground": "cs",
-        "inactiveForeground": "dis"
+        "inactiveForeground": "dis",
+        "insets": "12,10,12,10"
       },
       "mnemonicForeground": "text",
       "paintBorder": false,
@@ -1128,8 +1192,15 @@
         "borderColor": "bg",
         "foreground": "fg"
       },
-      "Selection.arc": 8,
-      "Selection.leftRightInset": 8,
+      "SearchField": {
+        "borderInsets": "4,4,4,4",
+        "inputInsets": "4,4,4,4"
+      },
+      "Selection": {
+        "arc": 8,
+        "leftRightInset": 8,
+        "innerInsets": "8,8,8,8"
+      },
       "Separator": {
         "foreground": "fg",
         "color": "border"
@@ -1145,10 +1216,15 @@
     },
     "PopupMenu": {
       "background": "bg",
+      "borderInsets": "10,10,10,10",
+      "borderCornerRadiusX": 8,
+      "borderCornerRadiusY": 8,
+      "borderCornerRadius": 8,
       "borderWidth": 1,
       "border": "8,8,8,8",
-      "borderCornerRadius": 8,
       "foreground": "fg",
+      "leftBorderWidth": 8,
+      "rightBorderWidth": 8,
       "Selection": {
         "arc": 8,
         "innerInsets": "8,2,8,2"
@@ -1157,11 +1233,11 @@
       "translucentBackground": "bg"
     },
     "PopupMenuSeparator": {
+      "borderCornerRadius": 8,
       "height": 10,
       "stripeWidth": 2,
       "stripeIndent": 5,
-      "withToEdge": 4,
-      "borderCornerRadius": 8
+      "withToEdge": 4
     },
     "Profiler": {
       "ChartSlider": {
@@ -1231,6 +1307,7 @@
       "acceleratorForeground": "text",
       "acceleratorSelectionForeground": "text",
       "background": "bg",
+      "borderPainted": false,
       "disabledBackground": "bg",
       "disabledForeground": "dis",
       "foreground": "fg",
@@ -1358,7 +1435,9 @@
         "leftHoverBackground": "hl"
       },
       "separatorColor": "border",
-      "stopBackground": "second"
+      "stopBackground": "second",
+      "toolbarHeight": 30,
+      "toolbarBorderHeight": 4
     },
     "ScreenView.borderColor": "border",
     "scrollbar": "bg",
@@ -1498,9 +1577,11 @@
       "foreground": "fg"
     },
     "Spinner": {
+      "arrowButtonInsets": "1,1,1,1",
       "background": "bg",
       "border": "4,4,4,4",
       "disabledBackground": "excl",
+      "editorBorderPainted": false,
       "foreground": "fg",
       "selectionForeground": "activeFg"
     },
@@ -1513,7 +1594,7 @@
     "StatusBar": {
       "background": "bg",
       "Breadcrumbs": {
-        "chevronInset": "0",
+        "chevronInset": 0,
         "floatingBackground": "tree",
         "floatingForeground": "fg",
         "floatingToolbarInsets": "8,12,8,12",
@@ -1521,6 +1602,7 @@
         "hoverBackground": "tree",
         "hoverForeground": "fg",
         "itemBackgroundInsets": "2,4,2,4",
+        "itemInsets": "0,0,0,0",
         "selectionBackground": "selBg",
         "selectionForeground": "activeFg",
         "selectionInactiveBackground": "button",
@@ -1539,6 +1621,13 @@
         "pressedBackground": "button",
         "pressedForeground": "fg",
         "widgetInsets": "8,12,8,12"
+      }
+    },
+    "StripeToolbar": {
+      "Button": {
+        "size": "40,40",
+        "iconSize": "20,20",
+        "iconPadding": "8,8,8,8"
       }
     },
     "TabbedPane": {
@@ -1566,6 +1655,8 @@
       "selectedLabelShift": 0,
       "selectedTabPadInsets": "0,0,0,0",
       "shadow": "hc",
+      "tabAreaInsets": "0,0,0,0",
+      "tabFillStyle": "underline",
       "tabHeight": 32,
       "tabInsets": "5,10,5,10",
       "tabSelectionArc": 4,
@@ -1627,9 +1718,11 @@
     "textText": "text",
     "TextArea": {
       "background": "cs",
+      "caretBlinkRate": 500,
       "caretForeground": "accent",
       "foreground": "fg",
       "inactiveForeground": "dis",
+      "margin": "0,0,0,0",
       "selectionBackground": "table",
       "selectionForeground": "activeFg"
     },
@@ -1662,7 +1755,7 @@
     "TitlePane": {
       "Button": {
         "hoverBackground": "hl",
-        "preferredSize": "48,40"
+        "preferredSize": "42,42"
       },
       "background": "hc",
       "inactiveBackground": "bg",
@@ -1685,6 +1778,8 @@
       "onForeground": "accent"
     },
     "Toolbar": {
+      "verticalToolbarInsets": "6,6,6,6",
+      "horizontalToolbarInsets": "6,6,6,6",
       "Floating": {
         "background": "button",
         "borderColor": "second"
@@ -1702,6 +1797,7 @@
     },
     "ToolbarComboWidget": {
       "background": "button",
+      "borderInsets": "3,5,3,5",
       "hoverBackground": "hl"
     },
     "tooltips": {
@@ -1769,7 +1865,9 @@
         "height": 42,
         "background": "second",
         "borderColor": "second",
-        "inactiveBackground": "bg"
+        "inactiveBackground": "bg",
+        "labelLeftRightInsets": "0,12,0,16",
+        "toolbarLeftRightInsets": "0,12,0,8"
       },
       "HeaderCloseButton": {
         "background": "bg"
@@ -1815,6 +1913,8 @@
       "hoverBackground": "tree",
       "hoverInactiveBackground": "table",
       "modifiedItemForeground": "accent",
+      "paintLines": false,
+      "rendererFillBackground": false,
       "rowHeight": "%rowHeight",
       "selectionBackground": "tree",
       "selectionForeground": "selFg",
@@ -1935,6 +2035,7 @@
     "ValidationTooltip": {
       "errorBackground": "notif",
       "errorBorderColor": "notif",
+      "maxWidth": 384,
       "warningBackground": "notif",
       "warningBorderColor": "notif"
     },
@@ -1967,7 +2068,8 @@
           "hoveredBackground": "tree",
           "Reference.foreground": "text",
           "rowHeight": 28,
-          "unmatchedForeground": "text"
+          "unmatchedForeground": "text",
+          "verticalPadding": 8
         }
       },
       "MarkerPopup": {
@@ -1981,6 +2083,7 @@
       },
       "RefLabel": {
         "backgroundBase": "hl",
+        "backgroundBrightness": 0.3,
         "foreground": "activeFg"
       }
     },
