@@ -29,7 +29,7 @@ import com.mallowigi.idea.ThemesBundle.message
 import org.jetbrains.annotations.NonNls
 
 /** Enum for theme names. */
-enum class MTThemes(@param:NonNls private val id: String, @field:Transient val themeName: String) {
+enum class MTThemes(@param:NonNls val id: String, @field:Transient val themeName: String) {
   OCEANIC("OCEANIC", message("mt.oceanic.name")),
   DARKER("DARKER", message("mt.darker.name")),
   LIGHTER("LIGHTER", message("mt.lighter.name")),

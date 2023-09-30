@@ -101,10 +101,16 @@ let globalProps = [
   ['notifError', '#ef9694', '#b71c1c'],
   ['notifWarn', '#ffeca0', '#5d4037'],
   ['notifInfo', '#87bb91', '#1b5e20'],
+  ['FileColor.Green', '#89CC8E', '#273828'],
+  ['FileColor.Blue', '#6B9BFA', '#25324D'],
+  ['FileColor.Red', '#EB938D', '#472B2B'],
+  ['FileColor.Yellow', '#F7DE8B', '#5E4D33'],
+  ['FileColor.Purple', '#C4A0F3', '#3B3147'],
+  ['FileColor.Orange', '#F5BD98', '#614438'],
 ];
 
 let sizesProps = [
-  ['tabInsets', "null", "0,8,0,8"],
+  ['tabInsets', "-7,8,-7,8", "0,8,0,8"],
   ['rowHeight', "28", "20"]
 ]
 

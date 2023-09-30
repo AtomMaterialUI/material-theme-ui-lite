@@ -561,12 +561,12 @@
       "unselectedBlend": 0.7
     },
     "FileColor": {
-      "Blue": "#004BA0",
-      "Green": "#387002",
-      "Orange": "#B53D00",
-      "Rose": "#A00037",
-      "Violet": "#4D2C91",
-      "Yellow": "excl",
+      "Blue": "#25324D",
+      "Green": "#273828",
+      "Orange": "#614438",
+      "Rose": "#472B2B",
+      "Violet": "#3B3147",
+      "Yellow": "#5E4D33",
       "Gray": "excl",
       "excluded": "excl"
     },

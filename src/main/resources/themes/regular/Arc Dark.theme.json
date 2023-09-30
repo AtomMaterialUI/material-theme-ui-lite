@@ -551,7 +551,7 @@
       "tabContentInsetsActionsLeft": "0,6,0,6",
       "tabContentInsetsActionsNone": "0,6,0,6",
       "tabContentInsetsActionsRight": "0,6,0,6",
-      "tabInsets": "null",
+      "tabInsets": "-7,8,-7,8",
       "underlineColor": "accent",
       "underlineHeight": 3,
       "underlineArc": 4,
@@ -561,12 +561,12 @@
       "unselectedBlend": 0.7
     },
     "FileColor": {
-      "Blue": "#004BA0",
-      "Green": "#387002",
-      "Orange": "#B53D00",
-      "Rose": "#A00037",
-      "Violet": "#4D2C91",
-      "Yellow": "excl",
+      "Blue": "#25324D",
+      "Green": "#273828",
+      "Orange": "#614438",
+      "Rose": "#472B2B",
+      "Violet": "#3B3147",
+      "Yellow": "#5E4D33",
       "Gray": "excl",
       "excluded": "excl"
     },
