@@ -614,6 +614,7 @@
       "selectionForeground.unfocused": "selFg"
     },
     "GotItTooltip": {
+      "animationBackground": "notif",
       "background": "notif",
       "borderColor": "notif",
       "codeBackground": "cs",
@@ -622,6 +623,7 @@
       "endBackground": "button",
       "endBorderColor": "button",
       "foreground": "fg",
+      "imageBorderColor": "notif",
       "Header.foreground": "fg",
       "linkForeground": "accent",
       "shortcutBackground": "notif",
@@ -988,6 +990,11 @@
       "separatorWidth": 10
     },
     "NewPSD.warning": "accent",
+    "NewUiOnboarding": {
+      "Dialog": {
+        "background": "second"
+      }
+    },
     "Notification.Shadow": {
       "borderInsets": "8,8,8,8",
       "top0Color": "#00000000",
@@ -1030,6 +1037,8 @@
         "innerBorderColor": "button"
       },
       "ToolWindow": {
+        "background": "notif",
+        "borderColor": "notif",
         "Button.DragAndDrop": {
           "buttonFloatingBackground": "button",
           "stripeBackground": "bg"
@@ -1439,7 +1448,12 @@
       "toolbarHeight": 30,
       "toolbarBorderHeight": 4
     },
-    "ScreenView.borderColor": "border",
+    "ScreenView": {
+      "borderColor": "border",
+      "defaultBorderColor": "border",
+      "hoveredBorderColor": "hl",
+      "selectedBorderColor": "second"
+    },
     "scrollbar": "bg",
     "ScrollBar": {
       "background": "bg",
@@ -1783,9 +1797,7 @@
       "Floating": {
         "background": "button",
         "borderColor": "second"
-      }
-    },
-    "ToolBar": {
+      },
       "background": "hc",
       "borderHandleColor": "text",
       "comboBoxButtonBackground": "button",
@@ -1946,12 +1958,14 @@
       "motion": {
         "AddConstraintColor": "accent",
         "AddConstraintPlus": "accent",
+        "Axis.lineSeparatorColor": "fg",
         "CSPanel.SelectedBackground": "tree",
         "CSPanel.SelectedFocusBackground": "selBg",
         "Component.foreground": "fg",
         "ConstraintSet.background": "second",
         "ConstraintSetText.foreground": "text",
         "CursorTextColor.foreground": "fg",
+        "Grid.lineSeparatorColor": "border",
         "HoverColor.disabledBackground": "dis",
         "Key.selectedForeground": "accent",
         "Notification.background": "notif",
@@ -1966,6 +1980,8 @@
         "borderColor": "border",
         "cs_FocusText.infoForeground": "text",
         "graphLine.lineSeparatorColor": "accent",
+        "label.textColor": "text",
+        "label.background": "text",
         "motionGraph.background": "bg",
         "ourAvg.background": "second",
         "ourCS.background": "second",
