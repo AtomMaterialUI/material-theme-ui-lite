@@ -1,7 +1,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2015-2022 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2015-2023 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -3122,6 +3122,11 @@
                 <option name="FOREGROUND" value="79b8ff"/>
             </value>
         </option>
+        <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
+            <value>
+                <option name="BACKGROUND" value="2f363d"/>
+            </value>
+        </option>
         <option name="TEXT">
             <value>
                 <option name="FOREGROUND" value="d1d5da"/>
@@ -3268,6 +3273,11 @@
         </option>
         <option name="XML_TAG_DATA" baseAttributes="TEXT"/>
         <option name="XML_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="85e89d"/>
+            </value>
+        </option>
+        <option name="XML_CUSTOM_TAG_NAME">
             <value>
                 <option name="FOREGROUND" value="85e89d"/>
             </value>

@@ -39,6 +39,7 @@ enum class MTThemes(@param:NonNls val id: String, @field:Transient val themeName
   SANDYBEACH("SANDYBEACH", message("mt.sandybeach.name")),
   FOREST("FOREST", message("mt.forest.name")),
   VOLCANO("VOLCANO", message("mt.volcano.name")),
+  SPACE("SPACE", message("mt.space.name")),
   MONOKAI("MONOKAI", message("monokai.name")),
   ARC_DARK("ARC_DARK", message("arc.dark.name")),
   ONE_DARK("ONE_DARK", message("one.dark.name")),

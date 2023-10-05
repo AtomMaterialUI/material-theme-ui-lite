@@ -1,7 +1,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2015-2022 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2015-2023 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -1314,7 +1314,6 @@
         </option>
         <option name="INACTIVE_HYPERLINK_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="808080"/>
                 <option name="EFFECT_COLOR" value="808080"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
@@ -1585,6 +1584,11 @@
             <value/>
         </option>
         <option name="KOTLIN_KEYWORD" baseAttributes="DEFAULT_KEYWORD"/>
+        <option name="KOTLIN_LABEL">
+            <value>
+                <option name="FOREGROUND" value="fcfcfa"/>
+            </value>
+        </option>
         <option name="KOTLIN_MUTABLE_VARIABLE">
             <value>
                 <option name="EFFECT_COLOR" value="fcfcfa"/>
@@ -2976,6 +2980,11 @@
                 <option name="FOREGROUND" value="ab9df2"/>
             </value>
         </option>
+        <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
+            <value>
+                <option name="BACKGROUND" value="403e41"/>
+            </value>
+        </option>
         <option name="TEXT">
             <value>
                 <option name="FOREGROUND" value="fcfcfa"/>
@@ -3138,6 +3147,11 @@
         </option>
         <option name="XML_TAG_DATA" baseAttributes="TEXT"/>
         <option name="XML_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="ff6188"/>
+            </value>
+        </option>
+        <option name="XML_CUSTOM_TAG_NAME">
             <value>
                 <option name="FOREGROUND" value="ff6188"/>
             </value>
