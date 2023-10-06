@@ -1,5 +1,29 @@
 ## Changelog
 
+# 23.0.0
+
+### Features
+
+- New Theme: **Material Space**
+
+### Fixes
+
+- Support for 2023.3
+
+# 22.0.0
+
+### Features
+
+- Add sizes
+
+# 21.0.0
+
+### Fixes
+
+- Fix Compact Tabs
+- More UI Properties taken from Material Theme
+
+
 # 20.0.0
 
 ### Features
