@@ -39,8 +39,7 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
     // Find LAF theme and trigger a theme change
     val lafManager = LafManager.getInstance()
     val selectedTheme = getThemeName(e)
-    val reference: LafManager.LafReference = LafManager.LafReference(selectedTheme, theme.id)
-    val lafInfo = lafManager.findLaf(reference)
+    val lafInfo = lafManager.installedThemes.singleOrNull { it.id == selectedTheme }
 
     if (lafInfo != null) lafManager.currentUIThemeLookAndFeel = lafInfo
   }
@@ -69,5 +68,6 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
     }
   }
 
+  /** Get the action update thread. */
   override fun getActionUpdateThread(): ActionUpdateThread = ActionUpdateThread.BGT
 }
