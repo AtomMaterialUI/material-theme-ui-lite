@@ -872,6 +872,7 @@
         "borderInsets": "10,10,10,10",
         "background": "bg",
         "hoverBackground": "hl",
+        "insets": "5,4,5,4",
         "pressedBackground": "table"
       },
       "inactiveBackground": "bg",
@@ -942,6 +943,7 @@
     },
     "MenuBar": {
       "background": "hc",
+      "border": "8,12,8,12",
       "borderInsets": "8,12,8,12",
       "borderColor": "bg",
       "disabledBackground": "bg",
@@ -960,6 +962,7 @@
       "disabledBackground": "bg",
       "disabledForeground": "dis",
       "foreground": "fg",
+      "insets": "0,4,0,4",
       "selectionBackground": "selBg",
       "selectionForeground": "activeFg",
       "Selection": {
@@ -1018,7 +1021,7 @@
       "arc": 16,
       "background": "notif",
       "borderColor": "notif",
-      "borderInsets": "4,6,4,6",
+      "borderInsets": "4,4,4,4",
       "errorBackground": "notif",
       "errorBorderColor": "notif",
       "errorForeground": "accent",
