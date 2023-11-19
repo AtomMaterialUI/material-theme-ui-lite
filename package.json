@@ -1,6 +1,6 @@
 {
   "name": "ninpou",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "<div align=\"center\">   <a href=\"https://www.material-theme.com\"> <img src=\"logo.svg\" width=\"320\" height=\"320\" alt=\"logo\"></img> </a> </div>",
   "main": "app.js",
   "directories": {
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/mallowigi/material-theme-ui-lite#readme",
   "devDependencies": {
-    "yaml": "2.3.2"
+    "yaml": "2.3.4"
   }
 }
