@@ -1,34 +1,40 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 mallowigi/material-theme-ui-lite is built on the following main stack:
+
 - [Gradle](https://www.gradle.org/) – Java Build Tools
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [YAML](http://www.yaml.org/) – Languages
 - [Kotlin](https://kotlinlang.org/) – Languages
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 mallowigi/material-theme-ui-lite is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/975/gradlephant-social-black-bg.png' alt='Gradle'/> [Gradle](https://www.gradle.org/) – Java Build Tools
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1744/yaml.png' alt='YAML'/> [YAML](http://www.yaml.org/) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/3750/pCfEzr6L.png' alt='Kotlin'/> [Kotlin](https://kotlinlang.org/) – Languages
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [mallowigi/material-theme-ui-lite](https://github.com/mallowigi/material-theme-ui-lite)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|7<br/>Tools used|11/19/23 <br/>Report generated|
+|7<br/>Tools used|12/14/23 <br/>Report generated|
 |------|------|
 </div>
 
-## <img src='https://img.stackshare.io/languages.svg'/> Languages (2)
+## <img src='https://img.stackshare.io/languages.svg'/> Languages (3)
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'>
@@ -42,6 +48,14 @@ Full tech stack [here](/techstack.md)
   <img width='36' height='36' src='https://img.stackshare.io/service/3750/pCfEzr6L.png' alt='Kotlin'>
   <br>
   <sub><a href="https://kotlinlang.org/">Kotlin</a></sub>
+  <br>
+  <sub></sub>
+</td>
+
+<td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/1744/yaml.png' alt='YAML'>
+  <br>
+  <sub><a href="http://www.yaml.org/">YAML</a></sub>
   <br>
   <sub></sub>
 </td>
@@ -90,15 +104,6 @@ Full tech stack [here](/techstack.md)
 
 </tr>
 </table>
-
-
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (1)</h2>
-
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (1)
-
-|NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
-|:------|:------|:------|:------|:------|:------|
-|[yaml](https://www.npmjs.com/yaml)|v2.3.2|10/07/23|renovate[bot] |ISC|N/A|
 
 <br/>
 <div align='center'>
