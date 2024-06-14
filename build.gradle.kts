@@ -32,17 +32,17 @@ plugins {
   // Java support
   id("java")
   // Kotlin support
-  id("org.jetbrains.kotlin.jvm") version "1.9.22"
+  id("org.jetbrains.kotlin.jvm") version "1.9.24"
   // gradle-intellij-plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
-  id("org.jetbrains.intellij") version "1.17.0"
+  id("org.jetbrains.intellij") version "1.17.4"
   // gradle-changelog-plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
   id("org.jetbrains.changelog") version "2.2.0"
   // Gradle Qodana Plugin
-  id("org.jetbrains.qodana") version "2023.2.1"
+  id("org.jetbrains.qodana") version "2023.3.2"
   // detekt linter - read more: https://detekt.github.io/detekt/gradle.html
-  id("io.gitlab.arturbosch.detekt") version "1.23.4"
+  id("io.gitlab.arturbosch.detekt") version "1.23.6"
   // ktlint linter - read more: https://github.com/JLLeitschuh/ktlint-gradle
-  id("org.jlleitschuh.gradle.ktlint") version "12.1.0"
+  id("org.jlleitschuh.gradle.ktlint") version "12.1.1"
 }
 
 group = properties("pluginGroup")
@@ -58,11 +58,11 @@ repositories {
 }
 
 dependencies {
-  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.4")
+  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.6")
   implementation("com.jgoodies:jgoodies-forms:1.9.0")
   implementation("com.thoughtworks.xstream:xstream:1.4.20")
   implementation("org.javassist:javassist:3.30.2-GA")
-  implementation("com.mixpanel:mixpanel-java:1.5.2")
+  implementation("com.mixpanel:mixpanel-java:1.5.3")
 }
 
 // Configure gradle-intellij-plugin plugin.
