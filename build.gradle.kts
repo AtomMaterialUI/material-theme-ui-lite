@@ -1,113 +1,180 @@
-/*
+/**
+ * ****************************************************************************
  * The MIT License (MIT)
  *
- * Copyright (c) 2021 Elior "Mallowigi" Boukhobza
+ * Copyright (c) 2015-2024 Elior "Mallowigi" Boukhobza
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+ * ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+ * CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ * ****************************************************************************
  */
+
 @file:Suppress("SpellCheckingInspection", "HardCodedStringLiteral")
 
 import io.gitlab.arturbosch.detekt.Detekt
+import kotlinx.coroutines.runBlocking
 import org.jetbrains.changelog.Changelog
+import org.jetbrains.changelog.markdownToHTML
+import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-fun properties(key: String) = project.findProperty(key).toString()
+fun properties(key: String) = providers.gradleProperty(key).get()
+fun environment(key: String) = providers.environmentVariable(key)
+fun fileContents(filePath: String) = providers.fileContents(layout.projectDirectory.file(filePath)).asText
+
+val platformVersion: String by project
+
+val pluginName: String by project
+val pluginID: String by project
+val pluginVersion: String by project
+val pluginDescription: String by project
+val pluginSinceBuild: String by project
+val pluginUntilBuild: String by project
+
+val pluginVendorName: String by project
+val pluginVendorEmail: String by project
+val pluginVendorUrl: String by project
+
+val pluginChannels: String by project
+
+val javaVersion: String by project
+val gradleVersion: String by project
 
 plugins {
-  // Java support
   id("java")
-  // Kotlin support
-  id("org.jetbrains.kotlin.jvm") version "1.9.22"
-  // gradle-intellij-plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
-  id("org.jetbrains.intellij") version "1.17.0"
-  // gradle-changelog-plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
-  id("org.jetbrains.changelog") version "2.2.0"
-  // Gradle Qodana Plugin
-  id("org.jetbrains.qodana") version "2023.2.1"
-  // detekt linter - read more: https://detekt.github.io/detekt/gradle.html
-  id("io.gitlab.arturbosch.detekt") version "1.23.4"
-  // ktlint linter - read more: https://github.com/JLLeitschuh/ktlint-gradle
-  id("org.jlleitschuh.gradle.ktlint") version "12.1.0"
+
+  alias(libs.plugins.kotlin)
+  alias(libs.plugins.gradleIntelliJPlugin)
+  alias(libs.plugins.changelog)
+  alias(libs.plugins.detekt)
+  alias(libs.plugins.ktlint)
 }
 
-group = properties("pluginGroup")
-version = properties("pluginVersion")
+group = pluginID
+version = pluginVersion
 
-// Configure project's dependencies
 repositories {
   mavenCentral()
-  maven(url = "https://maven-central.storage-download.googleapis.com/repos/central/data/")
-  maven(url = "https://repo.eclipse.org/content/groups/releases/")
-  maven(url = "https://www.jetbrains.com/intellij-repository/releases")
-  maven(url = "https://www.jetbrains.com/intellij-repository/snapshots")
+  mavenLocal()
+  gradlePluginPortal()
+
+  intellijPlatform {
+    defaultRepositories()
+  }
 }
 
 dependencies {
-  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.4")
-  implementation("com.jgoodies:jgoodies-forms:1.9.0")
-  implementation("com.thoughtworks.xstream:xstream:1.4.20")
-  implementation("org.javassist:javassist:3.30.2-GA")
-  implementation("com.mixpanel:mixpanel-java:1.5.2")
+  intellijPlatform {
+    intellijIdeaUltimate(platformVersion, useInstaller = false)
+    instrumentationTools()
+//    local(properties("idePath"))
+
+    pluginVerifier()
+    zipSigner()
+  }
+
+  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.6")
 }
 
-// Configure gradle-intellij-plugin plugin.
-// Read more: https://github.com/JetBrains/gradle-intellij-plugin
-intellij {
-  pluginName.set(properties("pluginName"))
-  version.set(properties("platformVersion"))
-  type.set(properties("platformType"))
-  downloadSources.set(true)
-  instrumentCode.set(true)
-  updateSinceUntilBuild.set(true)
-//  localPath.set(properties("idePath"))
+intellijPlatform {
+  buildSearchableOptions = false
+  instrumentCode = true
 
-  // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
-  plugins.set(listOf("java"))
+  projectName = pluginName
+
+  pluginConfiguration {
+    id = pluginID
+    name = pluginName
+    version = pluginVersion
+    description = pluginDescription
+
+    // Get the latest available change notes from the changelog file
+    val changelog = project.changelog // local variable for configuration cache compatibility
+    // Get the latest available change notes from the changelog file
+    val pluginVersion = pluginVersion
+    changeNotes.set(provider {
+      with(changelog) {
+        renderItem(
+          (getOrNull(pluginVersion) ?: getUnreleased()).withHeader(false).withEmptySections(false),
+          Changelog.OutputType.HTML,
+        )
+      }
+    })
+
+    ideaVersion {
+      sinceBuild = pluginSinceBuild
+      untilBuild = pluginUntilBuild
+    }
+
+    vendor {
+      name = pluginVendorName
+      email = pluginVendorEmail
+      url = pluginVendorUrl
+    }
+  }
+
+  publishing {
+    token = environment("INTELLIJ_PUBLISH_TOKEN")
+    channels = pluginChannels.split(',').map { it.trim() }
+  }
+
+  signing {
+    certificateChain = fileContents("./chain.crt")
+    privateKey = fileContents("./private.pem")
+    password = fileContents("./private_encrypted.pem")
+  }
+
+  pluginVerification {
+    ides {
+      recommended()
+      select {
+        sinceBuild = pluginSinceBuild
+        untilBuild = pluginUntilBuild
+      }
+    }
+  }
 }
-// Configure gradle-changelog-plugin plugin.
-// Read more: https://github.com/JetBrains/gradle-changelog-plugin
+
 changelog {
   path.set("${project.projectDir}/docs/CHANGELOG.md")
-  version.set(properties("pluginVersion"))
-  header.set(provider { version.get() })
+  version.set(pluginVersion)
+  // header.set(provider { version })
   itemPrefix.set("-")
   keepUnreleasedSection.set(true)
   unreleasedTerm.set("Changelog")
   groups.set(listOf("Features", "Fixes", "Removals", "Other"))
 }
 
-// Configure detekt plugin.
-// Read more: https://detekt.github.io/detekt/kotlindsl.html
 detekt {
-  config = files("./detekt-config.yml")
+  config.from(files("./detekt-config.yml"))
   buildUponDefaultConfig = true
   autoCorrect = true
 }
 
-
 tasks {
-  properties("javaVersion").let {
+  javaVersion.let {
     // Set the compatibility versions to 1.8
     withType<JavaCompile> {
       sourceCompatibility = it
       targetCompatibility = it
     }
-    withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    withType<KotlinCompile> {
       kotlinOptions.jvmTarget = it
       kotlinOptions.freeCompilerArgs += listOf("-Xskip-prerelease-check", "-Xjvm-default=all")
     }
@@ -118,7 +185,7 @@ tasks {
   }
 
   withType<Detekt> {
-    jvmTarget = properties("javaVersion")
+    jvmTarget = javaVersion
     reports.xml.required.set(true)
   }
 
@@ -133,61 +200,10 @@ tasks {
     }
   }
 
-  patchPluginXml {
-    version.set(properties("pluginVersion"))
-    sinceBuild.set(properties("pluginSinceBuild"))
-    untilBuild.set(properties("pluginUntilBuild"))
-
-    // Get the latest available change notes from the changelog file
-    changeNotes.set(provider {
-      changelog.renderItem(
-        changelog
-          .getUnreleased()
-          .withHeader(false)
-          .withEmptySections(false),
-        Changelog.OutputType.HTML
-      )
-    })
-  }
-
-  runPluginVerifier {
-    ideVersions.set(properties("pluginVerifierIdeVersions").split(',').map { it.trim() }.toList())
-  }
-
-  buildSearchableOptions {
-    enabled = false
-  }
-
-  // Configure UI tests plugin
-  // Read more: https://github.com/JetBrains/intellij-ui-test-robot
-  runIdeForUiTests {
-    systemProperty("robot-server.port", "8082")
-    systemProperty("ide.mac.message.dialogs.as.sheets", "false")
-    systemProperty("jb.privacy.policy.text", "<!--999.999-->")
-    systemProperty("jb.consents.confirmation.enabled", "false")
-  }
-
-//  runIde {
-//    jvmArgs = properties("jvmArgs").split("")
-//    systemProperty("jb.service.configuration.url", properties("salesUrl"))
-//  }
-
-  signPlugin {
-    certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
-    privateKey.set(System.getenv("PRIVATE_KEY"))
-    password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
-  }
-
-  publishPlugin {
-    //    dependsOn("patchChangelog")
-    token.set(System.getenv("INTELLIJ_PUBLISH_TOKEN") ?: file("./publishToken").readText().trim())
-    channels.set(listOf(properties("pluginVersion").split('-').getOrElse(1) { "default" }.split('.').first()))
-  }
-
   register("markdownToHtml") {
     val input = File("./docs/CHANGELOG.md")
     File("./docs/CHANGELOG.html").run {
-      writeText(org.jetbrains.changelog.markdownToHTML(input.readText()))
+      writeText(markdownToHTML(input.readText()))
     }
   }
 }
