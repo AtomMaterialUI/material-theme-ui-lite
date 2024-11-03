@@ -55,7 +55,6 @@
 
 
   <extensions defaultExtensionNs="com.intellij">
-    <postStartupActivity implementation="com.mallowigi.idea.MTStartup"/>
     <themeProvider id="Material Oceanic" path="/themes/regular/Material Oceanic.theme.json"/>
     <themeProvider id="Material Darker" path="/themes/regular/Material Darker.theme.json"/>
     <themeProvider id="Material Lighter" path="/themes/regular/Material Lighter.theme.json"/>
@@ -65,6 +64,7 @@
     <themeProvider id="Material Sky Blue" path="/themes/regular/Material Sky Blue.theme.json"/>
     <themeProvider id="Material SandyBeach" path="/themes/regular/Material Sandy Beach.theme.json"/>
     <themeProvider id="Material Volcano" path="/themes/regular/Material Volcano.theme.json"/>
+    <themeProvider id="Material Space" path="/themes/regular/Material Space.theme.json"/>
     <themeProvider id="Dracula" path="/themes/regular/Dracula.theme.json"/>
     <themeProvider id="Monokai Pro" path="/themes/regular/Monokai Pro.theme.json"/>
     <themeProvider id="Arc Dark" path="/themes/regular/Arc Dark.theme.json"/>
@@ -88,6 +88,7 @@
     <themeProvider id="Material Sky Blue Compact" path="/themes/compact/Material Sky Blue Compact.theme.json"/>
     <themeProvider id="Material SandyBeach Compact" path="/themes/compact/Material Sandy Beach Compact.theme.json"/>
     <themeProvider id="Material Volcano Compact" path="/themes/compact/Material Volcano Compact.theme.json"/>
+    <themeProvider id="Material Space Compact" path="/themes/compact/Material Space Compact.theme.json"/>
     <themeProvider id="Dracula Compact" path="/themes/compact/Dracula Compact.theme.json"/>
     <themeProvider id="Monokai Pro Compact" path="/themes/compact/Monokai Pro Compact.theme.json"/>
     <themeProvider id="Arc Dark Compact" path="/themes/compact/Arc Dark Compact.theme.json"/>
@@ -115,6 +116,7 @@
     <themeProvider id="Material Sky Blue Contrast" path="/themes/contrast/Material Sky Blue Contrast.theme.json"/>
     <themeProvider id="Material SandyBeach Contrast" path="/themes/contrast/Material Sandy Beach Contrast.theme.json"/>
     <themeProvider id="Material Volcano Contrast" path="/themes/contrast/Material Volcano Contrast.theme.json"/>
+    <themeProvider id="Material Space Contrast" path="/themes/contrast/Material Space Contrast.theme.json"/>
     <themeProvider id="Dracula Contrast" path="/themes/contrast/Dracula Contrast.theme.json"/>
     <themeProvider id="Monokai Pro Contrast" path="/themes/contrast/Monokai Pro Contrast.theme.json"/>
     <themeProvider id="Arc Dark Contrast" path="/themes/contrast/Arc Dark Contrast.theme.json"/>
@@ -154,6 +156,8 @@
                    path="/themes/compactContrast/Material Sandy Beach Compact Contrast.theme.json"/>
     <themeProvider id="Material Volcano Compact Contrast"
                    path="/themes/compactContrast/Material Volcano Compact Contrast.theme.json"/>
+    <themeProvider id="Material Space Compact Contrast"
+                   path="/themes/compactContrast/Material Space Compact Contrast.theme.json"/>
     <themeProvider id="Dracula Compact Contrast" path="/themes/compactContrast/Dracula Compact Contrast.theme.json"/>
     <themeProvider id="Monokai Pro Compact Contrast"
                    path="/themes/compactContrast/Monokai Pro Compact Contrast.theme.json"/>
@@ -217,6 +221,10 @@
         <action id="MTVolcanoTheme"
                 class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
                 icon="/icons/actions/themes/volcano.svg">
+        </action>
+        <action id="MTSpaceTheme"
+                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
+                icon="/icons/actions/themes/space.svg">
         </action>
 
         <separator key="separator.third.-.party"/>
@@ -318,6 +326,10 @@
         </action>
         <action id="MTVolcanoThemeCompact"
                 class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
+                icon="/icons/actions/themes/volcano.svg">
+        </action>
+        <action id="MTSpaceThemeCompact"
+                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
                 icon="/icons/actions/themes/volcano.svg">
         </action>
 
@@ -423,6 +435,10 @@
                 class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
                 icon="/icons/actions/themes/volcano.svg">
         </action>
+        <action id="MTSpaceThemeContrast"
+                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
+                icon="/icons/actions/themes/space.svg">
+        </action>
 
         <separator key="separator.third.-.party"/>
 
@@ -524,6 +540,10 @@
         <action id="MTVolcanoThemeContrastCompact"
                 class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
                 icon="/icons/actions/themes/volcano.svg">
+        </action>
+        <action id="MTSpaceThemeContrastCompact"
+                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
+                icon="/icons/actions/themes/space.svg">
         </action>
 
         <separator key="separator.third.-.party"/>
