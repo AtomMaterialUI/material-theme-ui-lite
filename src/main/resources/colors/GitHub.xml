@@ -1,7 +1,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2015-2022 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2015-2023 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -34,26 +34,28 @@
         <property name="originalScheme">GitHub (Material)</property>
     </metaInfo>
     <option name="LINE_SPACING" value="1.4"/>
-    <font>
-        <option name="EDITOR_FONT_NAME" value="Menlo"/>
-        <option name="EDITOR_FONT_SIZE" value="12"/>
-    </font>
-    <font>
-        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
-        <option name="EDITOR_FONT_SIZE" value="12"/>
-    </font>
     <option name="EDITOR_LIGATURES" value="true"/>
-    <console-font>
-        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
-        <option name="EDITOR_FONT_SIZE" value="12"/>
-    </console-font>
-    <console-font>
+    <font>
         <option name="EDITOR_FONT_NAME" value="Menlo"/>
         <option name="EDITOR_FONT_SIZE" value="12"/>
+    </font>
+
+    <font>
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
+        <option name="EDITOR_FONT_SIZE" value="12"/>
+    </font>
+    <console-font>
+        <option name="EDITOR_FONT_NAME" value="Hack"/>
+        <option name="EDITOR_FONT_SIZE" value="13"/>
+    </console-font>
+
+    <console-font>
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
+        <option name="EDITOR_FONT_SIZE" value="13"/>
     </console-font>
     <colors>
         <option name="ADDED_LINES_COLOR" value="22863a"/>
-        <option name="ANNOTATIONS_COLOR" value="24292e"/>
+        <option name="ANNOTATIONS_COLOR" value="111111"/>
         <option name="ActionButton.hoverBackground" value="CCE5FF50"/>
         <option name="ActionButton.iconTextForeground" value="292D31"/>
         <option name="ActionButton.pressedBackground" value="CCE5FF"/>
@@ -67,6 +69,17 @@
         <option name="BookmarkMnemonicIcon.background" value="dfecfe"/>
         <option name="BookmarkMnemonicIcon.borderColor" value="dfecfe"/>
         <option name="BookmarkMnemonicIcon.foreground" value="000000"/>
+
+        <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="24292e"/>
+        <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="ffffff"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="ffffff"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="ffffff"/>
+        <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="e4e4e4"/>
+        <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="00d2ff"/>
+        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="e4e4e4"/>
+        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="00d2ffc0"/>
+        <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="c30000"/>
+
         <option name="CARET_COLOR" value="24292e"/>
         <option name="CARET_ROW_COLOR" value="eeeeee"/>
         <option name="CONSOLE_BACKGROUND_KEY" value="ffffff"/>
@@ -133,6 +146,7 @@
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="1b1f23"/>
         <option name="LOOKUP_COLOR" value="f3f3f3"/>
         <option name="METHOD_SEPARATORS_COLOR" value="dddddd"/>
+        <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="dddddd"/>
         <option name="MODIFIED_LINES_COLOR" value="005cc5"/>
         <option name="MODIFIED_TAB_ICON" value="cce5ff"/>
         <option name="MT_FILESTATUS_ADDED" value="22863a"/>
@@ -169,10 +183,11 @@
         <option name="SELECTED_INDENT_GUIDE" value="dddddd"/>
         <option name="SELECTED_TEARLINE_COLOR" value="e0e0b0"/>
         <option name="SELECTION_BACKGROUND" value="cce5ff"/>
-        <option name="SELECTION_FOREGROUND" value="0"/>
+        <option name="SELECTION_FOREGROUND" value="000000"/>
         <option name="SEPARATOR_ABOVE_COLOR" value="e4e4e4"/>
         <option name="SEPARATOR_BELOW_COLOR" value="e4e4e4"/>
         <option name="SOFT_WRAP_SIGN_COLOR" value="e4e4e4"/>
+        <option name="STICKY_LINES_BACKGROUND" value="fafbfc"/>
         <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="cce5ffc0"/>
         <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="ffffff"/>
         <option name="ScrollBar.Mac.Transparent.thumbColor" value="cce5ff80"/>
@@ -184,10 +199,13 @@
         <option name="ScrollBar.Transparent.hoverThumbColor" value="cce5ff80"/>
         <option name="ScrollBar.Transparent.hoverTrackColor" value="ffffff"/>
         <option name="ScrollBar.Transparent.thumbColor" value="cce5ffc0"/>
+        <option name="Scrollbar.Tabs.TransparentThumbColor" value="cce5ffc0"/>
         <option name="ScrollBar.Transparent.trackColor" value="ffffff"/>
         <option name="ScrollBar.hoverThumbColor" value="cce5ff"/>
+        <option name="Scrollbar.Tabs.HoveredThumbColor" value="cce5ff"/>
         <option name="ScrollBar.hoverTrackColor" value="ffffff"/>
         <option name="ScrollBar.thumbColor" value="cce5ffc0"/>
+        <option name="Scrollbar.Tabs.ThumbColor" value="cce5ffc0"/>
         <option name="ScrollBar.trackColor" value="ffffff"/>
         <option name="TAB_UNDERLINE" value="cce5ff"/>
         <option name="TAB_UNDERLINE_INACTIVE" value="cce5ff80"/>
@@ -404,7 +422,7 @@
         <option name="COFFEESCRIPT.GLOBAL_VARIABLE" baseAttributes="JS.GLOBAL_VARIABLE"/>
         <option name="COFFEESCRIPT.THIS">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -571,7 +589,7 @@
         </option>
         <option name="CUSTOM_KEYWORD2_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
@@ -590,6 +608,7 @@
         <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="DEFAULT_STRING"/>
         <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
         <option name="Class" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
+        <option name="TERMINAL_CLASS_NAME_LOG_REFERENCE" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
         <option name="Closure braces">
             <value/>
         </option>
@@ -657,6 +676,12 @@
                 <option name="FONT_TYPE" value="3"/>
             </value>
         </option>
+        <option name="DOC_TIPS_SHORTCUT">
+            <value>
+                <option name="FOREGROUND" value="6a737d"/>
+                <option name="FONT_TYPE" value="3"/>
+            </value>
+        </option>
         <option name="DEFAULT_DOC_MARKUP">
             <value>
                 <option name="FOREGROUND" value="6a737d"/>
@@ -699,8 +724,9 @@
         </option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="e4e4e4"/>
-                <option name="ERROR_STRIPE_COLOR" value="4d6168"/>
+                <option name="BACKGROUND" value="cce5ff80"/>
+                <option name="FOREGROUND" value="24292e"/>
+                <option name="ERROR_STRIPE_COLOR" value="cce5ff"/>
             </value>
         </option>
         <option name="DEFAULT_IDENTIFIER">
@@ -777,7 +803,7 @@
         </option>
         <option name="DEFAULT_PREDEFINED_SYMBOL">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
@@ -808,6 +834,11 @@
             </value>
         </option>
         <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
+            <value>
+                <option name="BACKGROUND" value="ececec"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_COMMAND">
             <value>
                 <option name="BACKGROUND" value="ececec"/>
             </value>
@@ -1400,6 +1431,16 @@
                 <option name="FOREGROUND" value="d73a49"/>
             </value>
         </option>
+        <option name="JAVA.PRIMITIVE">
+            <value>
+                <option name="FOREGROUND" value="032f62"/>
+            </value>
+        </option>
+        <option name="JAVA.NULL">
+            <value>
+                <option name="FOREGROUND" value="032f62"/>
+            </value>
+        </option>
         <option name="JAVA.THIS_SUPER">
             <value>
                 <option name="FOREGROUND" value="032f62"/>
@@ -1418,6 +1459,11 @@
         <option name="JS.CONSOLE">
             <value>
                 <option name="FOREGROUND" value="6f42c1"/>
+            </value>
+        </option>
+        <option name="JS.PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="e36209"/>
             </value>
         </option>
         <option name="JS.GLOBAL_FUNCTION">
@@ -1462,7 +1508,6 @@
                 <option name="FOREGROUND" value="005cc5"/>
             </value>
         </option>
-        <option name="JS.PARAMETER" baseAttributes="DEFAULT_PARAMETER"/>
         <option name="JS.PRIMITIVE">
             <value>
                 <option name="FOREGROUND" value="005cc5"/>
@@ -1951,6 +1996,11 @@
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
+        <option name="NG.SIGNAL">
+            <value>
+                <option name="FOREGROUND" value="005fc4"/>
+            </value>
+        </option>
         <option name="NG.BANANA_BINDING_ATTR_NAME">
             <value>
                 <option name="FOREGROUND" value="005fc4"/>
@@ -1961,9 +2011,11 @@
                 <option name="FOREGROUND" value="6f42c1"/>
             </value>
         </option>
+        <option name="MONGODB.JSON.PROPERTY_KEY" baseAttributes="DEFAULT_KEYWORD"/>
+        <option name="MN_EL.BACKGROUND" baseAttributes="NG.EXPRESSIONS"/>
         <option name="NG.EXPRESSIONS">
             <value>
-                <option name="BACKGROUND" value="ececec"/>
+                <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
         <option name="NG.PROPERTY_BINDING_ATTR_NAME">
@@ -2194,7 +2246,7 @@
         </option>
         <option name="PHP_PREDEFINED SYMBOL">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="PHP_SCRIPTING_BACKGROUND">
@@ -2262,12 +2314,12 @@
         </option>
         <option name="PY.PREDEFINED_DEFINITION">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="PY.PREDEFINED_USAGE">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="PY.SELF_PARAMETER">
@@ -2414,7 +2466,7 @@
         </option>
         <option name="RUBY_CONSTANT">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="RUBY_CONSTANT_DECLARATION">
@@ -2424,7 +2476,7 @@
         </option>
         <option name="RUBY_CVAR">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -2438,7 +2490,7 @@
         </option>
         <option name="RUBY_GVAR">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="RUBY_HASH_ASSOC">
@@ -2467,7 +2519,7 @@
         </option>
         <option name="RUBY_IVAR">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="RUBY_LINE_CONTINUATION">
@@ -2485,7 +2537,7 @@
         </option>
         <option name="RUBY_NTH_REF">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="RUBY_NUMBER">
@@ -2527,9 +2579,8 @@
         </option>
         <option name="RUNTIME_ERROR">
             <value>
-                <option name="EFFECT_COLOR" value="c30000"/>
+                <option name="BACKGROUND" value="c3000030"/>
                 <option name="ERROR_STRIPE_COLOR" value="c30000"/>
-                <option name="EFFECT_TYPE" value="2"/>
             </value>
         </option>
         <option name="RMARKDOWN_CHUNK" baseAttributes="TEXT"/>
@@ -2887,20 +2938,24 @@
         <option name="TAB_SELECTED">
             <value>
                 <option name="FOREGROUND" value="24292e"/>
-                <option name="BACKGROUND" value="fafbfc"/>
             </value>
         </option>
         <option name="TAB_SELECTED_INACTIVE">
             <value>
                 <option name="FOREGROUND" value="24292e"/>
-                <option name="BACKGROUND" value="d1d5da"/>
             </value>
         </option>
         <option name="TAPESTRY_COMPONENT_PARAMATER" baseAttributes=""/>
         <option name="TAPESTRY_COMPONENT_TAG" baseAttributes=""/>
         <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
+            </value>
+        </option>
+        <option name="TERMINAL_CLASS_NAME_LOG_REFERENCE" baseAttributes="DEFAULT_CLASS_NAME"/>
+        <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
+            <value>
+                <option name="BACKGROUND" value="ececec"/>
             </value>
         </option>
         <option name="TEXT">
@@ -2913,6 +2968,7 @@
             <value>
                 <option name="FOREGROUND" value="32424a"/>
                 <option name="BACKGROUND" value="FFECA0"/>
+                <option name="ERROR_STRIPE_COLOR" value="FFECA0"/>
             </value>
         </option>
         <option name="TODO_DEFAULT_ATTRIBUTES">
@@ -2953,7 +3009,7 @@
         </option>
         <option name="TWIG_IDENTIFIER">
             <value>
-                <option name="FOREGROUND" value="5cc4"/>
+                <option name="FOREGROUND" value="005cc4"/>
             </value>
         </option>
         <option name="TYPEDEF">
@@ -3053,6 +3109,11 @@
                 <option name="FOREGROUND" value="22863a"/>
             </value>
         </option>
+        <option name="XML_CUSTOM_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="22863a"/>
+            </value>
+        </option>
         <option name="XPATH.KEYWORD">
             <value>
                 <option name="FOREGROUND" value="d73a49"/>
@@ -3108,6 +3169,17 @@
         <option name="org.elm.TYPE" baseAttributes="DEFAULT_CLASS_NAME"/>
         <option name="org.elm.TYPE_ANNOTATION_NAME" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
         <option name="org.elm.TYPE_ANNOTATION_SIGNATURE_TYPES" baseAttributes="DEFAULT_CLASS_REFERENCE"/>
+        <option name="RUST_SELF">
+            <value>
+                <option name="FOREGROUND" value="005fc4"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_TRUE_FALSE">
+            <value>
+                <option name="FOREGROUND" value="005fc4"/>
+            </value>
+        </option>
         <option name="org.rust.DOC_CODE" baseAttributes="DEFAULT_DOC_MARKUP"/>
         <option name="org.rust.LIFETIME">
             <value>

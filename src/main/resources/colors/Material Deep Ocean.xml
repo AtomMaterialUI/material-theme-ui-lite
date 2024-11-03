@@ -1,7 +1,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ~ The MIT License (MIT)
   ~
-  ~ Copyright (c) 2015-2022 Elior "Mallowigi" Boukhobza
+  ~ Copyright (c) 2015-2023 Elior "Mallowigi" Boukhobza
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -34,27 +34,26 @@
         <property name="originalScheme">Material Deep Ocean</property>
     </metaInfo>
     <option name="LINE_SPACING" value="1.4"/>
-    <option name="EDITOR_FONT_SIZE" value="12"/>
-    <font>
-        <option name="EDITOR_FONT_NAME" value="Menlo"/>
-        <option name="EDITOR_FONT_SIZE" value="12"/>
-    </font>
-    <font>
-        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
-        <option name="EDITOR_FONT_SIZE" value="12"/>
-    </font>
     <option name="EDITOR_LIGATURES" value="true"/>
-    <console-font>
-        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
-        <option name="EDITOR_FONT_SIZE" value="12"/>
-    </console-font>
-    <console-font>
+    <font>
         <option name="EDITOR_FONT_NAME" value="Menlo"/>
         <option name="EDITOR_FONT_SIZE" value="12"/>
+    </font>
+
+    <font>
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
+        <option name="EDITOR_FONT_SIZE" value="12"/>
+    </font>
+    <console-font>
+        <option name="EDITOR_FONT_NAME" value="Hack"/>
+        <option name="EDITOR_FONT_SIZE" value="13"/>
+    </console-font>
+
+    <console-font>
+        <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
+        <option name="EDITOR_FONT_SIZE" value="13"/>
     </console-font>
     <colors>
-
-
         <option name="ADDED_LINES_COLOR" value="c3e88d"/>
         <option name="ANNOTATIONS_COLOR" value="fffbf7"/>
         <option name="ActionButton.hoverBackground" value="1F2233c0"/>
@@ -70,9 +69,20 @@
         <option name="BookmarkMnemonicIcon.background" value="3b3f51"/>
         <option name="BookmarkMnemonicIcon.borderColor" value="3b3f51"/>
         <option name="BookmarkMnemonicIcon.foreground" value="fffbf7"/>
+
+        <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="c3cee3"/>
+        <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="0f111a"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="0f111a"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="0f111a"/>
+        <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="3b3f51"/>
+        <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="84ffff"/>
+        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="3b3f51"/>
+        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="84ffffc0"/>
+        <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="ff5370"/>
+
         <option name="CARET_COLOR" value="ffcc00"/>
         <option name="CARET_ROW_COLOR" value="1b2529"/>
-        <option name="CONSOLE_BACKGROUND_KEY" value="f111a"/>
+        <option name="CONSOLE_BACKGROUND_KEY" value="0f111a"/>
         <option name="DELETED_LINES_COLOR" value="f07178"/>
         <option name="DIAGRAM_ANNOTATION_EDGE" value="c3cee3"/>
         <option name="DIAGRAM_COARSE_GRID" value="1a1c25"/>
@@ -81,10 +91,10 @@
         <option name="DIAGRAM_GENERALIZATION_EDGE" value="82aaff"/>
         <option name="DIAGRAM_HOT_SPOTS" value="ffcb6b"/>
         <option name="DIAGRAM_INNER_EDGE" value="ffcb6b"/>
-        <option name="DIAGRAM_NODE_BACKGROUND" value="f111a"/>
+        <option name="DIAGRAM_NODE_BACKGROUND" value="0f111a"/>
         <option name="DIAGRAM_NODE_BORDER" value="3b3f51"/>
         <option name="DIAGRAM_NODE_HEADER" value="181A1F"/>
-        <option name="DIAGRAM_NOTE_BACKGROUND" value="f111a"/>
+        <option name="DIAGRAM_NOTE_BACKGROUND" value="0f111a"/>
         <option name="DIAGRAM_NOTE_BORDER" value="c3cee3"/>
         <option name="DIAGRAM_REALIZATION_EDGE" value="f07178"/>
         <option name="DIAGRAM_SELECTED_NODE_BORDER" value="84ffff"/>
@@ -116,10 +126,10 @@
         <option name="FILESTATUS_addedOutside" value="ffcb6b"/>
         <option name="FILESTATUS_changelistConflict" value="fc9867"/>
         <option name="FILESTATUS_modifiedOutside" value="c792ea"/>
-        <option name="GUTTER_BACKGROUND" value="f111a"/>
+        <option name="GUTTER_BACKGROUND" value="0f111a"/>
         <option name="INDENT_GUIDE" value="3b3f51"/>
-        <option name="INFORMATION_HINT" value="f111a"/>
-        <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="f111a"/>
+        <option name="INFORMATION_HINT" value="0f111a"/>
+        <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="0f111a"/>
         <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="3b3f51"/>
         <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="1a1c25"/>
         <option name="JUPYTER.CELL_UNDER_CARET_COMMAND_MODE_STRIPE_COLOR" value="84ffff"/>
@@ -133,6 +143,7 @@
         <option name="LINE_NUMBERS_COLOR" value="475f63"/>
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="525975"/>
         <option name="LOOKUP_COLOR" value="181A1F"/>
+        <option name="METHOD_SEPARATORS_COLOR" value="3b3f51"/>
         <option name="METHOD_SEPARATORS_COLOR" value="3b3f51"/>
         <option name="MODIFIED_LINES_COLOR" value="ffcb6b"/>
         <option name="MODIFIED_TAB_ICON" value="84ffff"/>
@@ -165,7 +176,7 @@
         <option name="NOTIFICATION_BACKGROUND" value="090B10"/>
         <option name="NOT_CHANGED" value="4b526d"/>
         <option name="PROMOTION_PANE" value="90b10"/>
-        <option name="QUESTION_HINT" value="f111a"/>
+        <option name="QUESTION_HINT" value="0f111a"/>
         <option name="RECENT_LOCATIONS_SELECTION" value="90b10"/>
         <option name="RIGHT_MARGIN_COLOR" value="3b3f51"/>
         <option name="SELECTED_INDENT_GUIDE" value="84ffff"/>
@@ -174,22 +185,26 @@
         <option name="SELECTION_FOREGROUND" value="fffbf7"/>
         <option name="SEPARATOR_BELOW_COLOR" value="3b3f51"/>
         <option name="SOFT_WRAP_SIGN_COLOR" value="3b3f51"/>
+        <option name="STICKY_LINES_BACKGROUND" value="090B10"/>
         <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="84ffffc0"/>
-        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="f111a"/>
+        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="0f111a"/>
         <option name="ScrollBar.Mac.Transparent.thumbColor" value="84ffff80"/>
-        <option name="ScrollBar.Mac.Transparent.trackColor" value="f111a"/>
+        <option name="ScrollBar.Mac.Transparent.trackColor" value="0f111a"/>
         <option name="ScrollBar.Mac.hoverThumbColor" value="84ffff"/>
-        <option name="ScrollBar.Mac.hoverTrackColor" value="f111a"/>
+        <option name="ScrollBar.Mac.hoverTrackColor" value="0f111a"/>
         <option name="ScrollBar.Mac.thumbColor" value="84ffffc0"/>
-        <option name="ScrollBar.Mac.trackColor" value="f111a"/>
+        <option name="ScrollBar.Mac.trackColor" value="0f111a"/>
         <option name="ScrollBar.Transparent.hoverThumbColor" value="84ffffc0"/>
-        <option name="ScrollBar.Transparent.hoverTrackColor" value="f111a"/>
+        <option name="ScrollBar.Transparent.hoverTrackColor" value="0f111a"/>
         <option name="ScrollBar.Transparent.thumbColor" value="84ffff80"/>
-        <option name="ScrollBar.Transparent.trackColor" value="f111a"/>
+        <option name="Scrollbar.Tabs.TransparentThumbColor" value="84ffff80"/>
+        <option name="ScrollBar.Transparent.trackColor" value="0f111a"/>
         <option name="ScrollBar.hoverThumbColor" value="84ffff"/>
-        <option name="ScrollBar.hoverTrackColor" value="f111a"/>
+        <option name="Scrollbar.Tabs.HoveredThumbColor" value="84ffff"/>
+        <option name="ScrollBar.hoverTrackColor" value="0f111a"/>
         <option name="ScrollBar.thumbColor" value="84ffffc0"/>
-        <option name="ScrollBar.trackColor" value="f111a"/>
+        <option name="Scrollbar.Tabs.ThumbColor" value="84ffffc0"/>
+        <option name="ScrollBar.trackColor" value="0f111a"/>
         <option name="TAB_UNDERLINE" value="84ffff"/>
         <option name="TAB_UNDERLINE_INACTIVE" value="84ffffc0"/>
         <option name="TEARLINE_COLOR" value="3b3f51"/>
@@ -326,7 +341,7 @@
         <option name="BREADCRUMBS_DEFAULT">
             <value>
                 <option name="FOREGROUND" value="4b526d"/>
-                <option name="BACKGROUND" value="f111a"/>
+                <option name="BACKGROUND" value="0f111a"/>
             </value>
         </option>
         <option name="BREADCRUMBS_HOVERED">
@@ -338,7 +353,7 @@
         <option name="BREADCRUMBS_INACTIVE">
             <value>
                 <option name="FOREGROUND" value="4b526d"/>
-                <option name="BACKGROUND" value="f111a"/>
+                <option name="BACKGROUND" value="0f111a"/>
             </value>
         </option>
         <option name="BREAKPOINT_ATTRIBUTES">
@@ -581,6 +596,7 @@
         <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="DEFAULT_STRING"/>
         <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
         <option name="Class" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
+        <option name="TERMINAL_CLASS_NAME_LOG_REFERENCE" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
         <option name="Closure braces">
             <value>
                 <option name="FOREGROUND" value="89ddff"/>
@@ -652,6 +668,12 @@
             </value>
         </option>
         <option name="DEFAULT_DOC_COMMENT_TAG_VALUE">
+            <value>
+                <option name="FOREGROUND" value="c3cee3"/>
+                <option name="FONT_TYPE" value="3"/>
+            </value>
+        </option>
+        <option name="DOC_TIPS_SHORTCUT">
             <value>
                 <option name="FOREGROUND" value="c3cee3"/>
                 <option name="FONT_TYPE" value="3"/>
@@ -816,6 +838,12 @@
             </value>
         </option>
         <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
+            <value>
+                <option name="BACKGROUND" value="1a1c25"/>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_COMMAND">
             <value>
                 <option name="BACKGROUND" value="1a1c25"/>
                 <option name="EFFECT_TYPE" value="5"/>
@@ -1337,8 +1365,9 @@
         </option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="033e5d80"/>
-                <option name="ERROR_STRIPE_COLOR" value="4d6168"/>
+                <option name="BACKGROUND" value="84ffff80"/>
+                <option name="FOREGROUND" value="fffbf7"/>
+                <option name="ERROR_STRIPE_COLOR" value="84ffff"/>
             </value>
         </option>
         <option name="IGNORE.BRACKET">
@@ -1392,7 +1421,6 @@
         </option>
         <option name="INACTIVE_HYPERLINK_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="808080"/>
                 <option name="EFFECT_COLOR" value="808080"/>
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
@@ -1461,9 +1489,27 @@
         <option name="JADE_FILTER_NAME" baseAttributes="DEFAULT_LABEL"/>
         <option name="JADE_JS_BLOCK" baseAttributes="DEFAULT_IDENTIFIER"/>
         <option name="JADE_STATEMENTS" baseAttributes="DEFAULT_KEYWORD"/>
+        <option name="JAVA.ASSERT">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="JAVA.IF_ELSE">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
         <option name="JAVA.IMPORT_PACKAGE">
             <value>
                 <option name="FOREGROUND" value="f78c6c"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="JAVA.LOOP">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -1473,9 +1519,45 @@
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
+        <option name="JAVA.MODULE">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="JAVA.NEW">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="JAVA.RETURN">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="JAVA.SWITCH">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
         <option name="JAVA.THIS_SUPER">
             <value>
                 <option name="FOREGROUND" value="ff5370"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="JAVA.THROW">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="JAVA.TRY_CATCH">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -1492,6 +1574,11 @@
             </value>
         </option>
         <option name="JS.DEBUGGER_STMT">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="JS.PARAMETER">
             <value>
                 <option name="FOREGROUND" value="f78c6c"/>
             </value>
@@ -2050,9 +2137,15 @@
                 <option name="FOREGROUND" value="82aaff"/>
             </value>
         </option>
+        <option name="NG.SIGNAL">
+            <value>
+                <option name="FOREGROUND" value="82aaff"/>
+            </value>
+        </option>
+        <option name="MONGODB.JSON.PROPERTY_KEY" baseAttributes="DEFAULT_KEYWORD"/>
+        <option name="MN_EL.BACKGROUND" baseAttributes="NG.EXPRESSIONS"/>
         <option name="NG.EXPRESSIONS">
             <value>
-                <option name="BACKGROUND" value="1a1c25"/>
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
@@ -2702,7 +2795,7 @@
         <option name="RUBY_HEREDOC_CONTENT">
             <value>
                 <option name="FOREGROUND" value="c3cee3"/>
-                <option name="BACKGROUND" value="f111a"/>
+                <option name="BACKGROUND" value="0f111a"/>
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
@@ -2784,9 +2877,8 @@
         </option>
         <option name="RUNTIME_ERROR">
             <value>
-                <option name="EFFECT_COLOR" value="ff5370"/>
+                <option name="BACKGROUND" value="ff537030"/>
                 <option name="ERROR_STRIPE_COLOR" value="ff5370"/>
-                <option name="EFFECT_TYPE" value="2"/>
             </value>
         </option>
         <option name="RMARKDOWN_CHUNK" baseAttributes="TEXT"/>
@@ -3168,10 +3260,16 @@
                 <option name="FOREGROUND" value="bd92ea"/>
             </value>
         </option>
+        <option name="TERMINAL_CLASS_NAME_LOG_REFERENCE" baseAttributes="DEFAULT_CLASS_NAME"/>
+        <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
+            <value>
+                <option name="BACKGROUND" value="1a1c25"/>
+            </value>
+        </option>
         <option name="TEXT">
             <value>
                 <option name="FOREGROUND" value="c3cee3"/>
-                <option name="BACKGROUND" value="f111a"/>
+                <option name="BACKGROUND" value="0f111a"/>
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
@@ -3179,6 +3277,7 @@
             <value>
                 <option name="FOREGROUND" value="292d3e"/>
                 <option name="BACKGROUND" value="f8e71c"/>
+                <option name="ERROR_STRIPE_COLOR" value="f8e71c"/>
             </value>
         </option>
         <option name="TODO_DEFAULT_ATTRIBUTES">
@@ -3311,6 +3410,11 @@
                 <option name="FOREGROUND" value="f07178"/>
             </value>
         </option>
+        <option name="XML_CUSTOM_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="f07178"/>
+            </value>
+        </option>
         <option name="XPATH.KEYWORD">
             <value>
                 <option name="FOREGROUND" value="a7dbd8"/>
@@ -3370,6 +3474,121 @@
                 <option name="FOREGROUND" value="ffcb6b"/>
             </value>
         </option>
+
+        <option name="RUST_ASYNC_AWAIT">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_CRATE">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="RUST_DEF">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_DYN">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="RUST_IF_ELSE">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_IMPL">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_LOOP">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_MATCH">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_MOD">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_MOVE">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_PUB">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_SELF">
+            <value>
+                <option name="FOREGROUND" value="ff5370"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_REF">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="RUST_RETURN">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_TRUE_FALSE">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="RUST_USE">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="RUST_UNION">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="RUST_UNSAFE">
+            <value>
+                <option name="FOREGROUND" value="f78c6c"/>
+            </value>
+        </option>
+        <option name="RUST_UNDERSCORE">
+            <value>
+                <option name="FOREGROUND" value="ffcb6b"/>
+            </value>
+        </option>
+        <option name="RUST_WHERE">
+            <value>
+                <option name="FOREGROUND" value="89ddff"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+
         <option name="org.rust.LIFETIME">
             <value>
                 <option name="FOREGROUND" value="ffcb6b"/>
