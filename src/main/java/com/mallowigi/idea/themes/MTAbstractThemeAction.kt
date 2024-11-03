@@ -37,13 +37,13 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
   override fun setSelected(e: AnActionEvent, state: Boolean) {
     // Find LAF theme and trigger a theme change
     val lafManager = LafManager.getInstance()
-    val lafInfo = lafManager.installedLookAndFeels.find { it.name == getThemeName(e) }
-    if (lafInfo != null) lafManager.currentLookAndFeel = lafInfo
+    val lafInfo = lafManager.installedThemes.first { it.name == getThemeName(e) }
+    if (lafInfo != null) lafManager.currentUIThemeLookAndFeel = lafInfo
   }
 
   /** Whether theme is selected. */
   override fun isSelected(e: AnActionEvent): Boolean =
-    LafManager.getInstance().currentLookAndFeel!!.name == getThemeName(e)
+    LafManager.getInstance().currentUIThemeLookAndFeel!!.name == getThemeName(e)
 
   /** The theme. */
   protected abstract val theme: MTThemes

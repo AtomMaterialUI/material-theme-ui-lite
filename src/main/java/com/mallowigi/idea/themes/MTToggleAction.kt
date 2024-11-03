@@ -29,6 +29,7 @@ import com.intellij.openapi.actionSystem.ToggleAction
 import com.intellij.openapi.actionSystem.Toggleable
 import com.intellij.openapi.util.NlsActions
 import com.intellij.ui.LayeredIcon
+import com.intellij.ui.LayeredIcon.Companion.layeredIcon
 import com.intellij.util.IconUtil
 import com.intellij.util.ObjectUtils
 import com.intellij.util.ui.GraphicsUtil
@@ -56,6 +57,14 @@ abstract class MTToggleAction(
   /** Whether the action is toggled. */
   abstract override fun isSelected(e: AnActionEvent): Boolean
 
+  fun getLayeredIcon(vararg icons: Icon): LayeredIcon {
+    val layeredIcon = LayeredIcon(icons.size)
+    icons.forEachIndexed { index, icon ->
+      layeredIcon.setIcon(icon, index)
+    }
+    return layeredIcon
+  }
+
   /**
    * Update the action preentation according to config, license, etc
    *
@@ -77,8 +86,8 @@ abstract class MTToggleAction(
     } else {
       // Recreate the action button look
       when {
-        selected -> e.presentation.icon = LayeredIcon(actionButtonIcon, regularIcon(icon))
-        else     -> e.presentation.icon = regularIcon(icon)
+        selected -> e.presentation.icon = getLayeredIcon(actionButtonIcon, regularIcon(icon!!))
+        else     -> e.presentation.icon = regularIcon(icon!!)
       }
     }
   }
