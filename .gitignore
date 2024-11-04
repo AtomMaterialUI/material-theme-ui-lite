@@ -338,3 +338,10 @@ gradle-app.setting
 **/build/
 
 # End of https://www.toptal.com/developers/gitignore/api/java,gradle,sass,node,git,visualstudiocode,macos,jetbrains+all
+/.intellijPlatform/self-update.lock
+/.idea/cat-activity.xml
+/.idea/detekt.xml
+/.idea/git_toolbox_blame.xml
+/.idea/jsLibraryMappings.xml
+/.idea/material_theme_project_new.xml
+/.idea/refactorings.xml
