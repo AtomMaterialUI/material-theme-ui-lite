@@ -23,612 +23,611 @@
   -->
 
 <idea-plugin>
-  <id>com.mallowigi.idea</id>
-  <name>Material Theme UI Lite</name>
-  <version>@version@</version>
-  <category>Themes</category>
-  <vendor email="elior@material-theme.com" url="https://github.com/mallowigi">AtomMaterial</vendor>
+    <id>com.mallowigi.idea</id>
+    <name>Material Theme UI Lite</name>
+    <version>@version@</version>
+    <category>Themes</category>
+    <vendor email="elior@material-theme.com" url="https://github.com/mallowigi">AtomMaterial</vendor>
 
-  <description><![CDATA[
-    <!--suppress LongLine -->
-    <h1>Material Theme UI Lite</h1>
-    <h2>Material Design Experience for JetBrains IDEs</h2>
-    <hr/>
-    <div>
-      <a href="https://www.material-theme.com" style="outline: none;">
-        <img src="https://raw.githubusercontent.com/ChrisRM/material-theme-jetbrains/master/laptop-full.png"
-             width="640"
-             alt="theme">
-      </a>
-    </div>
-    <hr>
-    <p>This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material
-      Theme UI Plugin</a>
-      containing only the themes and color schemes.</p>
-    ]]></description>
+    <description><![CDATA[
+        <!--suppress LongLine -->
+        <h1>Material Theme UI Lite</h1>
+        <h2>Material Design Experience for JetBrains IDEs</h2>
+        <hr/>
+        <div>
+            <a href="https://www.material-theme.com" style="outline: none;">
+                <img src="https://raw.githubusercontent.com/ChrisRM/material-theme-jetbrains/master/laptop-full.png"
+                     width="640"
+                     alt="theme">
+            </a>
+        </div>
+        <hr>
+        <p>This is a lite version of the <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material
+            Theme UI Plugin</a>
+            containing only the themes and color schemes.</p>
+        ]]></description>
 
-  <depends>com.intellij.modules.platform</depends>
-  <change-notes></change-notes>
+    <depends>com.intellij.modules.platform</depends>
+    <change-notes></change-notes>
 
-  <idea-version since-build="191.6183"/>
-  <resource-bundle>messages.MaterialThemeBundle</resource-bundle>
+    <idea-version since-build="191.6183"/>
+    <resource-bundle>messages.MaterialThemeBundle</resource-bundle>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="Material Oceanic" path="/themes/regular/Material Oceanic.theme.json"/>
+        <themeProvider id="Material Darker" path="/themes/regular/Material Darker.theme.json"/>
+        <themeProvider id="Material Lighter" path="/themes/regular/Material Lighter.theme.json"/>
+        <themeProvider id="Material Palenight" path="/themes/regular/Material Palenight.theme.json"/>
+        <themeProvider id="Material Deep Ocean" path="/themes/regular/Material Deep Ocean.theme.json"/>
+        <themeProvider id="Material Forest" path="/themes/regular/Material Forest.theme.json"/>
+        <themeProvider id="Material Sky Blue" path="/themes/regular/Material Sky Blue.theme.json"/>
+        <themeProvider id="Material SandyBeach" path="/themes/regular/Material Sandy Beach.theme.json"/>
+        <themeProvider id="Material Volcano" path="/themes/regular/Material Volcano.theme.json"/>
+        <themeProvider id="Material Space" path="/themes/regular/Material Space.theme.json"/>
+        <themeProvider id="Dracula" path="/themes/regular/Dracula.theme.json"/>
+        <themeProvider id="Monokai Pro" path="/themes/regular/Monokai Pro.theme.json"/>
+        <themeProvider id="Arc Dark" path="/themes/regular/Arc Dark.theme.json"/>
+        <themeProvider id="Atom One Dark" path="/themes/regular/Atom One Dark.theme.json"/>
+        <themeProvider id="Atom One Light" path="/themes/regular/Atom One Light.theme.json"/>
+        <themeProvider id="Solarized Dark" path="/themes/regular/Solarized Dark.theme.json"/>
+        <themeProvider id="Solarized Light" path="/themes/regular/Solarized Light.theme.json"/>
+        <themeProvider id="GitHub" path="/themes/regular/GitHub.theme.json"/>
+        <themeProvider id="GitHub Dark" path="/themes/regular/GitHub Dark.theme.json"/>
+        <themeProvider id="Night Owl" path="/themes/regular/Night Owl.theme.json"/>
+        <themeProvider id="Light Owl" path="/themes/regular/Light Owl.theme.json"/>
+        <themeProvider id="Moonlight" path="/themes/regular/Moonlight.theme.json"/>
+        <themeProvider id="SynthWave '84" path="/themes/regular/SynthWave '84.theme.json"/>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <themeProvider id="Material Oceanic" path="/themes/regular/Material Oceanic.theme.json"/>
-    <themeProvider id="Material Darker" path="/themes/regular/Material Darker.theme.json"/>
-    <themeProvider id="Material Lighter" path="/themes/regular/Material Lighter.theme.json"/>
-    <themeProvider id="Material Palenight" path="/themes/regular/Material Palenight.theme.json"/>
-    <themeProvider id="Material Deep Ocean" path="/themes/regular/Material Deep Ocean.theme.json"/>
-    <themeProvider id="Material Forest" path="/themes/regular/Material Forest.theme.json"/>
-    <themeProvider id="Material Sky Blue" path="/themes/regular/Material Sky Blue.theme.json"/>
-    <themeProvider id="Material SandyBeach" path="/themes/regular/Material Sandy Beach.theme.json"/>
-    <themeProvider id="Material Volcano" path="/themes/regular/Material Volcano.theme.json"/>
-    <themeProvider id="Material Space" path="/themes/regular/Material Space.theme.json"/>
-    <themeProvider id="Dracula" path="/themes/regular/Dracula.theme.json"/>
-    <themeProvider id="Monokai Pro" path="/themes/regular/Monokai Pro.theme.json"/>
-    <themeProvider id="Arc Dark" path="/themes/regular/Arc Dark.theme.json"/>
-    <themeProvider id="Atom One Dark" path="/themes/regular/Atom One Dark.theme.json"/>
-    <themeProvider id="Atom One Light" path="/themes/regular/Atom One Light.theme.json"/>
-    <themeProvider id="Solarized Dark" path="/themes/regular/Solarized Dark.theme.json"/>
-    <themeProvider id="Solarized Light" path="/themes/regular/Solarized Light.theme.json"/>
-    <themeProvider id="GitHub" path="/themes/regular/GitHub.theme.json"/>
-    <themeProvider id="GitHub Dark" path="/themes/regular/GitHub Dark.theme.json"/>
-    <themeProvider id="Night Owl" path="/themes/regular/Night Owl.theme.json"/>
-    <themeProvider id="Light Owl" path="/themes/regular/Light Owl.theme.json"/>
-    <themeProvider id="Moonlight" path="/themes/regular/Moonlight.theme.json"/>
-    <themeProvider id="SynthWave '84" path="/themes/regular/SynthWave '84.theme.json"/>
+        <themeProvider id="Material Oceanic Compact" path="/themes/compact/Material Oceanic Compact.theme.json"/>
+        <themeProvider id="Material Darker Compact" path="/themes/compact/Material Darker Compact.theme.json"/>
+        <themeProvider id="Material Lighter Compact" path="/themes/compact/Material Lighter Compact.theme.json"/>
+        <themeProvider id="Material Palenight Compact" path="/themes/compact/Material Palenight Compact.theme.json"/>
+        <themeProvider id="Material Deep Ocean Compact" path="/themes/compact/Material Deep Ocean Compact.theme.json"/>
+        <themeProvider id="Material Forest Compact" path="/themes/compact/Material Forest Compact.theme.json"/>
+        <themeProvider id="Material Sky Blue Compact" path="/themes/compact/Material Sky Blue Compact.theme.json"/>
+        <themeProvider id="Material SandyBeach Compact" path="/themes/compact/Material Sandy Beach Compact.theme.json"/>
+        <themeProvider id="Material Volcano Compact" path="/themes/compact/Material Volcano Compact.theme.json"/>
+        <themeProvider id="Material Space Compact" path="/themes/compact/Material Space Compact.theme.json"/>
+        <themeProvider id="Dracula Compact" path="/themes/compact/Dracula Compact.theme.json"/>
+        <themeProvider id="Monokai Pro Compact" path="/themes/compact/Monokai Pro Compact.theme.json"/>
+        <themeProvider id="Arc Dark Compact" path="/themes/compact/Arc Dark Compact.theme.json"/>
+        <themeProvider id="Atom One Dark Compact" path="/themes/compact/Atom One Dark Compact.theme.json"/>
+        <themeProvider id="Atom One Light Compact" path="/themes/compact/Atom One Light Compact.theme.json"/>
+        <themeProvider id="Solarized Dark Compact" path="/themes/compact/Solarized Dark Compact.theme.json"/>
+        <themeProvider id="Solarized Light Compact" path="/themes/compact/Solarized Light Compact.theme.json"/>
+        <themeProvider id="GitHub Compact" path="/themes/compact/GitHub Compact.theme.json"/>
+        <themeProvider id="GitHub Dark Compact" path="/themes/compact/GitHub Dark Compact.theme.json"/>
+        <themeProvider id="Night Owl Compact" path="/themes/compact/Night Owl Compact.theme.json"/>
+        <themeProvider id="Light Owl Compact" path="/themes/compact/Light Owl Compact.theme.json"/>
+        <themeProvider id="Moonlight Compact" path="/themes/compact/Moonlight Compact.theme.json"/>
+        <themeProvider id="SynthWave '84 Compact" path="/themes/compact/SynthWave '84 Compact.theme.json"/>
 
-    <themeProvider id="Material Oceanic Compact" path="/themes/compact/Material Oceanic Compact.theme.json"/>
-    <themeProvider id="Material Darker Compact" path="/themes/compact/Material Darker Compact.theme.json"/>
-    <themeProvider id="Material Lighter Compact" path="/themes/compact/Material Lighter Compact.theme.json"/>
-    <themeProvider id="Material Palenight Compact" path="/themes/compact/Material Palenight Compact.theme.json"/>
-    <themeProvider id="Material Deep Ocean Compact" path="/themes/compact/Material Deep Ocean Compact.theme.json"/>
-    <themeProvider id="Material Forest Compact" path="/themes/compact/Material Forest Compact.theme.json"/>
-    <themeProvider id="Material Sky Blue Compact" path="/themes/compact/Material Sky Blue Compact.theme.json"/>
-    <themeProvider id="Material SandyBeach Compact" path="/themes/compact/Material Sandy Beach Compact.theme.json"/>
-    <themeProvider id="Material Volcano Compact" path="/themes/compact/Material Volcano Compact.theme.json"/>
-    <themeProvider id="Material Space Compact" path="/themes/compact/Material Space Compact.theme.json"/>
-    <themeProvider id="Dracula Compact" path="/themes/compact/Dracula Compact.theme.json"/>
-    <themeProvider id="Monokai Pro Compact" path="/themes/compact/Monokai Pro Compact.theme.json"/>
-    <themeProvider id="Arc Dark Compact" path="/themes/compact/Arc Dark Compact.theme.json"/>
-    <themeProvider id="Atom One Dark Compact" path="/themes/compact/Atom One Dark Compact.theme.json"/>
-    <themeProvider id="Atom One Light Compact" path="/themes/compact/Atom One Light Compact.theme.json"/>
-    <themeProvider id="Solarized Dark Compact" path="/themes/compact/Solarized Dark Compact.theme.json"/>
-    <themeProvider id="Solarized Light Compact" path="/themes/compact/Solarized Light Compact.theme.json"/>
-    <themeProvider id="GitHub Compact" path="/themes/compact/GitHub Compact.theme.json"/>
-    <themeProvider id="GitHub Dark Compact" path="/themes/compact/GitHub Dark Compact.theme.json"/>
-    <themeProvider id="Night Owl Compact" path="/themes/compact/Night Owl Compact.theme.json"/>
-    <themeProvider id="Light Owl Compact" path="/themes/compact/Light Owl Compact.theme.json"/>
-    <themeProvider id="Moonlight Compact" path="/themes/compact/Moonlight Compact.theme.json"/>
-    <themeProvider id="SynthWave '84 Compact" path="/themes/compact/SynthWave '84 Compact.theme.json"/>
+        <themeProvider id="Material Oceanic Contrast"
+                       path="/themes/contrast/Material Oceanic Contrast.theme.json"/>
+        <themeProvider id="Material Darker Contrast" path="/themes/contrast/Material Darker Contrast.theme.json"/>
+        <themeProvider id="Material Lighter Contrast"
+                       path="/themes/contrast/Material Lighter Contrast.theme.json"/>
+        <themeProvider id="Material Palenight Contrast"
+                       path="/themes/contrast/Material Palenight Contrast.theme.json"/>
+        <themeProvider id="Material Deep Ocean Contrast"
+                       path="/themes/contrast/Material Deep Ocean Contrast.theme.json"/>
+        <themeProvider id="Material Forest Contrast" path="/themes/contrast/Material Forest Contrast.theme.json"/>
+        <themeProvider id="Material Sky Blue Contrast" path="/themes/contrast/Material Sky Blue Contrast.theme.json"/>
+        <themeProvider id="Material SandyBeach Contrast"
+                       path="/themes/contrast/Material Sandy Beach Contrast.theme.json"/>
+        <themeProvider id="Material Volcano Contrast" path="/themes/contrast/Material Volcano Contrast.theme.json"/>
+        <themeProvider id="Material Space Contrast" path="/themes/contrast/Material Space Contrast.theme.json"/>
+        <themeProvider id="Dracula Contrast" path="/themes/contrast/Dracula Contrast.theme.json"/>
+        <themeProvider id="Monokai Pro Contrast" path="/themes/contrast/Monokai Pro Contrast.theme.json"/>
+        <themeProvider id="Arc Dark Contrast" path="/themes/contrast/Arc Dark Contrast.theme.json"/>
+        <themeProvider id="Atom One Dark Contrast" path="/themes/contrast/Atom One Dark Contrast.theme.json"/>
+        <themeProvider id="Atom One Light Contrast" path="/themes/contrast/Atom One Light Contrast.theme.json"/>
+        <themeProvider id="Solarized Dark Contrast"
+                       path="/themes/contrast/Solarized Dark Contrast.theme.json"/>
+        <themeProvider id="Solarized Light Contrast"
+                       path="/themes/contrast/Solarized Light Contrast.theme.json"/>
+        <themeProvider id="GitHub Contrast"
+                       path="/themes/contrast/GitHub Contrast.theme.json"/>
+        <themeProvider id="GitHub Dark Contrast"
+                       path="/themes/contrast/GitHub Dark Contrast.theme.json"/>
+        <themeProvider id="Night Owl Contrast"
+                       path="/themes/contrast/Night Owl Contrast.theme.json"/>
+        <themeProvider id="Light Owl Contrast"
+                       path="/themes/contrast/Light Owl Contrast.theme.json"/>
+        <themeProvider id="Moonlight Contrast"
+                       path="/themes/contrast/Moonlight Contrast.theme.json"/>
+        <themeProvider id="SynthWave '84 Contrast" path="/themes/contrast/SynthWave '84 Contrast.theme.json"/>
 
-    <themeProvider id="Material Oceanic Contrast"
-                   path="/themes/contrast/Material Oceanic Contrast.theme.json"/>
-    <themeProvider id="Material Darker Contrast" path="/themes/contrast/Material Darker Contrast.theme.json"/>
-    <themeProvider id="Material Lighter Contrast"
-                   path="/themes/contrast/Material Lighter Contrast.theme.json"/>
-    <themeProvider id="Material Palenight Contrast"
-                   path="/themes/contrast/Material Palenight Contrast.theme.json"/>
-    <themeProvider id="Material Deep Ocean Contrast"
-                   path="/themes/contrast/Material Deep Ocean Contrast.theme.json"/>
-    <themeProvider id="Material Forest Contrast" path="/themes/contrast/Material Forest Contrast.theme.json"/>
-    <themeProvider id="Material Sky Blue Contrast" path="/themes/contrast/Material Sky Blue Contrast.theme.json"/>
-    <themeProvider id="Material SandyBeach Contrast" path="/themes/contrast/Material Sandy Beach Contrast.theme.json"/>
-    <themeProvider id="Material Volcano Contrast" path="/themes/contrast/Material Volcano Contrast.theme.json"/>
-    <themeProvider id="Material Space Contrast" path="/themes/contrast/Material Space Contrast.theme.json"/>
-    <themeProvider id="Dracula Contrast" path="/themes/contrast/Dracula Contrast.theme.json"/>
-    <themeProvider id="Monokai Pro Contrast" path="/themes/contrast/Monokai Pro Contrast.theme.json"/>
-    <themeProvider id="Arc Dark Contrast" path="/themes/contrast/Arc Dark Contrast.theme.json"/>
-    <themeProvider id="Atom One Dark Contrast" path="/themes/contrast/Atom One Dark Contrast.theme.json"/>
-    <themeProvider id="Atom One Light Contrast" path="/themes/contrast/Atom One Light Contrast.theme.json"/>
-    <themeProvider id="Solarized Dark Contrast"
-                   path="/themes/contrast/Solarized Dark Contrast.theme.json"/>
-    <themeProvider id="Solarized Light Contrast"
-                   path="/themes/contrast/Solarized Light Contrast.theme.json"/>
-    <themeProvider id="GitHub Contrast"
-                   path="/themes/contrast/GitHub Contrast.theme.json"/>
-    <themeProvider id="GitHub Dark Contrast"
-                   path="/themes/contrast/GitHub Dark Contrast.theme.json"/>
-    <themeProvider id="Night Owl Contrast"
-                   path="/themes/contrast/Night Owl Contrast.theme.json"/>
-    <themeProvider id="Light Owl Contrast"
-                   path="/themes/contrast/Light Owl Contrast.theme.json"/>
-    <themeProvider id="Moonlight Contrast"
-                   path="/themes/contrast/Moonlight Contrast.theme.json"/>
-    <themeProvider id="SynthWave '84 Contrast" path="/themes/contrast/SynthWave '84 Contrast.theme.json"/>
+        <themeProvider id="Material Oceanic Compact Contrast"
+                       path="/themes/compactContrast/Material Oceanic Compact Contrast.theme.json"/>
+        <themeProvider id="Material Darker Compact Contrast"
+                       path="/themes/compactContrast/Material Darker Compact Contrast.theme.json"/>
+        <themeProvider id="Material Lighter Compact Contrast"
+                       path="/themes/compactContrast/Material Lighter Compact Contrast.theme.json"/>
+        <themeProvider id="Material Palenight Compact Contrast"
+                       path="/themes/compactContrast/Material Palenight Compact Contrast.theme.json"/>
+        <themeProvider id="Material Deep Ocean Compact Contrast"
+                       path="/themes/compactContrast/Material Deep Ocean Compact Contrast.theme.json"/>
+        <themeProvider id="Material Forest Compact Contrast"
+                       path="/themes/compactContrast/Material Forest Compact Contrast.theme.json"/>
+        <themeProvider id="Material Sky Blue Compact Contrast"
+                       path="/themes/compactContrast/Material Sky Blue Compact Contrast.theme.json"/>
+        <themeProvider id="Material SandyBeach Compact Contrast"
+                       path="/themes/compactContrast/Material Sandy Beach Compact Contrast.theme.json"/>
+        <themeProvider id="Material Volcano Compact Contrast"
+                       path="/themes/compactContrast/Material Volcano Compact Contrast.theme.json"/>
+        <themeProvider id="Material Space Compact Contrast"
+                       path="/themes/compactContrast/Material Space Compact Contrast.theme.json"/>
+        <themeProvider id="Dracula Compact Contrast"
+                       path="/themes/compactContrast/Dracula Compact Contrast.theme.json"/>
+        <themeProvider id="Monokai Pro Compact Contrast"
+                       path="/themes/compactContrast/Monokai Pro Compact Contrast.theme.json"/>
+        <themeProvider id="Arc Dark Compact Contrast"
+                       path="/themes/compactContrast/Arc Dark Compact Contrast.theme.json"/>
+        <themeProvider id="Atom One Dark Compact Contrast"
+                       path="/themes/compactContrast/Atom One Dark Compact Contrast.theme.json"/>
+        <themeProvider id="Atom One Light Compact Contrast"
+                       path="/themes/compactContrast/Atom One Light Compact Contrast.theme.json"/>
+        <themeProvider id="Solarized Dark Compact Contrast"
+                       path="/themes/compactContrast/Solarized Dark Compact Contrast.theme.json"/>
+        <themeProvider id="Solarized Light Compact Contrast"
+                       path="/themes/compactContrast/Solarized Light Compact Contrast.theme.json"/>
+        <themeProvider id="GitHub Compact Contrast" path="/themes/compactContrast/GitHub Compact Contrast.theme.json"/>
+        <themeProvider id="GitHub Dark Compact Contrast"
+                       path="/themes/compactContrast/GitHub Dark Compact Contrast.theme.json"/>
+        <themeProvider id="Night Owl Compact Contrast"
+                       path="/themes/compactContrast/Night Owl Compact Contrast.theme.json"/>
+        <themeProvider id="Light Owl Compact Contrast"
+                       path="/themes/compactContrast/Light Owl Compact Contrast.theme.json"/>
+        <themeProvider id="Moonlight Compact Contrast"
+                       path="/themes/compactContrast/Moonlight Compact Contrast.theme.json"/>
+        <themeProvider id="SynthWave '84 Compact Contrast"
+                       path="/themes/compactContrast/SynthWave '84 Compact Contrast.theme.json"/>
 
-    <themeProvider id="Material Oceanic Compact Contrast"
-                   path="/themes/compactContrast/Material Oceanic Compact Contrast.theme.json"/>
-    <themeProvider id="Material Darker Compact Contrast"
-                   path="/themes/compactContrast/Material Darker Compact Contrast.theme.json"/>
-    <themeProvider id="Material Lighter Compact Contrast"
-                   path="/themes/compactContrast/Material Lighter Compact Contrast.theme.json"/>
-    <themeProvider id="Material Palenight Compact Contrast"
-                   path="/themes/compactContrast/Material Palenight Compact Contrast.theme.json"/>
-    <themeProvider id="Material Deep Ocean Compact Contrast"
-                   path="/themes/compactContrast/Material Deep Ocean Compact Contrast.theme.json"/>
-    <themeProvider id="Material Forest Compact Contrast"
-                   path="/themes/compactContrast/Material Forest Compact Contrast.theme.json"/>
-    <themeProvider id="Material Sky Blue Compact Contrast"
-                   path="/themes/compactContrast/Material Sky Blue Compact Contrast.theme.json"/>
-    <themeProvider id="Material SandyBeach Compact Contrast"
-                   path="/themes/compactContrast/Material Sandy Beach Compact Contrast.theme.json"/>
-    <themeProvider id="Material Volcano Compact Contrast"
-                   path="/themes/compactContrast/Material Volcano Compact Contrast.theme.json"/>
-    <themeProvider id="Material Space Compact Contrast"
-                   path="/themes/compactContrast/Material Space Compact Contrast.theme.json"/>
-    <themeProvider id="Dracula Compact Contrast" path="/themes/compactContrast/Dracula Compact Contrast.theme.json"/>
-    <themeProvider id="Monokai Pro Compact Contrast"
-                   path="/themes/compactContrast/Monokai Pro Compact Contrast.theme.json"/>
-    <themeProvider id="Arc Dark Compact Contrast" path="/themes/compactContrast/Arc Dark Compact Contrast.theme.json"/>
-    <themeProvider id="Atom One Dark Compact Contrast"
-                   path="/themes/compactContrast/Atom One Dark Compact Contrast.theme.json"/>
-    <themeProvider id="Atom One Light Compact Contrast"
-                   path="/themes/compactContrast/Atom One Light Compact Contrast.theme.json"/>
-    <themeProvider id="Solarized Dark Compact Contrast"
-                   path="/themes/compactContrast/Solarized Dark Compact Contrast.theme.json"/>
-    <themeProvider id="Solarized Light Compact Contrast"
-                   path="/themes/compactContrast/Solarized Light Compact Contrast.theme.json"/>
-    <themeProvider id="GitHub Compact Contrast" path="/themes/compactContrast/GitHub Compact Contrast.theme.json"/>
-    <themeProvider id="GitHub Dark Compact Contrast"
-                   path="/themes/compactContrast/GitHub Dark Compact Contrast.theme.json"/>
-    <themeProvider id="Night Owl Compact Contrast"
-                   path="/themes/compactContrast/Night Owl Compact Contrast.theme.json"/>
-    <themeProvider id="Light Owl Compact Contrast"
-                   path="/themes/compactContrast/Light Owl Compact Contrast.theme.json"/>
-    <themeProvider id="Moonlight Compact Contrast"
-                   path="/themes/compactContrast/Moonlight Compact Contrast.theme.json"/>
-    <themeProvider id="SynthWave '84 Compact Contrast"
-                   path="/themes/compactContrast/SynthWave '84 Compact Contrast.theme.json"/>
+        <notificationGroup displayType="STICKY_BALLOON" id="Material Theme UI Lite Notifications"/>
 
+    </extensions>
 
-    <notificationGroup displayType="STICKY_BALLOON" id="Material Theme UI Lite Notifications"/>
+    <!--  <actions>-->
+    <!--    <group id="MaterialLiteTheme.ThemeChooser" popup="true"-->
+    <!--           icon="/icons/actions/mt/themeSwitch.svg">-->
+    <!--      <group id="MaterialTheme.ThemeChooser.Dark"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/dark.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
 
-  </extensions>
+    <!--        <action id="MTDarkerTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTDarkerThemeAction"-->
+    <!--                icon="/icons/actions/themes/darker.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOceanicTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTOceanicThemeAction"-->
+    <!--                icon="/icons/actions/themes/oceanic.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTPalenightTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTPalenightThemeAction"-->
+    <!--                icon="/icons/actions/themes/palenight.svg">-->
+    <!--        </action>-->
 
-  <actions>
-    <group id="MaterialLiteTheme.ThemeChooser" popup="true"
-           icon="/icons/actions/mt/themeSwitch.svg">
-      <group id="MaterialTheme.ThemeChooser.Dark"
-             popup="true"
-             icon="/icons/actions/mt/dark.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
+    <!--        <separator key="separator.nature"/>-->
 
-        <action id="MTDarkerTheme"
-                class="com.mallowigi.idea.themes.MTDarkerThemeAction"
-                icon="/icons/actions/themes/darker.svg">
-        </action>
-        <action id="MTOceanicTheme"
-                class="com.mallowigi.idea.themes.MTOceanicThemeAction"
-                icon="/icons/actions/themes/oceanic.svg">
-        </action>
-        <action id="MTPalenightTheme"
-                class="com.mallowigi.idea.themes.MTPalenightThemeAction"
-                icon="/icons/actions/themes/palenight.svg">
-        </action>
+    <!--        <action id="MTDeepOceanTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"-->
+    <!--                icon="/icons/actions/themes/deepocean.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTForestTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTForestThemeAction"-->
+    <!--                icon="/icons/actions/themes/forest.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTVolcanoTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"-->
+    <!--                icon="/icons/actions/themes/volcano.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSpaceTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTSpaceThemeAction"-->
+    <!--                icon="/icons/actions/themes/space.svg">-->
+    <!--        </action>-->
 
-        <separator key="separator.nature"/>
+    <!--        <separator key="separator.third.-.party"/>-->
 
-        <action id="MTDeepOceanTheme"
-                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"
-                icon="/icons/actions/themes/deepocean.svg">
-        </action>
-        <action id="MTForestTheme"
-                class="com.mallowigi.idea.themes.MTForestThemeAction"
-                icon="/icons/actions/themes/forest.svg">
-        </action>
-        <action id="MTVolcanoTheme"
-                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
-                icon="/icons/actions/themes/volcano.svg">
-        </action>
-        <action id="MTSpaceTheme"
-                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
-                icon="/icons/actions/themes/space.svg">
-        </action>
+    <!--        <action id="MTMonokaiTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"-->
+    <!--                icon="/icons/actions/themes/monokai.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubDarkTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/githubdark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTDraculaTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTDraculaThemeAction"-->
+    <!--                icon="/icons/actions/themes/dracula.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTArcDarkTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/arc_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneDarkTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedDarkTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTNightOwlTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/night_owl.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTMoonlightTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"-->
+    <!--                icon="/icons/actions/themes/moonlight.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSynthwaveTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"-->
+    <!--                icon="/icons/actions/themes/synthwave.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
 
-        <separator key="separator.third.-.party"/>
+    <!--      <group id="MaterialTheme.ThemeChooser.Light"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/light.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
+    <!--        <action id="MTLighterTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTLighterThemeAction"-->
+    <!--                icon="/icons/actions/themes/lighter.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubThemeAction"-->
+    <!--                icon="/icons/actions/themes/github.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneLightTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedLightTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTLightOwlTheme"-->
+    <!--                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/light_owl.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
+    <!--    </group>-->
 
-        <action id="MTMonokaiTheme"
-                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"
-                icon="/icons/actions/themes/monokai.svg">
-        </action>
-        <action id="MTGitHubDarkTheme"
-                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"
-                icon="/icons/actions/themes/githubdark.svg">
-        </action>
-        <action id="MTDraculaTheme"
-                class="com.mallowigi.idea.themes.MTDraculaThemeAction"
-                icon="/icons/actions/themes/dracula.svg">
-        </action>
-        <action id="MTArcDarkTheme"
-                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"
-                icon="/icons/actions/themes/arc_dark.svg">
-        </action>
-        <action id="MTOneDarkTheme"
-                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"
-                icon="/icons/actions/themes/one_dark.svg">
-        </action>
-        <action id="MTSolarizedDarkTheme"
-                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"
-                icon="/icons/actions/themes/solarized_dark.svg">
-        </action>
-        <action id="MTNightOwlTheme"
-                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"
-                icon="/icons/actions/themes/night_owl.svg">
-        </action>
-        <action id="MTMoonlightTheme"
-                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"
-                icon="/icons/actions/themes/moonlight.svg">
-        </action>
-        <action id="MTSynthwaveTheme"
-                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"
-                icon="/icons/actions/themes/synthwave.svg">
-        </action>
-      </group>
+    <!--    <group id="MaterialLiteTheme.CompactThemeChooser" popup="true"-->
+    <!--           icon="/icons/actions/mt/themeSwitch.svg">-->
+    <!--      <group id="MaterialTheme.ThemeChooser.Compact.Dark"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/dark.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
 
-      <group id="MaterialTheme.ThemeChooser.Light"
-             popup="true"
-             icon="/icons/actions/mt/light.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
-        <action id="MTLighterTheme"
-                class="com.mallowigi.idea.themes.MTLighterThemeAction"
-                icon="/icons/actions/themes/lighter.svg">
-        </action>
-        <action id="MTGitHubTheme"
-                class="com.mallowigi.idea.themes.MTGithubThemeAction"
-                icon="/icons/actions/themes/github.svg">
-        </action>
-        <action id="MTOneLightTheme"
-                class="com.mallowigi.idea.themes.MTOneLightThemeAction"
-                icon="/icons/actions/themes/one_light.svg">
-        </action>
-        <action id="MTSolarizedLightTheme"
-                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"
-                icon="/icons/actions/themes/solarized_light.svg">
-        </action>
-        <action id="MTLightOwlTheme"
-                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"
-                icon="/icons/actions/themes/light_owl.svg">
-        </action>
-      </group>
-    </group>
+    <!--        <action id="MTDarkerThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTDarkerThemeAction"-->
+    <!--                icon="/icons/actions/themes/darker.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOceanicThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTOceanicThemeAction"-->
+    <!--                icon="/icons/actions/themes/oceanic.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTPalenightThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTPalenightThemeAction"-->
+    <!--                icon="/icons/actions/themes/palenight.svg">-->
+    <!--        </action>-->
 
-    <group id="MaterialLiteTheme.CompactThemeChooser" popup="true"
-           icon="/icons/actions/mt/themeSwitch.svg">
-      <group id="MaterialTheme.ThemeChooser.Compact.Dark"
-             popup="true"
-             icon="/icons/actions/mt/dark.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
+    <!--        <separator key="separator.nature"/>-->
 
-        <action id="MTDarkerThemeCompact"
-                class="com.mallowigi.idea.themes.MTDarkerThemeAction"
-                icon="/icons/actions/themes/darker.svg">
-        </action>
-        <action id="MTOceanicThemeCompact"
-                class="com.mallowigi.idea.themes.MTOceanicThemeAction"
-                icon="/icons/actions/themes/oceanic.svg">
-        </action>
-        <action id="MTPalenightThemeCompact"
-                class="com.mallowigi.idea.themes.MTPalenightThemeAction"
-                icon="/icons/actions/themes/palenight.svg">
-        </action>
+    <!--        <action id="MTDeepOceanThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"-->
+    <!--                icon="/icons/actions/themes/deepocean.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTForestThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTForestThemeAction"-->
+    <!--                icon="/icons/actions/themes/forest.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTVolcanoThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"-->
+    <!--                icon="/icons/actions/themes/volcano.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSpaceThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSpaceThemeAction"-->
+    <!--                icon="/icons/actions/themes/volcano.svg">-->
+    <!--        </action>-->
 
-        <separator key="separator.nature"/>
+    <!--        <separator key="separator.third.-.party"/>-->
 
-        <action id="MTDeepOceanThemeCompact"
-                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"
-                icon="/icons/actions/themes/deepocean.svg">
-        </action>
-        <action id="MTForestThemeCompact"
-                class="com.mallowigi.idea.themes.MTForestThemeAction"
-                icon="/icons/actions/themes/forest.svg">
-        </action>
-        <action id="MTVolcanoThemeCompact"
-                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
-                icon="/icons/actions/themes/volcano.svg">
-        </action>
-        <action id="MTSpaceThemeCompact"
-                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
-                icon="/icons/actions/themes/volcano.svg">
-        </action>
+    <!--        <action id="MTMonokaiThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"-->
+    <!--                icon="/icons/actions/themes/monokai.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubDarkThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/githubdark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTDraculaThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTDraculaThemeAction"-->
+    <!--                icon="/icons/actions/themes/dracula.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTArcDarkThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/arc_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneDarkThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedDarkThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTNightOwlThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/night_owl.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTMoonlightThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"-->
+    <!--                icon="/icons/actions/themes/moonlight.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSynthwaveThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"-->
+    <!--                icon="/icons/actions/themes/synthwave.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
 
-        <separator key="separator.third.-.party"/>
+    <!--      <group id="MaterialTheme.ThemeChooser.Compact.Light"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/light.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
+    <!--        <action id="MTLighterThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTLighterThemeAction"-->
+    <!--                icon="/icons/actions/themes/lighter.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubThemeAction"-->
+    <!--                icon="/icons/actions/themes/github.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneLightThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedLightThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTLightOwlThemeCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/light_owl.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
+    <!--    </group>-->
 
-        <action id="MTMonokaiThemeCompact"
-                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"
-                icon="/icons/actions/themes/monokai.svg">
-        </action>
-        <action id="MTGitHubDarkThemeCompact"
-                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"
-                icon="/icons/actions/themes/githubdark.svg">
-        </action>
-        <action id="MTDraculaThemeCompact"
-                class="com.mallowigi.idea.themes.MTDraculaThemeAction"
-                icon="/icons/actions/themes/dracula.svg">
-        </action>
-        <action id="MTArcDarkThemeCompact"
-                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"
-                icon="/icons/actions/themes/arc_dark.svg">
-        </action>
-        <action id="MTOneDarkThemeCompact"
-                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"
-                icon="/icons/actions/themes/one_dark.svg">
-        </action>
-        <action id="MTSolarizedDarkThemeCompact"
-                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"
-                icon="/icons/actions/themes/solarized_dark.svg">
-        </action>
-        <action id="MTNightOwlThemeCompact"
-                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"
-                icon="/icons/actions/themes/night_owl.svg">
-        </action>
-        <action id="MTMoonlightThemeCompact"
-                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"
-                icon="/icons/actions/themes/moonlight.svg">
-        </action>
-        <action id="MTSynthwaveThemeCompact"
-                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"
-                icon="/icons/actions/themes/synthwave.svg">
-        </action>
-      </group>
+    <!--    <group id="MaterialLiteTheme.ContrastThemeChooser" popup="true"-->
+    <!--           icon="/icons/actions/mt/contrast.svg">-->
+    <!--      <group id="MaterialTheme.ThemeChooser.Contrast.Dark"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/dark.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
 
-      <group id="MaterialTheme.ThemeChooser.Compact.Light"
-             popup="true"
-             icon="/icons/actions/mt/light.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
-        <action id="MTLighterThemeCompact"
-                class="com.mallowigi.idea.themes.MTLighterThemeAction"
-                icon="/icons/actions/themes/lighter.svg">
-        </action>
-        <action id="MTGitHubThemeCompact"
-                class="com.mallowigi.idea.themes.MTGithubThemeAction"
-                icon="/icons/actions/themes/github.svg">
-        </action>
-        <action id="MTOneLightThemeCompact"
-                class="com.mallowigi.idea.themes.MTOneLightThemeAction"
-                icon="/icons/actions/themes/one_light.svg">
-        </action>
-        <action id="MTSolarizedLightThemeCompact"
-                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"
-                icon="/icons/actions/themes/solarized_light.svg">
-        </action>
-        <action id="MTLightOwlThemeCompact"
-                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"
-                icon="/icons/actions/themes/light_owl.svg">
-        </action>
-      </group>
-    </group>
+    <!--        <action id="MTDarkerThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTDarkerThemeAction"-->
+    <!--                icon="/icons/actions/themes/darker.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOceanicThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTOceanicThemeAction"-->
+    <!--                icon="/icons/actions/themes/oceanic.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTPalenightThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTPalenightThemeAction"-->
+    <!--                icon="/icons/actions/themes/palenight.svg">-->
+    <!--        </action>-->
 
+    <!--        <separator key="separator.nature"/>-->
 
-    <group id="MaterialLiteTheme.ContrastThemeChooser" popup="true"
-           icon="/icons/actions/mt/contrast.svg">
-      <group id="MaterialTheme.ThemeChooser.Contrast.Dark"
-             popup="true"
-             icon="/icons/actions/mt/dark.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
+    <!--        <action id="MTDeepOceanThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"-->
+    <!--                icon="/icons/actions/themes/deepocean.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTForestThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTForestThemeAction"-->
+    <!--                icon="/icons/actions/themes/forest.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTVolcanoThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"-->
+    <!--                icon="/icons/actions/themes/volcano.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSpaceThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTSpaceThemeAction"-->
+    <!--                icon="/icons/actions/themes/space.svg">-->
+    <!--        </action>-->
 
-        <action id="MTDarkerThemeContrast"
-                class="com.mallowigi.idea.themes.MTDarkerThemeAction"
-                icon="/icons/actions/themes/darker.svg">
-        </action>
-        <action id="MTOceanicThemeContrast"
-                class="com.mallowigi.idea.themes.MTOceanicThemeAction"
-                icon="/icons/actions/themes/oceanic.svg">
-        </action>
-        <action id="MTPalenightThemeContrast"
-                class="com.mallowigi.idea.themes.MTPalenightThemeAction"
-                icon="/icons/actions/themes/palenight.svg">
-        </action>
+    <!--        <separator key="separator.third.-.party"/>-->
 
-        <separator key="separator.nature"/>
+    <!--        <action id="MTMonokaiThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"-->
+    <!--                icon="/icons/actions/themes/monokai.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubDarkThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/githubdark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTDraculaThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTDraculaThemeAction"-->
+    <!--                icon="/icons/actions/themes/dracula.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTArcDarkThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/arc_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneDarkThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedDarkThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTNightOwlThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/night_owl.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTMoonlightThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"-->
+    <!--                icon="/icons/actions/themes/moonlight.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSynthwaveThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"-->
+    <!--                icon="/icons/actions/themes/synthwave.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
 
-        <action id="MTDeepOceanThemeContrast"
-                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"
-                icon="/icons/actions/themes/deepocean.svg">
-        </action>
-        <action id="MTForestThemeContrast"
-                class="com.mallowigi.idea.themes.MTForestThemeAction"
-                icon="/icons/actions/themes/forest.svg">
-        </action>
-        <action id="MTVolcanoThemeContrast"
-                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
-                icon="/icons/actions/themes/volcano.svg">
-        </action>
-        <action id="MTSpaceThemeContrast"
-                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
-                icon="/icons/actions/themes/space.svg">
-        </action>
+    <!--      <group id="MaterialTheme.ThemeChooser.Contrast.Light"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/light.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
+    <!--        <action id="MTLighterThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTLighterThemeAction"-->
+    <!--                icon="/icons/actions/themes/lighter.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubThemeAction"-->
+    <!--                icon="/icons/actions/themes/github.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneLightThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedLightThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTLightOwlThemeContrast"-->
+    <!--                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/light_owl.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
+    <!--    </group>-->
 
-        <separator key="separator.third.-.party"/>
+    <!--    <group id="MaterialLiteTheme.CompactContrastThemeChooser" popup="true"-->
+    <!--           icon="/icons/actions/mt/contrast.svg">-->
+    <!--      <group id="MaterialTheme.ThemeChooser.Contrast.Compact.Dark"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/dark.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
 
-        <action id="MTMonokaiThemeContrast"
-                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"
-                icon="/icons/actions/themes/monokai.svg">
-        </action>
-        <action id="MTGitHubDarkThemeContrast"
-                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"
-                icon="/icons/actions/themes/githubdark.svg">
-        </action>
-        <action id="MTDraculaThemeContrast"
-                class="com.mallowigi.idea.themes.MTDraculaThemeAction"
-                icon="/icons/actions/themes/dracula.svg">
-        </action>
-        <action id="MTArcDarkThemeContrast"
-                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"
-                icon="/icons/actions/themes/arc_dark.svg">
-        </action>
-        <action id="MTOneDarkThemeContrast"
-                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"
-                icon="/icons/actions/themes/one_dark.svg">
-        </action>
-        <action id="MTSolarizedDarkThemeContrast"
-                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"
-                icon="/icons/actions/themes/solarized_dark.svg">
-        </action>
-        <action id="MTNightOwlThemeContrast"
-                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"
-                icon="/icons/actions/themes/night_owl.svg">
-        </action>
-        <action id="MTMoonlightThemeContrast"
-                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"
-                icon="/icons/actions/themes/moonlight.svg">
-        </action>
-        <action id="MTSynthwaveThemeContrast"
-                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"
-                icon="/icons/actions/themes/synthwave.svg">
-        </action>
-      </group>
+    <!--        <action id="MTDarkerThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTDarkerThemeAction"-->
+    <!--                icon="/icons/actions/themes/darker.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOceanicThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTOceanicThemeAction"-->
+    <!--                icon="/icons/actions/themes/oceanic.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTPalenightThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTPalenightThemeAction"-->
+    <!--                icon="/icons/actions/themes/palenight.svg">-->
+    <!--        </action>-->
 
-      <group id="MaterialTheme.ThemeChooser.Contrast.Light"
-             popup="true"
-             icon="/icons/actions/mt/light.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
-        <action id="MTLighterThemeContrast"
-                class="com.mallowigi.idea.themes.MTLighterThemeAction"
-                icon="/icons/actions/themes/lighter.svg">
-        </action>
-        <action id="MTGitHubThemeContrast"
-                class="com.mallowigi.idea.themes.MTGithubThemeAction"
-                icon="/icons/actions/themes/github.svg">
-        </action>
-        <action id="MTOneLightThemeContrast"
-                class="com.mallowigi.idea.themes.MTOneLightThemeAction"
-                icon="/icons/actions/themes/one_light.svg">
-        </action>
-        <action id="MTSolarizedLightThemeContrast"
-                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"
-                icon="/icons/actions/themes/solarized_light.svg">
-        </action>
-        <action id="MTLightOwlThemeContrast"
-                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"
-                icon="/icons/actions/themes/light_owl.svg">
-        </action>
-      </group>
-    </group>
+    <!--        <separator key="separator.nature"/>-->
 
-    <group id="MaterialLiteTheme.CompactContrastThemeChooser" popup="true"
-           icon="/icons/actions/mt/contrast.svg">
-      <group id="MaterialTheme.ThemeChooser.Contrast.Compact.Dark"
-             popup="true"
-             icon="/icons/actions/mt/dark.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
+    <!--        <action id="MTDeepOceanThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"-->
+    <!--                icon="/icons/actions/themes/deepocean.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTForestThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTForestThemeAction"-->
+    <!--                icon="/icons/actions/themes/forest.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTVolcanoThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"-->
+    <!--                icon="/icons/actions/themes/volcano.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSpaceThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSpaceThemeAction"-->
+    <!--                icon="/icons/actions/themes/space.svg">-->
+    <!--        </action>-->
 
-        <action id="MTDarkerThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTDarkerThemeAction"
-                icon="/icons/actions/themes/darker.svg">
-        </action>
-        <action id="MTOceanicThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTOceanicThemeAction"
-                icon="/icons/actions/themes/oceanic.svg">
-        </action>
-        <action id="MTPalenightThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTPalenightThemeAction"
-                icon="/icons/actions/themes/palenight.svg">
-        </action>
+    <!--        <separator key="separator.third.-.party"/>-->
 
-        <separator key="separator.nature"/>
+    <!--        <action id="MTMonokaiThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"-->
+    <!--                icon="/icons/actions/themes/monokai.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubDarkThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/githubdark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTDraculaThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTDraculaThemeAction"-->
+    <!--                icon="/icons/actions/themes/dracula.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTArcDarkThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/arc_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneDarkThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedDarkThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_dark.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTNightOwlThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/night_owl.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTMoonlightThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"-->
+    <!--                icon="/icons/actions/themes/moonlight.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSynthwaveThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"-->
+    <!--                icon="/icons/actions/themes/synthwave.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
 
-        <action id="MTDeepOceanThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTDeepOceanThemeAction"
-                icon="/icons/actions/themes/deepocean.svg">
-        </action>
-        <action id="MTForestThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTForestThemeAction"
-                icon="/icons/actions/themes/forest.svg">
-        </action>
-        <action id="MTVolcanoThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTVolcanoThemeAction"
-                icon="/icons/actions/themes/volcano.svg">
-        </action>
-        <action id="MTSpaceThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTSpaceThemeAction"
-                icon="/icons/actions/themes/space.svg">
-        </action>
+    <!--      <group id="MaterialTheme.ThemeChooser.Contrast.Compact.Light"-->
+    <!--             popup="true"-->
+    <!--             icon="/icons/actions/mt/light.svg"-->
+    <!--             class="com.mallowigi.idea.themes.ActionGroup">-->
+    <!--        <action id="MTLighterThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTLighterThemeAction"-->
+    <!--                icon="/icons/actions/themes/lighter.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTGitHubThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTGithubThemeAction"-->
+    <!--                icon="/icons/actions/themes/github.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTOneLightThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTOneLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/one_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTSolarizedLightThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"-->
+    <!--                icon="/icons/actions/themes/solarized_light.svg">-->
+    <!--        </action>-->
+    <!--        <action id="MTLightOwlThemeContrastCompact"-->
+    <!--                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"-->
+    <!--                icon="/icons/actions/themes/light_owl.svg">-->
+    <!--        </action>-->
+    <!--      </group>-->
+    <!--    </group>-->
 
-        <separator key="separator.third.-.party"/>
+    <!--    <group id="MaterialLiteTheme.Menu" popup="true"-->
+    <!--           icon="/icons/actions/mt/themeSwitch.svg">-->
+    <!--      <reference id="MaterialLiteTheme.ThemeChooser"/>-->
+    <!--      <separator/>-->
+    <!--      <reference id="MaterialLiteTheme.CompactThemeChooser"/>-->
+    <!--      <separator/>-->
+    <!--      <reference id="MaterialLiteTheme.ContrastThemeChooser"/>-->
+    <!--      <separator/>-->
+    <!--      <reference id="MaterialLiteTheme.CompactContrastThemeChooser"/>-->
+    <!--      <add-to-group group-id="ToolsMenu"/>-->
+    <!--      <add-to-group group-id="MainToolbarRight" anchor="last"/>-->
+    <!--      <add-to-group group-id="MainToolBar" anchor="last"/>-->
+    <!--      <add-to-group group-id="ChangeScheme" anchor="after" relative-to-action="MaterialLiteTheme.Menu"/>-->
+    <!--    </group>-->
 
-        <action id="MTMonokaiThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTMonokaiThemeAction"
-                icon="/icons/actions/themes/monokai.svg">
-        </action>
-        <action id="MTGitHubDarkThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTGithubDarkThemeAction"
-                icon="/icons/actions/themes/githubdark.svg">
-        </action>
-        <action id="MTDraculaThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTDraculaThemeAction"
-                icon="/icons/actions/themes/dracula.svg">
-        </action>
-        <action id="MTArcDarkThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTArcDarkThemeAction"
-                icon="/icons/actions/themes/arc_dark.svg">
-        </action>
-        <action id="MTOneDarkThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTOneDarkThemeAction"
-                icon="/icons/actions/themes/one_dark.svg">
-        </action>
-        <action id="MTSolarizedDarkThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTSolarizedDarkThemeAction"
-                icon="/icons/actions/themes/solarized_dark.svg">
-        </action>
-        <action id="MTNightOwlThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTNightOwlThemeAction"
-                icon="/icons/actions/themes/night_owl.svg">
-        </action>
-        <action id="MTMoonlightThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTMoonlightThemeAction"
-                icon="/icons/actions/themes/moonlight.svg">
-        </action>
-        <action id="MTSynthwaveThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTSynthwaveThemeAction"
-                icon="/icons/actions/themes/synthwave.svg">
-        </action>
-      </group>
-
-      <group id="MaterialTheme.ThemeChooser.Contrast.Compact.Light"
-             popup="true"
-             icon="/icons/actions/mt/light.svg"
-             class="com.mallowigi.idea.themes.ActionGroup">
-        <action id="MTLighterThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTLighterThemeAction"
-                icon="/icons/actions/themes/lighter.svg">
-        </action>
-        <action id="MTGitHubThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTGithubThemeAction"
-                icon="/icons/actions/themes/github.svg">
-        </action>
-        <action id="MTOneLightThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTOneLightThemeAction"
-                icon="/icons/actions/themes/one_light.svg">
-        </action>
-        <action id="MTSolarizedLightThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTSolarizedLightThemeAction"
-                icon="/icons/actions/themes/solarized_light.svg">
-        </action>
-        <action id="MTLightOwlThemeContrastCompact"
-                class="com.mallowigi.idea.themes.MTLightOwlThemeAction"
-                icon="/icons/actions/themes/light_owl.svg">
-        </action>
-      </group>
-    </group>
-
-
-    <group id="MaterialLiteTheme.Menu" popup="true"
-           icon="/icons/actions/mt/themeSwitch.svg">
-      <reference id="MaterialLiteTheme.ThemeChooser"/>
-      <separator/>
-      <reference id="MaterialLiteTheme.CompactThemeChooser"/>
-      <separator/>
-      <reference id="MaterialLiteTheme.ContrastThemeChooser"/>
-      <separator/>
-      <reference id="MaterialLiteTheme.CompactContrastThemeChooser"/>
-      <add-to-group group-id="ToolsMenu"/>
-      <add-to-group group-id="MainToolbarRight" anchor="last"/>
-      <add-to-group group-id="MainToolBar" anchor="last"/>
-      <add-to-group group-id="ChangeScheme" anchor="after" relative-to-action="MaterialLiteTheme.Menu"/>
-    </group>
-
-  </actions>
+    <!--  </actions>-->
 
 </idea-plugin>

@@ -23,7 +23,6 @@
  */
 package com.mallowigi.idea.themes
 
-import com.intellij.openapi.actionSystem.ActionPlaces
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.ToggleAction
 import com.intellij.openapi.actionSystem.Toggleable
@@ -69,7 +68,6 @@ abstract class MTToggleAction(
    *
    * @param e event data
    */
-  @Suppress("UnstableApiUsage")
   override fun update(e: AnActionEvent) {
     val selected = isSelected(e)
     val presentation = e.presentation
@@ -79,15 +77,9 @@ abstract class MTToggleAction(
     val fallbackIcon = selectedFallbackIcon(icon)
     val actionButtonIcon = ObjectUtils.notNull(UIManager.getIcon("ActionButton.backgroundIcon"), fallbackIcon)
 
-    if (ActionPlaces.isMacSystemMenuAction(e)) {
-      // force showing check marks instead of toggle icons in the context menu
-      presentation.icon = null
-    } else {
-      // Recreate the action button look
-      when {
-        selected -> e.presentation.icon = getLayeredIcon(actionButtonIcon, regularIcon(icon!!))
-        else     -> e.presentation.icon = regularIcon(icon!!)
-      }
+    when {
+      selected -> e.presentation.icon = getLayeredIcon(actionButtonIcon, regularIcon(icon!!))
+      else     -> e.presentation.icon = regularIcon(icon!!)
     }
   }
 

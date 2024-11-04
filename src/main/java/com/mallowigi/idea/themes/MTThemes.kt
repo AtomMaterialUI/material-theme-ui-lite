@@ -25,7 +25,7 @@
 
 package com.mallowigi.idea.themes
 
-import com.mallowigi.idea.ThemesBundle.message
+import com.mallowigi.idea.MaterialThemeBundle.message
 import org.jetbrains.annotations.NonNls
 
 /** Enum for theme names. */
