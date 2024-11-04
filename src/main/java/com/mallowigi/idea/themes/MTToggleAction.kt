@@ -29,7 +29,6 @@ import com.intellij.openapi.actionSystem.ToggleAction
 import com.intellij.openapi.actionSystem.Toggleable
 import com.intellij.openapi.util.NlsActions
 import com.intellij.ui.LayeredIcon
-import com.intellij.ui.LayeredIcon.Companion.layeredIcon
 import com.intellij.util.IconUtil
 import com.intellij.util.ObjectUtils
 import com.intellij.util.ui.GraphicsUtil
@@ -57,7 +56,7 @@ abstract class MTToggleAction(
   /** Whether the action is toggled. */
   abstract override fun isSelected(e: AnActionEvent): Boolean
 
-  fun getLayeredIcon(vararg icons: Icon): LayeredIcon {
+  private fun getLayeredIcon(vararg icons: Icon): LayeredIcon {
     val layeredIcon = LayeredIcon(icons.size)
     icons.forEachIndexed { index, icon ->
       layeredIcon.setIcon(icon, index)
@@ -81,7 +80,7 @@ abstract class MTToggleAction(
     val actionButtonIcon = ObjectUtils.notNull(UIManager.getIcon("ActionButton.backgroundIcon"), fallbackIcon)
 
     if (ActionPlaces.isMacSystemMenuAction(e)) {
-      //force showing check marks instead of toggle icons in the context menu
+      // force showing check marks instead of toggle icons in the context menu
       presentation.icon = null
     } else {
       // Recreate the action button look

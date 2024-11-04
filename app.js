@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-const fs = require('fs');
-const yaml = require('yaml');
+import fs from "fs";
+import yaml from "yaml";
 
 // Replacements
 let props = [

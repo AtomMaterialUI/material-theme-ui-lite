@@ -26,6 +26,7 @@
 
 package com.mallowigi.idea.themes
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.actionSystem.DefaultActionGroup
@@ -41,4 +42,6 @@ class ActionGroup : DefaultActionGroup() {
 
   /** dumb mode */
   override fun isDumbAware(): Boolean = true
+
+  override fun getActionUpdateThread(): ActionUpdateThread = ActionUpdateThread.BGT
 }
