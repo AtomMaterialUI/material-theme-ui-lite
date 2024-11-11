@@ -26,21 +26,22 @@
 package com.mallowigi.idea.notifications
 
 import com.intellij.notification.Notification
-import com.intellij.notification.NotificationGroupManager
 import com.intellij.notification.NotificationType
 import com.intellij.notification.Notifications
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.util.NlsContexts
+import com.mallowigi.idea.MaterialThemeBundle.message
+import org.jetbrains.annotations.NonNls
 import org.jetbrains.annotations.NotNull
 
 /** Service for sending notifications. */
-@Suppress("UnstableApiUsage")
 object MTNotifications {
-  private const val fromTop = 20
-
   /** Notification channel ID. */
-  private const val CHANNEL: String = "Material Theme Lite Notifications"
+  private val CHANNEL: String = message("material.theme.lite.notifications")
+
+  @NonNls
+  private const val GROUP_ID = "MaterialThemeLite"
 
   /**
    * Show a simple notification
@@ -91,8 +92,7 @@ object MTNotifications {
     @NlsContexts.NotificationContent content: String,
     type: NotificationType,
   ): Notification {
-    val group = NotificationGroupManager.getInstance().getNotificationGroup(CHANNEL)
-    return group.createNotification(title, content, type)
+    return Notification(GROUP_ID, title, content, type)
   }
 
   /**
