@@ -23,11 +23,13 @@
  */
 package com.mallowigi.idea.themes
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.ToggleAction
 import com.intellij.openapi.actionSystem.Toggleable
 import com.intellij.openapi.util.NlsActions
 import com.intellij.ui.LayeredIcon
+import com.intellij.ui.icons.EMPTY_ICON
 import com.intellij.util.IconUtil
 import com.intellij.util.ObjectUtils
 import com.intellij.util.ui.GraphicsUtil
@@ -48,20 +50,12 @@ abstract class MTToggleAction(
   @NlsActions.ActionDescription description: String = "",
   icon: Icon? = null,
 ) : ToggleAction(text, description, icon) {
-
-  private val defaultIconSize = 18
-  private val iconRadius = 4
+  private var originalIcon: Icon? = null
+  private val defaultIconSize = 20
+  private val iconRadius = 20
 
   /** Whether the action is toggled. */
   abstract override fun isSelected(e: AnActionEvent): Boolean
-
-  private fun getLayeredIcon(vararg icons: Icon): LayeredIcon {
-    val layeredIcon = LayeredIcon(icons.size)
-    icons.forEachIndexed { index, icon ->
-      layeredIcon.setIcon(icon, index)
-    }
-    return layeredIcon
-  }
 
   /**
    * Update the action preentation according to config, license, etc
@@ -71,15 +65,17 @@ abstract class MTToggleAction(
   override fun update(e: AnActionEvent) {
     val selected = isSelected(e)
     val presentation = e.presentation
-    val icon = presentation.icon
+
+    if (originalIcon == null) originalIcon = e.presentation.icon
+    val icon = originalIcon ?: EMPTY_ICON
 
     Toggleable.setSelected(presentation, selected)
-    val fallbackIcon = selectedFallbackIcon(icon)
+    val fallbackIcon = selectedFallbackIcon()
     val actionButtonIcon = ObjectUtils.notNull(UIManager.getIcon("ActionButton.backgroundIcon"), fallbackIcon)
 
     when {
-      selected -> e.presentation.icon = getLayeredIcon(actionButtonIcon, regularIcon(icon!!))
-      else     -> e.presentation.icon = regularIcon(icon!!)
+      selected -> e.presentation.icon = getLayeredIcon(regularIcon(icon), actionButtonIcon)
+      else     -> e.presentation.icon = regularIcon(icon)
     }
   }
 
@@ -95,10 +91,18 @@ abstract class MTToggleAction(
     showSimple(e.project ?: return, message("notification.message", notificationMessage, restText))
   }
 
+  private fun getLayeredIcon(vararg icons: Icon): LayeredIcon {
+    val layeredIcon = LayeredIcon(icons.size)
+    icons.forEachIndexed { index, icon ->
+      layeredIcon.setIcon(icon, index)
+    }
+    return layeredIcon
+  }
+
   private fun regularIcon(icon: Icon): Icon =
     IconUtil.toSize(icon, JBUI.scale(defaultIconSize), JBUI.scale(defaultIconSize))
 
-  private fun selectedFallbackIcon(icon: Icon?): Icon = object : Icon {
+  private fun selectedFallbackIcon(): Icon = object : Icon {
     override fun paintIcon(component: Component, g: Graphics, x: Int, y: Int) {
       val g2d = g.create()
       try {
@@ -110,11 +114,14 @@ abstract class MTToggleAction(
       }
     }
 
-    override fun getIconWidth(): Int = icon?.iconWidth ?: JBUI.scale(defaultIconSize)
+    override fun getIconWidth(): Int = JBUI.scale(defaultIconSize)
 
-    override fun getIconHeight(): Int = icon?.iconHeight ?: JBUI.scale(defaultIconSize)
+    override fun getIconHeight(): Int = JBUI.scale(defaultIconSize)
   }
 
   /** Make actions dumb aware. */
   override fun isDumbAware(): Boolean = true
+
+  override fun getActionUpdateThread(): ActionUpdateThread = ActionUpdateThread.BGT
+
 }

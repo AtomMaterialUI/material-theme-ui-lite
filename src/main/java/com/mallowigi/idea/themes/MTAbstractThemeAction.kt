@@ -24,8 +24,9 @@
 package com.mallowigi.idea.themes
 
 import com.intellij.ide.ui.LafManager
-import com.intellij.openapi.actionSystem.ActionUpdateThread
+import com.intellij.ide.ui.LafManagerListener
 import com.intellij.openapi.actionSystem.AnActionEvent
+import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.project.DumbAware
 import com.mallowigi.idea.MaterialThemeBundle.message
 import org.jetbrains.annotations.NonNls
@@ -35,10 +36,15 @@ import java.text.MessageFormat
 abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
   /** Set selected theme. */
   override fun setSelected(e: AnActionEvent, state: Boolean) {
+    super.setSelected(e, state)
     // Find LAF theme and trigger a theme change
     val lafManager = LafManager.getInstance()
     val lafInfo = lafManager.installedThemes.first { it.name == getThemeName(e) }
     if (lafInfo != null) lafManager.currentUIThemeLookAndFeel = lafInfo
+
+    ApplicationManager.getApplication().messageBus
+      .syncPublisher(LafManagerListener.TOPIC)
+      .lookAndFeelChanged(lafManager)
   }
 
   /** Whether theme is selected. */
@@ -58,12 +64,10 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
     val isCompact = text.contains(compact)
     val name = theme.themeName
     return when {
-      isContrast && isCompact -> MessageFormat.format("{0} {1} {2}", name, compact, contrast)
+      isContrast && isCompact  -> MessageFormat.format("{0} {1} {2}", name, compact, contrast)
       isContrast && !isCompact -> MessageFormat.format("{0} {1}", name, contrast)
       !isContrast && isCompact -> MessageFormat.format("{0} {1}", name, compact)
-      else -> name
+      else                     -> name
     }
   }
-
-  override fun getActionUpdateThread(): ActionUpdateThread = ActionUpdateThread.BGT
 }
