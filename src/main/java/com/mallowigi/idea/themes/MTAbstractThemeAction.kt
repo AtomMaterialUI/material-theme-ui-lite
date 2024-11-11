@@ -24,9 +24,7 @@
 package com.mallowigi.idea.themes
 
 import com.intellij.ide.ui.LafManager
-import com.intellij.ide.ui.LafManagerListener
 import com.intellij.openapi.actionSystem.AnActionEvent
-import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.project.DumbAware
 import com.mallowigi.idea.MaterialThemeBundle.message
 import org.jetbrains.annotations.NonNls
@@ -42,9 +40,7 @@ abstract class MTAbstractThemeAction : MTToggleAction(), DumbAware {
     val lafInfo = lafManager.installedThemes.first { it.name == getThemeName(e) }
     if (lafInfo != null) lafManager.currentUIThemeLookAndFeel = lafInfo
 
-    ApplicationManager.getApplication().messageBus
-      .syncPublisher(LafManagerListener.TOPIC)
-      .lookAndFeelChanged(lafManager)
+    lafManager.updateUI()
   }
 
   /** Whether theme is selected. */
