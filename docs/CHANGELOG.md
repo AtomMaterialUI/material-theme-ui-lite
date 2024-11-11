@@ -1,5 +1,18 @@
 ## Changelog
 
+# 21.0.0
+
+### Features
+- New Theme: **Material Space**
+- Group _Contrast_ and _Compact_ flavors under the same popup menus
+- Support for the latest UI Properties and Color Scheme Updates
+
+### Fixes
+
+- Support for 2024.3
+- Remove Internal API Usages
+- Migrate to Gradle Plugin 2.1
+
 # 20.0.0
 
 ### Features
