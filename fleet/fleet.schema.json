@@ -29,24 +29,4282 @@
       ]
     },
     "colors": {
-      "description": "Color definitions",
+      "description": "Colors",
       "type": "object",
       "properties": {
         "ai": {
           "type": "object",
-          "description": "Color definitions for AI Assistant",
+          "description": "Colors for AI Assistant",
           "properties": {
             "attachment.background.default": {
               "type": "string",
-              "description": "Default background color for attachments"
+              "description": "Background color for attachments"
             },
-            "error.border": {
-              "type": "string",
-              "description": "Border color for error messages"
+
+            "error": {
+              "type": "object",
+              "description": "Colors for error indicators",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for error indicators"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for error indicators"
+                }
+              }
             },
-            "error.background": {
+
+            "icon": {
+              "type": "object",
+              "description": "Colors for AI Icons",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for icons"
+                },
+                "background.secondary": {
+                  "type": "string",
+                  "description": "Secondary background color for icons"
+                }
+              }
+            },
+
+            "snippet": {
+              "type": "object",
+              "description": "Colors for code snippets",
+              "properties": {
+                "border": {
+                  "type": "string",
+                  "description": "Border color for code snippets"
+                },
+                "editor.background": {
+                  "type": "string",
+                  "description": "Background color for code snippet editors"
+                },
+                "header.background": {
+                  "type": "string",
+                  "description": "Background color for code snippet headers"
+                }
+              }
+            },
+
+            "thread": {
+              "type": "object",
+              "description": "Colors for threads",
+              "properties": {
+                "agent": {
+                  "type": "object",
+                  "description": "Colors for agent threads",
+                  "properties": {
+                    "error.background": {
+                      "type": "string",
+                      "description": "Background color for errored threads"
+                    },
+                    "finished.background": {
+                      "type": "string",
+                      "description": "Background color for finished threads"
+                    },
+                    "running.background": {
+                      "type": "string",
+                      "description": "Background color for running threads"
+                    }
+                  }
+                },
+
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for threads",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Default background color for threads"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Hovered background color for threads"
+                    }
+                  }
+                }
+              }
+            },
+
+            "user": {
+              "type": "object",
+              "description": "Colors for user messages",
+              "properties": {
+                "icon": {
+                  "type": "object",
+                  "description": "Colors for user avatars",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for user avatars"
+                    },
+                    "background.secondary": {
+                      "type": "string",
+                      "description": "Secondary background color for user avatars"
+                    }
+                  }
+                }
+              }
+            },
+
+            "warning": {
+              "type": "object",
+              "description": "Colors for warning indicators",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for warning indicators"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for warning indicators"
+                }
+              }
+            }
+          }
+        },
+
+        "background": {
+          "type": "object",
+          "description": "Background colors of the code editor interface",
+          "properties": {
+            "primary": {
               "type": "string",
-              "description": "Background color for error messages"
+              "description": "Primary background color"
+            },
+            "secondary": {
+              "type": "string",
+              "description": "Secondary background color"
+            }
+          }
+        },
+
+        "banner": {
+          "type": "object",
+          "description": "Colors for the Banner Messages",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for banners",
+              "properties": {
+                "ai": {
+                  "type": "string",
+                  "description": "Background color for AI related banners"
+                },
+                "dangerous": {
+                  "type": "string",
+                  "description": "Background color for error banners"
+                },
+                "info": {
+                  "type": "string",
+                  "description": "Background color for info banners"
+                },
+                "positive": {
+                  "type": "string",
+                  "description": "Background color for success banners"
+                },
+                "warning": {
+                  "type": "string",
+                  "description": "Background color for warning banners"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for banners",
+              "properties": {
+                "ai": {
+                  "type": "string",
+                  "description": "Border color for AI related banners"
+                },
+                "dangerous": {
+                  "type": "string",
+                  "description": "Border color for error banners"
+                },
+                "info": {
+                  "type": "string",
+                  "description": "Border color for info banners"
+                },
+                "positive": {
+                  "type": "string",
+                  "description": "Border color for success banners"
+                },
+                "warning": {
+                  "type": "string",
+                  "description": "Border color for warning banners"
+                }
+              }
+            },
+
+            "inline": {
+              "type": "object",
+              "description": "Inline banner colors",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for inline banners"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for inline banners"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for inline banners"
+                }
+              }
+            },
+
+            "secondary": {
+              "type": "object",
+              "description": "Secondary banner colors",
+              "properties": {
+                "background.error": {
+                  "type": "string",
+                  "description": "Secondary background color for error banners"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for secondary banners"
+                }
+              }
+            }
+          }
+        },
+
+        "border": {
+          "type": "string",
+          "description": "Border color for elements such as lists, tables, inputs, etc."
+        },
+
+        "border.focused": {
+          "type": "string",
+          "description": "Border color for focused elements"
+        },
+
+        "button": {
+          "type": "object",
+          "description": "Colors for the different kinds of buttons",
+          "properties": {
+            "ai": {
+              "type": "object",
+              "description": "Colors for AI Assistant buttons",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for AI Assistant buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for AI Assistant buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled AI Assistant buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered AI Assistant buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed AI Assistant buttons"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for AI Assistant buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for AI Assistant buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled AI Assistant buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered AI Assistant buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed AI Assistant buttons"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused AI Assistant buttons"
+                },
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused AI Assistant buttons"
+                },
+
+                "separator": {
+                  "type": "object",
+                  "description": "Separator colors for AI Assistant buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for AI Assistant button separators"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled AI Assistant button separators"
+                    }
+                  }
+                },
+
+                "split": {
+                  "type": "object",
+                  "description": "Split button colors for AI Assistant buttons",
+                  "properties": {
+                    "focusOutline": {
+                      "type": "string",
+                      "description": "Outline color for focused AI Assistant split buttons"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for AI Assistant buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for AI Assistant buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled AI Assistant buttons"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint AI Assistant buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered AI Assistant buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed AI Assistant buttons"
+                    }
+                  }
+                }
+              }
+            },
+
+            "dangerous": {
+              "type": "object",
+              "description": "Colors for dangerous buttons",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for dangerous buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for dangerous buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled dangerous buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered dangerous buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed dangerous buttons"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border color for dangerous buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for dangerous buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled dangerous buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered dangerous buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed dangerous buttons"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused dangerous buttons"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused dangerous buttons"
+                },
+
+                "separator": {
+                  "type": "object",
+                  "description": "Separator colors for dangerous buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for dangerous button separators"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled dangerous button separators"
+                    }
+                  }
+                },
+
+                "split": {
+                  "type": "object",
+                  "description": "Split button colors for dangerous buttons",
+                  "properties": {
+                    "focusOutline": {
+                      "type": "string",
+                      "description": "Outline color for focused dangerous split buttons"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for dangerous buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for dangerous buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled dangerous buttons"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint dangerous buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered dangerous buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed dangerous buttons"
+                    }
+                  }
+                }
+              }
+            },
+
+            "positive": {
+              "type": "object",
+              "description": "Colors for positive buttons",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for positive buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for positive buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled positive buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered positive buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed positive buttons"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border color for positive buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for positive buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled positive buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered positive buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed positive buttons"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused positive buttons"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused positive buttons"
+                },
+
+                "separator": {
+                  "type": "object",
+                  "description": "Separator colors for positive buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for positive button separators"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled positive button separators"
+                    }
+                  }
+                },
+
+                "split": {
+                  "type": "object",
+                  "description": "Split button colors for positive buttons",
+                  "properties": {
+                    "focusOutline": {
+                      "type": "string",
+                      "description": "Outline color for focused positive split buttons"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for positive buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for positive buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled positive buttons"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint positive buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered positive buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed positive buttons"
+                    }
+                  }
+                }
+              }
+            },
+
+            "primary": {
+              "type": "object",
+              "description": "Colors for primary buttons",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for primary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for primary buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled primary buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered primary buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed primary buttons"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border color for primary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for primary buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled primary buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered primary buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed primary buttons"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused primary buttons"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused primary buttons"
+                },
+
+                "separator": {
+                  "type": "object",
+                  "description": "Separator colors for primary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for primary button separators"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled primary button separators"
+                    }
+                  }
+                },
+
+                "split": {
+                  "type": "object",
+                  "description": "Split button colors for primary buttons",
+                  "properties": {
+                    "focusOutline": {
+                      "type": "string",
+                      "description": "Outline color for focused primary split buttons"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for primary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for primary buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled primary buttons"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint primary buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered primary buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed primary buttons"
+                    }
+                  }
+                }
+              }
+            },
+
+            "secondary": {
+              "type": "object",
+              "description": "Colors for secondary buttons",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for secondary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for secondary buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled secondary buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered secondary buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed secondary buttons"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border color for secondary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for secondary buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled secondary buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered secondary buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed secondary buttons"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused secondary buttons"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused secondary buttons"
+                },
+
+                "separator": {
+                  "type": "object",
+                  "description": "Separator colors for secondary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for secondary button separators"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled secondary button separators"
+                    }
+                  }
+                },
+
+                "split": {
+                  "type": "object",
+                  "description": "Split button colors for secondary buttons",
+                  "properties": {
+                    "focusOutline": {
+                      "type": "string",
+                      "description": "Outline color for focused secondary split buttons"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for secondary buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for secondary buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled secondary buttons"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint secondary buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered secondary buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed secondary buttons"
+                    }
+                  }
+                }
+              }
+            },
+
+            "warning": {
+              "type": "object",
+              "description": "Colors for warning buttons",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for warning buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for warning buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled warning buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered warning buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed warning buttons"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border color for warning buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for warning buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled warning buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered warning buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed warning buttons"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused warning buttons"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused warning buttons"
+                },
+
+                "separator": {
+                  "type": "object",
+                  "description": "Separator colors for warning buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for warning button separators"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled warning button separators"
+                    }
+                  }
+                },
+
+                "split": {
+                  "type": "object",
+                  "description": "Split button colors for warning buttons",
+                  "properties": {
+                    "focusOutline": {
+                      "type": "string",
+                      "description": "Outline color for focused warning split buttons"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for warning buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for warning buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled warning buttons"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint warning buttons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered warning buttons"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed warning buttons"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "checkbox": {
+          "type": "object",
+          "description": "Checkbox colors",
+          "properties": {
+            "icon": {
+              "type": "object",
+              "description": "Colors for checkboxes",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for checkboxes"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Background color for disabled checkboxes"
+                }
+              }
+            },
+
+            "off": {
+              "type": "object",
+              "description": "Colors for unchecked checkboxes",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for unchecked checkboxes",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for unchecked checkboxes"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled unchecked checkboxes"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered unchecked checkboxes"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border color for unchecked checkboxes",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for unchecked checkboxes"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled unchecked checkboxes"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered unchecked checkboxes"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused unchecked checkboxes"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused unchecked checkboxes"
+                }
+              }
+            },
+
+            "on": {
+              "type": "object",
+              "description": "Colors for checked checkboxes",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for checked checkboxes",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for checked checkboxes"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled checked checkboxes"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered checked checkboxes"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border color for checked checkboxes",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for checked checkboxes"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled checked checkboxes"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered checked checkboxes"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused checked checkboxes"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused checked checkboxes"
+                }
+              }
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for checkboxes",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for checkboxes"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Text color for disabled checkboxes"
+                }
+              }
+            }
+          }
+        },
+
+        "combobox": {
+          "type": "object",
+          "description": "Colors for comboboxes",
+          "properties": {
+            "arrowButton": {
+              "type": "object",
+              "description": "Colors for combobox arrow buttons",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for combobox arrow buttons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for combobox arrow buttons"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled combobox arrow buttons"
+                    }
+                  }
+                }
+              }
+            },
+
+            "background": {
+              "type": "object",
+              "description": "Background colors for comboboxes",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for comboboxes"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Background color for disabled comboboxes"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Background color for errored comboboxes"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Background color for hovered comboboxes"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for comboboxes",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for comboboxes"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Border color for disabled comboboxes"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Border color for errored comboboxes"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for hovered comboboxes"
+                }
+              }
+            },
+
+            "focusBorder": {
+              "type": "object",
+              "description": "Border colors for focused comboboxes",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for focused comboboxes"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Border color for errored focused comboboxes"
+                }
+              }
+            },
+
+            "focusOutline": {
+              "type": "object",
+              "description": "Outline colors for focused comboboxes",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Outline color for focused comboboxes"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Outline color for errored focused comboboxes"
+                }
+              }
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for comboboxes",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for comboboxes"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Text color for disabled comboboxes"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Text color for errored comboboxes"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered comboboxes"
+                }
+              }
+            }
+          }
+        },
+
+        "completion": {
+          "type": "object",
+          "description": "Colors for completion suggestions",
+          "properties": {
+            "match": {
+              "type": "object",
+              "description": "Colors for matched completion suggestions",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for matched completion suggestions"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for matched completion suggestions"
+                }
+              }
+            }
+          }
+        },
+
+        "dragAndDrop": {
+          "type": "object",
+          "description": "Colors for drag and drop indicators",
+          "properties": {
+            "background": {
+              "type": "string",
+              "description": "Background color for the draggable item"
+            },
+            "border": {
+              "type": "object",
+              "description": "Border colors for drag and drop",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color to visually indicate the area where the item is being dragged"
+                },
+                "highlight": {
+                  "type": "string",
+                  "description": "Additional color used to highlight the area where the item is being dragged"
+                }
+              }
+            }
+          }
+        },
+
+        "dropdown": {
+          "type": "object",
+          "description": "Colors for dropdowns",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for dropdowns",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for dropdowns"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Background color for disabled dropdowns"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Background color for errored dropdowns"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Background color for hovered dropdowns"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for dropdowns",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for dropdowns"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Border color for disabled dropdowns"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Border color for errored dropdowns"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for hovered dropdowns"
+                }
+              }
+            },
+
+            "focusBorder": {
+              "type": "object",
+              "description": "Border colors for focused dropdowns",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for focused dropdowns"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Border color for errored focused dropdowns"
+                }
+              }
+            },
+
+            "focusOutline": {
+              "type": "object",
+              "description": "Outline colors for focused dropdowns",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Outline color for focused dropdowns"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Outline color for errored focused dropdowns"
+                }
+              }
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for dropdowns",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for dropdowns"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Text color for disabled dropdowns"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Text color for errored dropdowns"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered dropdowns"
+                }
+              }
+            }
+          }
+        },
+
+        "editor": {
+          "type": "object",
+          "description": "Colors for the code editor",
+          "properties": {
+            "caret": {
+              "type": "object",
+              "description": "Colors for the caret",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the caret"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for the caret"
+                }
+              }
+            },
+
+            "currentLine": {
+              "type": "object",
+              "description": "Colors for the current line",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for the current line",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for the current line"
+                    },
+                    "focused": {
+                      "type": "string",
+                      "description": "Background color for focused current line"
+                    }
+                  }
+                },
+                "scrollbarMark": {
+                  "type": "string",
+                  "description": "Color for the scrollbar mark"
+                }
+              }
+            },
+
+            "foldIndicator": {
+              "type": "object",
+              "description": "Colors for the fold indicators",
+              "properties": {
+                "background.hovered": {
+                  "type": "string",
+                  "description": "Background color for hovered fold indicators"
+                },
+                "icon": {
+                  "type": "object",
+                  "description": "Colors for the fold indicator icons",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Color for the fold indicator icons"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Color for hovered fold indicator icons"
+                    }
+                  }
+                }
+              }
+            },
+
+            "foldedMark": {
+              "type": "object",
+              "description": "Colors for the folded mark",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the folded mark"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for the folded mark"
+                }
+              }
+            },
+
+            "gitDiff": {
+              "type": "object",
+              "description": "Colors for the git diff indicators",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for the git diff indicators",
+                  "properties": {
+                    "added": {
+                      "type": "string",
+                      "description": "Background color for added git diff indicators"
+                    },
+                    "blame": {
+                      "type": "string",
+                      "description": "Background color for blame git diff indicators"
+                    },
+                    "conflict": {
+                      "type": "string",
+                      "description": "Background color for conflict git diff indicators"
+                    },
+                    "deleted": {
+                      "type": "string",
+                      "description": "Background color for deleted git diff indicators"
+                    },
+                    "modified": {
+                      "type": "string",
+                      "description": "Background color for modified git diff indicators"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for the git diff indicators",
+                  "properties": {
+                    "added": {
+                      "type": "string",
+                      "description": "Text color for added git diff indicators"
+                    },
+                    "conflict": {
+                      "type": "string",
+                      "description": "Text color for conflict git diff indicators"
+                    },
+                    "deleted": {
+                      "type": "string",
+                      "description": "Text color for deleted git diff indicators"
+                    },
+                    "modified": {
+                      "type": "string",
+                      "description": "Text color for modified git diff indicators"
+                    }
+                  }
+                }
+              }
+            },
+
+            "interline": {
+              "type": "object",
+              "description": "Colors for interline indicators",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for interline indicators"
+                },
+
+                "match": {
+                  "type": "object",
+                  "description": "Colors for matched interline indicators",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for matched interline indicators"
+                    },
+                    "background.secondary": {
+                      "type": "string",
+                      "description": "Secondary background color for matched interline indicators"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Text color for matched interline indicators"
+                    },
+                    "text.secondary": {
+                      "type": "string",
+                      "description": "Secondary text color for matched interline indicators"
+                    }
+                  }
+                },
+
+                "preview": {
+                  "type": "object",
+                  "description": "Colors for preview interline indicators",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for preview interline indicators"
+                    },
+                    "border": {
+                      "type": "string",
+                      "description": "Border color for preview interline indicators"
+                    }
+                  }
+                },
+
+                "separator": {
+                  "type": "string",
+                  "description": "Colors for separator interline indicators"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for interline indicators",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for interline indicators"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered interline indicators"
+                    }
+                  }
+                }
+              }
+            },
+
+            "lineNumber": {
+              "type": "object",
+              "description": "Colors for line numbers",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for line numbers"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered line numbers"
+                }
+              }
+            },
+
+            "postline": {
+              "type": "object",
+              "description": "Colors for postline indicators",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Colors for postline indicators",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Background color for errored postline indicators"
+                    },
+                    "info": {
+                      "type": "string",
+                      "description": "Background color for info postline indicators"
+                    },
+                    "unused": {
+                      "type": "string",
+                      "description": "Background color for unused postline indicators"
+                    },
+                    "warning": {
+                      "type": "string",
+                      "description": "Background color for warning postline indicators"
+                    }
+                  }
+                }
+              }
+            },
+
+            "renamePostline": {
+              "type": "object",
+              "description": "Colors for rename postline indicators",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for rename postline indicators"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for rename postline indicators"
+                },
+                "description.text": {
+                  "type": "string",
+                  "description": "Text color for the description of rename postline indicators"
+                },
+                "usages.text": {
+                  "type": "string",
+                  "description": "Text color for the usages of rename postline indicators"
+                }
+              }
+            },
+
+            "selectableFoldedMark": {
+              "type": "object",
+              "description": "Colors for the selectable folded mark",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for the selectable folded mark",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for the selectable folded mark"
+                    },
+                    "focused": {
+                      "type": "string",
+                      "description": "Background color for focused selectable folded mark"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for the selectable folded mark",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for the selectable folded mark"
+                    },
+                    "focused": {
+                      "type": "string",
+                      "description": "Text color for focused selectable folded mark"
+                    }
+                  }
+                }
+              }
+            },
+
+            "text": {
+              "type": "string",
+              "description": "Text color for the code editor"
+            },
+
+            "whitespaceIndicator": {
+              "type": "string",
+              "description": "Color for the whitespace indicator"
+            }
+          }
+        },
+
+        "ghostButton": {
+          "type": "object",
+          "description": "Buttons that appear upon hovering, but are not always visible",
+          "properties": {
+            "off": {
+              "type": "object",
+              "description": "Colors for ghost buttons that are not visible",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for ghost buttons that are not visible",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for ghost buttons that are not visible"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled ghost buttons that are not visible"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered ghost buttons that are not visible"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed ghost buttons that are not visible"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for ghost buttons that are not visible",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for ghost buttons that are not visible"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled ghost buttons that are not visible"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered ghost buttons that are not visible"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed ghost buttons that are not visible"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused ghost buttons that are not visible"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused ghost buttons that are not visible"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for ghost buttons that are not visible",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for ghost buttons that are not visible"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled ghost buttons that are not visible"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered ghost buttons that are not visible"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed ghost buttons that are not visible"
+                    }
+                  }
+                }
+              }
+            },
+
+            "on": {
+              "type": "object",
+              "description": "Colors for ghost buttons that are visible",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for ghost buttons that are visible",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for ghost buttons that are visible"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled ghost buttons that are visible"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered ghost buttons that are visible"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed ghost buttons that are visible"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for ghost buttons that are visible",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for ghost buttons that are visible"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled ghost buttons that are visible"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered ghost buttons that are visible"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed ghost buttons that are visible"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused ghost buttons that are visible"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused ghost buttons that are visible"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for ghost buttons that are visible",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for ghost buttons that are visible"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled ghost buttons that are visible"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered ghost buttons that are visible"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed ghost buttons that are visible"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "gitBranchTag": {
+          "type": "object",
+          "description": "Colors for the Git view branch information",
+          "properties": {
+            "local": {
+              "type": "object",
+              "description": "Colors for the local branch",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the local branch"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for the local branch"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for the local branch"
+                }
+              }
+            },
+
+            "remote": {
+              "type": "object",
+              "description": "Colors for the remote branch",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the remote branch"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for the remote branch"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for the remote branch"
+                }
+              }
+            }
+          }
+        },
+
+        "highlight.resize.border": {
+          "type": "object",
+          "description": "Colors for separators when highlighted during resizing",
+          "properties": {
+            "center": {
+              "type": "object",
+              "description": "Colors for the center separators",
+              "properties": {
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for the hovered center separator"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Border color for the pressed center separator"
+                }
+              }
+            },
+
+            "edge": {
+              "type": "object",
+              "description": "Colors for the edge separators",
+              "properties": {
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for the hovered edge separator"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Border color for the pressed edge separator"
+                }
+              }
+            }
+          }
+        },
+
+        "icon.background": {
+          "type": "object",
+          "description": "Colors for icons",
+          "properties": {
+            "blue": {
+              "type": "string",
+              "description": "Background color for blue icons"
+            },
+            "cyan": {
+              "type": "string",
+              "description": "Background color for cyan icons"
+            },
+            "green": {
+              "type": "string",
+              "description": "Background color for green icons"
+            },
+            "magenta": {
+              "type": "string",
+              "description": "Background color for magenta icons"
+            },
+            "orange": {
+              "type": "string",
+              "description": "Background color for orange icons"
+            },
+            "purple": {
+              "type": "string",
+              "description": "Background color for purple icons"
+            },
+            "red": {
+              "type": "string",
+              "description": "Background color for red icons"
+            },
+            "yellow": {
+              "type": "string",
+              "description": "Background color for yellow icons"
+            }
+          }
+        },
+
+        "inputField": {
+          "type": "object",
+          "description": "Colors for input fields",
+          "properties": {
+            "ai": {
+              "type": "object",
+              "description": "Colors for AI input fields",
+              "properties": {
+                "focusBorder": {
+                  "type": "object",
+                  "description": "Border color for focused AI input fields",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for focused AI input fields"
+                    }
+                  }
+                },
+
+                "focusOutline": {
+                  "type": "object",
+                  "description": "Outline color for focused AI input fields",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Outline color for focused AI input fields"
+                    }
+                  }
+                }
+              }
+            },
+
+            "background": {
+              "type": "object",
+              "description": "Background colors for input fields",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for input fields"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Background color for disabled input fields"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Background color for errored input fields"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Background color for hovered input fields"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for input fields",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for input fields"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Border color for disabled input fields"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Border color for errored input fields"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for hovered input fields"
+                }
+              }
+            },
+
+            "caret": {
+              "type": "object",
+              "description": "Colors for the caret",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Default color for the caret"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Error color for the caret"
+                }
+              }
+            },
+
+            "focusBorder": {
+              "type": "object",
+              "description": "Border colors for focused input fields",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for focused input fields"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Border color for errored focused input fields"
+                }
+              }
+            },
+
+            "focusOutline": {
+              "type": "object",
+              "description": "Outline colors for focused input fields",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Outline color for focused input fields"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Outline color for errored focused input fields"
+                }
+              }
+            },
+
+            "hint": {
+              "type": "object",
+              "description": "Colors for hint text in input fields",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for hint text in input fields"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Text color for disabled hint text in input fields"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Text color for errored hint text in input fields"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered hint text in input fields"
+                }
+              }
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for input fields",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for input fields"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Text color for disabled input fields"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Text color for errored input fields"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered input fields"
+                }
+              }
+            }
+          }
+        },
+
+        "island": {
+          "type": "object",
+          "description": "Colors for islands (editor and tool panels)",
+          "properties": {
+            "background": {
+              "type": "string",
+              "description": "Background colors for islands"
+            }
+          }
+        },
+
+        "layout": {
+          "type": "object",
+          "description": "Colors for the layout",
+          "properties": {
+            "error": {
+              "type": "string",
+              "description": "Color for error messages in the layout"
+            }
+          }
+        },
+
+        "link": {
+          "type": "object",
+          "description": "Colors for links",
+          "properties": {
+            "ai": {
+              "type": "object",
+              "description": "Colors for AI links",
+              "properties": {
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused AI links"
+                },
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for AI links",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for AI links"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled AI links"
+                    }
+                  }
+                },
+                "underline": {
+                  "type": "string",
+                  "description": "Underline color for AI links"
+                }
+              }
+            },
+
+            "focusOutline": {
+              "type": "string",
+              "description": "Outline color for focused links"
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for links",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for links"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Text color for disabled links"
+                }
+              }
+            },
+
+            "underline": {
+              "type": "string",
+              "description": "Underline color for links"
+            }
+          }
+        },
+
+        "listItem": {
+          "type": "object",
+          "description": "Colors for list items",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for list items",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for list items"
+                },
+                "dnd": {
+                  "type": "string",
+                  "description": "Background color for list items during drag and drop"
+                },
+                "focused": {
+                  "type": "string",
+                  "description": "Background color for focused list items"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Background color for hovered list items"
+                },
+                "selected": {
+                  "type": "string",
+                  "description": "Background color for selected list items"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for list items",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for list items"
+                },
+                "focused": {
+                  "type": "string",
+                  "description": "Border color for focused list items"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for hovered list items"
+                },
+                "selected": {
+                  "type": "string",
+                  "description": "Border color for selected list items"
+                }
+              }
+            },
+
+            "focusBorder": {
+              "type": "string",
+              "description": "Border color for focused list items"
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for list items",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for list items"
+                },
+                "focused": {
+                  "type": "string",
+                  "description": "Text color for focused list items"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered list items"
+                },
+                "secondary": {
+                  "type": "string",
+                  "description": "Secondary text color for list items"
+                },
+                "selected": {
+                  "type": "string",
+                  "description": "Text color for selected list items"
+                }
+              }
+            }
+
+          }
+        },
+
+        "notification": {
+          "type": "object",
+          "description": "Colors for notifications",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for notifications",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for notifications"
+                },
+                "unread": {
+                  "type": "string",
+                  "description": "Background color for unread notifications"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for notifications",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for notifications"
+                },
+                "unread": {
+                  "type": "string",
+                  "description": "Border color for unread notifications"
+                }
+              }
+            },
+
+            "moreButton": {
+              "type": "object",
+              "description": "Colors for the more button in notifications",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for the more button in notifications",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for the more button in notifications"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered more button in notifications"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed more button in notifications"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for the more button in notifications",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for the more button in notifications"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered more button in notifications"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed more button in notifications"
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for the more button in notifications",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for the more button in notifications"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered more button in notifications"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed more button in notifications"
+                    }
+                  }
+                }
+              }
+            },
+
+            "separator": {
+              "type": "string",
+              "description": "Color for the separator in notifications"
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for notifications",
+              "properties": {
+                "primary": {
+                  "type": "string",
+                  "description": "Text color for notifications"
+                },
+                "secondary": {
+                  "type": "string",
+                  "description": "Secondary text color for notifications"
+                }
+              }
+            }
+          }
+
+        },
+
+        "parameterInfo": {
+          "type": "object",
+          "description": "Colors for the parameter information popup",
+          "properties": {
+            "match.text": {
+              "type": "string",
+              "description": "Text color for matched parameter info"
+            }
+          }
+        },
+
+        "pillButton": {
+          "type": "object",
+          "description": "Colors for pill buttons (buttons with rounded corners)",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for pill buttons",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for pill buttons"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Background color for disabled pill buttons"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Background color for hovered pill buttons"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Background color for pressed pill buttons"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for pill buttons",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for pill buttons"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Border color for disabled pill buttons"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for hovered pill buttons"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Border color for pressed pill buttons"
+                }
+              }
+            },
+
+            "focusBorder": {
+              "type": "string",
+              "description": "Border colors for focused pill buttons"
+            },
+
+            "focusOutline": {
+              "type": "string",
+              "description": "Outline colors for focused pill buttons"
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for pill buttons",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for pill buttons"
+                },
+                "disabled": {
+                  "type": "string",
+                  "description": "Text color for disabled pill buttons"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered pill buttons"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Text color for pressed pill buttons"
+                }
+              }
+            }
+          }
+        },
+
+        "popup": {
+          "type": "object",
+          "description": "Colors for popups",
+          "properties": {
+            "background": {
+              "type": "string",
+              "description": "Background colors for popups"
+            },
+
+            "border": {
+              "type": "string",
+              "description": "Border colors for popups"
+            },
+
+            "closeIcon": {
+              "type": "object",
+              "description": "Colors for the close icon in popups",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Color for the close icon in popups"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Color for hovered close icon in popups"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Color for pressed close icon in popups"
+                }
+              }
+            },
+
+            "editor": {
+              "type": "object",
+              "description": "Colors for the code editor in popups",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the code editor in popups"
+                },
+
+                "border": {
+                  "type": "string",
+                  "description": "Border color for the code editor in popups"
+                }
+              }
+            },
+
+            "goto": {
+              "type": "object",
+              "description": "Colors for the goto popup",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the goto popup"
+                }
+              }
+            },
+
+            "listItem": {
+              "type": "object",
+              "description": "Colors for list items in popups",
+              "properties": {
+                "footer": {
+                  "type": "object",
+                  "description": "Colors for the footer of list items in popups",
+                  "properties": {
+                    "background": {
+                      "type": "object",
+                      "description": "Background color for the footer of list items in popups",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "description": "Background color for the footer of list items in popups"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+
+            "separator": {
+              "type": "string",
+              "description": "Color for the separator in popups"
+            },
+
+            "text": {
+              "type": "string",
+              "description": "Text colors for popups"
+            }
+
+          }
+        },
+
+        "problemsWidget": {
+          "type": "object",
+          "description": "Colors for the problems widget",
+          "properties": {
+            "card": {
+              "type": "object",
+              "description": "Colors for the cards in the problems widget",
+              "properties": {
+                "expanded": {
+                  "type": "object",
+                  "description": "Colors for the expanded cards in the problems widget",
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Colors for the error expanded cards in the problems widget",
+                      "properties": {
+                        "background": {
+                          "type": "string",
+                          "description": "Background color for the error expanded cards in the problems widget"
+                        },
+                        "border": {
+                          "type": "string",
+                          "description": "Border color for the error expanded cards in the problems widget"
+                        }
+                      }
+                    },
+
+                    "warning": {
+                      "type": "object",
+                      "description": "Colors for the warning expanded cards in the problems widget",
+                      "properties": {
+                        "background": {
+                          "type": "string",
+                          "description": "Background color for the warning expanded cards in the problems widget"
+                        },
+                        "border": {
+                          "type": "string",
+                          "description": "Border color for the warning expanded cards in the problems widget"
+                        }
+                      }
+                    },
+
+                    "weakWarning": {
+                      "type": "object",
+                      "description": "Colors for the weak warning expanded cards in the problems widget",
+                      "properties": {
+                        "background": {
+                          "type": "string",
+                          "description": "Background color for the weak warning expanded cards in the problems widget"
+                        },
+                        "border": {
+                          "type": "string",
+                          "description": "Border color for the weak warning expanded cards in the problems widget"
+                        }
+                      }
+                    }
+                  }
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for the cards in the problems widget",
+                  "properties": {
+                    "primary": {
+                      "type": "string",
+                      "description": "Primary text color for the cards in the problems widget"
+                    },
+                    "secondary": {
+                      "type": "string",
+                      "description": "Secondary text color for the cards in the problems widget"
+                    }
+                  }
+                }
+              }
+            },
+
+            "tag": {
+              "type": "object",
+              "description": "Colors for the tags in the problems widget",
+              "properties": {
+                "error": {
+                  "type": "object",
+                  "description": "Colors for the error tags in the problems widget",
+                  "properties": {
+                    "background": {
+                      "type": "object",
+                      "description": "Background color for the error tags in the problems widget",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "description": "Background color for the error tags in the problems widget"
+                        },
+                        "hovered": {
+                          "type": "string",
+                          "description": "Background color for hovered error tags in the problems widget"
+                        },
+                        "pressed": {
+                          "type": "string",
+                          "description": "Background color for pressed error tags in the problems widget"
+                        }
+                      }
+                    },
+
+                    "text": {
+                      "type": "object",
+                      "description": "Text colors for the error tags in the problems widget",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "description": "Text color for the error tags in the problems widget"
+                        },
+                        "hovered": {
+                          "type": "string",
+                          "description": "Text color for hovered error tags in the problems widget"
+                        },
+                        "pressed": {
+                          "type": "string",
+                          "description": "Text color for pressed error tags in the problems widget"
+                        }
+                      }
+                    }
+                  }
+                },
+
+                "success": {
+                  "type": "object",
+                  "description": "Colors for the success tags in the problems widget",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for the success tags in the problems widget"
+                    },
+
+                    "foreground": {
+                      "type": "string",
+                      "description": "Text colors for the success tags in the problems widget"
+                    }
+                  }
+                },
+
+                "warning": {
+                  "type": "object",
+                  "description": "Colors for the warning tags in the problems widget",
+                  "properties": {
+                    "background": {
+                      "type": "object",
+                      "description": "Background color for the warning tags in the problems widget",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "description": "Background color for the warning tags in the problems widget"
+                        },
+                        "hovered": {
+                          "type": "string",
+                          "description": "Background color for hovered warning tags in the problems widget"
+                        },
+                        "pressed": {
+                          "type": "string",
+                          "description": "Background color for pressed warning tags in the problems widget"
+                        }
+                      }
+                    },
+
+                    "text": {
+                      "type": "object",
+                      "description": "Text colors for the warning tags in the problems widget",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "description": "Text color for the warning tags in the problems widget"
+                        },
+                        "hovered": {
+                          "type": "string",
+                          "description": "Text color for hovered warning tags in the problems widget"
+                        },
+                        "pressed": {
+                          "type": "string",
+                          "description": "Text color for pressed warning tags in the problems widget"
+                        }
+                      }
+                    }
+                  }
+                },
+
+                "weakWarning": {
+                  "type": "object",
+                  "description": "Colors for the weak warning tags in the problems widget",
+                  "properties": {
+                    "background": {
+                      "type": "object",
+                      "description": "Background color for the weak warning tags in the problems widget",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "description": "Background color for the weak warning tags in the problems widget"
+                        },
+                        "hovered": {
+                          "type": "string",
+                          "description": "Background color for hovered weak warning tags in the problems widget"
+                        },
+                        "pressed": {
+                          "type": "string",
+                          "description": "Background color for pressed weak warning tags in the problems widget"
+                        }
+                      }
+                    },
+
+                    "text": {
+                      "type": "object",
+                      "description": "Text colors for the weak warning tags in the problems widget",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "description": "Text color for the weak warning tags in the problems widget"
+                        },
+                        "hovered": {
+                          "type": "string",
+                          "description": "Text color for hovered weak warning tags in the problems widget"
+                        },
+                        "pressed": {
+                          "type": "string",
+                          "description": "Text color for pressed weak warning tags in the problems widget"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "progressBar": {
+          "type": "object",
+          "description": "Colors for progress bars",
+          "properties": {
+            "determinate": {
+              "type": "object",
+              "description": "Colors for determinate progress bars",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for determinate progress bars"
+                },
+                "foreground": {
+                  "type": "string",
+                  "description": "Foreground color for determinate progress bars"
+                }
+              }
+            },
+
+            "indeterminate": {
+              "type": "object",
+              "description": "Colors for indeterminate progress bars",
+              "properties": {
+                "foreground": {
+                  "type": "string",
+                  "description": "Foreground color for indeterminate progress bars"
+                },
+                "foregroundAccent": {
+                  "type": "string",
+                  "description": "Foreground accent color for indeterminate progress bars"
+                }
+              }
+            }
+          }
+        },
+
+        "progressInline": {
+          "type": "object",
+          "description": "Colors for inline progress bars",
+          "properties": {
+            "foreground": {
+              "type": "string",
+              "description": "Foreground color for inline progress bars"
+            }
+          }
+        },
+
+        "progressSpinner": {
+          "type": "object",
+          "description": "Colors for progress spinners",
+          "properties": {
+            "foreground": {
+              "type": "string",
+              "description": "Foreground color for progress spinners"
+            }
+          }
+        },
+
+        "remote": {
+          "type": "object",
+          "description": "Colors during a remote collaborative development session",
+          "properties": {
+            "userColor.background": {
+              "type": "object",
+              "description": "Assign one of ten background colors to each user",
+              "properties": {
+                "one": {
+                  "type": "string",
+                  "description": "Background color for user 1"
+                },
+                "two": {
+                  "type": "string",
+                  "description": "Background color for user 2"
+                },
+                "three": {
+                  "type": "string",
+                  "description": "Background color for user 3"
+                },
+                "four": {
+                  "type": "string",
+                  "description": "Background color for user 4"
+                },
+                "five": {
+                  "type": "string",
+                  "description": "Background color for user 5"
+                },
+                "six": {
+                  "type": "string",
+                  "description": "Background color for user 6"
+                },
+                "seven": {
+                  "type": "string",
+                  "description": "Background color for user 7"
+                },
+                "eight": {
+                  "type": "string",
+                  "description": "Background color for user 8"
+                },
+                "nine": {
+                  "type": "string",
+                  "description": "Background color for user 9"
+                },
+                "ten": {
+                  "type": "string",
+                  "description": "Background color for user 10"
+                }
+              }
+            }
+          }
+        },
+
+        "remoteWorkspaceStatusLabel": {
+          "type": "object",
+          "description": "Colors for the status label in the remote workspace view",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for the status label in the remote workspace view",
+              "properties": {
+                "docker": {
+                  "type": "string",
+                  "description": "Background color for the Docker status label"
+                },
+                "space": {
+                  "type": "string",
+                  "description": "Background color for the Space status label"
+                },
+                "ssh": {
+                  "type": "string",
+                  "description": "Background color for the SSH status label"
+                },
+                "wsl": {
+                  "type": "string",
+                  "description": "Background color for the WSL status label"
+                }
+              }
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for the status label in the remote workspace view",
+              "properties": {
+                "docker": {
+                  "type": "string",
+                  "description": "Text color for the Docker status label"
+                },
+                "space": {
+                  "type": "string",
+                  "description": "Text color for the Space status label"
+                },
+                "ssh": {
+                  "type": "string",
+                  "description": "Text color for the SSH status label"
+                },
+                "wsl": {
+                  "type": "string",
+                  "description": "Text color for the WSL status label"
+                }
+              }
+            }
+          }
+        },
+
+        "scrollbar": {
+          "type": "object",
+          "description": "Colors for scrollbars",
+          "properties": {
+            "thumb": {
+              "type": "object",
+              "description": "Colors for the thumb of the scrollbar",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Color for the thumb of the scrollbar"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Color for the hovered thumb of the scrollbar"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Color for the pressed thumb of the scrollbar"
+                }
+              }
+            },
+
+            "track": {
+              "type": "object",
+              "description": "Colors for the track of the scrollbar",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Color for the track of the scrollbar"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Color for the hovered track of the scrollbar"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Color for the pressed track of the scrollbar"
+                }
+              }
+            }
+          }
+        },
+
+        "search": {
+          "type": "object",
+          "description": "Colors for the search tool window",
+          "properties": {
+            "counter": {
+              "type": "object",
+              "description": "Colors for the counter of found matches",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the counter"
+                }
+              }
+            },
+
+            "match": {
+              "type": "object",
+              "description": "Colors for the matches",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for a match"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for a match"
+                }
+              }
+            }
+          }
+        },
+
+        "separator": {
+          "type": "object",
+          "description": "Colors for separators",
+          "properties": {
+            "default": {
+              "type": "string",
+              "description": "Default color for separators"
+            },
+            "hovered": {
+              "type": "string",
+              "description": "Color for hovered separators"
+            }
+          }
+        },
+
+        "settings": {
+          "type": "object",
+          "description": "Colors for the indicator in the settings for modified items",
+          "properties": {
+            "background.highligted": {
+              "type": "string",
+              "description": "Color for the highlighted setting"
+            },
+            "modified.indicator": {
+              "type": "string",
+              "description": "Color for the modified items"
+            }
+          }
+        },
+
+        "shadow": {
+          "type": "object",
+          "description": "Colors for shadows",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for shadows",
+              "properties": {
+                "large": {
+                  "type": "string",
+                  "description": "Background color for large shadows"
+                },
+                "medium": {
+                  "type": "string",
+                  "description": "Background color for medium shadows"
+                },
+                "small": {
+                  "type": "string",
+                  "description": "Background color for small shadows"
+                }
+              }
+            },
+
+            "border": {
+              "type": "string",
+              "description": "Border colors for shadows"
+            }
+          }
+        },
+
+        "shortcut": {
+          "type": "object",
+          "description": "Colors for shortcuts",
+          "properties": {
+            "background": {
+              "type": "string",
+              "description": "Background color for shortcuts"
+            },
+
+            "text": {
+              "type": "string",
+              "description": "Text colors for shortcuts"
+            }
+          }
+        },
+
+        "smartMode": {
+          "type": "object",
+          "description": "Colors for smart mode",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for smart mode",
+              "properties": {
+                "enabled": {
+                  "type": "string",
+                  "description": "Background color for enabled smart mode"
+                },
+                "error": {
+                  "type": "string",
+                  "description": "Background color for errored smart mode"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for smart mode",
+              "properties": {
+                "loading": {
+                  "type": "string",
+                  "description": "Border color for loading smart mode"
+                }
+              }
+            }
+          }
+        },
+
+        "statusBar": {
+          "type": "object",
+          "description": "Colors for the status bar",
+          "properties": {
+            "text": {
+              "type": "object",
+              "description": "Text colors for the status bar",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for the status bar"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered status bar"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Text color for pressed status bar"
+                }
+              }
+            }
+          }
+        },
+
+        "survey": {
+          "type": "object",
+          "description": "Colors for surveys",
+          "properties": {
+            "button": {
+              "type": "object",
+              "description": "Colors for buttons in the survey",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background colors for buttons in the survey",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for buttons in the survey"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered buttons in the survey"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for buttons in the survey",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for buttons in the survey"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered buttons in the survey"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused buttons in the survey"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused buttons in the survey"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for buttons in the survey",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for buttons in the survey"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered buttons in the survey"
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+        },
+
+        "tab": {
+          "type": "object",
+          "description": "Colors for the tabs",
+          "properties": {
+            "background": {
+              "type": "object",
+              "description": "Background colors for the tabs",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Background color for tabs"
+                },
+                "dragAndDrop": {
+                  "type": "string",
+                  "description": "Background color for tabs during drag and drop"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Background color for hovered tabs"
+                },
+                "selected": {
+                  "type": "string",
+                  "description": "Background color for selected tabs"
+                }
+              }
+            },
+
+            "border": {
+              "type": "object",
+              "description": "Border colors for the tabs",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Border color for tabs"
+                },
+                "dragAndDrop": {
+                  "type": "string",
+                  "description": "Border color for tabs during drag and drop"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Border color for hovered tabs"
+                },
+                "selected": {
+                  "type": "string",
+                  "description": "Border color for selected tabs"
+                }
+              }
+            },
+
+            "closeIcon": {
+              "type": "object",
+              "description": "Colors for the close icon in the tabs",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Color for the close icon in the tabs"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Color for hovered close icon in the tabs"
+                },
+                "pressed": {
+                  "type": "string",
+                  "description": "Color for pressed close icon in the tabs"
+                }
+              }
+            },
+
+            "focusOutline": {
+              "type": "object",
+              "description": "Outline color for focused tabs",
+              "properties": {
+                "dragAndDrop": {
+                  "type": "string",
+                  "description": "Outline color for focused tabs during drag and drop"
+                }
+              }
+            },
+
+            "hint": {
+              "type": "object",
+              "description": "Colors for hint text in tabs",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for hint text in tabs"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered hint text in tabs"
+                },
+                "selected": {
+                  "type": "string",
+                  "description": "Text color for selected hint text in tabs"
+                }
+              }
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for the tabs",
+              "properties": {
+                "default": {
+                  "type": "string",
+                  "description": "Text color for tabs"
+                },
+                "hovered": {
+                  "type": "string",
+                  "description": "Text color for hovered tabs"
+                },
+                "selected": {
+                  "type": "string",
+                  "description": "Text color for selected tabs"
+                }
+              }
+            }
+          }
+        },
+
+        "terminal": {
+          "type": "object",
+          "description": "Colors for the terminal",
+          "properties": {
+            "ansiColors": {
+              "type": "object",
+              "description": "Colors for ANSI colors in the terminal",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Colors for ANSI colors in the terminal",
+                  "properties": {
+                    "ansiBlack": {
+                      "type": "string",
+                      "description": "Color for the black ANSI color in the terminal"
+                    },
+                    "ansiBlue": {
+                      "type": "string",
+                      "description": "Color for the blue ANSI color in the terminal"
+                    },
+                    "ansiBrightBlack": {
+                      "type": "string",
+                      "description": "Color for the bright black ANSI color in the terminal"
+                    },
+                    "ansiBrightBlue": {
+                      "type": "string",
+                      "description": "Color for the bright blue ANSI color in the terminal"
+                    },
+                    "ansiBrightCyan": {
+                      "type": "string",
+                      "description": "Color for the bright cyan ANSI color in the terminal"
+                    },
+                    "ansiBrightGreen": {
+                      "type": "string",
+                      "description": "Color for the bright green ANSI color in the terminal"
+                    },
+                    "ansiBrightMagenta": {
+                      "type": "string",
+                      "description": "Color for the bright magenta ANSI color in the terminal"
+                    },
+                    "ansiBrightRed": {
+                      "type": "string",
+                      "description": "Color for the bright red ANSI color in the terminal"
+                    },
+                    "ansiBrightWhite": {
+                      "type": "string",
+                      "description": "Color for the bright white ANSI color in the terminal"
+                    },
+                    "ansiBrightYellow": {
+                      "type": "string",
+                      "description": "Color for the bright yellow ANSI color in the terminal"
+                    },
+                    "ansiCyan": {
+                      "type": "string",
+                      "description": "Color for the cyan ANSI color in the terminal"
+                    },
+                    "ansiGreen": {
+                      "type": "string",
+                      "description": "Color for the green ANSI color in the terminal"
+                    },
+                    "ansiMagenta": {
+                      "type": "string",
+                      "description": "Color for the magenta ANSI color in the terminal"
+                    },
+                    "ansiRed": {
+                      "type": "string",
+                      "description": "Color for the red ANSI color in the terminal"
+                    },
+                    "ansiWhite": {
+                      "type": "string",
+                      "description": "Color for the white ANSI color in the terminal"
+                    },
+                    "ansiYellow": {
+                      "type": "string",
+                      "description": "Color for the yellow ANSI color in the terminal"
+                    }
+                  }
+                },
+
+                "foreground": {
+                  "type": "object",
+                  "description": "Colors for ANSI colors in the terminal",
+                  "properties": {
+                    "ansiBlack": {
+                      "type": "string",
+                      "description": "Color for the black ANSI color in the terminal"
+                    },
+                    "ansiBlue": {
+                      "type": "string",
+                      "description": "Color for the blue ANSI color in the terminal"
+                    },
+                    "ansiBrightBlack": {
+                      "type": "string",
+                      "description": "Color for the bright black ANSI color in the terminal"
+                    },
+                    "ansiBrightBlue": {
+                      "type": "string",
+                      "description": "Color for the bright blue ANSI color in the terminal"
+                    },
+                    "ansiBrightCyan": {
+                      "type": "string",
+                      "description": "Color for the bright cyan ANSI color in the terminal"
+                    },
+                    "ansiBrightGreen": {
+                      "type": "string",
+                      "description": "Color for the bright green ANSI color in the terminal"
+                    },
+                    "ansiBrightMagenta": {
+                      "type": "string",
+                      "description": "Color for the bright magenta ANSI color in the terminal"
+                    },
+                    "ansiBrightRed": {
+                      "type": "string",
+                      "description": "Color for the bright red ANSI color in the terminal"
+                    },
+                    "ansiBrightWhite": {
+                      "type": "string",
+                      "description": "Color for the bright white ANSI color in the terminal"
+                    },
+                    "ansiBrightYellow": {
+                      "type": "string",
+                      "description": "Color for the bright yellow ANSI color in the terminal"
+                    },
+                    "ansiCyan": {
+                      "type": "string",
+                      "description": "Color for the cyan ANSI color in the terminal"
+                    },
+                    "ansiGreen": {
+                      "type": "string",
+                      "description": "Color for the green ANSI color in the terminal"
+                    },
+                    "ansiMagenta": {
+                      "type": "string",
+                      "description": "Color for the magenta ANSI color in the terminal"
+                    },
+                    "ansiRed": {
+                      "type": "string",
+                      "description": "Color for the red ANSI color in the terminal"
+                    },
+                    "ansiWhite": {
+                      "type": "string",
+                      "description": "Color for the white ANSI color in the terminal"
+                    },
+                    "ansiYellow": {
+                      "type": "string",
+                      "description": "Color for the yellow ANSI color in the terminal"
+                    }
+                  }
+                }
+              }
+
+            }
+          }
+        },
+
+        "text": {
+          "type": "object",
+          "description": "Colors for various text elements",
+          "properties": {
+            "ai": {
+              "type": "string",
+              "description": "Color for AI text"
+            },
+
+            "bright": {
+              "type": "string",
+              "description": "Color for bright text"
+            },
+
+            "dangerous": {
+              "type": "string",
+              "description": "Color for dangerous text"
+            },
+
+            "disabled": {
+              "type": "string",
+              "description": "Color for disabled text"
+            },
+
+            "primary": {
+              "type": "string",
+              "description": "Color for primary text"
+            },
+
+            "secondary": {
+              "type": "string",
+              "description": "Color for secondary text"
+            },
+
+            "tertiary": {
+              "type": "string",
+              "description": "Color for tertiary text"
+            }
+          }
+        },
+
+        "tileButton": {
+          "type": "object",
+          "description": "Colors for tile buttons on the welcome screen",
+          "properties": {
+            "off": {
+              "type": "object",
+              "description": "Colors for tile buttons when they are off",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for tile buttons when they are off",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for tile buttons when they are off"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled tile buttons when they are off"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered tile buttons when they are off"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed tile buttons when they are off"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for tile buttons when they are off",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for tile buttons when they are off"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled tile buttons when they are off"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered tile buttons when they are off"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed tile buttons when they are off"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused tile buttons when they are off"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused tile buttons when they are off"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for tile buttons when they are off",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for tile buttons when they are off"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled tile buttons when they are off"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered tile buttons when they are off"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed tile buttons when they are off"
+                    }
+                  }
+                },
+
+                "text.shortcut": {
+                  "type": "object",
+                  "description": "Text colors for shortcuts on tile buttons when they are off",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for shortcuts on tile buttons when they are off"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled shortcuts on tile buttons when they are off"
+                    }
+                  }
+                }
+              }
+            },
+
+            "on": {
+              "type": "object",
+              "description": "Colors for tile buttons when they are on",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for tile buttons when they are on",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for tile buttons when they are on"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled tile buttons when they are on"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered tile buttons when they are on"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed tile buttons when they are on"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for tile buttons when they are on",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for tile buttons when they are on"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled tile buttons when they are on"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered tile buttons when they are on"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed tile buttons when they are on"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused tile buttons when they are on"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused tile buttons when they are on"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for tile buttons when they are on",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for tile buttons when they are on"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled tile buttons when they are on"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered tile buttons when they are on"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed tile buttons when they are on"
+                    }
+                  }
+                },
+
+                "text.shortcut": {
+                  "type": "object",
+                  "description": "Text colors for shortcuts on tile buttons when they are on",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for shortcuts on tile buttons when they are on"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled shortcuts on tile buttons when they are on"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "toast": {
+          "type": "object",
+          "description": "Colors for toasts (popups that show up when pressing a shortcut)",
+          "properties": {
+            "background": {
+              "type": "string",
+              "description": "Background color for toasts"
+            },
+
+            "border": {
+              "type": "string",
+              "description": "Border color for toasts"
+            },
+
+            "text": {
+              "type": "string",
+              "description": "Text color for toasts"
+            }
+          }
+        },
+
+        "toggleButton": {
+          "type": "object",
+          "description": "Colors for toggle buttons",
+          "properties": {
+            "off": {
+              "type": "object",
+              "description": "Colors for toggle buttons when they are off",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for toggle buttons when they are off",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for toggle buttons when they are off"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled toggle buttons when they are off"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered toggle buttons when they are off"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed toggle buttons when they are off"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for toggle buttons when they are off",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for toggle buttons when they are off"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled toggle buttons when they are off"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered toggle buttons when they are off"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed toggle buttons when they are off"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused toggle buttons when they are off"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused toggle buttons when they are off"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for toggle buttons when they are off",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for toggle buttons when they are off"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled toggle buttons when they are off"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint text on toggle buttons when they are off"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered toggle buttons when they are off"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Text color for pressed toggle buttons when they are off"
+                    }
+                  }
+                }
+              }
+            },
+
+            "on": {
+              "type": "object",
+              "description": "Colors for toggle buttons when they are on",
+              "properties": {
+                "background": {
+                  "type": "object",
+                  "description": "Background color for toggle buttons when they are on",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Background color for toggle buttons when they are on"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Background color for disabled toggle buttons when they are on"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Background color for hovered toggle buttons when they are on"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Background color for pressed toggle buttons when they are on"
+                    }
+                  }
+                },
+
+                "border": {
+                  "type": "object",
+                  "description": "Border colors for toggle buttons when they are on",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Border color for toggle buttons when they are on"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Border color for disabled toggle buttons when they are on"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Border color for hovered toggle buttons when they are on"
+                    },
+                    "pressed": {
+                      "type": "string",
+                      "description": "Border color for pressed toggle buttons when they are on"
+                    }
+                  }
+                },
+
+                "focusBorder": {
+                  "type": "string",
+                  "description": "Border color for focused toggle buttons when they are on"
+                },
+
+                "focusOutline": {
+                  "type": "string",
+                  "description": "Outline color for focused toggle buttons when they are on"
+                },
+
+                "text": {
+                  "type": "object",
+                  "description": "Text colors for toggle buttons when they are on",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Text color for toggle buttons when they are on"
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Text color for disabled toggle buttons when they are on"
+                    },
+                    "hint": {
+                      "type": "string",
+                      "description": "Text color for hint text on toggle buttons when they are on"
+                    },
+                    "hovered": {
+                      "type": "string",
+                      "description": "Text color for hovered toggle buttons when they are on"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "tooltip": {
+          "type": "object",
+          "description": "Colors for tooltips",
+          "properties": {
+            "background": {
+              "type": "string",
+              "description": "Background color for tooltips"
+            },
+
+            "border": {
+              "type": "string",
+              "description": "Border color for tooltips"
+            },
+
+            "error": {
+              "type": "object",
+              "description": "Colors for error tooltips",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for error tooltips"
+                },
+
+                "border": {
+                  "type": "string",
+                  "description": "Border color for error tooltips"
+                },
+
+                "text": {
+                  "type": "string",
+                  "description": "Text color for error tooltips"
+                }
+              }
+            },
+
+            "text": {
+              "type": "object",
+              "description": "Text colors for tooltips",
+              "properties": {
+                "primary": {
+                  "type": "string",
+                  "description": "Text color for primary tooltips"
+                },
+                "secondary": {
+                  "type": "string",
+                  "description": "Text color for secondary tooltips"
+                },
+                "tertiary": {
+                  "type": "string",
+                  "description": "Text color for tertiary tooltips"
+                }
+              }
+            }
+          }
+        },
+
+        "tree": {
+          "type": "object",
+          "description": "Colors for trees",
+          "properties": {
+            "compactFolder": {
+              "type": "object",
+              "description": "Colors for compact folders in trees",
+              "properties": {
+                "selector": {
+                  "type": "object",
+                  "description": "Color for the selector of compact folders in trees",
+                  "properties": {
+                    "default": {
+                      "type": "string",
+                      "description": "Color for the default selector of compact folders in trees"
+                    },
+                    "focused": {
+                      "type": "string",
+                      "description": "Color for the focused selector of compact folders in trees"
+                    }
+                  }
+                },
+
+                "separator": {
+                  "type": "string",
+                  "description": "Color for the separator of compact folders in trees"
+                }
+              }
+            },
+
+            "focusBorder": {
+              "type": "string",
+              "description": "Border color for focused trees"
+            }
+          }
+        },
+
+        "vim": {
+          "type": "object",
+          "description": "Colors when editing in Vim Modes",
+          "properties": {
+            "mode": {
+              "type": "object",
+              "description": "Colors for Vim Modes",
+              "properties": {
+                "cmdLine": {
+                  "type": "object",
+                  "description": "Colors for the Command Vim Mode",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for the Command Vim Mode"
+                    },
+                    "border": {
+                      "type": "string",
+                      "description": "Border color for the Command Vim Mode"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Text color for the Command Vim Mode"
+                    }
+                  }
+                },
+
+                "insert": {
+                  "type": "object",
+                  "description": "Colors for the Insert Vim Mode",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for the Insert Vim Mode"
+                    },
+                    "border": {
+                      "type": "string",
+                      "description": "Border color for the Insert Vim Mode"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Text color for the Insert Vim Mode"
+                    }
+                  }
+                },
+
+                "normal": {
+                  "type": "object",
+                  "description": "Colors for the Normal Vim Mode",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for the Normal Vim Mode"
+                    },
+                    "border": {
+                      "type": "string",
+                      "description": "Border color for the Normal Vim Mode"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Text color for the Normal Vim Mode"
+                    }
+                  }
+                },
+
+                "replace": {
+                  "type": "object",
+                  "description": "Colors for the Replace Vim Mode",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for the Replace Vim Mode"
+                    },
+                    "border": {
+                      "type": "string",
+                      "description": "Border color for the Replace Vim Mode"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Text color for the Replace Vim Mode"
+                    }
+                  }
+                },
+
+                "select": {
+                  "type": "object",
+                  "description": "Colors for the Select Vim Mode",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for the Select Vim Mode"
+                    },
+                    "border": {
+                      "type": "string",
+                      "description": "Border color for the Select Vim Mode"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Text color for the Select Vim Mode"
+                    }
+                  }
+                },
+
+                "visual": {
+                  "type": "object",
+                  "description": "Colors for the Visual Vim Mode",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "description": "Background color for the Visual Vim Mode"
+                    },
+                    "border": {
+                      "type": "string",
+                      "description": "Border color for the Visual Vim Mode"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Text color for the Visual Vim Mode"
+                    }
+                  }
+                }
+              }
+            },
+
+            "recordingTag": {
+              "type": "object",
+              "description": "Colors for the recording tag in Vim",
+              "properties": {
+                "background": {
+                  "type": "string",
+                  "description": "Background color for the recording tag in Vim"
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Border color for the recording tag in Vim"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text color for the recording tag in Vim"
+                }
+              }
             }
           }
         }

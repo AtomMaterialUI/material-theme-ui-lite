@@ -5,8 +5,10 @@
     "theme.version": 1
   },
   "colors": {
-    "background.primary": "#263238",
-    "background.secondary": "#b0bec5"
+    "background": {
+      "primary": "#263238",
+      "secondary": "#b0bec5"
+    }
   },
   "palette": {}
 }
