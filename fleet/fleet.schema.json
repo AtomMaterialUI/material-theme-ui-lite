@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://json.schemastore.org/fleet.json",
+  "title": "Fleet",
+  "description": "Fleet Plugin Definition",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "theme.name": {
+          "type": "string",
+          "description": "The name of the theme."
+        },
+        "theme.version": {
+          "type": "integer",
+          "description": "The version of the theme.",
+          "minimum": 1
+        },
+        "theme.kind": {
+          "type": "string",
+          "description": "The default theme applied when a field is not specified."
+        }
+      },
+      "required": [
+        "theme.name",
+        "theme.version",
+        "theme.kind"
+      ]
+    },
+    "colors": {
+      "description": "Color definitions",
+      "type": "object",
+      "properties": {
+        "ai": {
+          "type": "object",
+          "description": "Color definitions for AI Assistant",
+          "properties": {
+            "attachment.background.default": {
+              "type": "string",
+              "description": "Default background color for attachments"
+            },
+            "error.border": {
+              "type": "string",
+              "description": "Border color for error messages"
+            },
+            "error.background": {
+              "type": "string",
+              "description": "Background color for error messages"
+            }
+          }
+        }
+      }
+    }
+  }
+}

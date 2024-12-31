@@ -63,6 +63,10 @@ plugins {
   alias(libs.plugins.changelog)
   alias(libs.plugins.detekt)
   alias(libs.plugins.ktlint)
+
+  alias(libs.plugins.kotlin.multiplatform) apply false
+  alias(libs.plugins.fleet.plugin) apply false
+  alias(libs.plugins.fleet.plugin.layer) apply false
 }
 
 group = pluginID
