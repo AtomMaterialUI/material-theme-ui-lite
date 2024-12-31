@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "theme.name": "Material Oceanic",
+    "theme.kind": "Dark",
+    "theme.version": 1
+  },
+  "colors": {
+    "background.primary": "#263238",
+    "background.secondary": "#b0bec5"
+  },
+  "palette": {}
+}

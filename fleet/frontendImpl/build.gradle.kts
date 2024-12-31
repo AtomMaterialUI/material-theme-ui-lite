@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2021 Elior "Mallowigi" Boukhobza
+ * Copyright (c) 2024 Elior "Mallowigi" Boukhobza
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,18 +22,11 @@
  * SOFTWARE.
  */
 
-rootProject.name = "material-theme-lite"
+plugins {
+  alias(libs.plugins.kotlin.multiplatform)
+  alias(libs.plugins.fleet.plugin.layer)
+}
 
-include(":fleet")
-include(":fleet:frontendImpl")
-
-pluginManagement {
-  repositories {
-    maven {
-      url = java.net.URI("https://oss.sonatype.org/content/repositories/snapshots/")
-    }
-    maven("https://cache-redirector.jetbrains.com/intellij-dependencies")
-    maven("https://packages.jetbrains.team/maven/p/fleet/fleet-sdk")
-    gradlePluginPortal()
-  }
+kotlin {
+  jvmToolchain(17)
 }

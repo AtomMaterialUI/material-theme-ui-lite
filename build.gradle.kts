@@ -28,7 +28,6 @@
 @file:Suppress("SpellCheckingInspection", "HardCodedStringLiteral")
 
 import io.gitlab.arturbosch.detekt.Detekt
-import kotlinx.coroutines.runBlocking
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.markdownToHTML
 import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
@@ -64,6 +63,10 @@ plugins {
   alias(libs.plugins.changelog)
   alias(libs.plugins.detekt)
   alias(libs.plugins.ktlint)
+
+  alias(libs.plugins.kotlin.multiplatform) apply false
+  alias(libs.plugins.fleet.plugin) apply false
+  alias(libs.plugins.fleet.plugin.layer) apply false
 }
 
 group = pluginID

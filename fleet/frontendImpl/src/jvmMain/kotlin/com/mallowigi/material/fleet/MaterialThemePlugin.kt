@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2021 Elior "Mallowigi" Boukhobza
+ * Copyright (c) 2024 Elior "Mallowigi" Boukhobza
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,18 +22,24 @@
  * SOFTWARE.
  */
 
-rootProject.name = "material-theme-lite"
+package com.mallowigi.material.fleet
 
-include(":fleet")
-include(":fleet:frontendImpl")
+import fleet.dock.api.ThemeId
+import fleet.frontend.theme.registerTheme
+import fleet.kernel.plugins.ContributionScope
+import fleet.kernel.plugins.Plugin
+import fleet.kernel.plugins.PluginScope
 
-pluginManagement {
-  repositories {
-    maven {
-      url = java.net.URI("https://oss.sonatype.org/content/repositories/snapshots/")
-    }
-    maven("https://cache-redirector.jetbrains.com/intellij-dependencies")
-    maven("https://packages.jetbrains.team/maven/p/fleet/fleet-sdk")
-    gradlePluginPortal()
+class MaterialThemePlugin : Plugin<Unit> {
+  override val key: Plugin.Key<Unit> = MaterialThemePlugin
+
+  override fun ContributionScope.load(pluginScope: PluginScope) {
+    registerTheme(ThemeId(id = "material-oceanic"))
+    // registerTheme(ThemeId(id = "material-darker"))
+    // registerTheme(ThemeId(id = "material-palenight"))
+    // registerTheme(ThemeId(id = "material-lighter"))
   }
+
+  companion object : Plugin.Key<Unit>
+
 }
