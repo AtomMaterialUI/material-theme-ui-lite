@@ -19,7 +19,11 @@
         },
         "theme.kind": {
           "type": "string",
-          "description": "The default theme applied when a field is not specified."
+          "description": "The default theme applied when a field is not specified.",
+          "enum": [
+            "Dark",
+            "Light"
+          ]
         }
       },
       "required": [
@@ -28,8 +32,9 @@
         "theme.kind"
       ]
     },
+
     "colors": {
-      "description": "Colors",
+      "description": "Theme color properties",
       "type": "object",
       "properties": {
         "ai": {
@@ -4309,6 +4314,1263 @@
           }
         }
       }
+    },
+
+    "textAttributes": {
+      "type": "object",
+      "description": "Text Attributes for syntax highlighting",
+      "properties": {
+        "attributeName.html": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "attributeValue.html": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "boolean": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "comment": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "comment.doc": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "comment.doc.value": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "comment.doc.tag": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "comment.todo": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "debug.currentFrame": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.added": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.added.word": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.added.withBorder": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "diff.added.resolved": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "diff.added.empty": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.deleted": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.deleted.word": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.deleted.withBorder": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "diff.deleted.resolved": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "diff.deleted.empty": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.modified": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.modified.word": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "diff.modified.withBorder": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "diff.modified.resolved": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "editor.brace.match": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "editor.rename.current": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "style": {
+                  "type": "string"
+                }
+              }
+            },
+            "showEmptyIntervals": {
+              "type": "boolean"
+            }
+          }
+        },
+        "editor.rename.entries": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "showEmptyIntervals": {
+              "type": "boolean"
+            },
+            "stripeColor": {
+              "type": "string"
+            }
+          }
+        },
+        "editor.search.results": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "stripeColor": {
+              "type": "string"
+            }
+          }
+        },
+        "editor.selection": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "editor.selection.focused": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "editor.text.composable": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "editor.text.scheme": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "editor.indentGuide": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            },
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "style": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "editor.indentGuide.current": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            },
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "style": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "editor.indentGuide.declaration": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "editor.indentGuide.declaration.current": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "entityReference.html": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.alias.yaml": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.anchor.yaml": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.constant": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.constant.predefined": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.field": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.field.static": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.function.call": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.function.call.package": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.function.call.suspend": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.function.declaration": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.interface": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.method.static": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.methodReceiver.go": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.namedArgument": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.other": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.package.go": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.parameter": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.this": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.this.mutable": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "identifier.type": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.type.class": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.type.enum": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.type.struct": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.type.valueType": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.typeDeclaration.go": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.typeParameter": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.typeReference.go": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.underCaret": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            },
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "style": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "identifier.variable": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "identifier.variable.mutable": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "key.json": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "key.yaml": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "keyword": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "keyword.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "keyword.extend.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "keyword.global.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "keyword.important.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            },
+            "fontModifier": {
+              "type": "object",
+              "properties": {
+                "italic": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "keyword.typeModifier": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "link": {
+          "type": "object"
+        },
+        "link.always.visible": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object"
+            }
+          }
+        },
+        "link.hovered": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            },
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "markup.bold": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            },
+            "fontModifier": {
+              "type": "object",
+              "properties": {
+                "bold": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "markup.code.block": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "markup.heading": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "markup.href": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object"
+            },
+            "foregroundColor": {
+              "type": "string"
+            },
+            "fontModifier": {
+              "type": "object",
+              "properties": {
+                "italic": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "markup.italic": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            },
+            "fontModifier": {
+              "type": "object",
+              "properties": {
+                "italic": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "metadata.structTag.key.go": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "metadata.structTag.value.go": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "number": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "number.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "number.unit.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "other.html": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "problem.deprecated": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "problem.error": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "thickness": {
+                  "type": "number"
+                }
+              }
+            },
+            "stripeColor": {
+              "type": "string"
+            }
+          }
+        },
+        "problem.error.badCharacter": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "thickness": {
+                  "type": "number"
+                }
+              }
+            },
+            "showEmptyIntervals": {
+              "type": "boolean"
+            },
+            "stripeColor": {
+              "type": "string"
+            }
+          }
+        },
+        "problem.info": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "style": {
+                  "type": "string"
+                }
+              }
+            },
+            "stripeColor": {
+              "type": "string"
+            }
+          }
+        },
+        "problem.unknown": {
+          "type": "object"
+        },
+        "problem.unused": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "problem.warning": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "thickness": {
+                  "type": "number"
+                }
+              }
+            },
+            "stripeColor": {
+              "type": "string"
+            }
+          }
+        },
+        "problem.warning.weak": {
+          "type": "object",
+          "properties": {
+            "decoration": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "thickness": {
+                  "type": "number"
+                }
+              }
+            },
+            "stripeColor": {
+              "type": "string"
+            }
+          }
+        },
+        "propertyName.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "propertyValue.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "punctuation": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "punctuation.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "punctuation.operator": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "punctuation.operator.merge.yaml": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "selector.class.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "selector.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "selector.id.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "selector.pseudo.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "selector.tag.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "snippet": {
+          "type": "object",
+          "properties": {
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "snippet.selected": {
+          "type": "object",
+          "properties": {
+            "border": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "string": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "string.binary": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "string.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "string.escape": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "string.escape.alternative": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "string.escape.unicode": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "string.formatItem": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "string.regexp": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "tag.html": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "tagName.custom.html": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "tagName.html": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "target.match": {
+          "type": "object",
+          "properties": {
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "target.match.word": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            },
+            "backgroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "transparent": {
+          "type": "object"
+        },
+        "url.css": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        },
+        "value.yaml": {
+          "type": "object",
+          "properties": {
+            "foregroundColor": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+
+    "palette": {
+      "type": "object",
+      "description": "Custom Colors to be used inside the colors",
+      "patternProperties": {
+        "[a-zA-Z0-9_.]+": {
+          "type": "string",
+          "description": "Custom color",
+          "pattern": "^#([A-Fa-f0-9]{6,8}|[A-Fa-f0-9]{3})$"
+        }
+      }
     }
-  }
+  },
+
+  "required": [
+    "meta",
+    "colors"
+  ]
 }

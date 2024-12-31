@@ -10,5 +10,7 @@
       "secondary": "#b0bec5"
     }
   },
-  "palette": {}
+  "palette": {
+    "Blue": "#b0bec5"
+  }
 }
