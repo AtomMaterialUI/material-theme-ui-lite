@@ -5,12 +5,177 @@
     "theme.version": 1
   },
   "colors": {
+    "ai": {
+      "attachment.background.default": "second",
+      "error": {
+        "background": "error",
+        "border": "error"
+      },
+
+      "icon": {
+        "background": "second",
+        "background.secondary": "accent2"
+      },
+
+      "snippet": {
+        "editor.background": "second",
+        "header.background": "contrast",
+        "border": "hl"
+      },
+
+      "thread": {
+        "background": {
+          "default": "bg",
+          "hovered": "active"
+        },
+        "agent": {
+          "error.background": "error",
+          "finished.background": "green",
+          "running.background": "hl"
+        }
+      },
+
+      "user": {
+        "icon": {
+          "background": "second",
+          "background.secondary": "accent2"
+        }
+      },
+
+      "warning": {
+        "background": "yellow",
+        "border": "yellow"
+      }
+    },
+
     "background": {
-      "primary": "#263238",
-      "secondary": "#b0bec5"
+      "primary": "bg",
+      "secondary": "contrast"
+    },
+
+    "banner": {
+      "background": {
+        "info": "notif",
+        "warning": "orange",
+        "dangerous": "error",
+        "positive": "green",
+        "ai": "notif"
+      }
+    },
+
+    "border": "border",
+    "border.focused": "accent",
+
+    "button": {
+      "ai": {
+        "background": {
+          "default": "button",
+          "disabled": "button",
+          "hovered": "hl",
+          "pressed": "active"
+        },
+        "border": {
+          "default": "button",
+          "disabled": "button",
+          "hovered": "hl",
+          "pressed": "active"
+        },
+        "focusBorder": "hl",
+        "focusOutline": "accent",
+        "separator": {
+          "disabled": "disabled",
+          "default": "border"
+        },
+        "split": {
+          "focusOutline": "hl"
+        },
+        "text": {
+          "default": "fg",
+          "hint": "text",
+          "disabled": "disabled",
+          "pressed": "selFg",
+          "hovered": "selFg"
+        }
+      },
+
+      "positive": {
+        "background": {
+          "default": "green",
+          "disabled": "button",
+          "hovered": "green",
+          "pressed": "green"
+        },
+        "border": {
+          "default": "green",
+          "disabled": "disabled",
+          "hovered": "green",
+          "pressed": "green"
+        },
+        "focusBorder": "selFg",
+        "focusOutline": "selFg",
+        "separator": {
+          "default": "border",
+          "disabled": "disabled"
+        },
+        "split": {
+          "focusOutline": "selFg"
+        },
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg",
+          "hint": "text"
+        }
+      }
     }
   },
   "palette": {
-    "Blue": "#b0bec5"
+    "bg": "#263238",
+    "bg30": "#26323830",
+    "fg": "#B0BEC5",
+    "text": "#607D8B",
+    "selBg": "#546E7A",
+    "selBg20": "#546E7A20",
+    "selFg": "#FFFFFF",
+    "activeFg": "#FFFFFF",
+    "border": "#2A373E",
+    "excl": "#2E3C43",
+    "second": "#32424A",
+    "disabled": "#415967",
+    "accent": "#009688",
+    "accent2": "#ffcb6b",
+    "accent50": "#00968850",
+    "accent70": "#00968870",
+    "contrast": "#1E272C",
+    "button": "#2E3C43",
+    "active": "#314549",
+    "tree": "#30454d",
+    "hl": "#425B67",
+    "notif": "#1E272C",
+    "hc": "#1E272C",
+    "shadow": "#202020",
+    "white": "#eeffff",
+    "blue": "#82aaff",
+    "red": "#f07178",
+    "yellow": "#ffcb6b",
+    "green": "#c3e88d",
+    "gray": "#546e7a",
+    "purple": "#c792ea",
+    "orange": "#f78c6c",
+    "cyan": "#89ddff",
+    "error": "#ff5370",
+    "comments": "#546e7a",
+    "vars": "#eeffff",
+    "links": "#80cbc4",
+    "functions": "#82aaff",
+    "keywords": "#c792ea",
+    "tags": "#f07178",
+    "strings": "#c3e88d",
+    "operators": "#89ddff",
+    "attributes": "#ffcb6b",
+    "classes": "#ffcb6b",
+    "numbers": "#f78c6c",
+    "parameters": "#f78c6c"
   }
 }
