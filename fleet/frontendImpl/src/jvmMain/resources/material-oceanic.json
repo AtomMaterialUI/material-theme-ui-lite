@@ -127,8 +127,193 @@
           "pressed": "selFg",
           "hint": "text"
         }
+      },
+
+      "dangerous": {
+        "background": {
+          "default": "error",
+          "disabled": "button",
+          "hovered": "error",
+          "pressed": "error"
+        },
+        "border": {
+          "default": "error",
+          "disabled": "disabled",
+          "hovered": "error",
+          "pressed": "error"
+        },
+        "focusBorder": "selFg",
+        "focusOutline": "selFg",
+        "separator": {
+          "default": "border",
+          "disabled": "disabled"
+        },
+        "split": {
+          "focusOutline": "selFg"
+        },
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg",
+          "hint": "text"
+        }
+      },
+
+      "warning": {
+        "background": {
+          "default": "yellow",
+          "disabled": "button",
+          "hovered": "yellow",
+          "pressed": "yellow"
+        },
+        "border": {
+          "default": "yellow",
+          "disabled": "disabled",
+          "hovered": "yellow",
+          "pressed": "yellow"
+        },
+        "focusBorder": "selFg",
+        "focusOutline": "selFg",
+        "separator": {
+          "default": "border",
+          "disabled": "disabled"
+        },
+        "split": {
+          "focusOutline": "selFg"
+        },
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg",
+          "hint": "text"
+        }
+      },
+
+      "primary": {
+        "background": {
+          "default": "active",
+          "disabled": "disabled",
+          "hovered": "hl",
+          "pressed": "hl"
+        },
+        "border": {
+          "default": "active",
+          "disabled": "disabled",
+          "hovered": "hl",
+          "pressed": "hl"
+        },
+        "focusBorder": "active",
+        "separator": {
+          "default": "border",
+          "disabled": "disabled"
+        },
+        "split": {
+          "focusOutline": "accent"
+        },
+        "text": {
+          "default": "fg",
+          "disabled": "gray",
+          "hovered": "selFg",
+          "pressed": "selFg",
+          "hint": "text"
+        }
+      },
+
+      "secondary": {
+        "background": {
+          "default": "button",
+          "disabled": "disabled",
+          "hovered": "button",
+          "pressed": "button"
+        },
+        "border": {
+          "default": "button",
+          "disabled": "disabled",
+          "hovered": "button",
+          "pressed": "button"
+        },
+        "focusBorder": "border",
+        "separator": {
+          "default": "border",
+          "disabled": "disabled"
+        },
+        "split": {
+          "focusOutline": "accent"
+        },
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg",
+          "hint": "text"
+        }
       }
+    },
+
+    "editor": {
+      "text": "fg",
+      "caret": {
+        "background": "accent2",
+        "border": "accent2"
+      },
+      "currentLine": {
+        "background": {
+          "default": "excl"
+        },
+        "scrollbarMark": "accent"
+      },
+      "whitespaceIndicator": "text",
+      "lineNumber": {
+        "default": "text",
+        "hovered": "selFg"
+      },
+      "foldIndicator": {
+        "icon": {
+          "default": "fg",
+          "hovered": "accent"
+        },
+        "background.hovered": "hl"
+      }
+    },
+
+    "tab": {
+      "background": {
+        "default": "bg",
+        "dragAndDrop": "accent",
+        "hovered": "active",
+        "selected": "hl"
+      },
+      "text": {
+        "default": "fg",
+        "hovered": "selFg",
+        "selected": "selFg"
+      },
+      "border": {
+        "default": "border",
+        "hovered": "accent",
+        "selected": "accent"
+      },
+      "hint": {
+        "default": "text",
+        "hovered": "fg",
+        "selected": "fg"
+      },
+      "focusOutline": {
+        "dragAndDrop": "accent"
+      },
+      "closeIcon": {
+        "default": "bg",
+        "hovered": "accent",
+        "pressed": "hl"
+      }
+    },
+
+    "island": {
+      "background": "bg"
     }
+
   },
   "palette": {
     "bg": "#263238",
