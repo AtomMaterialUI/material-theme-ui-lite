@@ -49,6 +49,7 @@ let props = [
   ['accent', 'accent'],
   ['excl', 'excluded'],
   ['acc2', 'acc2'],
+  ['shadow', 'shadow'],
   ['gray', 'comments'],
   ['white', 'vars'],
   ['cyan', 'operators'],
@@ -83,6 +84,7 @@ let contrastProps = [
   ['accent', 'accent'],
   ['excl', 'excluded'],
   ['acc2', 'acc2'],
+  ['shadow', 'shadow'],
   ['gray', 'comments'],
   ['white', 'vars'],
   ['cyan', 'operators'],
@@ -100,6 +102,12 @@ let globalProps = [
   ['notifWarn', '#ffeca0', '#5d4037'],
   ['notifInfo', '#87bb91', '#1b5e20'],
   ['parent', 'ExperimentalLight', 'ExperimentalDark'],
+  ['FileColor.Green', '#89CC8E', '#273828'],
+  ['FileColor.Blue', '#6B9BFA', '#25324D'],
+  ['FileColor.Red', '#EB938D', '#472B2B'],
+  ['FileColor.Yellow', '#F7DE8B', '#5E4D33'],
+  ['FileColor.Purple', '#C4A0F3', '#3B3147'],
+  ['FileColor.Orange', '#F5BD98', '#614438'],
 ];
 
 let sizesProps = [
