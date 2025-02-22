@@ -340,13 +340,13 @@
         "disabledArrowButtonBackground": "excl",
         "editable.arrowButtonBackground": "hc",
         "hoveredArrowButtonForeground": "accent",
-        "nonEditableBackground": "bg"
+        "nonEditableBackground": "hc"
       },
       "disabledBackground": "excl",
       "disabledForeground": "dis",
       "foreground": "fg",
       "modifiedItemForeground": "accent",
-      "nonEditableBackground": "bg",
+      "nonEditableBackground": "hc",
       "padding": "5,5,5,5",
       "selectionBackground": "table",
       "selectionForeground": "activeFg",
@@ -1795,7 +1795,7 @@
       "stripedBackground": "cs"
     },
     "TableHeader": {
-      "background": "button",
+      "background": "hc",
       "bottomSeparatorColor": "border",
       "borderColor": "hl",
       "cellBorder": "6,0,6,0",
@@ -1948,11 +1948,6 @@
       "shortcutForeground": "text"
     },
     "ToolWindow": {
-      "active": {
-        "Header.background": "second",
-        "HeaderTab.background": "cs"
-      },
-      "Background": "bg",
       "background": "hc",
       "Button": {
         "hoverBackground": "table",
@@ -1972,32 +1967,24 @@
         "active": {
           "background": "second"
         },
-        "background": "bg",
+        "background": "hc",
         "border": {
           "background": "border"
         },
         "closeButton": {
-          "background": "bg"
-        },
-        "tab": {
-          "selected": {
-            "active": {
-              "background": "cs"
-            },
-            "background": "cs"
-          }
+          "background": "hc"
         }
       },
       "Header": {
         "height": 42,
-        "background": "second",
+        "background": "bg",
         "borderColor": "border",
-        "inactiveBackground": "bg",
+        "inactiveBackground": "hc",
         "labelLeftRightInsets": "0,12,0,16",
         "toolbarLeftRightInsets": "0,12,0,8"
       },
       "HeaderCloseButton": {
-        "background": "bg"
+        "background": "hc"
       },
       "HeaderTab": {
         "borderColor": "bg",

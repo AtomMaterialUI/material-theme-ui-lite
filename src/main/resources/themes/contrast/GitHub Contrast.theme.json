@@ -340,13 +340,13 @@
         "disabledArrowButtonBackground": "excl",
         "editable.arrowButtonBackground": "hc",
         "hoveredArrowButtonForeground": "accent",
-        "nonEditableBackground": "bg"
+        "nonEditableBackground": "hc"
       },
       "disabledBackground": "excl",
       "disabledForeground": "dis",
       "foreground": "fg",
       "modifiedItemForeground": "accent",
-      "nonEditableBackground": "bg",
+      "nonEditableBackground": "hc",
       "padding": "5,5,5,5",
       "selectionBackground": "table",
       "selectionForeground": "activeFg",
@@ -1795,7 +1795,7 @@
       "stripedBackground": "cs"
     },
     "TableHeader": {
-      "background": "button",
+      "background": "hc",
       "bottomSeparatorColor": "border",
       "borderColor": "hl",
       "cellBorder": "6,0,6,0",
@@ -1948,11 +1948,6 @@
       "shortcutForeground": "text"
     },
     "ToolWindow": {
-      "active": {
-        "Header.background": "second",
-        "HeaderTab.background": "cs"
-      },
-      "Background": "bg",
       "background": "hc",
       "Button": {
         "hoverBackground": "table",
@@ -1972,32 +1967,24 @@
         "active": {
           "background": "second"
         },
-        "background": "bg",
+        "background": "hc",
         "border": {
           "background": "border"
         },
         "closeButton": {
-          "background": "bg"
-        },
-        "tab": {
-          "selected": {
-            "active": {
-              "background": "cs"
-            },
-            "background": "cs"
-          }
+          "background": "hc"
         }
       },
       "Header": {
         "height": 42,
-        "background": "hc",
+        "background": "bg",
         "borderColor": "border",
-        "inactiveBackground": "bg",
+        "inactiveBackground": "hc",
         "labelLeftRightInsets": "0,12,0,16",
         "toolbarLeftRightInsets": "0,12,0,8"
       },
       "HeaderCloseButton": {
-        "background": "bg"
+        "background": "hc"
       },
       "HeaderTab": {
         "borderColor": "bg",
@@ -2021,36 +2008,30 @@
         "HeaderTab.background": "cs"
       },
       "Stripe": {
-        "separatorColor": "table",
         "DragAndDrop": {
-          "separatorColor": "accent70"
-        }
+          "separatorColor": "accent50"
+        },
+        "separatorColor": "table"
       }
     },
     "Tree": {
       "border": "4,12,4,12",
       "background": "hc",
-      "collapsedIcon": "/expui/general/chevronRight.svg",
-      "collapsedSelectedIcon": "/expui/general/chevronRight.svg",
-      "expandedIcon": "/expui/general/chevronDown.svg",
-      "expandedSelectedIcon": "/expui/general/chevronDown.svg",
       "foreground": "text",
       "errorForeground": "red",
       "hash": "border",
       "hoverBackground": "tree",
       "hoverInactiveBackground": "table",
       "modifiedItemForeground": "accent",
-      "paintLines": false,
-      "rendererFillBackground": false,
       "rowHeight": "28",
       "selectionBackground": "tree",
       "selectionForeground": "selFg",
       "selectionInactiveBackground": "tree",
       "selectionInactiveForeground": "selFg",
-      "textBackground": "hc"
+      "textBackground": "hc",
+      "leftChildIndent": 10,
+      "rightChildIndent": 5
     },
-    "Tree.leftChildIndent": 10,
-    "Tree.rightChildIndent": 5,
     "UIDesigner": {
       "Activity": {
         "borderColor": "border"
@@ -2238,7 +2219,6 @@
     "ValidationTooltip": {
       "errorBackground": "notif",
       "errorBorderColor": "notif",
-      "maxWidth": 384,
       "warningBackground": "notif",
       "warningBorderColor": "notif"
     },
@@ -2308,7 +2288,7 @@
       "AssociatedComponent": {
         "background": "bg"
       },
-      "SidePanel.background": "second",
+      "SidePanel.background": "hc",
       "background": "bg",
       "borderColor": "bg",
       "captionBackground": "cs",
