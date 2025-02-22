@@ -833,13 +833,14 @@
         "hoverBackground": "selBg"
       },
       "rowHeight": "28",
+      "selectedItemAlpha": 75,
       "selectionBackground": "tree",
       "selectionForeground": "selFg",
       "selectionInactiveBackground": "table",
       "selectionInactiveForeground": "activeFg",
       "Tag": {
-        "foreground": "fg",
-        "background": "button"
+        "background": "button",
+        "foreground": "fg"
       }
     },
     "LiveIndicator": {
