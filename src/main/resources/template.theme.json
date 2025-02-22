@@ -1694,18 +1694,19 @@
     "StatusBar": {
       "background": "hc",
       "Breadcrumbs": {
-        "chevronInset": 0,
-        "floatingBackground": "tree",
+        "background": "hc",
+        "chevronInset": 2,
+        "floatingBackground": "table",
         "floatingForeground": "fg",
         "floatingToolbarInsets": "8,12,8,12",
         "foreground": "fg",
-        "hoverBackground": "tree",
-        "hoverForeground": "fg",
+        "hoverBackground": "hl",
+        "hoverForeground": "activeFg",
         "itemBackgroundInsets": "2,4,2,4",
         "itemInsets": 0,
         "selectionBackground": "selBg",
-        "selectionForeground": "activeFg",
-        "selectionInactiveBackground": "button",
+        "selectionForeground": "selFg",
+        "selectionInactiveBackground": "table",
         "selectionInactiveForeground": "fg"
       },
       "borderColor": "border",
@@ -1718,7 +1719,7 @@
         "foreground": "fg",
         "hoverBackground": "hl",
         "hoverForeground": "selFg",
-        "pressedBackground": "button",
+        "pressedBackground": "table",
         "pressedForeground": "fg",
         "widgetInsets": "8,12,8,12"
       }
