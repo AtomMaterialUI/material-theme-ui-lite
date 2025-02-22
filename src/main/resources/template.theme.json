@@ -201,7 +201,7 @@
       "focusedBorderColor": "accent",
       "foreground": "text",
       "highlight": "selFg",
-      "minimumSize": "80,32",
+      "minimumSize": "%buttonHeight",
       "mt.background": "button",
       "mt.color1": "button",
       "mt.color2": "button",

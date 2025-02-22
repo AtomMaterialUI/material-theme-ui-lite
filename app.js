@@ -110,7 +110,8 @@ let globalProps = [
 
 let sizesProps = [
   ['tabInsets', "-10,10,-10,10", "0,8,0,8"],
-  ['rowHeight', "28", "20"]
+  ['rowHeight', "28", "20"],
+  ['buttonHeight', "80,34", "72,24"],
 ]
 
 // Function to replace placeholders in a text
@@ -129,19 +130,19 @@ const replacePlaceholders = (text, theme, props, {contrast, compact}) => {
 
   props.forEach(([placeholder, prop]) => {
     console.log(`Replacing ${placeholder} with property ${prop}: ${theme[prop]}`);
-    result = result.replace(new RegExp(`%${placeholder}`, 'g'), theme[prop]);
+    result = result.replace(new RegExp(`%${placeholder}\\b`, 'g'), theme[prop]);
     result = result.replace(new RegExp(`"@${placeholder}"`, 'g'), theme[prop]);
   });
 
   globalProps.forEach(([prop, light, dark]) => {
     let isDark = theme.dark;
     console.log(`Replacing global ${prop} with ${isDark ? dark : light}`);
-    result = result.replace(new RegExp(`%${prop}`, 'g'), isDark ? dark : light);
+    result = result.replace(new RegExp(`%${prop}\\b`, 'g'), isDark ? dark : light);
   });
 
   sizesProps.forEach(([prop, normalProp, compactProp]) => {
     console.log(`Replacing ${prop} with ${compact ? compactProp : normalProp}`);
-    result = result.replace(new RegExp(`%${prop}`, 'g'), compact ? compactProp : normalProp);
+    result = result.replace(new RegExp(`%${prop}\\b`, 'g'), compact ? compactProp : normalProp);
   });
 
   return result;
