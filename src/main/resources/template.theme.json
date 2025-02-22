@@ -668,6 +668,32 @@
       "active": "bg",
       "inactive": "cs"
     },
+    "HelpBrowser": {
+      "titleHighlightForeground": "accent",
+      "UserMessage": {
+        "background": "second",
+        "Snippet": {
+          "border": "button",
+          "MoreLines": {
+            "foreground": "accent",
+            "background": "bg",
+            "hoverForeground": "selFg",
+            "hoverBackground": "hl"
+          }
+        }
+      },
+      "HelpBrowserMessage": {
+        "Snippet": {
+          "border": "button",
+          "MoreLines": {
+            "foreground": "accent",
+            "background": "bg",
+            "hoverForeground": "selFg",
+            "hoverBackground": "hl"
+          }
+        }
+      }
+    },
     "HelpTooltip": {
       "background": "bg",
       "backgroundColor": "bg",
@@ -682,7 +708,9 @@
       "shortcutTextColor": "text",
       "smallTextBorderInsets": "8,12,8,12",
       "textColor": "fg",
-      "verticalGap": 8
+      "verticalGap": 8,
+      "xOffset": 2,
+      "yOffset": 2
     },
     "Hg.Log.Ref": {
       "Branch": "accent",
