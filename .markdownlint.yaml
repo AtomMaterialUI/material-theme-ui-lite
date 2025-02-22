@@ -3,6 +3,9 @@
 # https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.yaml
 # https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
 
+
+
+
 # Default state for all rules
 default: true
 
