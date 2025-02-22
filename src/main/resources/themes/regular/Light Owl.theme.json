@@ -1692,7 +1692,7 @@
       "activeBackground": "button"
     },
     "StatusBar": {
-      "background": "hc",
+      "background": "bg",
       "Breadcrumbs": {
         "background": "hc",
         "chevronInset": 2,
