@@ -605,7 +605,6 @@
       "hoverColor": "hl",
       "hoverMaskColor": "hl",
       "inactive.maskColor": "bg",
-      "inactiveColoredFileBackground": "bg70",
       "inactiveMaskColor": "bg",
       "inactiveUnderlineColor": "dis",
       "selectedBackground": "table",
