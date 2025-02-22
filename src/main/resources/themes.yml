@@ -875,7 +875,7 @@ other:
     border: '#0D3640'
     hl: '#005a6f'
     tree: '#023c45'
-    notif: '#2E4C52'
+    notif: '#00252E'
     accent: '#d33682'
     acc2: '#2aa198'
     excluded: '#083F4D'
