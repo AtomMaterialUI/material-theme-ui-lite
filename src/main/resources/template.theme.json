@@ -1937,6 +1937,7 @@
       "Learning": {
         "background": "accent",
         "borderColor": "accent",
+        "codeBorderColor": "hl",
         "codeForeground": "fg",
         "foreground": "fg",
         "spanBackground": "accent50",
@@ -1956,16 +1957,16 @@
       "Button": {
         "hoverBackground": "table",
         "DragAndDrop": {
-          "stripeBackground": "bg",
-          "buttonDropBackground": "selBg70",
-          "buttonDropBorderColor": "accent",
+          "stripeBackground": "cs",
+          "buttonDropBackground": "accent70",
+          "buttonDropBorderColor": "accent70",
           "buttonFloatingBackground": "button"
         },
-        "selectedBackground": "cs",
+        "selectedBackground": "accent70",
         "selectedForeground": "activeFg"
       },
       "DragAndDrop": {
-        "areaBackground": "accent50"
+        "areaBackground": "accent70"
       },
       "header": {
         "active": {
@@ -2200,6 +2201,13 @@
             "selectedForeground": "selFg"
           }
         }
+      },
+      "PackageTag": {
+        "background": "excl",
+        "foreground": "fg",
+        "hoverBackground": "tree",
+        "selectedBackground": "selBg",
+        "selectedForeground": "selFg"
       },
       "Panel": {
         "background": "bg",
