@@ -1444,7 +1444,7 @@
     "Review": {
       "Branch": {
         "Background": "button",
-        "Background.Hover": "hl"
+        "Background.Hover": "tree"
       },
       "ChatItem": {
         "BubblePanel": {
@@ -1507,17 +1507,18 @@
         "activeBackground": "hl"
       },
       "runningBackground": "hl",
+      "runningForeground": "selFg",
+      "runningIconColor": "accent",
+      "runIconColor": "accent",
       "Run": {
         "activeBackground": "hl"
       },
       "Running": {
         "background": "hl",
+        "foreground": "selFg",
         "leftHoverBackground": "hl",
         "leftPressedBackground": "table"
       },
-      "runningBackground": "hl",
-      "runningForeground": "selFg",
-      "runIconColor": "accent",
       "separatorColor": "border",
       "stopBackground": "second",
       "StopButton": {
