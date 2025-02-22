@@ -1238,6 +1238,7 @@
       },
       "Selection": {
         "arc": 8,
+        "innerInsets": "8,8,8,8",
         "leftRightInset": 8
       },
       "Separator": {
@@ -1261,7 +1262,9 @@
       "borderCornerRadius": 8,
       "borderCornerRadiusX": 8,
       "borderCornerRadiusY": 8,
+      "borderCornerRadius": 8,
       "borderWidth": 1,
+      "border": "8,8,8,8",
       "foreground": "fg",
       "leftBorderWidth": 8,
       "rightBorderWidth": 8,
@@ -1299,8 +1302,35 @@
       }
     },
     "Profiler": {
+      "ChartSlider": {
+        "foreground": "fg",
+        "lineColor": "border"
+      },
+      "CpuChart": {
+        "background": "accent",
+        "borderColor": "accent",
+        "inactiveBackground": "accent70",
+        "inactiveBorderColor": "accent70",
+        "pointBackground": "accent",
+        "pointBorderColor": "accent"
+      },
+      "MemoryChart": {
+        "background": "accent",
+        "borderColor": "accent",
+        "inactiveBackground": "accent70",
+        "inactiveBorderColor": "accent70",
+        "pointBackground": "accent",
+        "pointBorderColor": "accent"
+      },
       "neutralLifecycleEvent": "second",
-      "trackBackground": "button"
+      "trackBackground": "button",
+      "Timer": {
+        "foreground": "fg",
+        "disabledForeground": "dis"
+      },
+      "LiveChart": {
+        "horizontalAxisColor": "border"
+      }
     },
     "ProgressBar": {
       "background": "bg",
