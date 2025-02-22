@@ -789,6 +789,22 @@
         "stepNumberForeground": "text"
       }
     },
+    "LineProfiler": {
+      "Line": {
+        "labelBackground": "bg",
+        "foreground": "fg",
+        "hoverBackground": "table"
+      },
+      "HotLine": {
+        "labelBackground": "table",
+        "foreground": "red",
+        "hoverBackground": "hl"
+      },
+      "IgnoredLine": {
+        "labelBackground": "excl",
+        "foreground": "fg"
+      }
+    },
     "link": "accent",
     "Link": {
       "activeForeground": "accent",
