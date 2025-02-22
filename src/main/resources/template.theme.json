@@ -2284,6 +2284,7 @@
       },
       "RefLabel": {
         "backgroundBase": "hl",
+        "backgroundBrightness": 0.3,
         "foreground": "activeFg"
       }
     },
@@ -2300,6 +2301,7 @@
       "AssociatedComponent": {
         "background": "bg"
       },
+      "SidePanel.background": "hc",
       "background": "bg",
       "borderColor": "bg",
       "captionBackground": "cs",
