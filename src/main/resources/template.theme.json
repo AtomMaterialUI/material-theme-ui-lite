@@ -858,7 +858,7 @@
       "transparentSelectionBackground": "tree"
     },
     "MainToolbar": {
-      "background": "bg",
+      "background": "hc",
       "Button": {
         "buttonInsets": "0,4,0,4",
         "iconSize": 20,
@@ -869,6 +869,8 @@
         "background": "bg",
         "foreground": "fg",
         "hoverBackground": "hl",
+        "iconSize": 20,
+        "maxWidth": 350,
         "pressedBackground": "table",
         "transparentHoverBackground": "accent70"
       },
@@ -908,6 +910,12 @@
     "ManagedIdeBadgeBackground": "bg",
     "ManagedIdeBadgeBackgroundHover": "accent70",
     "ManagedIdeMenuItemHover": "selBg",
+    "macOSWindow": {
+      "Title": {
+        "height": 30,
+        "heightSmall": 24
+      }
+    },
     "material": {
       "background": "bg",
       "branchColor": "fg",
@@ -948,6 +956,8 @@
     },
     "MenuBar": {
       "background": "hc",
+      "border": "8,12,8,12",
+      "borderInsets": "8,12,8,12",
       "borderColor": "bg",
       "disabledBackground": "bg",
       "disabledForeground": "dis",
@@ -1001,6 +1011,25 @@
         "background": "second"
       }
     },
+    "Notification.Shadow": {
+      "borderInsets": "8,8,8,8",
+      "top0Color": "#00000000",
+      "top1Color": "#00000010",
+      "bottom0Color": "#00000000",
+      "bottom1Color": "#00000010",
+      "left0Color": "#00000000",
+      "left1Color": "#00000010",
+      "right0Color": "#00000000",
+      "right1Color": "#00000010",
+      "topLeft0Color": "#00000000",
+      "topLeft1Color": "#00000010",
+      "topRight0Color": "#00000000",
+      "topRight1Color": "#00000010",
+      "bottomLeft0Color": "#00000000",
+      "bottomLeft1Color": "#00000010",
+      "bottomRight0Color": "#00000000",
+      "bottomRight1Color": "#00000010"
+    },
     "Notification": {
       "arc": 16,
       "Error.foreground": "accent",
@@ -1011,14 +1040,23 @@
       "errorBackground": "notif",
       "errorBorderColor": "notif",
       "errorForeground": "accent",
+      "Error.foreground": "accent",
       "foreground": "fg",
       "linkForeground": "accent",
+      "Link.foreground": "accent",
+      "Button": {
+        "background": "button",
+        "borderColor": "button",
+        "foreground": "fg"
+      },
       "MoreButton": {
         "background": "button",
         "foreground": "fg",
         "innerBorderColor": "button"
       },
       "ToolWindow": {
+        "background": "notif",
+        "borderColor": "notif",
         "Button.DragAndDrop": {
           "buttonFloatingBackground": "button",
           "stripeBackground": "bg"
