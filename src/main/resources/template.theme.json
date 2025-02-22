@@ -201,7 +201,7 @@
       "focusedBorderColor": "accent",
       "foreground": "text",
       "highlight": "selFg",
-      "minimumSize": "%buttonHeight",
+      "minimumSize": "%btnHeight",
       "mt.background": "button",
       "mt.color1": "button",
       "mt.color2": "button",
@@ -1823,11 +1823,12 @@
       "caretForeground": "accent",
       "foreground": "fg",
       "inactiveForeground": "dis",
+      "margin": "16,16,16,16",
       "selectionBackground": "table",
       "selectionForeground": "activeFg"
     },
     "TextField": {
-      "background": "cs",
+      "background": "hc",
       "borderColor": "bg",
       "caretForeground": "accent",
       "disabledBackground": "excl",
@@ -1878,12 +1879,10 @@
       "onForeground": "accent"
     },
     "Toolbar": {
-      "horizontalToolbarInsets": "8,8,8,8",
       "Floating": {
         "background": "button",
         "borderColor": "border"
-      },
-      "verticalToolbarInsets": "8,8,8,8"
+      }
     },
     "ToolBar": {
       "background": "hc",
