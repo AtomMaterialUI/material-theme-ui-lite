@@ -1531,8 +1531,8 @@
     "ScreenView": {
       "borderColor": "border",
       "defaultBorderColor": "border",
-      "hoveredBorderColor": "hl",
-      "selectedBorderColor": "selBg"
+      "hoveredBorderColor": "accent",
+      "selectedBorderColor": "accent"
     },
     "scrollbar": "bg",
     "ScrollBar": {
@@ -1637,7 +1637,8 @@
       "focusedSelectedButtonColor": "hl",
       "selectedEndBorderColor": "accent",
       "selectedButtonColor": "button",
-      "selectedStartBorderColor": "accent"
+      "selectedStartBorderColor": "border",
+      "selectedEndBorderColor": "border"
     },
     "Separator": {
       "background": "second",
@@ -1676,6 +1677,7 @@
       "background": "bg",
       "border": "4,4,4,4",
       "disabledBackground": "excl",
+      "editorBorderPainted": false,
       "foreground": "fg",
       "selectionForeground": "activeFg"
     },
@@ -1690,7 +1692,7 @@
       "activeBackground": "button"
     },
     "StatusBar": {
-      "background": "bg10",
+      "background": "hc",
       "Breadcrumbs": {
         "chevronInset": 0,
         "floatingBackground": "tree",
