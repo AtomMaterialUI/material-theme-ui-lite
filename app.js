@@ -99,6 +99,7 @@ let globalProps = [
   ['notifError', '#ef9694', '#b71c1c'],
   ['notifWarn', '#ffeca0', '#5d4037'],
   ['notifInfo', '#87bb91', '#1b5e20'],
+  ['parent', 'ExperimentalLight', 'ExperimentalDark'],
 ];
 
 let sizesProps = [
