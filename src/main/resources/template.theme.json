@@ -55,6 +55,7 @@
       "inactiveForeground": "text",
       "infoForeground": "text",
       "lineSeparatorColor": "hl",
+      "modifiedItemForeground": "accent",
       "pressedBorderColor": "hl",
       "selectionBackground": "selBg",
       "selectionBackgroundInactive": "second",
@@ -226,6 +227,7 @@
       "Tooltip.background": "notif",
       "Tooltip.borderColor": "border"
     },
+    "Caret.width": 2,
     "CellEditor": {
       "border": {
         "width": 2
@@ -303,6 +305,9 @@
         "dropdownBorder": "second",
         "pillBackground": "second"
       },
+      "MainToolbar": {
+        "NoConnectionLabelForeground": "dis"
+      },
       "Users": {
         "1": {
           "Background": "green",
@@ -365,7 +370,8 @@
       "nonEditableBackground": "bg",
       "padding": "5,5,5,5",
       "selectionBackground": "table",
-      "selectionForeground": "activeFg"
+      "selectionForeground": "activeFg",
+      "squareButton": true
     },
     "ComboPopup": {
       "border": "1,1,1,1,%accent"
