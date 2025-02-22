@@ -201,7 +201,7 @@
       "focusedBorderColor": "accent",
       "foreground": "text",
       "highlight": "selFg",
-      "minimumSize": 72,
+      "minimumSize": "80,32",
       "mt.background": "button",
       "mt.color1": "button",
       "mt.color2": "button",
@@ -1727,7 +1727,7 @@
     "StripeToolbar": {
       "Button": {
         "iconSize": 20,
-        "iconPadding": 8,
+        "iconPadding": "8,8,8,8",
         "size": "40,40"
       }
     },
@@ -1756,8 +1756,9 @@
       "selectedLabelShift": 0,
       "selectedTabPadInsets": "0,0,0,0",
       "shadow": "hc",
+      "tabAreaInsets": "0,0,0,0",
+      "tabFillStyle": "underline",
       "tabHeight": 32,
-      "tabAreaInsets": 0,
       "tabInsets": "5,10,5,10",
       "tabSelectionArc": 4,
       "tabSelectionHeight": 2,
@@ -1818,6 +1819,7 @@
     "textText": "text",
     "TextArea": {
       "background": "cs",
+      "caretBlinkRate": 500,
       "caretForeground": "accent",
       "foreground": "fg",
       "inactiveForeground": "dis",
