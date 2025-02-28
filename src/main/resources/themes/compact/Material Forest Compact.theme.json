@@ -107,6 +107,10 @@
       "borderColor": "button",
       "foreground": "fg"
     },
+    "Badge": {
+      "greenOutlineForeground": "accent",
+      "greenOutlineBorderColor": "accent"
+    },
     "Banner": {
       "foreground": "fg"
     },
@@ -188,6 +192,7 @@
         "focusColor": "accent",
         "focusedBorderColor": "accent",
         "foreground": "selFg",
+        "loadingForeground": "dis",
         "shadowColor": "shadow",
         "startBackground": "table",
         "startBorderColor": "table"
@@ -319,6 +324,12 @@
       "foreground": "fg",
       "swatchesDefaultRecentColor": "fg"
     },
+    "CombinedDiff": {
+      "BlockBorder": {
+        "selectedActiveColor": "hl",
+        "selectedInactiveColor": "second"
+      }
+    },
     "ComboBoxButton": {
       "background": "button"
     },
@@ -354,6 +365,35 @@
     },
     "ComboPopup": {
       "border": "1,1,1,1,#FFCC80"
+    },
+    "CompilationCharts": {
+      "background": {
+        "even": "bg",
+        "odd": "cs",
+        "default": "bg"
+      },
+      "cpu": {
+        "background": "accent70",
+        "stroke": "accent"
+      },
+      "lineColor": "accent",
+      "memory": {
+        "background": "hl",
+        "stroke": "border"
+      },
+      "production": {
+        "enabled": "fg",
+        "disabled": "dis",
+        "stroke": "border",
+        "selected": "table"
+      },
+      "test": {
+        "enabled": "fg",
+        "disabled": "dis",
+        "stroke": "border",
+        "selected": "table"
+      },
+      "textColor": "text"
     },
     "CompletionPopup": {
       "Advertiser": {
@@ -424,6 +464,18 @@
       "background": "accent",
       "borderColor": "accent",
       "foreground": "selFg"
+    },
+    "DataSummary": {
+      "Chart": {
+        "barColor": "accent"
+      }
+    },
+    "DisclosureButton": {
+      "arc": 16,
+      "defaultBackground": "button",
+      "hoverOverlay": "hl",
+      "pressedOverlay": "table",
+      "textRightIconGap": 8
     },
     "darcula": {
       "background": "bg",
@@ -499,7 +551,7 @@
       },
       "shortcutForeground": "text",
       "SearchField": {
-        "background": "cs",
+        "background": "hc",
         "borderInsets": "8,12,8,12"
       },
       "SearchReplaceModePanel": {
@@ -512,6 +564,7 @@
         "borderColor": "border"
       },
       "ToolTip": {
+        "background": "notif",
         "border": "border",
         "foreground": "fg",
         "iconHoverBackground": "table",
@@ -552,7 +605,6 @@
       "hoverColor": "hl",
       "hoverMaskColor": "hl",
       "inactive.maskColor": "bg",
-      "inactiveColoredFileBackground": "bg70",
       "inactiveMaskColor": "bg",
       "inactiveUnderlineColor": "dis",
       "selectedBackground": "table",
@@ -629,8 +681,10 @@
       "Button": {
         "contrastBackground": "cs",
         "endBackground": "button",
+        "endBorderColor": "button",
         "foreground": "fg",
-        "startBackground": "button"
+        "startBackground": "button",
+        "startBorderColor": "button"
       },
       "codeBackground": "cs",
       "codeBorderColor": "bg",
@@ -723,8 +777,11 @@
       "linkColor": "accent"
     },
     "IconBadge": {
+      "errorBackground": "red",
       "infoBackground": "accent",
-      "newUiBackground": "accent"
+      "newUiBackground": "accent",
+      "successBackground": "green",
+      "warningBackground": "orange"
     },
     "IdeStatusBar": {
       "border": "4,4,4,4"
@@ -771,7 +828,8 @@
       "infoForeground": "text",
       "selectedDisabledForeground": "fg",
       "selectedForeground": "activeFg",
-      "textForeground": "text"
+      "textForeground": "text",
+      "warningForeground": "orange"
     },
     "Lesson": {
       "Badge": {
@@ -788,6 +846,18 @@
         "spanForeground": "fg",
         "stepNumberForeground": "text"
       }
+    },
+    "LicenseDialog": {
+      "LicenseList": {
+        "licenseDetailsForeground": "text",
+        "licenseIdForeground": "fg",
+        "separatorColor": "border"
+      },
+      "LicenseServer": {
+        "separatorColor": "border"
+      },
+      "termsAndConditionsForeground": "fg",
+      "waitingLabelForeground": "text"
     },
     "LineProfiler": {
       "Line": {
@@ -1042,6 +1112,7 @@
       "errorForeground": "accent",
       "Error.foreground": "accent",
       "foreground": "fg",
+      "iconHoverBackground": "accent70",
       "linkForeground": "accent",
       "Link.foreground": "accent",
       "Button": {
@@ -1194,7 +1265,8 @@
         "hoverBackground": "table",
         "selectedBackground": "table",
         "selectedForeground": "selFg"
-      }
+      },
+      "ultimateTagForeground": "selFg"
     },
     "Popup": {
       "Advertiser": {
@@ -1442,6 +1514,18 @@
       }
     },
     "Review": {
+      "AI": {
+        "Background": "acc2"
+      },
+      "Avatar": {
+        "Border": {
+          "Status": {
+            "Accepted": "green",
+            "WaitForUpdates": "orange",
+            "NeedReview": "text"
+          }
+        }
+      },
       "Branch": {
         "Background": "button",
         "Background.Hover": "tree"
@@ -1461,8 +1545,19 @@
       },
       "MetaInfo": {
         "StatusLine": {
-          "Gray": "excl",
-          "Blue": "accent"
+          "Blue": "accent70",
+          "Gray": "excl"
+        }
+      },
+      "Notification": {
+        "Blue": "accent"
+      },
+      "Reaction": {
+        "Background": "bg",
+        "Background.Hovered": "hl",
+        "Background.Pressed": "table",
+        "Border": {
+          "Reacted": "accent"
         }
       },
       "State": {
@@ -1646,7 +1741,9 @@
       "separatorColor": "border"
     },
     "Settings": {
-      "Spotlight.borderColor": "accent"
+      "Spotlight": {
+        "borderColor": "accent"
+      }
     },
     "shortcutForeground": "text",
     "SidePanel": {
@@ -1687,6 +1784,13 @@
     },
     "SplitPaneDivider": {
       "draggingColor": "second"
+    },
+    "SslCertificate": {
+      "popup": {
+        "background": "bg",
+        "borderColor": "border",
+        "foreground": "fg"
+      }
     },
     "StateWidget": {
       "activeBackground": "button"
@@ -1851,7 +1955,9 @@
       "selectionForeground": "activeFg"
     },
     "TipOfTheDay": {
-      "Image.borderColor": "border"
+      "Image": {
+        "borderColor": "border"
+      }
     },
     "TitlePane": {
       "Button": {
@@ -2031,6 +2137,32 @@
       "textBackground": "hc",
       "leftChildIndent": 10,
       "rightChildIndent": 5
+    },
+    "TrialWidget": {
+      "Default": {
+        "foreground": "fg",
+        "background": "button",
+        "borderColor": "button",
+        "hoverBackground": "hl"
+      },
+      "Active": {
+        "foreground": "selFg",
+        "background": "accent",
+        "borderColor": "accent",
+        "hoverBackground": "hl"
+      },
+      "Alert": {
+        "foreground": "selFg",
+        "background": "orange",
+        "borderColor": "orange",
+        "hoverBackground": "hl"
+      },
+      "Expiring": {
+        "foreground": "selFg",
+        "background": "red",
+        "borderColor": "red",
+        "hoverBackground": "hl"
+      }
     },
     "UIDesigner": {
       "Activity": {
@@ -2233,6 +2365,7 @@
         "graphColor": "hl"
       },
       "GitLog": {
+        "headIconColor": "acc2",
         "localBranchIconColor": "accent",
         "otherIconColor": "text",
         "remoteBranchIconColor": "fg",
@@ -2258,12 +2391,23 @@
           "rowHeight": 28,
           "unmatchedForeground": "text",
           "verticalPadding": 8
+        },
+        "Graph": {
+          "saturation": 0.6,
+          "brightness": 0.6
         }
       },
       "MarkerPopup": {
         "borderColor": "border",
         "borderInsets": "6,8,6,10",
         "Toolbar.background": "hl"
+      },
+      "Merge": {
+        "Status": {
+          "NoConflicts": {
+            "foreground": "accent"
+          }
+        }
       },
       "Ref": {
         "backgroundBase": "hl",
@@ -2272,6 +2416,7 @@
       "RefLabel": {
         "backgroundBase": "hl",
         "backgroundBrightness": 0.3,
+        "bookmarkBackground": "acc2",
         "foreground": "activeFg"
       }
     },
@@ -2288,7 +2433,6 @@
       "AssociatedComponent": {
         "background": "bg"
       },
-      "SidePanel.background": "hc",
       "background": "bg",
       "borderColor": "bg",
       "captionBackground": "cs",
