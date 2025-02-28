@@ -681,10 +681,7 @@
             </value>
         </option>
         <option name="DOC_TIPS_SHORTCUT">
-            <value>
-                <option name="FOREGROUND" value="a0a1a7"/>
-                <option name="FONT_TYPE" value="3"/>
-            </value>
+          <value/>
         </option>
         <option name="DEFAULT_DOC_MARKUP">
             <value>

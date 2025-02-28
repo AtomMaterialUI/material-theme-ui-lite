@@ -889,9 +889,7 @@
             </value>
         </option>
         <option name="DOC_TIPS_SHORTCUT">
-            <value>
-                <option name="FOREGROUND" value="839496"/>
-            </value>
+          <value/>
         </option>
         <option name="DEFAULT_DOC_MARKUP">
             <value>
