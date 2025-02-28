@@ -828,7 +828,8 @@
       "infoForeground": "text",
       "selectedDisabledForeground": "fg",
       "selectedForeground": "activeFg",
-      "textForeground": "text"
+      "textForeground": "text",
+      "warningForeground": "orange"
     },
     "Lesson": {
       "Badge": {
@@ -1784,6 +1785,13 @@
     "SplitPaneDivider": {
       "draggingColor": "second"
     },
+    "SslCertificate": {
+      "popup": {
+        "background": "bg",
+        "borderColor": "border",
+        "foreground": "fg"
+      }
+    },
     "StateWidget": {
       "activeBackground": "button"
     },
@@ -2383,6 +2391,10 @@
           "rowHeight": 28,
           "unmatchedForeground": "text",
           "verticalPadding": 8
+        },
+        "Graph": {
+          "saturation": 0.6,
+          "brightness": 0.6
         }
       },
       "MarkerPopup": {
