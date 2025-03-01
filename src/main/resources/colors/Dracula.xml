@@ -1255,6 +1255,21 @@
                 <option name="BACKGROUND" value="44475a"/>
             </value>
         </option>
+        <option name="INLINE_PROMPT">
+            <value>
+                <option name="FOREGROUND" value="ff79c5"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_DARK">
+            <value>
+                <option name="FOREGROUND" value="ff79c5"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_LIGHT">
+            <value>
+                <option name="FOREGROUND" value="ffcaf3"/>
+            </value>
+        </option>
         <option name="JADE_FILE_PATH" baseAttributes="DEFAULT_STRING"/>
         <option name="JADE_FILTER_NAME" baseAttributes="DEFAULT_LABEL"/>
         <option name="JADE_JS_BLOCK" baseAttributes="DEFAULT_IDENTIFIER"/>

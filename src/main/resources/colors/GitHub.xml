@@ -1401,6 +1401,21 @@
                 <option name="BACKGROUND" value="dfecfe"/>
             </value>
         </option>
+        <option name="INLINE_PROMPT">
+            <value>
+                <option name="FOREGROUND" value="79cb60"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_DARK">
+            <value>
+                <option name="FOREGROUND" value="79cb60"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_LIGHT">
+            <value>
+                <option name="FOREGROUND" value="ACCBA8"/>
+            </value>
+        </option>
         <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
         <option name="Instance property reference ID">
             <value>

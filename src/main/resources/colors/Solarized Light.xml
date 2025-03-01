@@ -1559,6 +1559,21 @@
                 <option name="BACKGROUND" value="cac5b6"/>
             </value>
         </option>
+        <option name="INLINE_PROMPT">
+            <value>
+                <option name="FOREGROUND" value="d33682"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_DARK">
+            <value>
+                <option name="FOREGROUND" value="d33682"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_LIGHT">
+            <value>
+                <option name="FOREGROUND" value="d3a0c6"/>
+            </value>
+        </option>
         <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
         <option name="IVAR">
             <value>

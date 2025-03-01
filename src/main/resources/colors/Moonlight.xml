@@ -1428,6 +1428,21 @@
                 <option name="BACKGROUND" value="444a73"/>
             </value>
         </option>
+        <option name="INLINE_PROMPT">
+            <value>
+                <option name="FOREGROUND" value="4fd6be"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_DARK">
+            <value>
+                <option name="FOREGROUND" value="4fd6be"/>
+            </value>
+        </option>
+        <option name="INLINE_PROMPT_PROGRESS_LIGHT">
+            <value>
+                <option name="FOREGROUND" value="9cd6ce"/>
+            </value>
+        </option>
         <option name="IVAR">
             <value>
                 <option name="FOREGROUND" value="f3c1ff"/>
