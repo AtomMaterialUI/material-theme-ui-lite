@@ -28,7 +28,6 @@
 @file:Suppress("SpellCheckingInspection", "HardCodedStringLiteral")
 
 import io.gitlab.arturbosch.detekt.Detekt
-import kotlinx.coroutines.runBlocking
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.markdownToHTML
 import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
@@ -102,7 +101,7 @@ intellijPlatform {
     id = pluginID
     name = pluginName
     version = pluginVersion
-    description = pluginDescription
+    // description = pluginDescription
 
     // Get the latest available change notes from the changelog file
     val changelog = project.changelog // local variable for configuration cache compatibility

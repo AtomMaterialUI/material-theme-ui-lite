@@ -1,5 +1,17 @@
 ## Changelog
 
+# 25.0.0
+
+### Fixes
+
+- Add newer UI Properties
+- Update color schemes
+- Improve checkboxes
+- Improve tables
+- Improve buttons
+- Improve contrast in themes
+- Upgrade dependencies
+
 # 21.0.0
 
 ### Features
