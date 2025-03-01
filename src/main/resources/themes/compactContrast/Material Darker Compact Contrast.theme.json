@@ -520,6 +520,7 @@
       "underlinedTabBackground": "table",
       "underlinedTabForeground": "selFg"
     },
+    "definitionModeRGB": "blue",
     "Desktop.background": "bg",
     "Dialog": {
       "titleColor": "bg"
@@ -816,6 +817,8 @@
       "optionDialogBackground": "bg",
       "paletteBackground": "bg"
     },
+    "jumpModeRGB": "selFg",
+    "jumpEndModeRGB": "green",
     "Label": {
       "background": "bg",
       "disabledForeground": "dis",
@@ -1916,10 +1919,14 @@
       "borderColor": "button",
       "foreground": "fg"
     },
+    "tagBackgroundRGB": "accent",
+    "tagForegroundRGB": "selFg",
+    "targetModeRGB": "yellow",
     "text": "bg",
     "textInactiveText": "text",
     "textHighlight": "selBg",
     "textHighlightText": "activeFg",
+    "textHighlightRGB": "hl",
     "textText": "text",
     "TextArea": {
       "background": "cs",
