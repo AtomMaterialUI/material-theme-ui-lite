@@ -4,6 +4,6 @@
     <option name="additionalArguments" value="-version -Xskip-prerelease-check" />
   </component>
   <component name="KotlinJpsPluginSettings">
-    <option name="version" value="2.0.21-488" />
+    <option name="version" value="2.1.10" />
   </component>
 </project>

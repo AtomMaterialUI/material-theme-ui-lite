@@ -31,7 +31,6 @@ import io.gitlab.arturbosch.detekt.Detekt
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.markdownToHTML
 import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 fun properties(key: String) = providers.gradleProperty(key).get()
 fun environment(key: String) = providers.environmentVariable(key)
@@ -85,7 +84,6 @@ repositories {
 dependencies {
   intellijPlatform {
     intellijIdeaUltimate(platformVersion, useInstaller = false)
-    instrumentationTools()
 //    local(properties("idePath"))
 
     pluginVerifier()
@@ -170,6 +168,7 @@ detekt {
   autoCorrect = true
 }
 
+
 tasks {
   javaVersion.let {
     // Set the compatibility versions to 1.8
@@ -177,10 +176,10 @@ tasks {
       sourceCompatibility = it
       targetCompatibility = it
     }
-    withType<KotlinCompile> {
-      kotlinOptions.jvmTarget = it
-      kotlinOptions.freeCompilerArgs += listOf("-Xskip-prerelease-check", "-Xjvm-default=all")
-    }
+    // withType<KotlinCompile> {
+    //   kotlinOptions.jvmTarget = it
+    //   kotlinOptions.freeCompilerArgs += listOf("-Xskip-prerelease-check", "-Xjvm-default=all")
+    // }
   }
 
   wrapper {

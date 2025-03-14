@@ -3,13 +3,13 @@
 annotations = "24.1.0"
 
 # plugins
-kotlin = "2.0.0"
+kotlin = "2.1.10"
 changelog = "2.2.0"
 gradleIntelliJPlugin = "2.2.0"
 detekt = "1.23.6"
 ktlint = "12.1.1"
-fleet-sdk = "0.6.238"
-fleet-runtime = "1.44.151"
+fleet-sdk = "0.6.245"
+fleet-runtime = "1.46.97"
 
 [libraries]
 annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
