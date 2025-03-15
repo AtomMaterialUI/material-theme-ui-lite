@@ -503,12 +503,12 @@
           "hovered": "Transparent"
         },
         "border": {
-          "default": "button",
+          "default": "hl",
           "disabled": "disabled",
-          "hovered": "hl"
+          "hovered": "accent"
         },
         "focusBorder": "accent",
-        "focusOutline": "accent2"
+        "focusOutline": "accent"
       },
       "on": {
         "background": {
@@ -532,8 +532,8 @@
     "combobox": {
       "arrowButton": {
         "background": {
-          "default": "fg",
-          "disabled": "disabled"
+          "default": "button",
+          "disabled": "excl"
         }
       },
       "background": {
@@ -606,30 +606,54 @@
     },
 
     "editor": {
-      "text": "fg",
       "caret": {
-        "background": "accent2",
+        "background": "accent",
         "border": "accent2"
       },
       "currentLine": {
         "background": {
-          "default": "excl"
+          "default": "contrast",
+          "focused": "contrast"
         },
         "scrollbarMark": "accent"
       },
-      "whitespaceIndicator": "text",
-      "lineNumber": {
-        "default": "text",
-        "hovered": "selFg"
-      },
       "foldIndicator": {
+        "background": {
+          "hovered": "tree"
+        },
         "icon": {
           "default": "fg",
           "hovered": "accent"
+        }
+      },
+      "foldedMark": {
+        "background": "active",
+        "text": "accent2"
+      },
+      "gitDiff": {
+        "background": {
+          "added": "green",
+          "blame": "purple",
+          "conflict": "red",
+          "deleted": "gray",
+          "modified": "yellow"
         },
-        "background.hovered": "hl"
+        "text": {
+          "added": "green",
+          "conflict": "red",
+          "deleted": "gray",
+          "modified": "cyan"
+        }
+      },
+      "interline": {
+        "match": {
+          "background": "red",
+          "background.secondary": "yellow",
+          "text.secondary": "purple"
+        }
       }
     },
+
     "island": {
       "background": "bg"
     },
