@@ -1335,6 +1335,385 @@
     }
   },
 
+  "textAttributes": {
+    "ai.generated": {
+      "backgroundColor": "second"
+    },
+
+    "attribute.cpp": {
+      "foregroundColor": "attributes"
+    },
+    "attributeName": {
+      "foregroundColor": "attributes"
+    },
+    "attributeName.html": {
+      "foregroundColor": "attributes"
+    },
+    "attributeName.css": {
+      "foregroundColor": "attributes"
+    },
+
+    "attributeValue": {
+      "foregroundColor": "strings"
+    },
+    "attributeValue.html": {
+      "foregroundColor": "strings"
+    },
+
+    "boolean": {
+      "foregroundColor": "numbers"
+    },
+
+    "comment": {
+      "foregroundColor": "comments"
+    },
+    "comment.buildConstraint.go": {
+      "foregroundColor": "comments"
+    },
+    "comment.doc": {
+      "foregroundColor": "comments"
+    },
+    "comment.doc.tag": {
+      "foregroundColor": "keywords"
+    },
+    "comment.doc.value": {
+      "foregroundColor": "comments"
+    },
+    "comment.todo": {
+      "foregroundColor": "strings"
+    },
+
+    "debug.currentFrame": {
+      "backgroundColor": "red50"
+    },
+
+    "diff.added": {
+      "backgroundColor": "green70"
+    },
+    "diff.added.empty": {
+      "backgroundColor": "green50"
+    },
+    "diff.added.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "green"
+      }
+    },
+    "diff.added.withBorder": {
+      "backgroundColor": "green70",
+      "border": {
+        "color": "green"
+      }
+    },
+    "diff.added.word": {
+      "backgroundColor": "green"
+    },
+
+    "diff.conflict": {
+      "backgroundColor": "orange70"
+    },
+    "diff.conflict.empty": {
+      "backgroundColor": "orange50"
+    },
+    "diff.conflict.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "orange"
+      }
+    },
+    "diff.conflict.withBorder": {
+      "backgroundColor": "orange70",
+      "border": {
+        "color": "orange"
+      }
+    },
+    "diff.conflict.word": {
+      "backgroundColor": "orange"
+    },
+
+    "diff.deleted": {
+      "backgroundColor": "excl"
+    },
+    "diff.deleted.empty": {
+      "backgroundColor": "excl"
+    },
+    "diff.deleted.resolved": {
+      "backgroundColor": "second",
+      "border": {
+        "color": "hl"
+      }
+    },
+    "diff.deleted.withBorder": {
+      "backgroundColor": "second",
+      "border": {
+        "color": "hl"
+      }
+    },
+    "diff.deleted.word": {
+      "backgroundColor": "comments"
+    },
+
+    "diff.modified": {
+      "backgroundColor": "blue70"
+    },
+    "diff.modified.empty": {
+      "backgroundColor": "blue50"
+    },
+    "diff.modified.resolved": {
+      "backgroundColor": "blue70",
+      "border": {
+        "color": "blue"
+      }
+    },
+    "diff.modified.withBorder": {
+      "backgroundColor": "blue50",
+      "border": {
+        "color": "blue"
+      }
+    },
+    "diff.modified.word": {
+      "backgroundColor": "blue"
+    },
+
+    "editor.brace.match": {
+      "foregroundColor": "selFg",
+      "backgroundColor": "accent70"
+    },
+
+    "editor.indentGuide": {
+      "foregroundColor": "disabled"
+    },
+    "editor.indentGuide.current": {
+      "foregroundColor": "accent"
+    },
+    "editor.indentGuide.declaration": {
+      "foregroundColor": "disabled"
+    },
+    "editor.indentGuide.declaration.current": {
+      "foregroundColor": "accent"
+    },
+
+    "editor.rename.current": {
+      "scrollbarMarkColor": "yellow",
+      "border": {
+        "color": "yellow"
+      }
+    },
+    "editor.rename.entries": {
+      "backgroundColor": "accent70",
+      "scrollbarMarkColor": "accent"
+    },
+
+    "editor.search.results": {
+      "foregroundColor": "bg",
+      "backgroundColor": "yellow",
+      "scrollbarMarkColor": "yellow"
+    },
+
+    "editor.selection": {
+      "foregroundColor": "selFg",
+      "backgroundColor": "selBg"
+    },
+    "editor.selection.focused": {
+      "foregroundColor": "selFg",
+      "backgroundColor": "accent70"
+    },
+    "editor.text.scheme": {
+      "foregroundColor": "fg"
+    },
+    "editor.text.composable": {
+      "textDecoration": {
+        "color": "text"
+      }
+    },
+
+    "entityReference": {
+      "foregroundColor": "numbers"
+    },
+    "entityReference.html": {
+      "foregroundColor": "numbers"
+    },
+
+    "error.hovered": {
+      "backgroundColor": "error70"
+    },
+
+    "generic": {
+      "foregroundColor": "keywords"
+    },
+    "generic.php": {
+      "foregroundColor": "keywords"
+    },
+
+    "hex": {
+      "foregroundColor": "numbers"
+    },
+    "hex.css": {
+      "foregroundColor": "numbers"
+    },
+
+    "identifier": {
+      "foregroundColor": "vars"
+    },
+    "identifier.alias.yaml": {
+      "foregroundColor": "vars"
+    },
+    "identifier.anchor.yaml": {
+      "foregroundColor": "tags"
+    },
+    "identifier.constant": {
+      "foregroundColor": "numbers"
+    },
+    "identifier.constant.predefined": {
+      "foregroundColor": "operators"
+    },
+    "identifier.css": {
+      "foregroundColor": "operators"
+    },
+    "identifier.dependency.add.amper": {
+      "foregroundColor": "functions"
+    },
+    "identifier.dependency.annotator.amper": {
+      "foregroundColor": "keywords"
+    },
+    "identifier.dependency.scope.amper": {
+      "foregroundColor": "attributes"
+    },
+    "identifier.field": {
+      "foregroundColor": "operators"
+    },
+    "identifier.field.js": {
+      "foregroundColor": "operators"
+    },
+    "identifier.field.static": {
+      "foregroundColor": "attributes",
+      "fontStyle": "ITALIC"
+    },
+    "identifier.function": {
+      "foregroundColor": "functions"
+    },
+    "identifier.function.call": {
+      "foregroundColor": "functions"
+    },
+    "identifier.function.call.composable": {
+      "foregroundColor": "classes"
+    },
+    "identifier.function.call.package": {
+      "foregroundColor": "classes",
+      "fontStyle": "ITALIC"
+    },
+    "identifier.function.css": {
+      "foregroundColor": "functions"
+    },
+    "identifier.function.declaration": {
+      "foregroundColor": "functions"
+    },
+    "identifier.function.declaration.js": {
+      "foregroundColor": "functions"
+    },
+    "identifier.interface": {
+      "foregroundColor": "strings"
+    },
+    "identifier.method": {
+      "foregroundColor": "functions"
+    },
+    "identifier.method.static": {
+      "foregroundColor": "functions",
+      "fontStyle": "ITALIC"
+    },
+    "identifier.methodReceiver.go": {
+      "foregroundColor": "parameters",
+      "fontStyle": "ITALIC"
+    },
+    "identifier.namedArgument": {
+      "foregroundColor": "operators"
+    },
+    "identifier.other": {
+      "foregroundColor": "vars"
+    },
+    "identifier.package": {
+      "foregroundColor": "attributes"
+    },
+    "identifier.package.go": {
+      "foregroundColor": "attributes"
+    },
+    "identifier.parameter": {
+      "foregroundColor": "parameters"
+    },
+    "identifier.parameter.js": {
+      "foregroundColor": "parameters"
+    },
+    "identifier.this": {
+      "foregroundColor": "error"
+    },
+    "identifier.this.mutable": {
+      "foregroundColor": "error"
+    },
+    "identifier.type": {
+      "foregroundColor": "classes"
+    },
+    "identifier.type.class": {
+      "foregroundColor": "classes"
+    },
+    "identifier.type.enum": {
+      "foregroundColor": "numbers"
+    },
+    "identifier.type.struct": {
+      "foregroundColor": "numbers"
+    },
+    "identifier.type.valueType": {
+      "foregroundColor": "classes"
+    },
+    "identifier.typeDeclaration.go": {
+      "foregroundColor": "classes"
+    },
+    "identifier.typeParameter": {
+      "foregroundColor": "parameters"
+    },
+    "identifier.typeReference.go": {
+      "foregroundColor": "strings"
+    },
+    "identifier.underCaret": {
+      "backgroundColor": "accent70",
+      "scrollbarMarkColor": "accent"
+    },
+    "identifier.variable": {
+      "foregroundColor": "vars"
+    },
+    "identifier.variable.css": {
+      "foregroundColor": "attributes"
+    },
+    "identifier.variable.mutable": {
+      "foregroundColor": "parameters"
+    },
+    "identifier.variable.php": {
+      "foregroundColor": "vars"
+    },
+    "identifier.variable.shadowing.go": {
+      "foregroundColor": "parameters"
+    },
+
+    "keyword": {
+      "foregroundColor": "keywords"
+    },
+
+    "link": {
+      "foregroundColor": "links"
+    },
+
+    "metadata": {
+      "foregroundColor": "attributes"
+    },
+
+    "number": {
+      "foregroundColor": "Yellow"
+    },
+
+    "string": {
+      "foregroundColor": "strings"
+    }
+  },
+
   "palette": {
     "bg": "#263238",
     "bg30": "#26323830",
