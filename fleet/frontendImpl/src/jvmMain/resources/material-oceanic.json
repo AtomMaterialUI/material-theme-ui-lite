@@ -1,92 +1,11 @@
 {
   "meta": {
-    "theme.name": "Material Oceanic - Edited",
+    "theme.name": "Material Oceanic",
     "theme.kind": "Dark",
     "theme.version": 1
   },
+
   "colors": {
-    "focusOutline": "Blue_150",
-    "diff.preview.background": "Neutral_30",
-    "diff.preview.border": "Neutral_30",
-    "editor.caret.background": "Neutral_130",
-    "editor.caret.border": "Neutral_130",
-    "editor.currentLine.background.default": "LightTint_8",
-    "editor.currentLine.background.focused": "BlueTint_15",
-    "editor.currentLine.scrollbarMark": "Neutral_140",
-    "editor.foldedMark.background": "LightTint_12",
-    "editor.foldedMark.text": "Neutral_110",
-    "editor.foldIndicator.background.hovered": "LightTint_10",
-    "editor.foldIndicator.icon.default": "Neutral_100",
-    "editor.foldIndicator.icon.hovered": "Neutral_100",
-    "editor.gitDiff.background.added": "Green_90",
-    "editor.gitDiff.background.blame": "Yellow_90",
-    "editor.gitDiff.background.conflict": "Yellow_90",
-    "editor.gitDiff.background.deleted": "Red_90",
-    "editor.gitDiff.background.modified": "Blue_90",
-    "editor.gitDiff.text.added": "Green_120",
-    "editor.gitDiff.text.conflict": "Yellow_120",
-    "editor.gitDiff.text.deleted": "Red_120",
-    "editor.gitDiff.text.modified": "Blue_120",
-    "editor.interline.background": "Neutral_30",
-    "editor.interline.text.default": "Neutral_90",
-    "editor.interline.text.hovered": "Blue_110",
-    "editor.interline.separator": "LightTint_20",
-    "editor.interline.match.background": "Yellow_60",
-    "editor.interline.match.text": "Neutral_140",
-    "editor.interline.match.background.secondary": "#FFFE24",
-    "editor.interline.match.text.secondary": "Black",
-    "editor.interline.preview.background": "Neutral_20",
-    "editor.interline.preview.border": "Transparent",
-    "editor.lineNumber.current": "Neutral_120",
-    "editor.lineNumber.default": "Neutral_60",
-    "editor.renamePostline.background": "Blue 10",
-    "editor.renamePostline.border": "Blue 100",
-    "editor.renamePostline.description.text": "Neutral_140",
-    "editor.renamePostline.usages.text": "Yellow 60",
-    "editor.selectableFoldedMark.background.default": "Transparent",
-    "editor.selectableFoldedMark.background.focused": "Blue 30",
-    "editor.selectableFoldedMark.border.default": "Gray 90",
-    "editor.selectableFoldedMark.border.focused": "Blue 80",
-    "editor.selectableFoldedMark.text.default": "Gray 80",
-    "editor.selectableFoldedMark.text.focused": "#D1D1D180",
-    "editor.text": "Neutral_140",
-    "editor.whitespaceIndicator": "LightTint_30",
-    "gitBranchTag.local.background": "Transparent",
-    "gitBranchTag.local.border": "Blue_110",
-    "gitBranchTag.local.text": "Blue_110",
-    "gitBranchTag.remote.background": "Transparent",
-    "gitBranchTag.remote.border": "Purple_110",
-    "gitBranchTag.remote.text": "Purple_110",
-    "icon.background.blue": "Blue_100",
-    "icon.background.green": "Green_100",
-    "icon.background.yellow": "YellowBright_10",
-    "icon.background.red": "Red_100",
-    "icon.background.cyan": "#13A4CD",
-    "inputField.background.default": "Transparent",
-    "inputField.background.hovered": "Transparent",
-    "inputField.background.disabled": "LightTint_12",
-    "inputField.background.error": "Transparent",
-    "inputField.border.default": "Neutral_50",
-    "inputField.border.hovered": "Neutral_60",
-    "inputField.border.disabled": "LightTint_12",
-    "inputField.border.error": "Red_100",
-    "inputField.caret.default": "Neutral_140",
-    "inputField.caret.error": "Neutral_140",
-    "inputField.focusBorder.default": "Blue_100",
-    "inputField.focusBorder.error": "Red_100",
-    "inputField.focusOutline.default": "Blue_50",
-    "inputField.focusOutline.error": "Red_50",
-    "inputField.hint.default": "Neutral_110",
-    "inputField.hint.hovered": "Neutral_110",
-    "inputField.hint.disabled": "Neutral_80",
-    "inputField.hint.error": "Neutral_110",
-    "inputField.selectionBackground.default": "Blue_50",
-    "inputField.selectionBackground.error": "Blue_50",
-    "inputField.text.default": "Neutral_140",
-    "inputField.text.hovered": "Neutral_140",
-    "inputField.text.disabled": "Neutral_80",
-    "inputField.text.error": "Neutral_140",
-    "layout.error": "#8000FF",
     "link.focusOutline": "Blue_100",
     "link.text.default": "Blue_110",
     "link.text.disabled": "Neutral_80",
@@ -228,6 +147,7 @@
 
     "ai": {
       "attachment.background.default": "second",
+
       "error": {
         "background": "error",
         "border": "error"
@@ -282,6 +202,7 @@
         "positive": "green",
         "warning": "orange"
       },
+
       "border": {
         "ai": "accent2",
         "dangerous": "error",
@@ -289,16 +210,19 @@
         "positive": "green",
         "warning": "orange"
       },
+
       "inline": {
         "background": "notif",
         "border": "notif",
         "text": "fg"
       },
+
       "secondary": {
         "background": {
           "error": "error"
         }
       },
+
       "text": "fg"
     },
 
@@ -320,7 +244,7 @@
           "pressed": "active"
         },
         "focusBorder": "accent",
-        "focusOutline": "accent",
+        "focusOutline": "accent70",
         "separator": {
           "disabled": "disabled",
           "default": "border"
@@ -350,14 +274,14 @@
           "hovered": "green",
           "pressed": "green"
         },
-        "focusBorder": "selFg",
-        "focusOutline": "selFg",
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
         "separator": {
           "default": "border",
           "disabled": "disabled"
         },
         "split": {
-          "focusOutline": "selFg"
+          "focusOutline": "accent"
         },
         "text": {
           "default": "fg",
@@ -381,14 +305,14 @@
           "hovered": "error",
           "pressed": "error"
         },
-        "focusBorder": "selFg",
-        "focusOutline": "selFg",
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
         "separator": {
           "default": "border",
           "disabled": "disabled"
         },
         "split": {
-          "focusOutline": "selFg"
+          "focusOutline": "accent"
         },
         "text": {
           "default": "fg",
@@ -412,14 +336,14 @@
           "hovered": "yellow",
           "pressed": "yellow"
         },
-        "focusBorder": "selFg",
-        "focusOutline": "selFg",
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
         "separator": {
           "default": "border",
           "disabled": "disabled"
         },
         "split": {
-          "focusOutline": "selFg"
+          "focusOutline": "accent"
         },
         "text": {
           "default": "fg",
@@ -433,17 +357,18 @@
       "primary": {
         "background": {
           "default": "active",
-          "disabled": "disabled",
+          "disabled": "excl",
           "hovered": "hl",
           "pressed": "hl"
         },
         "border": {
           "default": "active",
-          "disabled": "disabled",
+          "disabled": "excl",
           "hovered": "hl",
           "pressed": "hl"
         },
-        "focusBorder": "active",
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
         "separator": {
           "default": "border",
           "disabled": "disabled"
@@ -453,7 +378,7 @@
         },
         "text": {
           "default": "fg",
-          "disabled": "gray",
+          "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
           "hint": "text"
@@ -463,17 +388,18 @@
       "secondary": {
         "background": {
           "default": "button",
-          "disabled": "disabled",
+          "disabled": "excl",
           "hovered": "button",
           "pressed": "button"
         },
         "border": {
           "default": "button",
-          "disabled": "disabled",
+          "disabled": "excl",
           "hovered": "button",
           "pressed": "button"
         },
-        "focusBorder": "border",
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
         "separator": {
           "default": "border",
           "disabled": "disabled"
@@ -496,6 +422,7 @@
         "default": "bg",
         "disabled": "bg"
       },
+
       "off": {
         "background": {
           "default": "Transparent",
@@ -508,8 +435,9 @@
           "hovered": "accent"
         },
         "focusBorder": "accent",
-        "focusOutline": "accent"
+        "focusOutline": "accent70"
       },
+
       "on": {
         "background": {
           "default": "accent",
@@ -524,11 +452,13 @@
         "focusBorder": "accent",
         "focusOutline": "accent"
       },
+
       "text": {
         "default": "fg",
         "disabled": "disabled"
       }
     },
+
     "combobox": {
       "arrowButton": {
         "background": {
@@ -536,26 +466,31 @@
           "disabled": "excl"
         }
       },
+
       "background": {
         "default": "button",
         "disabled": "excl",
         "error": "error70",
         "hovered": "hl"
       },
+
       "border": {
         "default": "button",
         "disabled": "excl",
         "error": "error",
         "hovered": "hl"
       },
+
       "focusBorder": {
         "default": "accent",
         "error": "error"
       },
+
       "focusOutline": {
-        "default": "accent",
-        "error": "error"
+        "default": "accent70",
+        "error": "error70"
       },
+
       "text": {
         "default": "fg",
         "disabled": "disabled",
@@ -563,12 +498,21 @@
         "hovered": "selFg"
       }
     },
+
     "completion": {
       "match": {
         "background": "Transparent",
         "text": "accent"
       }
     },
+
+    "diff": {
+      "preview": {
+        "background": "bg",
+        "border": "bg"
+      }
+    },
+
     "dragAndDrop": {
       "background": "accent50",
       "border": {
@@ -576,6 +520,7 @@
         "highlight": "accent2"
       }
     },
+
     "dropdown": {
       "background": {
         "default": "button",
@@ -583,20 +528,24 @@
         "error": "error70",
         "hovered": "hl"
       },
+
       "border": {
         "default": "button",
         "disabled": "excl",
         "error": "error",
         "hovered": "hl"
       },
+
       "focusBorder": {
         "default": "accent",
         "error": "error"
       },
+
       "focusOutline": {
-        "default": "accent",
-        "error": "error"
+        "default": "accent70",
+        "error": "error70"
       },
+
       "text": {
         "default": "fg",
         "disabled": "disabled",
@@ -618,6 +567,7 @@
         },
         "scrollbarMark": "accent"
       },
+
       "foldIndicator": {
         "background": {
           "hovered": "tree"
@@ -627,10 +577,12 @@
           "hovered": "accent"
         }
       },
+
       "foldedMark": {
         "background": "active",
         "text": "accent2"
       },
+
       "gitDiff": {
         "background": {
           "added": "green",
@@ -646,6 +598,7 @@
           "modified": "cyan"
         }
       },
+
       "interline": {
         "background": "contrast",
         "match": {
@@ -664,10 +617,12 @@
           "hovered": "accent"
         }
       },
+
       "lineNumber": {
         "current": "fg",
         "default": "text"
       },
+
       "postline": {
         "background": {
           "error": "error",
@@ -677,12 +632,14 @@
           "weakWarning": "purple"
         }
       },
+
       "renamePostline": {
         "background": "button",
         "border": "button",
         "description.text": "fg",
         "usages.text": "text"
       },
+
       "selectableFoldedMark": {
         "background": {
           "default": "Transparent",
@@ -697,13 +654,184 @@
           "focused": "fg"
         }
       },
+
       "text": "fg",
       "whitespaceIndicator": "text"
+    },
+
+    "focusOutline": "accent70",
+
+    "ghostButton": {
+      "off": {
+        "background": {
+          "default": "Transparent",
+          "disabled": "Transparent",
+          "hovered": "button",
+          "pressed": "hl"
+        },
+        "border": {
+          "default": "Transparent",
+          "disabled": "Transparent",
+          "hovered": "button",
+          "pressed": "hl"
+        },
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg"
+        }
+      },
+
+      "on": {
+        "background": {
+          "default": "button",
+          "disabled": "excl",
+          "hovered": "active",
+          "pressed": "hl"
+        },
+        "border": {
+          "default": "button",
+          "disabled": "button",
+          "hovered": "active",
+          "pressed": "hl"
+        },
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
+        "text": {
+          "default": "accent",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg"
+        }
+      }
+    },
+
+    "gitBranchTag": {
+      "local": {
+        "background": "button",
+        "border": "button",
+        "text": "accent"
+      },
+
+      "remote": {
+        "background": "button",
+        "border": "button",
+        "text": "text"
+      }
+    },
+
+    "highlight": {
+      "resize": {
+        "border": {
+          "center": {
+            "hovered": "accent70",
+            "pressed": "accent"
+          },
+          "edge": {
+            "hovered": "Transparent",
+            "pressed": "Transparent"
+          }
+        }
+      }
+    },
+
+    "icon": {
+      "background": {
+        "blue": "blue",
+        "cyan": "cyan",
+        "green": "green",
+        "red": "red",
+        "yellow": "yellow"
+      }
+    },
+
+    "inputField": {
+      "ai": {
+        "focusBorder": {
+          "default": "accent2"
+        },
+        "focusOutline": {
+          "default": "accent270"
+        }
+      },
+
+      "background": {
+        "default": "contrast",
+        "disabled": "bg",
+        "error": "error50",
+        "hovered": "bg"
+      },
+
+      "border": {
+        "default": "contrast",
+        "disabled": "bg",
+        "error": "error50",
+        "hovered": "bg"
+      },
+
+      "caret": {
+        "default": "accent",
+        "error": "error"
+      },
+
+      "focusBorder": {
+        "default": "accent",
+        "error": "error"
+      },
+
+      "focusOutline": {
+        "default": "accent70",
+        "error": "error70"
+      },
+
+      "hint": {
+        "default": "text",
+        "disabled": "disabled",
+        "error": "error",
+        "hovered": "fg"
+      },
+
+      "selectionBackground": {
+        "background": "selBg",
+        "error": "error70"
+      },
+
+      "text": {
+        "default": "fg",
+        "disabled": "disabled",
+        "error": "error",
+        "hovered": "selFg"
+      }
     },
 
     "island": {
       "background": "bg"
     },
+
+    "layout": {
+      "error": "error"
+    },
+
+    "link": {
+      "ai": {
+        "focusOutline": "accent270",
+        "text": {
+          "default": "accent2",
+          "disabled": "disabled",
+          "underline": "accent2"
+        }
+      },
+      "focusOutline": "accent70",
+      "text": {
+        "default": "accent",
+        "disabled": "disabled",
+        "underline": "accent"
+      }
+    },
+
     "shadow": {
       "border": "shadow",
       "large": "shadow",
@@ -718,24 +846,29 @@
         "hovered": "active",
         "selected": "hl"
       },
+
       "text": {
         "default": "fg",
         "hovered": "selFg",
         "selected": "selFg"
       },
+
       "border": {
         "default": "border",
         "hovered": "accent",
         "selected": "accent"
       },
+
       "hint": {
         "default": "text",
         "hovered": "fg",
         "selected": "fg"
       },
+
       "focusOutline": {
         "dragAndDrop": "accent"
       },
+
       "closeIcon": {
         "default": "bg",
         "hovered": "accent",
@@ -753,8 +886,8 @@
       "secondary": "text",
       "tertiary": "disabled"
     }
-
   },
+
   "palette": {
     "bg": "#263238",
     "bg30": "#26323830",
@@ -769,9 +902,11 @@
     "second": "#32424A",
     "disabled": "#415967",
     "accent": "#009688",
-    "accent2": "#ffcb6b",
     "accent50": "#00968850",
     "accent70": "#00968870",
+    "accent2": "#ffcb6b",
+    "accent270": "#ffcb6b70",
+    "accent250": "#ffcb6b50",
     "contrast": "#1E272C",
     "button": "#2E3C43",
     "active": "#314549",
