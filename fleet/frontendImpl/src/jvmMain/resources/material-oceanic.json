@@ -6,30 +6,12 @@
   },
 
   "colors": {
-    "snippet.background": "LightTint_15",
-    "snippet.border": "Transparent",
-    "snippet.content.background": "Neutral_20",
-    "snippet.content.border": "Transparent",
-    "toast.background": "LightTint_80",
-    "toast.border": "Transparent",
-    "toast.text": "Neutral_10",
-    "tooltip.text.primary": "Neutral_140",
-    "tooltip.text.secondary": "Neutral_120",
-    "tooltip.text.tertiary": "Neutral_80",
-    "tooltip.background": "Neutral_40",
-    "tooltip.border": "Transparent",
-    "tooltip.error.text": "White",
-    "tooltip.error.background": "Red_80",
-    "tooltip.error.border": "Transparent",
-    "tree.focusBorder": "Blue_100",
-    "tree.compactFolder.selector.default": "Neutral_140",
-    "tree.compactFolder.selector.focused": "Neutral_140",
-    "tree.compactFolder.separator": "Neutral_80",
-
-    "#######################################": "########################",
-
     "ai": {
-      "attachment.background.default": "second",
+      "attachment": {
+        "background": {
+          "default": "second"
+        }
+      },
 
       "error": {
         "background": "error",
@@ -1018,6 +1000,15 @@
       },
       "border": {
         "loading": "text"
+      }
+    },
+
+    "snippet": {
+      "background": "bg",
+      "border": "bg",
+      "content": {
+        "background": "bg",
+        "border": "bg"
       }
     },
 
