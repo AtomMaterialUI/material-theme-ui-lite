@@ -6,127 +6,10 @@
   },
 
   "colors": {
-    "link.focusOutline": "Blue_100",
-    "link.text.default": "Blue_110",
-    "link.text.disabled": "Neutral_80",
-    "link.underline": "Blue_110",
-    "listItem.background.default": "Transparent",
-    "listItem.background.focused": "BlueTint_40",
-    "listItem.background.hovered": "LightTint_5",
-    "listItem.background.selected": "LightTint_15",
-    "listItem.background.dnd": "Blue 70",
-    "listItem.border.default": "Transparent",
-    "listItem.border.focused": "Transparent",
-    "listItem.border.hovered": "Transparent",
-    "listItem.border.selected": "Transparent",
-    "listItem.focusBorder": "Blue_100",
-    "listItem.text.default": "Neutral_140",
-    "listItem.text.focused": "Neutral_140",
-    "listItem.text.hovered": "Neutral_140",
-    "listItem.text.secondary": "LightTint_70",
-    "listItem.text.selected": "Neutral_140",
-    "smartMode.background.enabled": "Green_100",
-    "smartMode.background.error": "Red_100",
-    "smartMode.border.loading": "Red_100",
-    "notification.background.default": "Neutral_30",
-    "notification.background.unread": "Gray 50",
-    "notification.text.primary": "Neutral_140",
-    "notification.text.secondary": "Neutral_110",
-    "notification.separator": "Neutral_50",
-    "notification.moreButton.background.default": "Neutral_30",
-    "notification.moreButton.background.hovered": "Neutral_40",
-    "notification.moreButton.background.pressed": "Neutral_50",
-    "notification.moreButton.border.default": "Neutral_50",
-    "notification.moreButton.border.hovered": "Neutral_50",
-    "notification.moreButton.border.pressed": "Neutral_50",
-    "notification.moreButton.text.default": "Neutral_140",
-    "notification.moreButton.text.hovered": "Neutral_140",
-    "notification.moreButton.text.pressed": "Neutral_140",
-    "parameterInfo.match.text": "Blue_120",
-    "popup.background": "Neutral_30",
-    "popup.border": "Neutral_50",
-    "popup.text": "Neutral_140",
-    "popup.separator": "Neutral_40",
-    "popup.footer.background": "Neutral_40",
-    "popup.footer.text": "Neutral_120",
-    "popup.closeIcon.default": "LightTint_30",
-    "popup.closeIcon.hovered": "LightTint_70",
-    "popup.closeIcon.pressed": "LightTint_80",
-    "popup.editor.background": "Neutral_20",
-    "popup.editor.border": "Transparent",
-    "popup.goto.background": "Neutral_30",
-    "problemsWidget.tag.error.background.default": "Red_70",
-    "problemsWidget.tag.error.background.hovered": "Red_60",
-    "problemsWidget.tag.error.background.pressed": "Red_50",
-    "problemsWidget.tag.error.text.default": "Red_150",
-    "problemsWidget.tag.error.text.hovered": "Red_150",
-    "problemsWidget.tag.error.text.pressed": "Red_150",
-    "problemsWidget.tag.warning.background.default": "Yellow_70",
-    "problemsWidget.tag.warning.background.hovered": "Yellow_60",
-    "problemsWidget.tag.warning.background.pressed": "Yellow_50",
-    "problemsWidget.tag.warning.text.default": "Yellow_150",
-    "problemsWidget.tag.warning.text.hovered": "Yellow_150",
-    "problemsWidget.tag.warning.text.pressed": "Yellow_150",
-    "problemsWidget.tag.weakWarning.background.default": "Neutral_50",
-    "problemsWidget.tag.weakWarning.background.hovered": "Neutral_40",
-    "problemsWidget.tag.weakWarning.background.pressed": "Neutral_30",
-    "problemsWidget.tag.weakWarning.text.default": "Neutral_140",
-    "problemsWidget.tag.weakWarning.text.hovered": "Neutral_140",
-    "problemsWidget.tag.weakWarning.text.pressed": "Neutral_140",
-    "problemsWidget.tag.success.background": "Neutral_20",
-    "problemsWidget.tag.success.foreground": "Green_120",
-    "progressSpinner.foreground": "Neutral_140",
-    "progressBar.determinate.background": "BlueTint_20",
-    "progressBar.determinate.foreground": "Blue_90",
-    "progressBar.indeterminate.foreground": "Blue_90",
-    "progressBar.indeterminate.foregroundAccent": "#4A92E4",
-    "progressInline.foreground": "BlueTint_60",
-    "scrollbar.thumb.default": "LightTint_15",
-    "scrollbar.thumb.hovered": "LightTint_20",
-    "scrollbar.thumb.pressed": "LightTint_30",
-    "scrollbar.track.default": "Transparent",
-    "scrollbar.track.hovered": "LightTint_10",
-    "scrollbar.track.pressed": "LightTint_10",
-    "search.match.background": "YellowTint_50",
-    "search.match.text": "Neutral_140",
-    "search.counter.background": "LightTint_20",
-    "separator.default": "Neutral_60",
-    "separator.hovered": "Blue_90",
-    "highlight.resize.border.center.hovered": "BlueTint_40",
-    "highlight.resize.border.edge.hovered": "BlueTint_15",
-    "highlight.resize.border.center.pressed": "Blue_90",
-    "highlight.resize.border.edge.pressed": "BlueTint_15",
-    "settings.modified.indicator": "Blue 60",
-    "shortcut.text": "Neutral_140",
-    "shortcut.background": "LightTint_15",
     "snippet.background": "LightTint_15",
     "snippet.border": "Transparent",
     "snippet.content.background": "Neutral_20",
     "snippet.content.border": "Transparent",
-    "statusBar.text.default": "Neutral_110",
-    "statusBar.text.hovered": "Neutral_120",
-    "statusBar.text.pressed": "Neutral_130",
-    "tab.background.default": "LightTint_5",
-    "tab.background.hovered": "LightTint_10",
-    "tab.background.selected": "LightTint_10",
-    "tab.background.selectedFocused": "Neutral_50",
-    "tab.background.dragAndDrop": "Blue_40",
-    "tab.border.default": "Transparent",
-    "tab.border.hovered": "Transparent",
-    "tab.border.selected": "Transparent",
-    "tab.border.selectedFocused": "Transparent",
-    "tab.border.dragAndDrop": "Gray 10",
-    "tab.focusOutline.dragAndDrop": "Blue_100",
-    "tab.text.default": "Neutral_120",
-    "tab.text.hovered": "Neutral_130",
-    "tab.text.selected": "Neutral_120",
-    "tab.text.selectedFocused": "Neutral_130",
-    "tab.closeIcon.default": "LightTint_30",
-    "tab.closeIcon.hovered": "LightTint_70",
-    "tab.closeIcon.pressed": "LightTint_80",
-    "tab.hint.default": "Neutral_90",
-    "tab.hint.hovered": "Neutral_110",
-    "tab.hint.selected": "Neutral_110",
     "toast.background": "LightTint_80",
     "toast.border": "Transparent",
     "toast.text": "Neutral_10",
@@ -887,12 +770,232 @@
       "text": {
         "primary": "fg",
         "secondary": "text"
-      }
+      },
+      "timestamp": "text"
     },
 
     "parameterInfo": {
       "match": {
         "text": "accent"
+      }
+    },
+
+    "pillButton": {
+      "background": {
+        "default": "button",
+        "disabled": "excl",
+        "hovered": "hl",
+        "pressed": "hl"
+      },
+
+      "border": {
+        "default": "button",
+        "disabled": "excl",
+        "hovered": "hl",
+        "pressed": "hl"
+      },
+
+      "focusBorder": "accent",
+      "focusOutline": "accent70",
+
+      "text": {
+        "default": "fg",
+        "disabled": "disabled",
+        "hovered": "selFg",
+        "pressed": "selFg"
+      }
+    },
+
+    "popup": {
+      "background": "hc",
+      "border": "hc",
+      "closeIcon": {
+        "default": "hc",
+        "hovered": "hl",
+        "pressed": "active"
+      },
+      "editor": {
+        "background": "bg",
+        "border": "bg"
+      },
+      "goto": {
+        "background": "hc"
+      },
+      "listItem": {
+        "footer": {
+          "background": {
+            "default": "hc"
+          }
+        }
+      },
+      "separator": "border",
+      "text": "fg"
+    },
+
+    "problemsWidget": {
+      "card": {
+        "expanded": {
+          "error": {
+            "background": "error70",
+            "border": "error"
+          },
+          "warning": {
+            "background": "yellow70",
+            "border": "yellow"
+          },
+          "weakWarning": {
+            "background": "purple70",
+            "border": "purple"
+          }
+        },
+        "text": {
+          "primary": "fg",
+          "secondary": "text"
+        }
+      },
+
+      "tag": {
+        "error": {
+          "background": {
+            "default": "error70",
+            "hovered": "error",
+            "pressed": "error"
+          },
+          "text": {
+            "default": "selFg",
+            "hovered": "selFg",
+            "pressed": "selFg"
+          }
+        },
+
+        "success": {
+          "background": {
+            "default": "green70",
+            "hovered": "green",
+            "pressed": "green"
+          },
+          "text": {
+            "default": "selFg",
+            "hovered": "selFg",
+            "pressed": "selFg"
+          }
+        },
+
+        "warning": {
+          "background": {
+            "default": "yellow70",
+            "hovered": "yellow",
+            "pressed": "yellow"
+          },
+          "text": {
+            "default": "selFg",
+            "hovered": "selFg",
+            "pressed": "selFg"
+          }
+        },
+
+        "weakWarning": {
+          "background": {
+            "default": "purple70",
+            "hovered": "purple",
+            "pressed": "purple"
+          },
+          "text": {
+            "default": "selFg",
+            "hovered": "selFg",
+            "pressed": "selFg"
+          }
+        }
+      }
+    },
+
+    "progressBar": {
+      "determinate": {
+        "background": "bg",
+        "foreground": "accent"
+      },
+
+      "indeterminate": {
+        "background": "bg",
+        "foreground": "accent"
+      }
+    },
+
+    "progressInline": {
+      "foreground": "accent"
+    },
+
+    "progressSpinner": {
+      "foreground": "accent"
+    },
+
+    "remote": {
+      "userColor": {
+        "background": {
+          "one": "accent",
+          "two": "blue",
+          "three": "red",
+          "four": "yellow",
+          "five": "cyan",
+          "six": "orange",
+          "seven": "purple",
+          "eight": "green",
+          "nine": "error",
+          "ten": "gray"
+        }
+      }
+    },
+
+    "remoteWorkspaceStatusLabel": {
+      "background": {
+        "docker": "blue",
+        "space": "purple",
+        "ssh": "green",
+        "wsl": "yellow"
+      },
+
+      "text": {
+        "docker": "selFg",
+        "space": "selFg",
+        "ssh": "selFg",
+        "wsl": "selFg"
+      }
+    },
+
+    "scrollbar": {
+      "thumb": {
+        "default": "accent70",
+        "hovered": "accent70",
+        "pressed": "accent"
+      },
+      "track": {
+        "default": "Transparent",
+        "hovered": "bg30",
+        "pressed": "bg30"
+      }
+    },
+
+    "search": {
+      "counter": {
+        "background": "second"
+      },
+      "match": {
+        "background": "accent",
+        "text": "selFg"
+      }
+    },
+
+    "separator": {
+      "default": "contrast",
+      "hovered": "accent"
+    },
+
+    "settings": {
+      "background": {
+        "highlighted": "accent70"
+      },
+      "modified": {
+        "indicator": "accent"
       }
     },
 
@@ -903,52 +1006,341 @@
       "small": "shadow"
     },
 
+    "shortcut": {
+      "background": "button",
+      "text": "fg"
+    },
+
+    "smartMode": {
+      "background": {
+        "enabled": "accent",
+        "error": "error"
+      },
+      "border": {
+        "loading": "text"
+      }
+    },
+
+    "statusBar": {
+      "text": {
+        "default": "text",
+        "hovered": "fg",
+        "pressed": "selFg"
+      }
+    },
+
+    "survey": {
+      "button": {
+        "background": {
+          "default": "button",
+          "hovered": "hl"
+        },
+
+        "border": {
+          "default": "button",
+          "hovered": "hl"
+        },
+
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
+
+        "text": {
+          "default": "fg",
+          "hovered": "selFg"
+        }
+      }
+    },
+
     "tab": {
       "background": {
-        "default": "bg",
-        "dragAndDrop": "accent",
-        "hovered": "active",
-        "selected": "hl"
-      },
-
-      "text": {
-        "default": "fg",
-        "hovered": "selFg",
-        "selected": "selFg"
+        "default": "hc",
+        "dragAndDrop": "accent70",
+        "hovered": "hl",
+        "selected": "active",
+        "selectedFocused": "active"
       },
 
       "border": {
-        "default": "border",
-        "hovered": "accent",
-        "selected": "accent"
+        "default": "hc",
+        "dragAndDrop": "accent70",
+        "hovered": "hl",
+        "selected": "hl",
+        "selectedFocused": "accent"
+      },
+
+      "closeIcon": {
+        "default": "fg",
+        "hovered": "selFg",
+        "pressed": "accent"
+      },
+
+      "focusOutline": {
+        "dragAndDrop": "accent70"
       },
 
       "hint": {
         "default": "text",
         "hovered": "fg",
-        "selected": "fg"
+        "selected": "fg",
+        "selectedFocused": "fg"
       },
 
-      "focusOutline": {
-        "dragAndDrop": "accent"
-      },
+      "text": {
+        "default": "fg",
+        "hovered": "selFg",
+        "selected": "selFg",
+        "selectedFocused": "selFg"
+      }
+    },
 
-      "closeIcon": {
-        "default": "bg",
-        "hovered": "accent",
-        "pressed": "hl"
+    "terminal": {
+      "ansiColors": {
+        "background": {
+          "ansiBlack": "fg",
+          "ansiBlue": "blue",
+          "ansiBrightBlack": "bg",
+          "ansiBrightBlue": "blue",
+          "ansiBrightCyan": "cyan",
+          "ansiBrightGreen": "green",
+          "ansiBrightMagenta": "purple",
+          "ansiBrightRed": "red",
+          "ansiBrightWhite": "bg",
+          "ansiBrightYellow": "yellow",
+          "ansiCyan": "cyan",
+          "ansiGreen": "green",
+          "ansiMagenta": "purple",
+          "ansiRed": "red",
+          "ansiWhite": "bg",
+          "ansiYellow": "yellow"
+        },
+
+        "foreground": {
+          "ansiBlack": "fg",
+          "ansiBlue": "blue",
+          "ansiBrightBlack": "bg",
+          "ansiBrightBlue": "blue",
+          "ansiBrightCyan": "cyan",
+          "ansiBrightGreen": "green",
+          "ansiBrightMagenta": "purple",
+          "ansiBrightRed": "red",
+          "ansiBrightWhite": "bg",
+          "ansiBrightYellow": "yellow",
+          "ansiCyan": "cyan",
+          "ansiGreen": "green",
+          "ansiMagenta": "purple",
+          "ansiRed": "red",
+          "ansiWhite": "bg",
+          "ansiYellow": "yellow"
+        }
       }
     },
 
     "text": {
       "ai": "accent2",
-      "bright": "accent",
+      "bright": "selFg",
       "dangerous": "error",
+      "default": "fg",
       "disabled": "disabled",
       "positive": "green",
       "primary": "fg",
       "secondary": "text",
       "tertiary": "disabled"
+    },
+
+    "tileButton": {
+      "off": {
+        "background": {
+          "default": "button",
+          "disabled": "excl",
+          "hovered": "hl",
+          "pressed": "hl"
+        },
+
+        "border": {
+          "default": "button",
+          "disabled": "disabled",
+          "hovered": "button",
+          "pressed": "button"
+        },
+
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
+
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg",
+          "shortcut": {
+            "default": "text",
+            "disabled": "disabled"
+          }
+        }
+      },
+
+      "on": {
+        "background": {
+          "default": "button",
+          "disabled": "excl",
+          "hovered": "hl",
+          "pressed": "hl"
+        },
+
+        "border": {
+          "default": "button",
+          "disabled": "excl",
+          "hovered": "hl",
+          "pressed": "hl"
+        },
+
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
+
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hovered": "selFg",
+          "pressed": "selFg",
+          "shortcut": {
+            "default": "text",
+            "disabled": "disabled"
+          }
+        }
+      }
+    },
+
+    "toast": {
+      "background": "notif",
+      "border": "notif",
+      "text": "fg"
+    },
+
+    "toggleButton": {
+      "off": {
+        "background": {
+          "default": "Transparent",
+          "disabled": "Transparent",
+          "hovered": "button",
+          "pressed": "hl"
+        },
+
+        "border": {
+          "default": "button",
+          "disabled": "disabled",
+          "hovered": "button",
+          "pressed": "button"
+        },
+
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
+
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hint": "text",
+          "hovered": "selFg",
+          "pressed": "selFg"
+        }
+      },
+
+      "on": {
+        "background": {
+          "default": "button",
+          "disabled": "excl",
+          "hovered": "hl",
+          "pressed": "hl"
+        },
+
+        "border": {
+          "default": "button",
+          "disabled": "excl",
+          "hovered": "hl",
+          "pressed": "hl"
+        },
+
+        "focusBorder": "accent",
+        "focusOutline": "accent70",
+
+        "text": {
+          "default": "fg",
+          "disabled": "disabled",
+          "hint": "text",
+          "hovered": "selFg",
+          "pressed": "selFg"
+        }
+      }
+    },
+
+    "tooltip": {
+      "background": "notif",
+      "border": "notif",
+      "error": {
+        "background": "error70",
+        "border": "error",
+        "text": "error"
+      },
+      "text": {
+        "primary": "fg",
+        "secondary": "text",
+        "tertiary": "disabled"
+      }
+    },
+
+    "tree": {
+      "compactFolder": {
+        "selector": {
+          "default": "fg",
+          "focused": "accent"
+        },
+        "separator": "hl",
+        "focusBorder": "accent"
+      }
+    },
+
+    "vim": {
+      "mode": {
+        "cmdLine": {
+          "background": "purple",
+          "border": "purple",
+          "text": "bg"
+        },
+
+        "insert": {
+          "background": "yellow",
+          "border": "yellow",
+          "text": "bg"
+        },
+
+        "normal": {
+          "background": "bg",
+          "border": "bg",
+          "text": "fg"
+        },
+
+        "replace": {
+          "background": "orange",
+          "border": "orange",
+          "text": "bg"
+        },
+
+        "select": {
+          "background": "selBg",
+          "border": "selBg",
+          "text": "selFg"
+        },
+
+        "visual": {
+          "background": "blue",
+          "border": "blue",
+          "text": "bg"
+        }
+      },
+
+      "recordingTag": {
+        "background": "red",
+        "border": "red",
+        "text": "bg"
+      }
     }
   },
 
