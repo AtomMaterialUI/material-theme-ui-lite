@@ -1,6 +1,6 @@
 {
   "meta": {
-    "theme.name": "Material Oceanic",
+    "theme.name": "Material Oceanic - Edited",
     "theme.kind": "Dark",
     "theme.version": 1
   },
@@ -610,6 +610,7 @@
         "background": "accent",
         "border": "accent2"
       },
+
       "currentLine": {
         "background": {
           "default": "contrast",
@@ -646,12 +647,58 @@
         }
       },
       "interline": {
+        "background": "contrast",
         "match": {
-          "background": "red",
-          "background.secondary": "yellow",
-          "text.secondary": "purple"
+          "background": "accent",
+          "background.secondary": "accent70",
+          "text": "contrast",
+          "text.secondary": "contrast"
+        },
+        "preview": {
+          "background": "bg",
+          "border": "border"
+        },
+        "separator": "border",
+        "text": {
+          "default": "fg",
+          "hovered": "accent"
         }
-      }
+      },
+      "lineNumber": {
+        "current": "fg",
+        "default": "text"
+      },
+      "postline": {
+        "background": {
+          "error": "error",
+          "info": "blue",
+          "unused": "gray",
+          "warning": "yellow",
+          "weakWarning": "purple"
+        }
+      },
+      "renamePostline": {
+        "background": "button",
+        "border": "button",
+        "description.text": "fg",
+        "usages.text": "text"
+      },
+      "selectableFoldedMark": {
+        "background": {
+          "default": "Transparent",
+          "focused": "accent"
+        },
+        "border": {
+          "default": "border",
+          "focused": "accent"
+        },
+        "text": {
+          "default": "text",
+          "focused": "fg"
+        }
+      },
+      "text": "fg",
+      "whitespaceIndicator": "text"
     },
 
     "island": {
