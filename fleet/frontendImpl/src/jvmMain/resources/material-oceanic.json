@@ -526,6 +526,53 @@
         "disabled": "disabled"
       }
     },
+    "combobox": {
+      "arrowButton": {
+        "background": {
+          "default": "fg",
+          "disabled": "disabled"
+        }
+      },
+      "background": {
+        "default": "button",
+        "disabled": "disabled",
+        "error": "error",
+        "hovered": "hl"
+      },
+      "border": {
+        "default": "button",
+        "disabled": "disabled",
+        "error": "error",
+        "hovered": "hl"
+      },
+      "focusBorder": {
+        "default": "accent",
+        "error": "error"
+      },
+      "focusOutline": {
+        "default": "accent",
+        "error": "error"
+      },
+      "text": {
+        "default": "fg",
+        "disabled": "disabled",
+        "error": "error",
+        "hovered": "selFg"
+      }
+    },
+    "completion": {
+      "match": {
+        "background": "Transparent",
+        "text": "accent"
+      }
+    },
+    "dragAndDrop": {
+      "background": "accent50",
+      "border": {
+        "default": "accent",
+        "highlight": "accent2"
+      }
+    },
 
     "editor": {
       "text": "fg",
