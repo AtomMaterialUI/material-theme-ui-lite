@@ -223,7 +223,9 @@
     "tree.compactFolder.selector.default": "Neutral_140",
     "tree.compactFolder.selector.focused": "Neutral_140",
     "tree.compactFolder.separator": "Neutral_80",
+
     "#######################################": "########################",
+
     "ai": {
       "attachment.background.default": "second",
       "error": {
@@ -269,7 +271,7 @@
 
     "background": {
       "primary": "contrast",
-      "secondary": "contrast"
+      "secondary": "second"
     },
 
     "banner": {
@@ -307,17 +309,17 @@
       "ai": {
         "background": {
           "default": "button",
-          "disabled": "button",
+          "disabled": "excl",
           "hovered": "hl",
           "pressed": "active"
         },
         "border": {
           "default": "button",
-          "disabled": "button",
+          "disabled": "excl",
           "hovered": "hl",
           "pressed": "active"
         },
-        "focusBorder": "hl",
+        "focusBorder": "accent",
         "focusOutline": "accent",
         "separator": {
           "disabled": "disabled",
@@ -488,6 +490,7 @@
         }
       }
     },
+
     "checkbox": {
       "icon": {
         "default": "bg",
@@ -535,13 +538,13 @@
       },
       "background": {
         "default": "button",
-        "disabled": "disabled",
-        "error": "error",
+        "disabled": "excl",
+        "error": "error70",
         "hovered": "hl"
       },
       "border": {
         "default": "button",
-        "disabled": "disabled",
+        "disabled": "excl",
         "error": "error",
         "hovered": "hl"
       },
@@ -573,6 +576,34 @@
         "highlight": "accent2"
       }
     },
+    "dropdown": {
+      "background": {
+        "default": "button",
+        "disabled": "excl",
+        "error": "error70",
+        "hovered": "hl"
+      },
+      "border": {
+        "default": "button",
+        "disabled": "excl",
+        "error": "error",
+        "hovered": "hl"
+      },
+      "focusBorder": {
+        "default": "accent",
+        "error": "error"
+      },
+      "focusOutline": {
+        "default": "accent",
+        "error": "error"
+      },
+      "text": {
+        "default": "fg",
+        "disabled": "disabled",
+        "error": "error",
+        "hovered": "selFg"
+      }
+    },
 
     "editor": {
       "text": "fg",
@@ -598,6 +629,15 @@
         },
         "background.hovered": "hl"
       }
+    },
+    "island": {
+      "background": "bg"
+    },
+    "shadow": {
+      "border": "shadow",
+      "large": "shadow",
+      "medium": "shadow",
+      "small": "shadow"
     },
 
     "tab": {
@@ -632,15 +672,6 @@
       }
     },
 
-    "island": {
-      "background": "bg"
-    },
-    "shadow": {
-      "border": "shadow",
-      "large": "shadow",
-      "medium": "shadow",
-      "small": "shadow"
-    },
     "text": {
       "ai": "accent2",
       "bright": "accent",
@@ -680,14 +711,30 @@
     "shadow": "#2020201F",
     "white": "#eeffff",
     "blue": "#82aaff",
+    "blue70": "#82aaff70",
+    "blue50": "#82aaff50",
     "red": "#f07178",
+    "red70": "#f0717870",
+    "red50": "#f0717850",
     "yellow": "#ffcb6b",
+    "yellow70": "#ffcb6b70",
+    "yellow50": "#ffcb6b50",
     "green": "#c3e88d",
+    "green70": "#c3e88d70",
+    "green50": "#c3e88d50",
     "gray": "#546e7a",
     "purple": "#c792ea",
+    "purple70": "#c792ea70",
+    "purple50": "#c792ea50",
     "orange": "#f78c6c",
+    "orange70": "#f78c6c70",
+    "orange50": "#f78c6c50",
     "cyan": "#89ddff",
+    "cyan70": "#89ddff70",
+    "cyan50": "#89ddff50",
     "error": "#ff5370",
+    "error70": "#ff537070",
+    "error50": "#ff537050",
     "comments": "#546e7a",
     "vars": "#eeffff",
     "links": "#80cbc4",
