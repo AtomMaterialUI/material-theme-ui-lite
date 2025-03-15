@@ -430,9 +430,9 @@
           "hovered": "Transparent"
         },
         "border": {
-          "default": "hl",
+          "default": "text",
           "disabled": "disabled",
-          "hovered": "accent"
+          "hovered": "fg"
         },
         "focusBorder": "accent",
         "focusOutline": "accent70"
@@ -523,14 +523,14 @@
 
     "dropdown": {
       "background": {
-        "default": "button",
+        "default": "contrast",
         "disabled": "excl",
         "error": "error70",
         "hovered": "hl"
       },
 
       "border": {
-        "default": "button",
+        "default": "hl",
         "disabled": "excl",
         "error": "error",
         "hovered": "hl"
@@ -766,7 +766,7 @@
       },
 
       "border": {
-        "default": "contrast",
+        "default": "hl",
         "disabled": "bg",
         "error": "error50",
         "hovered": "bg"
@@ -829,6 +829,70 @@
         "default": "accent",
         "disabled": "disabled",
         "underline": "accent"
+      }
+    },
+
+    "listItem": {
+      "background": {
+        "default": "Transparent",
+        "dnd": "accent70",
+        "focused": "tree",
+        "hovered": "active",
+        "selected": "hl"
+      },
+
+      "border": {
+        "default": "Transparent",
+        "focused": "Transparent",
+        "hovered": "Transparent",
+        "selected": "Transparent"
+      },
+
+      "focusBorder": "accent",
+
+      "text": {
+        "default": "fg",
+        "focused": "fg",
+        "hovered": "selFg",
+        "secondary": "text",
+        "selected": "selFg"
+      }
+    },
+
+    "notification": {
+      "background": {
+        "default": "notif",
+        "unread": "bg"
+      },
+
+      "moreButton": {
+        "background": {
+          "default": "button",
+          "hovered": "hl",
+          "pressed": "active"
+        },
+        "border": {
+          "default": "button",
+          "hovered": "hl",
+          "pressed": "active"
+        },
+        "text": {
+          "default": "fg",
+          "hovered": "selFg",
+          "pressed": "selFg"
+        }
+      },
+
+      "separator": "border",
+      "text": {
+        "primary": "fg",
+        "secondary": "text"
+      }
+    },
+
+    "parameterInfo": {
+      "match": {
+        "text": "accent"
       }
     },
 
