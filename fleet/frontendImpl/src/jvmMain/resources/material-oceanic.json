@@ -1339,54 +1339,65 @@
     "ai.generated": {
       "backgroundColor": "second"
     },
-
-    "attribute.cpp": {
+    "attribute": {
       "foregroundColor": "attributes"
+    },
+    "attribute.cpp": {
+      "foregroundColor": "tags",
+      "fontWeight": "BOLD"
     },
     "attributeName": {
-      "foregroundColor": "attributes"
+      "foregroundColor": "attributes",
+      "fontStyle": "ITALIC"
     },
     "attributeName.html": {
-      "foregroundColor": "attributes"
+      "foregroundColor": "attributes",
+      "fontStyle": "ITALIC"
     },
     "attributeName.css": {
-      "foregroundColor": "attributes"
+      "foregroundColor": "attributes",
+      "fontStyle": "ITALIC"
     },
-
     "attributeValue": {
       "foregroundColor": "strings"
     },
     "attributeValue.html": {
       "foregroundColor": "strings"
     },
-
+    "attributeValue.css": {
+      "foregroundColor": "numbers"
+    },
     "boolean": {
       "foregroundColor": "numbers"
     },
-
     "comment": {
-      "foregroundColor": "comments"
+      "foregroundColor": "comments",
+      "fontStyle": "ITALIC"
     },
     "comment.buildConstraint.go": {
-      "foregroundColor": "comments"
+      "foregroundColor": "comments",
+      "fontStyle": "ITALIC"
     },
     "comment.doc": {
-      "foregroundColor": "comments"
+      "foregroundColor": "comments",
+      "fontStyle": "ITALIC"
     },
     "comment.doc.tag": {
-      "foregroundColor": "keywords"
+      "foregroundColor": "tags",
+      "fontStyle": "ITALIC",
+      "fontWeight": "BOLD"
     },
     "comment.doc.value": {
-      "foregroundColor": "comments"
+      "foregroundColor": "strings",
+      "fontStyle": "ITALIC"
     },
     "comment.todo": {
-      "foregroundColor": "strings"
+      "foregroundColor": "operators",
+      "fontStyle": "ITALIC"
     },
-
     "debug.currentFrame": {
       "backgroundColor": "red50"
     },
-
     "diff.added": {
       "backgroundColor": "green70"
     },
@@ -1408,7 +1419,6 @@
     "diff.added.word": {
       "backgroundColor": "green"
     },
-
     "diff.conflict": {
       "backgroundColor": "orange70"
     },
@@ -1430,7 +1440,6 @@
     "diff.conflict.word": {
       "backgroundColor": "orange"
     },
-
     "diff.deleted": {
       "backgroundColor": "excl"
     },
@@ -1452,7 +1461,6 @@
     "diff.deleted.word": {
       "backgroundColor": "comments"
     },
-
     "diff.modified": {
       "backgroundColor": "blue70"
     },
@@ -1474,12 +1482,11 @@
     "diff.modified.word": {
       "backgroundColor": "blue"
     },
-
     "editor.brace.match": {
       "foregroundColor": "selFg",
-      "backgroundColor": "accent70"
+      "backgroundColor": "accent70",
+      "fontWeight": "BOLD"
     },
-
     "editor.indentGuide": {
       "foregroundColor": "disabled"
     },
@@ -1492,7 +1499,6 @@
     "editor.indentGuide.declaration.current": {
       "foregroundColor": "accent"
     },
-
     "editor.rename.current": {
       "scrollbarMarkColor": "yellow",
       "border": {
@@ -1503,13 +1509,11 @@
       "backgroundColor": "accent70",
       "scrollbarMarkColor": "accent"
     },
-
     "editor.search.results": {
       "foregroundColor": "bg",
       "backgroundColor": "yellow",
       "scrollbarMarkColor": "yellow"
     },
-
     "editor.selection": {
       "foregroundColor": "selFg",
       "backgroundColor": "selBg"
@@ -1526,37 +1530,33 @@
         "color": "text"
       }
     },
-
     "entityReference": {
       "foregroundColor": "numbers"
     },
     "entityReference.html": {
       "foregroundColor": "numbers"
     },
-
     "error.hovered": {
       "backgroundColor": "error70"
     },
-
     "generic": {
       "foregroundColor": "keywords"
     },
     "generic.php": {
-      "foregroundColor": "keywords"
+      "foregroundColor": "keywords",
+      "fontWeight": "BOLD"
     },
-
     "hex": {
       "foregroundColor": "numbers"
     },
     "hex.css": {
       "foregroundColor": "numbers"
     },
-
     "identifier": {
       "foregroundColor": "vars"
     },
     "identifier.alias.yaml": {
-      "foregroundColor": "vars"
+      "foregroundColor": "attributes"
     },
     "identifier.anchor.yaml": {
       "foregroundColor": "tags"
@@ -1565,19 +1565,23 @@
       "foregroundColor": "numbers"
     },
     "identifier.constant.predefined": {
-      "foregroundColor": "operators"
+      "foregroundColor": "operators",
+      "fontStyle": "ITALIC"
     },
     "identifier.css": {
-      "foregroundColor": "operators"
+      "foregroundColor": "attributes"
     },
     "identifier.dependency.add.amper": {
-      "foregroundColor": "functions"
+      "foregroundColor": "functions",
+      "fontStyle": "ITALIC"
     },
     "identifier.dependency.annotator.amper": {
-      "foregroundColor": "keywords"
+      "foregroundColor": "keywords",
+      "fontStyle": "ITALIC"
     },
     "identifier.dependency.scope.amper": {
-      "foregroundColor": "attributes"
+      "foregroundColor": "keywords",
+      "fontStyle": "ITALIC"
     },
     "identifier.field": {
       "foregroundColor": "operators"
@@ -1593,10 +1597,12 @@
       "foregroundColor": "functions"
     },
     "identifier.function.call": {
-      "foregroundColor": "functions"
+      "foregroundColor": "attributes",
+      "fontStyle": "ITALIC"
     },
     "identifier.function.call.composable": {
-      "foregroundColor": "classes"
+      "foregroundColor": "functions",
+      "fontStyle": "ITALIC"
     },
     "identifier.function.call.package": {
       "foregroundColor": "classes",
@@ -1629,13 +1635,15 @@
       "foregroundColor": "operators"
     },
     "identifier.other": {
-      "foregroundColor": "vars"
+      "foregroundColor": "operators"
     },
     "identifier.package": {
-      "foregroundColor": "attributes"
+      "foregroundColor": "classes",
+      "fontStyle": "ITALIC"
     },
     "identifier.package.go": {
-      "foregroundColor": "attributes"
+      "foregroundColor": "attributes",
+      "fontStyle": "ITALIC"
     },
     "identifier.parameter": {
       "foregroundColor": "parameters"
@@ -1647,7 +1655,11 @@
       "foregroundColor": "error"
     },
     "identifier.this.mutable": {
-      "foregroundColor": "error"
+      "foregroundColor": "error",
+      "textDecoration": {
+        "color": "vars",
+        "style": "DASHED"
+      }
     },
     "identifier.type": {
       "foregroundColor": "classes"
@@ -1659,7 +1671,7 @@
       "foregroundColor": "numbers"
     },
     "identifier.type.struct": {
-      "foregroundColor": "numbers"
+      "foregroundColor": "classes"
     },
     "identifier.type.valueType": {
       "foregroundColor": "classes"
@@ -1675,6 +1687,7 @@
     },
     "identifier.underCaret": {
       "backgroundColor": "accent70",
+      "foregroundColor": "selFg",
       "scrollbarMarkColor": "accent"
     },
     "identifier.variable": {
@@ -1684,33 +1697,283 @@
       "foregroundColor": "attributes"
     },
     "identifier.variable.mutable": {
-      "foregroundColor": "parameters"
+      "foregroundColor": "parameters",
+      "textDecoration": {
+        "color": "attributes"
+      }
     },
     "identifier.variable.php": {
       "foregroundColor": "vars"
     },
     "identifier.variable.shadowing.go": {
-      "foregroundColor": "parameters"
+      "foregroundColor": "vars",
+      "textDecoration": {
+        "color": "error",
+        "style": "DASHED"
+      }
     },
-
-    "keyword": {
+    "interpolation.css": {
+      "foregroundColor": "operators"
+    },
+    "jsCodeDelimiter": {
+      "foregroundColor": "operators"
+    },
+    "jsCodeInjection": {
+      "foregroundColor": "comments",
+      "fontStyle": "ITALIC"
+    },
+    "key": {
       "foregroundColor": "keywords"
     },
-
-    "link": {
-      "foregroundColor": "links"
+    "key.json": {
+      "foregroundColor": "keywords"
     },
-
+    "key.yaml": {
+      "foregroundColor": "attributes"
+    },
+    "keyword": {
+      "foregroundColor": "keywords",
+      "fontStyle": "ITALIC"
+    },
+    "keyword.css": {
+      "foregroundColor": "keywords",
+      "fontStyle": "ITALIC"
+    },
+    "keyword.extend.css": {
+      "foregroundColor": "operators",
+      "fontStyle": "ITALIC"
+    },
+    "keyword.global.css": {
+      "foregroundColor": "attributes",
+      "fontStyle": "ITALIC"
+    },
+    "keyword.important.css": {
+      "foregroundColor": "tags",
+      "fontWeight": "BOLD"
+    },
+    "keyword.typeModifier": {
+      "foregroundColor": "attributes"
+    },
+    "link": {
+      "foregroundColor": "links",
+      "textDecoration": {
+        "color": "links",
+        "style": "SOLID",
+        "type": "UNDERLINE"
+      }
+    },
+    "link.hovered": {
+      "foregroundColor": "accent",
+      "textDecoration": {
+        "color": "accent",
+        "style": "SOLID",
+        "type": "UNDERLINE"
+      }
+    },
     "metadata": {
       "foregroundColor": "attributes"
     },
-
+    "markup.bold": {
+      "foregroundColor": "keywords",
+      "fontWeight": "BOLD"
+    },
+    "markup.code.block": {
+      "backgroundColor": "second"
+    },
+    "markup.heading": {
+      "foregroundColor": "tags",
+      "fontWeight": "BOLD"
+    },
+    "markup.href": {
+      "foregroundColor": "links",
+      "textDecoration": {
+        "color": "links",
+        "style": "SOLID",
+        "type": "UNDERLINE"
+      }
+    },
+    "markup.italic": {
+      "foregroundColor": "keywords",
+      "fontStyle": "ITALIC"
+    },
+    "metadata.structTag.arbitraryText.go": {
+      "foregroundColor": "comments"
+    },
+    "metadata.structTag.key.go": {
+      "foregroundColor": "operators"
+    },
+    "metadata.structTag.value.go": {
+      "foregroundColor": "strings"
+    },
+    "mixin": {
+      "foregroundColor": "functions",
+      "fontStyle": "ITALIC"
+    },
     "number": {
-      "foregroundColor": "Yellow"
+      "foregroundColor": "numbers"
+    },
+    "number.css": {
+      "foregroundColor": "numbers"
+    },
+    "number.unit.css": {
+      "foregroundColor": "attributes"
+    },
+    "problem.deprecated": {
+      "textDecoration": {
+        "color": "comments",
+        "type": "LINE_THROUGH"
+      }
+    },
+    "problem.error": {
+      "textDecoration": {
+        "color": "error",
+        "style": "WAVY"
+      }
+    },
+    "problem.error.badCharacter": {
+      "textDecoration": {
+        "color": "error",
+        "style": "WAVY"
+      }
+    },
+    "problem.info": {
+      "textDecoration": {
+        "color": "vars",
+        "style": "SOLID"
+      }
+    },
+    "problem.unused": {
+      "foregroundColor": "comments"
+    },
+    "problem.warning": {
+      "textDecoration": {
+        "color": "yellow",
+        "style": "WAVY"
+      }
+    },
+    "problem.warning.badCharacter": {
+      "textDecoration": {
+        "color": "yellow",
+        "style": "WAVY"
+      }
+    },
+    "property.php": {
+      "foregroundColor": "operators"
+    },
+    "property.static.php": {
+      "foregroundColor": "operators",
+      "fontStyle": "ITALIC"
+    },
+    "propertyName.css": {
+      "foregroundColor": "operators"
+    },
+    "propertyValue.css": {
+      "foregroundColor": "numbers"
     },
 
+    "punctuation.css": {
+      "foregroundColor": "operators"
+    },
+    "punctuation.operator": {
+      "foregroundColor": "operators"
+    },
+    "punctuation.operator.merge.yaml": {
+      "foregroundColor": "operators"
+    },
+
+    "refactoring.modified.code": {
+      "backgroundColor": "accent70"
+    },
+
+    "schema.yaml": {
+      "foregroundColor": "tags"
+    },
+
+    "selector.class.css": {
+      "foregroundColor": "classes",
+      "fontStyle": "ITALIC"
+    },
+    "selector.css": {
+      "foregroundColor": "classes",
+      "fontStyle": "ITALIC"
+    },
+    "selector.id.css": {
+      "foregroundColor": "keywords",
+      "fontWeight": "BOLD"
+    },
+    "selector.pseudo.css": {
+      "foregroundColor": "keywords",
+      "fontStyle": "ITALIC"
+    },
+    "selector.tag.css": {
+      "foregroundColor": "tags",
+      "fontStyle": "ITALIC"
+    },
+
+    "snippet.selected": {
+      "border": {
+        "color": "accent"
+      }
+    },
     "string": {
       "foregroundColor": "strings"
+    },
+    "string.binary": {
+      "foregroundColor": "tags",
+      "fontStyle": "ITALIC"
+    },
+    "string.css": {
+      "foregroundColor": "strings"
+    },
+    "string.escape": {
+      "foregroundColor": "attributes"
+    },
+    "string.escape.alternative": {
+      "foregroundColor": "error"
+    },
+    "string.escape.unicode": {
+      "foregroundColor": "operators"
+    },
+    "string.formatItem": {
+      "foregroundColor": "vars"
+    },
+    "string.regexp": {
+      "foregroundColor": "operators"
+    },
+
+    "tag": {
+      "foregroundColor": "tags"
+    },
+    "tag.html": {
+      "foregroundColor": "operators"
+    },
+    "tagName": {
+      "foregroundColor": "operators"
+    },
+    "tagName.html": {
+      "foregroundColor": "operators"
+    },
+    "tagName.custom.html": {
+      "foregroundColor": "functions"
+    },
+    "target.match": {
+      "backgroundColor": "accent270"
+    },
+
+    "target.match.word": {
+      "backgroundColor": "accent270",
+      "foregroundColor": "accent"
+    },
+
+    "url.css": {
+      "foregroundColor": "links",
+      "textDecoration": {
+        "color": "links"
+      }
+    },
+
+    "value.yaml": {
+      "foregroundColor": "fg"
     }
   },
 
