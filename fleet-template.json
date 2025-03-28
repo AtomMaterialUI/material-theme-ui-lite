@@ -55,7 +55,7 @@
     },
 
     "background": {
-      "primary": "invert",
+      "primary": "bc",
       "secondary": "second"
     },
 
@@ -388,7 +388,7 @@
 
     "dropdown": {
       "background": {
-        "default": "invert",
+        "default": "bc",
         "disabled": "excl",
         "error": "error70",
         "hovered": "hl"
@@ -673,7 +673,7 @@
     },
 
     "island": {
-      "background": "hc"
+      "background": "bc"
     },
 
     "layout": {
@@ -789,10 +789,10 @@
     },
 
     "popup": {
-      "background": "hc",
-      "border": "hc",
+      "background": "bc",
+      "border": "bc",
       "closeIcon": {
-        "default": "hc",
+        "default": "bc",
         "hovered": "hl",
         "pressed": "active"
       },
@@ -1004,8 +1004,8 @@
     },
 
     "snippet": {
-      "background": "hc",
-      "border": "hc",
+      "background": "bc",
+      "border": "bc",
       "content": {
         "background": "bg",
         "border": "bg"
@@ -1980,6 +1980,7 @@
   "palette": {
     "bg": "%bg",
     "bg30": "%bg30",
+    "bc": "%bc",
     "fg": "%fg",
     "fc": "%fc",
     "text": "%text",
@@ -2004,7 +2005,6 @@
     "hl": "%hl",
     "notif": "%notif",
     "hc": "%hc",
-    "invert": "%invert",
     "shadow": "%shadow",
     "white": "%white",
     "blue": "%blue",

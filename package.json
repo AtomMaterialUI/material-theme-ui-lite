@@ -21,5 +21,8 @@
   "homepage": "https://github.com/mallowigi/material-theme-ui-lite#readme",
   "devDependencies": {
     "yaml": "2.4.5"
+  },
+  "dependencies": {
+    "polished": "^4.3.1"
   }
 }

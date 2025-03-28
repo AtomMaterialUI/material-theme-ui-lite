@@ -24,6 +24,7 @@
 
 import fs from "fs";
 import yaml from "yaml";
+import {darken, lighten} from "polished";
 
 // Replacements
 let props = [
@@ -32,7 +33,6 @@ let props = [
   ['id', 'className'],
   ['bg', 'background'],
   ['fg', 'foreground'],
-  ['fc', 'foreground'],
   ['text', 'text'],
   ['selBg', 'selectBg'],
   ['selFg', 'selectFg'],
@@ -42,7 +42,6 @@ let props = [
   ['dis', 'disabled'],
   ['cs', 'contrast'],
   ['hc', 'background'],
-  ['invert', 'contrast'],
   ['table', 'table'],
   ['border', 'border'],
   ['hl', 'hl'],
@@ -81,7 +80,6 @@ let contrastProps = [
   ['id', 'className'],
   ['bg', 'background'],
   ['fg', 'foreground'],
-  ['fc', 'selectFg'],
   ['text', 'text'],
   ['selBg', 'selectBg'],
   ['selFg', 'selectFg'],
@@ -91,7 +89,6 @@ let contrastProps = [
   ['dis', 'disabled'],
   ['cs', 'contrast'],
   ['hc', 'contrast'],
-  ['invert', 'background'],
   ['table', 'table'],
   ['border', 'border'],
   ['hl', 'hl'],
@@ -160,26 +157,72 @@ const replacePlaceholders = (text, theme, props, {contrast, compact}) => {
   result = result.replace(new RegExp(`%name`, 'g'), name);
 
   sizesProps.forEach(([prop, normalProp, compactProp]) => {
-    console.log(`Replacing ${prop} with ${compact ? compactProp : normalProp}`);
     result = result.replace(new RegExp(`%${prop}`, 'g'), compact ? compactProp : normalProp);
   });
 
   props.forEach(([placeholder, prop]) => {
-    console.log(`Replacing ${placeholder} with property ${prop}: ${theme[prop]}`);
     result = result.replace(new RegExp(`%${placeholder}`, 'g'), theme[prop]);
     result = result.replace(new RegExp(`"@${placeholder}"`, 'g'), theme[prop]);
   });
 
+  // Foreground contrast
+  const contrastedForeground = contrastifyForeground({dark: theme.dark, color: theme.foreground, contrast});
+  result = result.replace(new RegExp(`%fc`, 'g'), contrastedForeground);
+
+  // Background contrast
+  const contrastedBackground = contrastifyBackground({dark: theme.dark, color: theme.background, contrast});
+  result = result.replace(new RegExp(`%bc`, 'g'), contrastedBackground);
+
+  // Dark/Light for Fleet
   result = result.replace(new RegExp(`-dark-`, 'g'), theme.dark ? 'Dark' : 'Light');
 
   globalProps.forEach(([prop, light, dark]) => {
     let isDark = theme.dark;
-    console.log(`Replacing global ${prop} with ${isDark ? dark : light}`);
     result = result.replace(new RegExp(`%${prop}`, 'g'), isDark ? dark : light);
   });
 
   return result;
 };
+
+function contrastifyForeground({dark, color, contrast}) {
+  let result;
+  if (dark) {
+    result = contrast ? lighten(0.1, color) : color;
+  } else {
+    result = contrast ? darken(0.1, color) : color;
+  }
+
+  if (result.length === 4) {
+    result = convertShortHexToLongHex(result);
+  }
+
+  return result;
+}
+
+function contrastifyBackground({dark, color, contrast}) {
+  let result;
+  if (dark) {
+    result = contrast ? darken(0.05, color) : color;
+  } else {
+    result = contrast ? lighten(0.05, color) : color;
+  }
+
+  if (result.length === 4) {
+    result = convertShortHexToLongHex(result);
+  }
+
+  return result;
+}
+
+function convertShortHexToLongHex(shortHex) {
+  return shortHex
+    .split('')
+    .map((char) => char.repeat(2))
+    .join('')
+    .slice(1);
+}
+
+console.log('Reading themes...');
 
 // Read the themes
 const themesFile = fs.readFileSync('./src/main/resources/themes.yml', 'utf8');
@@ -187,9 +230,13 @@ const themes = yaml.parse(themesFile);
 const {material, other} = themes;
 const allThemes = [...material, ...other];
 
+console.log('Themes:', allThemes.map((theme) => theme.name).join(', '));
+
 // Output files
 const template = fs.readFileSync('./src/main/resources/template.theme.json', 'utf8');
 const fleetTemplate = fs.readFileSync('./fleet-template.json', 'utf8');
+
+console.log('Generating folders...');
 
 // Directories
 const themesDir = './src/main/resources/themes';
@@ -200,6 +247,8 @@ fs.mkdirSync(`${themesDir}/compactContrast`, {recursive: true});
 
 // Fleet Dirs
 const fleetThemesDir = './fleet/frontendImpl/src/jvmMain/resources';
+
+console.log('Generating themes...');
 
 // Generate Themes
 allThemes.forEach((theme) => {
@@ -216,6 +265,8 @@ allThemes.forEach((theme) => {
   fs.writeFileSync(`./src/main/resources/themes/compactContrast/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
 });
 
+console.log('Generating Fleet themes...');
+
 // Generate Fleet Themes
 allThemes.forEach((theme) => {
   const themeStr = replacePlaceholders(fleetTemplate, theme, props, {contrast: false, compact: false});
@@ -230,3 +281,5 @@ allThemes.forEach((theme) => {
   // const compactContrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: true});
   // fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
 });
+
+console.log('Done!');
