@@ -224,9 +224,9 @@ allThemes.forEach((theme) => {
   const contrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: false});
   fs.writeFileSync(`${fleetThemesDir}/${theme.name} Contrast.theme.json`, contrastThemeStr, 'utf8');
 
-  const compactThemeStr = replacePlaceholders(fleetTemplate, theme, props, {contrast: false, compact: true});
-  fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact.theme.json`, compactThemeStr, 'utf8');
-
-  const compactContrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: true});
-  fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
+  // const compactThemeStr = replacePlaceholders(fleetTemplate, theme, props, {contrast: false, compact: true});
+  // fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact.theme.json`, compactThemeStr, 'utf8');
+  //
+  // const compactContrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: true});
+  // fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
 });

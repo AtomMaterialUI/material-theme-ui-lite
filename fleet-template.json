@@ -388,7 +388,7 @@
 
     "dropdown": {
       "background": {
-        "default": "hc",
+        "default": "invert",
         "disabled": "excl",
         "error": "error70",
         "hovered": "hl"
@@ -727,7 +727,7 @@
     "notification": {
       "background": {
         "default": "notif",
-        "unread": "hc"
+        "unread": "notif"
       },
 
       "moreButton": {
@@ -1005,7 +1005,7 @@
 
     "snippet": {
       "background": "hc",
-      "border": "bg",
+      "border": "hc",
       "content": {
         "background": "bg",
         "border": "bg"
@@ -1044,7 +1044,7 @@
 
     "tab": {
       "background": {
-        "default": "hc",
+        "default": "bg",
         "dragAndDrop": "accent70",
         "hovered": "hl",
         "selected": "active",
@@ -1052,7 +1052,7 @@
       },
 
       "border": {
-        "default": "hc",
+        "default": "bg",
         "dragAndDrop": "accent70",
         "hovered": "hl",
         "selected": "hl",
@@ -1135,7 +1135,7 @@
       "positive": "green",
       "primary": "fc",
       "secondary": "text",
-      "tertiary": "disabled"
+      "tertiary": "text"
     },
 
     "tileButton": {
