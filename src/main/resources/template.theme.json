@@ -1877,7 +1877,7 @@
       "alternativeRowBackground": "cs",
       "alternateRowColor": "cs",
       "background": "bg",
-      "cellNoFocusBorder": "2,3,2,3",
+      "cellNoFocusBorder": "2,3,2,3,%accent",
       "disabledForeground": "dis",
       "dropLineColor": "accent",
       "dropLineShortColor": "accent",
