@@ -55,7 +55,7 @@
     },
 
     "background": {
-      "primary": "contrast",
+      "primary": "invert",
       "secondary": "second"
     },
 
@@ -79,7 +79,7 @@
       "inline": {
         "background": "notif",
         "border": "notif",
-        "text": "fg"
+        "text": "fc"
       },
 
       "secondary": {
@@ -88,7 +88,7 @@
         }
       },
 
-      "text": "fg"
+      "text": "fc"
     },
 
     "border": "border",
@@ -118,7 +118,7 @@
           "focusOutline": "hl"
         },
         "text": {
-          "default": "fg",
+          "default": "fc",
           "hint": "text",
           "disabled": "disabled",
           "pressed": "selFg",
@@ -149,7 +149,7 @@
           "focusOutline": "accent"
         },
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
@@ -180,7 +180,7 @@
           "focusOutline": "accent"
         },
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
@@ -211,7 +211,7 @@
           "focusOutline": "accent"
         },
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
@@ -242,7 +242,7 @@
           "focusOutline": "accent"
         },
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
@@ -273,7 +273,7 @@
           "focusOutline": "accent"
         },
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
@@ -297,7 +297,7 @@
         "border": {
           "default": "text",
           "disabled": "disabled",
-          "hovered": "fg"
+          "hovered": "fc"
         },
         "focusBorder": "accent",
         "focusOutline": "accent70"
@@ -319,7 +319,7 @@
       },
 
       "text": {
-        "default": "fg",
+        "default": "fc",
         "disabled": "disabled"
       }
     },
@@ -357,7 +357,7 @@
       },
 
       "text": {
-        "default": "fg",
+        "default": "fc",
         "disabled": "disabled",
         "error": "error",
         "hovered": "selFg"
@@ -388,7 +388,7 @@
 
     "dropdown": {
       "background": {
-        "default": "contrast",
+        "default": "hc",
         "disabled": "excl",
         "error": "error70",
         "hovered": "hl"
@@ -412,7 +412,7 @@
       },
 
       "text": {
-        "default": "fg",
+        "default": "fc",
         "disabled": "disabled",
         "error": "error",
         "hovered": "selFg"
@@ -428,7 +428,7 @@
       "currentLine": {
         "background": {
           "default": "contrast",
-          "focused": "contrast"
+          "focused": "tree"
         },
         "scrollbarMark": "accent"
       },
@@ -438,7 +438,7 @@
           "hovered": "tree"
         },
         "icon": {
-          "default": "fg",
+          "default": "fc",
           "hovered": "accent"
         }
       },
@@ -478,13 +478,13 @@
         },
         "separator": "border",
         "text": {
-          "default": "fg",
+          "default": "fc",
           "hovered": "accent"
         }
       },
 
       "lineNumber": {
-        "current": "fg",
+        "current": "fc",
         "default": "text"
       },
 
@@ -501,7 +501,7 @@
       "renamePostline": {
         "background": "button",
         "border": "button",
-        "description.text": "fg",
+        "description.text": "fc",
         "usages.text": "text"
       },
 
@@ -516,11 +516,11 @@
         },
         "text": {
           "default": "text",
-          "focused": "fg"
+          "focused": "fc"
         }
       },
 
-      "text": "fg",
+      "text": "fc",
       "whitespaceIndicator": "text"
     },
 
@@ -543,7 +543,7 @@
         "focusBorder": "accent",
         "focusOutline": "accent70",
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg"
@@ -656,7 +656,7 @@
         "default": "text",
         "disabled": "disabled",
         "error": "error",
-        "hovered": "fg"
+        "hovered": "fc"
       },
 
       "selectionBackground": {
@@ -665,7 +665,7 @@
       },
 
       "text": {
-        "default": "fg",
+        "default": "fc",
         "disabled": "disabled",
         "error": "error",
         "hovered": "selFg"
@@ -673,7 +673,7 @@
     },
 
     "island": {
-      "background": "bg"
+      "background": "hc"
     },
 
     "layout": {
@@ -716,8 +716,8 @@
       "focusBorder": "accent",
 
       "text": {
-        "default": "fg",
-        "focused": "fg",
+        "default": "fc",
+        "focused": "fc",
         "hovered": "selFg",
         "secondary": "text",
         "selected": "selFg"
@@ -727,7 +727,7 @@
     "notification": {
       "background": {
         "default": "notif",
-        "unread": "bg"
+        "unread": "hc"
       },
 
       "moreButton": {
@@ -742,7 +742,7 @@
           "pressed": "active"
         },
         "text": {
-          "default": "fg",
+          "default": "fc",
           "hovered": "selFg",
           "pressed": "selFg"
         }
@@ -750,7 +750,7 @@
 
       "separator": "border",
       "text": {
-        "primary": "fg",
+        "primary": "fc",
         "secondary": "text"
       },
       "timestamp": "text"
@@ -781,7 +781,7 @@
       "focusOutline": "accent70",
 
       "text": {
-        "default": "fg",
+        "default": "fc",
         "disabled": "disabled",
         "hovered": "selFg",
         "pressed": "selFg"
@@ -797,7 +797,7 @@
         "pressed": "active"
       },
       "editor": {
-        "background": "bg",
+        "background": "hc",
         "border": "bg"
       },
       "goto": {
@@ -811,7 +811,7 @@
         }
       },
       "separator": "border",
-      "text": "fg"
+      "text": "fc"
     },
 
     "problemsWidget": {
@@ -831,7 +831,7 @@
           }
         },
         "text": {
-          "primary": "fg",
+          "primary": "fc",
           "secondary": "text"
         }
       },
@@ -968,7 +968,7 @@
     },
 
     "separator": {
-      "default": "contrast",
+      "default": "second",
       "hovered": "accent"
     },
 
@@ -990,7 +990,7 @@
 
     "shortcut": {
       "background": "button",
-      "text": "fg"
+      "text": "fc"
     },
 
     "smartMode": {
@@ -1004,7 +1004,7 @@
     },
 
     "snippet": {
-      "background": "bg",
+      "background": "hc",
       "border": "bg",
       "content": {
         "background": "bg",
@@ -1015,7 +1015,7 @@
     "statusBar": {
       "text": {
         "default": "text",
-        "hovered": "fg",
+        "hovered": "fc",
         "pressed": "selFg"
       }
     },
@@ -1036,7 +1036,7 @@
         "focusOutline": "accent70",
 
         "text": {
-          "default": "fg",
+          "default": "fc",
           "hovered": "selFg"
         }
       }
@@ -1060,7 +1060,7 @@
       },
 
       "closeIcon": {
-        "default": "fg",
+        "default": "fc",
         "hovered": "selFg",
         "pressed": "accent"
       },
@@ -1071,13 +1071,13 @@
 
       "hint": {
         "default": "text",
-        "hovered": "fg",
-        "selected": "fg",
-        "selectedFocused": "fg"
+        "hovered": "fc",
+        "selected": "fc",
+        "selectedFocused": "fc"
       },
 
       "text": {
-        "default": "fg",
+        "default": "fc",
         "hovered": "selFg",
         "selected": "selFg",
         "selectedFocused": "selFg"
@@ -1087,7 +1087,7 @@
     "terminal": {
       "ansiColors": {
         "background": {
-          "ansiBlack": "fg",
+          "ansiBlack": "fc",
           "ansiBlue": "blue",
           "ansiBrightBlack": "bg",
           "ansiBrightBlue": "blue",
@@ -1106,7 +1106,7 @@
         },
 
         "foreground": {
-          "ansiBlack": "fg",
+          "ansiBlack": "fc",
           "ansiBlue": "blue",
           "ansiBrightBlack": "bg",
           "ansiBrightBlue": "blue",
@@ -1130,10 +1130,10 @@
       "ai": "accent2",
       "bright": "selFg",
       "dangerous": "error",
-      "default": "fg",
+      "default": "fc",
       "disabled": "disabled",
       "positive": "green",
-      "primary": "fg",
+      "primary": "fc",
       "secondary": "text",
       "tertiary": "disabled"
     },
@@ -1158,7 +1158,7 @@
         "focusOutline": "accent70",
 
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
@@ -1188,7 +1188,7 @@
         "focusOutline": "accent70",
 
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hovered": "selFg",
           "pressed": "selFg",
@@ -1203,7 +1203,7 @@
     "toast": {
       "background": "notif",
       "border": "notif",
-      "text": "fg"
+      "text": "fc"
     },
 
     "toggleButton": {
@@ -1226,7 +1226,7 @@
         "focusOutline": "accent70",
 
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hint": "text",
           "hovered": "selFg",
@@ -1253,7 +1253,7 @@
         "focusOutline": "accent70",
 
         "text": {
-          "default": "fg",
+          "default": "fc",
           "disabled": "disabled",
           "hint": "text",
           "hovered": "selFg",
@@ -1271,7 +1271,7 @@
         "text": "error"
       },
       "text": {
-        "primary": "fg",
+        "primary": "fc",
         "secondary": "text",
         "tertiary": "disabled"
       }
@@ -1280,7 +1280,7 @@
     "tree": {
       "compactFolder": {
         "selector": {
-          "default": "fg",
+          "default": "fc",
           "focused": "accent"
         },
         "separator": "hl",
@@ -1305,7 +1305,7 @@
         "normal": {
           "background": "bg",
           "border": "bg",
-          "text": "fg"
+          "text": "fc"
         },
 
         "replace": {
@@ -1981,6 +1981,7 @@
     "bg": "%bg",
     "bg30": "%bg30",
     "fg": "%fg",
+    "fc": "%fc",
     "text": "%text",
     "selBg": "%selBg",
     "selBg20": "%selBg20",
@@ -2003,6 +2004,7 @@
     "hl": "%hl",
     "notif": "%notif",
     "hc": "%hc",
+    "invert": "%invert",
     "shadow": "%shadow",
     "white": "%white",
     "blue": "%blue",
