@@ -58,6 +58,19 @@ let props = [
   ['green', 'strings'],
   ['yellow', 'attributes'],
   ['orange', 'numbers'],
+  ['error', 'error'],
+  ['comments', 'comments'],
+  ['vars', 'vars'],
+  ['operators', 'operators'],
+  ['keywords', 'keywords'],
+  ['functions', 'functions'],
+  ['tags', 'tags'],
+  ['strings', 'strings'],
+  ['attributes', 'attributes'],
+  ['numbers', 'numbers'],
+  ['parameters', 'parameters'],
+  ['classes', 'classes'],
+  ['links', 'links'],
 ];
 
 let contrastProps = [
@@ -92,6 +105,19 @@ let contrastProps = [
   ['green', 'strings'],
   ['yellow', 'attributes'],
   ['orange', 'numbers'],
+  ['error', 'error'],
+  ['comments', 'comments'],
+  ['vars', 'vars'],
+  ['operators', 'operators'],
+  ['keywords', 'keywords'],
+  ['functions', 'functions'],
+  ['tags', 'tags'],
+  ['strings', 'strings'],
+  ['attributes', 'attributes'],
+  ['numbers', 'numbers'],
+  ['parameters', 'parameters'],
+  ['classes', 'classes'],
+  ['links', 'links'],
 ];
 
 let globalProps = [
@@ -140,7 +166,7 @@ const replacePlaceholders = (text, theme, props, {contrast, compact}) => {
     result = result.replace(new RegExp(`"@${placeholder}"`, 'g'), theme[prop]);
   });
 
-  result = result.replace(new RegExp(`"%dark"`, 'g'), theme.dark ? 'Dark' : 'Light');
+  result = result.replace(new RegExp(`-dark-`, 'g'), theme.dark ? 'Dark' : 'Light');
 
   globalProps.forEach(([prop, light, dark]) => {
     let isDark = theme.dark;
@@ -170,10 +196,6 @@ fs.mkdirSync(`${themesDir}/compactContrast`, {recursive: true});
 
 // Fleet Dirs
 const fleetThemesDir = './fleet/frontendImpl/src/jvmMain/resources';
-fs.mkdirSync(`${fleetThemesDir}/regular`, {recursive: true});
-fs.mkdirSync(`${fleetThemesDir}/compact`, {recursive: true});
-fs.mkdirSync(`${fleetThemesDir}/contrast`, {recursive: true});
-fs.mkdirSync(`${fleetThemesDir}/compactContrast`, {recursive: true});
 
 // Generate Themes
 allThemes.forEach((theme) => {
@@ -193,14 +215,14 @@ allThemes.forEach((theme) => {
 // Generate Fleet Themes
 allThemes.forEach((theme) => {
   const themeStr = replacePlaceholders(fleetTemplate, theme, props, {contrast: false, compact: false});
-  fs.writeFileSync(`${fleetThemesDir}/regular/${theme.name}.theme.json`, themeStr, 'utf8');
+  fs.writeFileSync(`${fleetThemesDir}/${theme.name}.theme.json`, themeStr, 'utf8');
 
   const contrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: false});
-  fs.writeFileSync(`${fleetThemesDir}/compact/${theme.name} Contrast.theme.json`, contrastThemeStr, 'utf8');
+  fs.writeFileSync(`${fleetThemesDir}/${theme.name} Contrast.theme.json`, contrastThemeStr, 'utf8');
 
   const compactThemeStr = replacePlaceholders(fleetTemplate, theme, props, {contrast: false, compact: true});
-  fs.writeFileSync(`${fleetThemesDir}/contrast/${theme.name} Compact.theme.json`, compactThemeStr, 'utf8');
+  fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact.theme.json`, compactThemeStr, 'utf8');
 
   const compactContrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: true});
-  fs.writeFileSync(`${fleetThemesDir}/compactContrast/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
+  fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
 });

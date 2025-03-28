@@ -29,15 +29,32 @@ import fleet.frontend.theme.registerTheme
 import fleet.kernel.plugins.ContributionScope
 import fleet.kernel.plugins.Plugin
 import fleet.kernel.plugins.PluginScope
+import org.yaml.snakeyaml.Yaml
+import java.io.InputStream
 
 class MaterialThemePlugin : Plugin<Unit> {
   override val key: Plugin.Key<Unit> = MaterialThemePlugin
 
   override fun ContributionScope.load(pluginScope: PluginScope) {
-    registerTheme(ThemeId(id = "material-oceanic"))
-    // registerTheme(ThemeId(id = "material-darker"))
-    // registerTheme(ThemeId(id = "material-palenight"))
-    // registerTheme(ThemeId(id = "material-lighter"))
+    val themeNames = loadThemesFromYaml()
+
+    themeNames.forEach {
+      registerTheme(ThemeId(id = "${it}.theme"))
+      registerTheme(ThemeId(id = "${it} Contrast.theme"))
+      // registerTheme(ThemeId(id = "${it} Compact.theme"))
+      // registerTheme(ThemeId(id = "${it} Contrast Compact.theme"))
+    }
+  }
+
+  private fun loadThemesFromYaml(): List<String> {
+    val inputStream: InputStream = this::class.java.getResourceAsStream("/themes.yml")
+      ?: throw IllegalArgumentException("Resource not found: themes.yml")
+
+    val yaml = Yaml()
+    val data: Map<String, List<Map<String, String>>> = yaml.load(inputStream)
+    val themes = data.values.flatten()
+
+    return themes.mapNotNull { it["name"] }
   }
 
   companion object : Plugin.Key<Unit>

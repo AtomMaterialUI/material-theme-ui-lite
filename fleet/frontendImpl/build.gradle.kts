@@ -22,6 +22,11 @@
  * SOFTWARE.
  */
 
+dependencies {
+  implementation("org.yaml:snakeyaml:2.4")
+  commonMainApi("org.yaml:snakeyaml:2.4")
+}
+
 plugins {
   alias(libs.plugins.kotlin.multiplatform)
   alias(libs.plugins.fleet.plugin.layer)
