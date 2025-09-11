@@ -100,7 +100,7 @@
     },
     "Autocomplete": {
       "selectionBackground": "selBg",
-      "selectionUnfocus": "hl"
+      "selectionUnfocus": "selBg"
     },
     "AvailableMnemonic": {
       "background": "button",
@@ -415,9 +415,9 @@
       "selectionBackground": "cs",
       "selectionForeground": "selFg",
       "selectionGrayForeground": "selFg",
-      "selectionInactiveBackground": "hl",
-      "selectionInactiveForeground": "text",
-      "selectionInactiveInfoForeground": "text",
+      "selectionInactiveBackground": "selBg",
+      "selectionInactiveForeground": "selFg",
+      "selectionInactiveInfoForeground": "selFg",
       "selectionInfoForeground": "selFg",
       "selectionInnerInsets": "4,4,4,4"
     },
