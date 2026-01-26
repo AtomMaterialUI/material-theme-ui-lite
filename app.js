@@ -173,7 +173,6 @@ const replacePlaceholders = (text, theme, props, {contrast, compact}) => {
   const contrastedBackground = contrastifyBackground({dark: theme.dark, color: theme.background, contrast});
   result = result.replace(new RegExp(`%bc`, 'g'), contrastedBackground);
 
-  // Dark/Light for Fleet
   result = result.replace(new RegExp(`-dark-`, 'g'), theme.dark ? 'Dark' : 'Light');
 
   globalProps.forEach(([prop, light, dark]) => {
@@ -234,7 +233,6 @@ console.log('Themes:', allThemes.map((theme) => theme.name).join(', '));
 
 // Output files
 const template = fs.readFileSync('./src/main/resources/template.theme.json', 'utf8');
-const fleetTemplate = fs.readFileSync('./fleet-template.json', 'utf8');
 
 console.log('Generating folders...');
 
@@ -245,8 +243,6 @@ fs.mkdirSync(`${themesDir}/compact`, {recursive: true});
 fs.mkdirSync(`${themesDir}/contrast`, {recursive: true});
 fs.mkdirSync(`${themesDir}/compactContrast`, {recursive: true});
 
-// Fleet Dirs
-const fleetThemesDir = './fleet/frontendImpl/src/jvmMain/resources';
 
 console.log('Generating themes...');
 
@@ -263,23 +259,6 @@ allThemes.forEach((theme) => {
 
   const compactContrastThemeStr = replacePlaceholders(template, theme, contrastProps, {contrast: true, compact: true});
   fs.writeFileSync(`./src/main/resources/themes/compactContrast/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
-});
-
-console.log('Generating Fleet themes...');
-
-// Generate Fleet Themes
-allThemes.forEach((theme) => {
-  const themeStr = replacePlaceholders(fleetTemplate, theme, props, {contrast: false, compact: false});
-  fs.writeFileSync(`${fleetThemesDir}/${theme.name}.theme.json`, themeStr, 'utf8');
-
-  const contrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: false});
-  fs.writeFileSync(`${fleetThemesDir}/${theme.name} Contrast.theme.json`, contrastThemeStr, 'utf8');
-
-  // const compactThemeStr = replacePlaceholders(fleetTemplate, theme, props, {contrast: false, compact: true});
-  // fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact.theme.json`, compactThemeStr, 'utf8');
-  //
-  // const compactContrastThemeStr = replacePlaceholders(fleetTemplate, theme, contrastProps, {contrast: true, compact: true});
-  // fs.writeFileSync(`${fleetThemesDir}/${theme.name} Compact Contrast.theme.json`, compactContrastThemeStr, 'utf8');
 });
 
 console.log('Done!');

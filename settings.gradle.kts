@@ -24,8 +24,6 @@
 
 rootProject.name = "material-theme-lite"
 
-include(":fleet")
-include(":fleet:frontendImpl")
 
 pluginManagement {
   repositories {
@@ -33,7 +31,6 @@ pluginManagement {
       url = java.net.URI("https://oss.sonatype.org/content/repositories/snapshots/")
     }
     maven("https://cache-redirector.jetbrains.com/intellij-dependencies")
-    maven("https://packages.jetbrains.team/maven/p/fleet/fleet-sdk")
     gradlePluginPortal()
   }
 }
