@@ -1,5 +1,9 @@
 ## Changelog
 
+# 26.0.0
+
+- Support for 2026.1
+
 # 25.0.0
 
 ### Fixes
