@@ -345,3 +345,5 @@ gradle-app.setting
 /.idea/jsLibraryMappings.xml
 /.idea/material_theme_project_new.xml
 /.idea/refactorings.xml
+
+.intellijPlatform
