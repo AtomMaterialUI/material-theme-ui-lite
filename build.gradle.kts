@@ -76,12 +76,19 @@ repositories {
 
   intellijPlatform {
     defaultRepositories()
+    snapshots()
+    jetbrainsRuntime()
+    marketplace()
   }
 }
 
 dependencies {
   intellijPlatform {
-    intellijIdeaUltimate(platformVersion, useInstaller = false)
+    if (properties("platformType") == "IU") {
+      intellijIdeaUltimate(platformVersion)
+    } else {
+      intellijIdeaCommunity(platformVersion)
+    }
 //    local(properties("idePath"))
 
     pluginVerifier()
